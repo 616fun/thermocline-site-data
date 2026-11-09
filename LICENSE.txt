@@ -1,0 +1,8 @@
+These databases are made available under the Open Database License (ODbL) 1.0:
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Any rights in individual contents of the databases are licensed under the Database Contents License:
+https://opendatacommons.org/licenses/dbcl/1-0/
+
+They are derived from OpenStreetMap data, © OpenStreetMap contributors, available under the ODbL:
+https://www.openstreetmap.org/copyright
