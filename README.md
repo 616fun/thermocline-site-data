@@ -19,7 +19,7 @@ the Open Database License (ODbL) 1.0. See LICENSE.txt and https://www.openstreet
 | [v2026-11-10](https://github.com/616fun/thermocline-site-data/releases/tag/v2026-11-10) | 25 onward | 10 onward |
 | [v2026-11-09](https://github.com/616fun/thermocline-site-data/releases/tag/v2026-11-09) | 23–24 | 8–9 |
 
-The build number is in the app's About (iPhone: Profile; Mac: Settings).
+The build number is the number in brackets after the version: on iPhone under Profile, Version; on Mac in Thermocline > About Thermocline.
 
 Each list comes as SQLite (as the app ships it) and as CSV. Columns:
 
