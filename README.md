@@ -12,7 +12,14 @@ the Open Database License (ODbL) 1.0. See LICENSE.txt and https://www.openstreet
 | sites-osm-states | 1,495 | 2026-11-03 | Named springs, quarries and lakes across the US states, not already in sites-osm |
 | sites-inland | 125 | 2026-11-10 | US inland dive sites (quarries, springs, lakes) checked as dived, positions from OpenStreetMap and its Nominatim search |
 
-**Download:** the latest zip under [Releases](https://github.com/616fun/thermocline-site-data/releases/latest). A new release goes up with each app build that changes the lists.
+**Download:** the latest zip under [Releases](https://github.com/616fun/thermocline-site-data/releases/latest). A new release goes up with each app build that changes the lists, and every release is kept, so each build's lists stay available:
+
+| Release | Thermocline iPhone builds | Thermocline Mac builds |
+|---|---|---|
+| [v2026-11-10](https://github.com/616fun/thermocline-site-data/releases/tag/v2026-11-10) | 25 onward | 10 onward |
+| [v2026-11-09](https://github.com/616fun/thermocline-site-data/releases/tag/v2026-11-09) | 23–24 | 8–9 |
+
+The build number is in the app's About (iPhone: Profile; Mac: Settings).
 
 Each list comes as SQLite (as the app ships it) and as CSV. Columns:
 
