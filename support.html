@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support – Thermocline</title>
+  <meta name="description" content="Help with Thermocline, the dive logbook for iPhone, iPad and Mac: sending feedback, importing your logbook, sync and downloads.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/support.html">
+  <link rel="icon" href="images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="30" height="30">Thermocline</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="btn" href="/#beta">Join the beta</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('images/wreck-deck.jpg')">
+  <div class="wrap">
+    <h1>Support</h1>
+    <p>Help for the Thermocline beta on iPhone, iPad, Mac and Apple Watch. Thermocline is for Apple devices only.</p>
+  </div>
+</div>
+
+<main class="doc">
+
+  <h2>Report a problem or an idea</h2>
+  <p>The quickest way: take a screenshot in the app, then send it with <strong>Share Beta Feedback</strong> in TestFlight. It reaches the developer with the build and device attached, which makes it much faster to fix.</p>
+  <p>You can also email <a href="mailto:support@thermoclineapp.com">support@thermoclineapp.com</a>. Please include your device, the build number (shown in TestFlight) and what you expected to happen.</p>
+
+  <h2>Getting started</h2>
+  <ul>
+    <li><strong>Take the tour.</strong> Profile → Show the tour walks through every screen using a sample logbook, not yours.</li>
+    <li><strong>Import your logbook.</strong> Profile → Import a logbook file. It reads MacDive (XML or UDDF), a Shearwater Cloud database, UDDF and CSV. You choose which dives to add, and anything it can't read is listed.</li>
+    <li><strong>Download from a computer.</strong> On iPhone: Logbook → Download Dives. On the Mac: File → Download from Dive Computer…, by Bluetooth or USB cable. Tested with Shearwater Perdix and Perdix 2 over Bluetooth.</li>
+  </ul>
+
+  <h2>Testing a cable download (Mac)</h2>
+  <p>USB and serial cable downloads are built for many computers but haven't been tried on real hardware yet, so every attempt helps.</p>
+  <ul>
+    <li>Choose File → Download from Dive Computer…, then USB Cable, your computer's model and its port.</li>
+    <li>For a Shearwater Predator, pair it in System Settings → Bluetooth first. Its port may then appear in the list.</li>
+    <li>Whether it works or not, open Download Log…, choose Save Log…, and send the file with Share Beta Feedback or by email.</li>
+  </ul>
+
+  <h2>Common questions</h2>
+  <p><strong>My dive computer won't connect.</strong> Shearwater computers remember the last device they paired with. If your phone or another app is nearby and paired, the computer may connect to it instead. Close other dive apps, turn Bluetooth off and on, and try again with the computer in its Bluetooth upload mode.</p>
+  <p><strong>Dives are missing or doubled after a sync.</strong> Before changing anything, take a screenshot of Profile → Sync and send it. Profile → Restore points can take your logbook back to before an import or merge.</p>
+  <p><strong>The Mac and iPhone don't match.</strong> Update both apps to the latest builds in TestFlight. An older build stops sending changes until it's updated, and it says so. Nothing is lost.</p>
+  <p><strong>A SAC figure looks wrong.</strong> Tap How? next to it to see every input it used: each tank, its water capacity, the gas, the pressures and the temperature. Send a screenshot of that screen if it still looks off.</p>
+  <p><strong>Moving to another app.</strong> Profile → Export saves your whole logbook as UDDF, CSV or MacDive XML.</p>
+
+  <h2>Safety</h2>
+  <p>Thermocline is a logbook. It shows what your dive computer recorded and never calculates decompression. Site positions are for logging, not for navigation.</p>
+
+  <h2>Privacy</h2>
+  <p>No account, no analytics and no developer servers. See the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong style="color:var(--on-deep)">Thermocline</strong>, a dive logbook. Not for dive planning or navigation.</p>
+      <p>Dive-site lists © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available under the Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
