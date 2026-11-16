@@ -565,3 +565,13 @@ section { padding: 96px 0; }
   .phone { flex: 0 0 min(62%, 260px); scroll-snap-align: center; }
 }
 @media (max-width: 600px) { .phones { margin: 0 -16px; padding: 4px 16px 16px; } .help-cards { grid-template-columns: 1fr; } }
+
+/* ---------- Mac beta button: its own colour, so the two joins don't look alike ---------- */
+.btn.mac {
+  background: linear-gradient(135deg, #5ee6d6, #22b8b0 55%, #128f93);
+  color: #032a2e;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .18) inset, 0 10px 30px rgba(34, 184, 176, .4);
+}
+.btn.mac:hover { box-shadow: 0 0 0 1px rgba(255, 255, 255, .24) inset, 0 14px 40px rgba(34, 184, 176, .55); }
+.join { flex-direction: column; align-items: flex-start; }
+.join .btn { margin-top: 4px; }
