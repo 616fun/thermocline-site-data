@@ -566,12 +566,37 @@ section { padding: 96px 0; }
 }
 @media (max-width: 600px) { .phones { margin: 0 -16px; padding: 4px 16px 16px; } .help-cards { grid-template-columns: 1fr; } }
 
-/* ---------- Mac beta button: its own colour, so the two joins don't look alike ---------- */
-.btn.mac {
-  background: linear-gradient(135deg, #5ee6d6, #22b8b0 55%, #128f93);
-  color: #032a2e;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, .18) inset, 0 10px 30px rgba(34, 184, 176, .4);
+/* ---------- Beta buttons in the logo's colours: cold blue for iPhone & iPad, warm for Mac ---------- */
+.btn.cold {
+  background: linear-gradient(135deg, #c4ecff, #7fd0f5 50%, #45ade3);
+  color: #04223f;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .25) inset, 0 10px 30px rgba(127, 208, 245, .35);
 }
-.btn.mac:hover { box-shadow: 0 0 0 1px rgba(255, 255, 255, .24) inset, 0 14px 40px rgba(34, 184, 176, .55); }
+.btn.cold:hover { box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 14px 40px rgba(127, 208, 245, .5); }
+.btn.mac {
+  background: linear-gradient(135deg, #ffe6c6, #ffd9a8 45%, #ffb26b);
+  color: #2a1300;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .25) inset, 0 10px 30px rgba(255, 178, 107, .35);
+}
+.btn.mac:hover { box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 14px 40px rgba(255, 178, 107, .5); }
+
+/* ---------- Wordmark: as on the app's splash screen. Warm above, cold below, split sharply. ---------- */
+.wordmark {
+  font-family: "Saira Semi Condensed", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600; letter-spacing: 0;
+  background: linear-gradient(to bottom, #ffd9a8 0 52%, #7fd0f5 52% 100%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+}
+.brand .wordmark { font-size: 1.4rem; line-height: 1; }
 .join { flex-direction: column; align-items: flex-start; }
 .join .btn { margin-top: 4px; }
+/* Headline: every line runs warm to cold, however the headline wraps. */
+.grad.lines { -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.nav .btn { white-space: nowrap; }
+@media (max-width: 420px) {
+  .brand { gap: 8px; }
+  .brand .wordmark { font-size: 1.22rem; }
+  .nav { gap: 12px; }
+  .nav .btn { padding: 8px 13px; font-size: .86rem; }
+}

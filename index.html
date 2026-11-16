@@ -17,7 +17,10 @@
   <meta property="og:image" content="https://thermoclineapp.com/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" as="image" href="images/wreck-hatch.jpg">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="styles.css?v=8">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -25,7 +28,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="32" height="32">Thermocline</a>
+    <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
     <nav class="nav" aria-label="Main">
       <a href="#app">See the app</a>
       <a href="#features">Features</a>
@@ -58,10 +61,10 @@
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Public beta on TestFlight</span>
-      <h1 id="hero-title">The dive logbook that shows <span class="grad">what your computer recorded.</span></h1>
+      <h1 id="hero-title"><span class="grad lines">The dive logbook that shows what your computer recorded.</span></h1>
       <p class="lede">Download your dives over Bluetooth or cable, bring in your whole logbook history, and read gas, depth and ppO₂ at a glance.</p>
       <div class="cta-row">
-        <a class="btn glow" href="https://testflight.apple.com/join/6NnXJzDP">
+        <a class="btn cold" href="https://testflight.apple.com/join/6NnXJzDP">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
           iPhone &amp; iPad beta
         </a>
@@ -147,7 +150,7 @@
           <h3>iPhone and iPad</h3>
           <p>Includes the Apple Watch app · iOS 18 or later</p>
         </div>
-        <a class="btn glow" href="https://testflight.apple.com/join/6NnXJzDP"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Join the iPhone &amp; iPad beta</a>
+        <a class="btn cold" href="https://testflight.apple.com/join/6NnXJzDP"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Join the iPhone &amp; iPad beta</a>
       </div>
       <div class="join reveal">
         <div>
@@ -342,7 +345,7 @@
     <h2 id="closing-title">Bring your logbook along.</h2>
     <p>Join the beta on your iPhone, iPad or Mac, import your dives, and tell us what's confusing, missing or wrong, however small.</p>
     <div class="cta-row">
-      <a class="btn glow" href="https://testflight.apple.com/join/6NnXJzDP">iPhone &amp; iPad beta</a>
+      <a class="btn cold" href="https://testflight.apple.com/join/6NnXJzDP">iPhone &amp; iPad beta</a>
       <a class="btn mac" href="https://testflight.apple.com/join/ygF4ngNd">Mac beta</a>
     </div>
   </div>
@@ -353,7 +356,7 @@
 <footer class="site-footer">
   <div class="wrap foot-grid">
     <div>
-      <p><strong style="color:var(--on-deep)">Thermocline</strong>, a dive logbook for iPhone, iPad, Mac and Apple Watch. Not for dive planning or navigation.</p>
+      <p><strong class="wordmark">Thermocline</strong>, a dive logbook for iPhone, iPad, Mac and Apple Watch. Not for dive planning or navigation.</p>
       <p>Dive-site lists © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available under the Open Database License. <a href="https://github.com/616fun/thermocline-site-data">Download the site lists</a>.</p>
       <p>Apple, iPhone, iPad, Mac, Apple Watch, iCloud and TestFlight are trademarks of Apple Inc.</p>
     </div>
