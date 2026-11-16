@@ -17,7 +17,7 @@
   <meta property="og:image" content="https://thermoclineapp.com/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" as="image" href="images/wreck-hatch.jpg">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -27,10 +27,10 @@
   <div class="wrap">
     <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="32" height="32">Thermocline</a>
     <nav class="nav" aria-label="Main">
-      <a href="#chart">Try the chart</a>
+      <a href="#app">See the app</a>
       <a href="#features">Features</a>
-      <a href="#principles">How it's built</a>
-      <a href="#faq">Questions</a>
+      <a class="keep" href="guide.html">Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
       <a class="btn" href="#testers">Join the beta</a>
     </nav>
   </div>
@@ -74,6 +74,7 @@
         <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
         <div><b>Made for Apple devices.</b> <span>iPhone, iPad, Mac and Apple Watch.</span></div>
       </div>
+      <p class="hero-links"><a href="#app">See the app</a> · <a href="guide.html">Read the guide</a> · <a href="troubleshooting.html">Troubleshooting</a></p>
     </div>
   </div>
 </section>
@@ -91,6 +92,37 @@
     </figure>
   </div>
 </div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">See the app</p>
+      <h2 id="app-title">Your dives, the way you read them</h2>
+      <p>Safety values in the same place on every dive, a profile you can read moment by moment, and the working shown behind every gas figure. Shown here with the app's sample logbook.</p>
+    </div>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="images/guide/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="The iPhone logbook: one dive waiting under To confirm, then the dive list with site, date, depth and time."><figcaption><b>Logbook</b>Dives that need a site or gas wait at the top.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="images/guide/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="A dive on iPhone: the safety strip with depth, time, gases, deco, ppO2 and CNS above the profile."><figcaption><b>Every dive</b>Depth, gases, deco, ppO₂ and CNS first.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="images/guide/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="The How? panel for gas use on iPhone, listing the cylinder, pressures, temperature and the calculation."><figcaption><b>Gas use</b>Tap How? to see every input behind SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="images/guide/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="The sites map on iPhone, with your sites and the built-in dive-site lists marked."><figcaption><b>Sites</b>Your sites and 73,000+ more, offline.</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="images/guide/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="The Mac app: the dive list beside a dive with its safety values, site, buddies, gear and depth profile, with a readout of the deepest point."><figcaption><b>On the Mac</b>The whole logbook beside the dive. Point at the profile to read any moment.</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">Guide</span>
+        <h3>How to use Thermocline</h3>
+        <p>Import your logbook, download your computer, confirm sites and gases, sync and export. Step by step, for iPhone and Mac.</p>
+        <span class="go">Read the guide →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">Troubleshooting</span>
+        <h3>Something not working?</h3>
+        <p>Computer not found, no new dives, sync differences, import gaps and odd SAC figures, each with the quickest thing to check.</p>
+        <span class="go">Find a fix →</span>
+      </a>
+    </div>
+  </div>
+</section>
 
 <div class="stats">
   <div class="wrap stats-grid">

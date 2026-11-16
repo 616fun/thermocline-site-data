@@ -537,3 +537,31 @@ section { padding: 96px 0; }
 .shot.wide img { border-radius: 10px; }
 .shot figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.4; opacity: .8; }
 @media (max-width: 480px) { .shot { flex-basis: 78%; } .shot.part, .shot.wide { flex-basis: 100%; } }
+
+/* ---------- Home: see the app, guide links ---------- */
+@media (max-width: 760px) { .nav a.keep { display: inline; } .nav { gap: 16px; } }
+.hero-links { margin-top: 22px; font-size: .95rem; color: var(--on-deep-2); }
+.hero-links a { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,.4); }
+.hero-links a:hover { text-decoration-color: #fff; }
+.app-tour { padding-bottom: 40px; }
+.phones { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.phone, .mac-shot { margin: 0; }
+.phone img, .mac-shot img { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--line); box-shadow: 0 14px 40px rgba(4,34,63,.18); }
+.phone img { border-radius: 26px; }
+.mac-shot { margin-top: 40px; }
+.mac-shot img { border-radius: 12px; }
+.phone figcaption, .mac-shot figcaption { margin-top: 14px; font-size: .95rem; line-height: 1.45; color: var(--text-2); }
+.phone figcaption b, .mac-shot figcaption b { display: block; color: var(--text); font-size: 1rem; }
+.mac-shot figcaption b { display: inline; margin-right: 6px; }
+.help-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 48px; }
+.help-card { display: block; padding: 26px 28px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); color: var(--text); text-decoration: none; transition: transform .15s, border-color .15s; }
+.help-card:hover { transform: translateY(-2px); border-color: var(--accent); }
+.help-card .tag { font-size: .78rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.help-card h3 { margin: 8px 0 6px; }
+.help-card p { color: var(--text-2); margin: 0 0 14px; }
+.help-card .go { font-weight: 650; color: var(--accent); }
+@media (max-width: 900px) {
+  .phones { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px; margin: 0 -24px; padding: 4px 24px 16px; }
+  .phone { flex: 0 0 min(62%, 260px); scroll-snap-align: center; }
+}
+@media (max-width: 600px) { .phones { margin: 0 -16px; padding: 4px 16px 16px; } .help-cards { grid-template-columns: 1fr; } }
