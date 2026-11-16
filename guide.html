@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guide – Thermocline</title>
+  <meta name="description" content="How to use Thermocline, the dive logbook for iPhone, iPad and Mac: import your logbook, download from your dive computer, confirm sites and gases, sync, and export.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/guide.html">
+  <link rel="icon" href="images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the guide</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="30" height="30">Thermocline</a>
+    <nav class="nav" aria-label="Main">
+      <a href="guide.html" aria-current="page">Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+      <a href="support.html">Support</a>
+      <a class="btn" href="/#testers">Join the beta</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero">
+  <div class="wrap">
+    <h1>Guide</h1>
+    <p>How to use Thermocline on iPhone, iPad and Mac, task by task. Written for the beta; menus can still change between builds. Updated 16 November 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#start">Get the app</a></li>
+      <li><a href="#first">First launch</a></li>
+      <li><a href="#import">Bring your logbook</a></li>
+      <li><a href="#download">Download dives</a></li>
+      <li><a href="#computers">Supported computers</a></li>
+      <li><a href="#confirm">Confirm site and gases</a></li>
+      <li><a href="#dive">Read a dive</a></li>
+      <li><a href="#sites">Sites and the Watch</a></li>
+      <li><a href="#gear">Gear and tanks</a></li>
+      <li><a href="#merge">Merge and join dives</a></li>
+      <li><a href="#photos">Photos and video</a></li>
+      <li><a href="#sync">Sync with iCloud</a></li>
+      <li><a href="#data">Export, undo, erase</a></li>
+    </ol>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="callout">
+      <p><strong>Something not working?</strong> See <a href="troubleshooting.html">Troubleshooting</a>. Thermocline is a logbook: it shows what your dive computer recorded and never calculates decompression.</p>
+    </div>
+
+    <h2 id="start">Get the app</h2>
+    <p>Thermocline is for Apple devices only: iPhone, iPad, Mac and Apple Watch. During the beta it's installed through Apple's TestFlight app.</p>
+    <ul>
+      <li><strong>iPhone and iPad:</strong> <a href="https://testflight.apple.com/join/6NnXJzDP">join the iPhone beta</a>. The Apple Watch app comes with it.</li>
+      <li><strong>Mac:</strong> <a href="https://testflight.apple.com/join/ygF4ngNd">join the Mac beta</a>. The Mac app is a separate download that shares the same logbook through iCloud.</li>
+      <li><strong>Keep both up to date.</strong> When TestFlight offers a new build, update every device you use. An older build stops sending changes until it's updated, and says so. Nothing is lost.</li>
+    </ul>
+
+    <h2 id="first">First launch and the tour</h2>
+    <p>The first launch asks your name, your units and where your dives come from. Units are stored in metric; changing them only changes the display.</p>
+    <div class="plat">
+      <div><h4>iPhone and iPad</h4><p>Everything else lives in the <span class="path">Profile</span> tab. <span class="path">Profile → Help → Show the tour</span> walks through every screen on a sample logbook, not yours.</p></div>
+      <div><h4>Mac</h4><p>Settings are under <span class="path">Thermocline → Settings</span>. <span class="path">Help → Take the Tour</span> opens the tour on a sample logbook.</p></div>
+    </div>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="The iPhone logbook: one dive waiting under To confirm, then the dive list with site, date, depth and time."><figcaption>The logbook on iPhone. Dives that need a site or gas wait at the top.</figcaption></figure>
+    </div>
+    <p class="note">Screenshots on this page show the sample logbook from the tour: the dives and sites are made up.</p>
+
+    <h2 id="import">Bring your logbook</h2>
+    <p>Thermocline reads MacDive (its database, XML or UDDF), a Shearwater Cloud database, UDDF from any logbook, and CSV. You choose which dives to add, and anything it can't read is listed, never silently dropped.</p>
+    <div class="plat">
+      <div><h4>iPhone and iPad</h4>
+        <ol>
+          <li><span class="path">Profile → Your data → Import a logbook file</span>.</li>
+          <li>Pick the file, from iCloud Drive or Files.</li>
+          <li>Untick any dives you don't want, then <strong>Import</strong>.</li>
+        </ol>
+      </div>
+      <div><h4>Mac</h4>
+        <ul>
+          <li><span class="path">File → Import from MacDive…</span> and choose MacDive's folder. This is the fullest route: dives, dive photos and card photos. MacDive's files aren't changed.</li>
+          <li>For exported files (UDDF, MacDive, Shearwater Cloud, CSV), use the File menu's import command (⇧⌘I).</li>
+        </ul>
+      </div>
+    </div>
+    <p><strong>Coming from MacDive on iPhone only?</strong> In MacDive on your Mac, select your dives, choose Export → Dives → Selected as UDDF, save the file to iCloud Drive, and import it on the iPhone.</p>
+    <p>When the import finishes, a report shows how many dives were added, which items were <strong>not imported</strong> and why, and anything to <strong>check</strong>. Dives whose file had no gas wait in <a href="#confirm">To confirm</a>. A restore point is saved before any import of more than one dive, and on the Mac <strong>Undo Import…</strong> takes it back.</p>
+    <p class="note">MacDive's UDDF export leaves out gear, gear sets, dive types and photos. Importing MacDive's folder on the Mac brings those across too.</p>
+
+    <h2 id="download">Download dives from your computer</h2>
+    <p>Put the dive computer in its Bluetooth mode first. On a Shearwater: <span class="path">Menu → Bluetooth</span>. It stays there about two minutes. Only dives newer than your last download are fetched.</p>
+    <div class="plat">
+      <div><h4>iPhone and iPad (Bluetooth)</h4>
+        <ol>
+          <li><span class="path">Logbook → Download Dives</span>.</li>
+          <li>Pick your computer under <strong>Nearby</strong>. The first time, type the PIN shown on its screen.</li>
+          <li>Untick any dive you don't want, then <strong>Keep</strong>. Unticked dives stay on the computer and are offered again next time.</li>
+        </ol>
+      </div>
+      <div><h4>Mac (Bluetooth or cable)</h4>
+        <ol>
+          <li><span class="path">File → Download from Dive Computer…</span> (⇧⌘D).</li>
+          <li>Choose <strong>Bluetooth</strong> or <strong>USB Cable</strong> as the connection.</li>
+          <li>For a cable, pick your computer's model and its port, follow <strong>Before you start</strong>, then <strong>Download</strong>.</li>
+        </ol>
+      </div>
+    </div>
+    <p><strong>The clock question.</strong> The first download from each computer asks <strong>What zone is the computer's clock set to?</strong> Most computers record local time with no time zone, so this keeps your dive times right when you travel. The answer is remembered for that computer.</p>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-download.jpg" width="600" height="1304" loading="lazy" alt="The iPhone download screen: the clock zone question for a Perdix 2, three new dives ticked, and a Keep 3 dives button."><figcaption>Downloading on iPhone: the clock question, the new dives, then Keep.</figcaption></figure>
+    </div>
+    <p>After choosing dives, you can step through them one by one to set the site and gases, or <strong>Finish later</strong>: they wait in <a href="#confirm">To confirm</a>.</p>
+    <p><strong>Deleted a dive and want it back?</strong> Turn on <strong>Download every dive on the computer</strong>. It takes longer; dives already in your logbook are skipped.</p>
+    <h3>Shearwater Predator and Petrel 1</h3>
+    <p>These use older Bluetooth (Bluetooth Classic) that iPhones and iPads can't use. On the Mac, pair the computer in <span class="path">System Settings → Bluetooth</span> first, then choose <strong>USB Cable</strong> in the download window: its port may appear in the list. Put the computer in its Bluetooth upload mode and choose Download. This hasn't been tried on a real Predator or Petrel 1 yet, so please <a href="troubleshooting.html#send-log">send the download log</a> whether it works or not. On iPhone, import their dives from Shearwater Cloud or a UDDF file instead.</p>
+
+    <h2 id="computers">Supported computers</h2>
+    <p>Thermocline downloads with libdivecomputer, the open-source library many logbooks share. It knows several hundred models from most makers. To see yours, open the download screen and choose <strong>Supported computers</strong>; each one says whether it works on iPhone and iPad or needs the Mac.</p>
+    <table class="models">
+      <thead><tr><th>Connection</th><th>Where it works</th><th>Tried so far</th></tr></thead>
+      <tbody>
+        <tr><td>Bluetooth LE</td><td>iPhone, iPad and Mac</td><td>Shearwater Perdix and Perdix 2. Other models should work: tell us.</td></tr>
+        <tr><td>USB or serial cable</td><td>Mac only</td><td>Built, not yet tried on real hardware.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 and other older models)</td><td>Mac only, paired as a serial port</td><td>Not yet tried.</td></tr>
+      </tbody>
+    </table>
+    <p>Got a computer we haven't tried? <a href="/#testers">Help us test it</a>.</p>
+
+    <h2 id="confirm">Confirm site and gases</h2>
+    <p>Dives still missing a site or confirmed gases wait in <strong>To confirm</strong>. Nothing stops them saving; fill them in when you like.</p>
+    <div class="plat">
+      <div><h4>iPhone and iPad</h4><p>They're at the top of <span class="path">Logbook</span> under <strong>To confirm</strong>. Open one, then <strong>Choose a site</strong> and tap <strong>Yes, these gases are right</strong> (or <strong>Correct Gas…</strong>).</p></div>
+      <div><h4>Mac</h4><p><span class="path">Go → To Confirm</span> (⌘2). The banner on each dive offers <strong>Confirm Site and Gases…</strong>, <strong>Choose Site…</strong> or <strong>Confirm Gases…</strong>.</p></div>
+    </div>
+    <p>Thermocline suggests the site from the dive's position: your own sites first, then the built-in lists of more than 73,000 dive sites and wrecks, which work offline.</p>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-confirm.jpg" width="600" height="1304" loading="lazy" alt="A dive waiting to be confirmed on iPhone, asking whether its gases are right."><figcaption>A dive in To confirm, asking about its gases.</figcaption></figure>
+    </div>
+
+    <h2 id="dive">Read a dive</h2>
+    <ul>
+      <li><strong>Safety values</strong> sit in a fixed strip at the top of every dive, always in the same place.</li>
+      <li><strong>The profile:</strong> drag across the chart (iPhone) or point at it (Mac) to read any moment. Chips under the chart show or hide Tank, SAC, Temp, ppO₂, CNS and Ascent, as <strong>Stacked</strong> strips or one <strong>Overlay</strong>. <a href="/#chart">Try it on the home page.</a></li>
+      <li><strong>Gas use:</strong> tap or click <strong>How?</strong> next to the SAC figure to see every input: the cylinder, its water capacity, pressures, temperature and the real-gas correction.</li>
+      <li><strong>Editing:</strong> edit any dive, or log one by hand (<span class="path">Logbook → Log by Hand</span>, or ⌘N on the Mac). A correction keeps the computer's original reading.</li>
+    </ul>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="A dive on iPhone: the safety strip with depth, time, gases, deco, ppO2 and CNS above the profile."><figcaption>The safety strip, then the profile.</figcaption></figure>
+      <figure class="shot"><img src="images/guide/ios-chart.jpg" width="600" height="1304" loading="lazy" alt="Stacked strips under the iPhone profile for tank pressure, SAC, temperature and ppO2, with chips to show or hide each one."><figcaption>Chips choose the strips under the profile.</figcaption></figure>
+      <figure class="shot"><img src="images/guide/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="The How? panel for gas use on iPhone, listing the cylinder, pressures, temperature and the calculation."><figcaption>How? shows every input behind SAC.</figcaption></figure>
+      <figure class="shot wide"><img src="images/guide/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="The Mac app: the dive list beside a dive with its safety values, site, buddies, gear and depth profile, with a readout of the deepest point."><figcaption>The same dive on the Mac. Point at the profile to read any moment.</figcaption></figure>
+    </div>
+
+    <h2 id="sites">Sites, positions and the Apple Watch</h2>
+    <div class="plat">
+      <div><h4>iPhone and iPad</h4>
+        <ul>
+          <li><span class="path">Profile → Sites</span>, then the add button: <strong>Find or name a site</strong> or <strong>Mark spot here (GPS)</strong>.</li>
+          <li>A site without a position offers <strong>Find position</strong>: check the suggestion on the map, type in coordinates, or drop a pin.</li>
+        </ul>
+      </div>
+      <div><h4>Mac</h4>
+        <ul>
+          <li><span class="path">Go → Sites</span> (⌘4), then <strong>Add Site…</strong>.</li>
+          <li><strong>Find Positions…</strong> works through every site without one, one at a time.</li>
+        </ul>
+      </div>
+    </div>
+    <p><strong>Apple Watch:</strong> at the surface, open Thermocline on the watch and press <strong>Mark spot</strong> once it has a good fix. You can add a name. The spot goes to your iPhone, which looks it up and puts it in To confirm.</p>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="The sites map on iPhone, with your sites and the built-in dive-site lists marked."><figcaption>Your sites and the built-in lists on the map.</figcaption></figure>
+    </div>
+    <p class="note">Site positions are for logging, not for navigation.</p>
+
+    <h2 id="gear">Gear and tanks</h2>
+    <ul>
+      <li><span class="path">Profile → Gear</span> on iPhone, <span class="path">Go → Gear</span> on the Mac.</li>
+      <li>On a cylinder, <strong>Model</strong> opens the cylinder catalogue: search by maker or model (for example "PST LP104") to fill in its published sizes, or type your own numbers.</li>
+      <li>Tick <strong>Doubles (manifolded pair)</strong> for a twinset.</li>
+      <li>A steel tank stamped with a +: turn on <strong>Plus rating</strong> while the last hydro test kept the +. It shows as, for example, 2400+. This switch appears when cylinder sizes are shown in cubic feet.</li>
+      <li>Tanks on each dive are under the dive's gas section (<strong>Add tank</strong>, <strong>Gear set</strong>).</li>
+    </ul>
+
+    <h2 id="merge">Merge and join dives</h2>
+    <ul>
+      <li><strong>Merge</strong> is for one dive recorded by two computers. Both recordings are kept and you can switch between them on the chart.</li>
+      <li><strong>Join</strong> is for one dive split in two by a brief surfacing.</li>
+      <li>Thermocline never does either on its own. When it spots a likely pair, a banner at the top of the logbook offers to <strong>Review</strong> them.</li>
+      <li>To do it yourself: on iPhone, tap Select, choose two dives, then Merge or Join. On the Mac, select two dives and right-click: <strong>Merge These Dives…</strong> or <strong>Join These Dives…</strong>.</li>
+      <li>Changed your mind? Use <strong>Undo</strong> straight away, or <strong>Separate these dives</strong> on the dive at any time.</li>
+    </ul>
+
+    <h2 id="photos">Photos and video links</h2>
+    <ul>
+      <li><strong>Add photos</strong> on a dive copies them from your library into the logbook.</li>
+      <li>To save iCloud space, turn on <span class="path">Sync → Save iCloud storage on dive photos</span> on every device. Photos are then linked to iCloud Photos instead of copied, and videos from your library can be added. Thermocline asks for Photos access only when you turn this on.</li>
+      <li><strong>Video links:</strong> paste a YouTube or Vimeo link under a dive's photos. Only the link is kept.</li>
+    </ul>
+
+    <h2 id="sync">Sync with iCloud</h2>
+    <p>Turn on <strong>Sync with iCloud</strong> on each device: <span class="path">Profile → Sync</span> on iPhone, <span class="path">Thermocline → Settings → Sync</span> on the Mac. Every device signed in to the same Apple Account then shares one logbook, stored in your own private iCloud. Changes made offline wait on the device and send when it's back online.</p>
+    <p>The Sync section shows the status, anything <strong>Waiting to send</strong>, and whether this device and your others match. <strong>Sync now</strong> checks straight away.</p>
+    <div class="shots">
+      <figure class="shot part"><img src="images/guide/ios-sync.jpg" width="600" height="358" loading="lazy" alt="The Sync with iCloud switch on iPhone, with a note on what it keeps the same across devices."><figcaption>Profile → Sync on iPhone.</figcaption></figure>
+    </div>
+
+    <h2 id="data">Export, restore points and erase</h2>
+    <ul>
+      <li><strong>Export:</strong> <span class="path">Profile → Your data</span> on iPhone, or the File menu on the Mac. UDDF is the complete export and your way out to any logbook. Also available: a spreadsheet (CSV), MacDive XML, bookmarks for cave survey (CSV) and an experience summary (text) for course prerequisites.</li>
+      <li><strong>Restore points:</strong> <span class="path">Profile → Your data → Restore points</span> (Mac: Settings → Your data → Restore Points). One is saved before turning on sync, before a large import, a merge, a join, an erase and before anything is deleted. Restoring saves your current logbook as a restore point first, so you can undo it.</li>
+      <li><strong>Erase:</strong> <strong>Erase logbook…</strong> offers to export first. With sync on, your other devices follow.</li>
+    </ul>
+    <div class="shots">
+      <figure class="shot part"><img src="images/guide/ios-yourdata.jpg" width="600" height="438" loading="lazy" alt="Your data on iPhone: Import a logbook file, Export logbook (UDDF), Export in another format, Restore points and Erase logbook."><figcaption>Profile → Your data on iPhone.</figcaption></figure>
+    </div>
+
+    <h2>Still stuck?</h2>
+    <p>See <a href="troubleshooting.html">Troubleshooting</a>, or send feedback from TestFlight or to <a href="mailto:support@thermoclineapp.com">support@thermoclineapp.com</a>.</p>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong style="color:var(--on-deep)">Thermocline</strong>, a dive logbook. Not for dive planning or navigation.</p>
+      <p>Dive-site lists © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available under the Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

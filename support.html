@@ -9,16 +9,17 @@
   <link rel="canonical" href="https://thermoclineapp.com/support.html">
   <link rel="icon" href="images/favicon-64.png" type="image/png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="30" height="30">Thermocline</a>
     <nav class="nav" aria-label="Main">
-      <a href="/#features">Features</a>
+      <a href="guide.html">Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
       <a href="privacy.html">Privacy</a>
-      <a class="btn" href="/#beta">Join the beta</a>
+      <a class="btn" href="/#testers">Join the beta</a>
     </nav>
   </div>
 </header>
@@ -36,10 +37,14 @@
   <p>The quickest way: take a screenshot in the app, then send it with <strong>Share Beta Feedback</strong> in TestFlight. It reaches the developer with the build and device attached, which makes it much faster to fix.</p>
   <p>You can also email <a href="mailto:support@thermoclineapp.com">support@thermoclineapp.com</a>. Please include your device, the build number (shown in TestFlight) and what you expected to happen.</p>
 
+  <div class="callout">
+    <p><strong>How do I…?</strong> The <a href="guide.html">Guide</a> covers every task step by step, and <a href="troubleshooting.html">Troubleshooting</a> covers connection, sync, import and photo problems.</p>
+  </div>
+
   <h2>Getting started</h2>
   <ul>
-    <li><strong>Take the tour.</strong> Profile → Show the tour walks through every screen using a sample logbook, not yours.</li>
-    <li><strong>Import your logbook.</strong> Profile → Import a logbook file. It reads MacDive (XML or UDDF), a Shearwater Cloud database, UDDF and CSV. You choose which dives to add, and anything it can't read is listed.</li>
+    <li><strong>Take the tour.</strong> Profile → Help → Show the tour walks through every screen using a sample logbook, not yours.</li>
+    <li><strong>Import your logbook.</strong> Profile → Your data → Import a logbook file. It reads MacDive (XML or UDDF), a Shearwater Cloud database, UDDF and CSV. You choose which dives to add, and anything it can't read is listed.</li>
     <li><strong>Download from a computer.</strong> On iPhone: Logbook → Download Dives. On the Mac: File → Download from Dive Computer…, by Bluetooth or USB cable. Tested with Shearwater Perdix and Perdix 2 over Bluetooth.</li>
   </ul>
 
@@ -47,16 +52,16 @@
   <p>USB and serial cable downloads are built for many computers but haven't been tried on real hardware yet, so every attempt helps.</p>
   <ul>
     <li>Choose File → Download from Dive Computer…, then USB Cable, your computer's model and its port.</li>
-    <li>For a Shearwater Predator, pair it in System Settings → Bluetooth first. Its port may then appear in the list.</li>
+    <li>For a Shearwater Predator or the original Petrel (Petrel 1), pair it in System Settings → Bluetooth first. Its port may then appear in the list.</li>
     <li>Whether it works or not, open Download Log…, choose Save Log…, and send the file with Share Beta Feedback or by email.</li>
   </ul>
 
   <h2>Common questions</h2>
   <p><strong>My dive computer won't connect.</strong> Shearwater computers remember the last device they paired with. If your phone or another app is nearby and paired, the computer may connect to it instead. Close other dive apps, turn Bluetooth off and on, and try again with the computer in its Bluetooth upload mode.</p>
-  <p><strong>Dives are missing or doubled after a sync.</strong> Before changing anything, take a screenshot of Profile → Sync and send it. Profile → Restore points can take your logbook back to before an import or merge.</p>
+  <p><strong>Dives are missing or doubled after a sync.</strong> Before changing anything, take a screenshot of Profile → Sync and send it. Profile → Your data → Restore points can take your logbook back to before an import or merge.</p>
   <p><strong>The Mac and iPhone don't match.</strong> Update both apps to the latest builds in TestFlight. An older build stops sending changes until it's updated, and it says so. Nothing is lost.</p>
   <p><strong>A SAC figure looks wrong.</strong> Tap How? next to it to see every input it used: each tank, its water capacity, the gas, the pressures and the temperature. Send a screenshot of that screen if it still looks off.</p>
-  <p><strong>Moving to another app.</strong> Profile → Export saves your whole logbook as UDDF, CSV or MacDive XML.</p>
+  <p><strong>Moving to another app.</strong> Profile → Your data → Export saves your whole logbook as UDDF, CSV or MacDive XML.</p>
 
   <h2>Safety</h2>
   <p>Thermocline is a logbook. It shows what your dive computer recorded and never calculates decompression. Site positions are for logging, not for navigation.</p>
@@ -73,6 +78,9 @@
     </div>
     <nav class="foot-links" aria-label="Footer">
       <a href="/">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+      <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
     </nav>
   </div>

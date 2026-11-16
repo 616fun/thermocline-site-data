@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troubleshooting – Thermocline</title>
+  <meta name="description" content="Fixes for common Thermocline problems: dive computer won't connect, no new dives, sync differences, import gaps, photos and SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/troubleshooting.html">
+  <link rel="icon" href="images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+<a class="skip" href="#content">Skip to troubleshooting</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="images/apple-touch-icon.png" alt="" width="30" height="30">Thermocline</a>
+    <nav class="nav" aria-label="Main">
+      <a href="guide.html">Guide</a>
+      <a href="troubleshooting.html" aria-current="page">Troubleshooting</a>
+      <a href="support.html">Support</a>
+      <a class="btn" href="/#testers">Join the beta</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Troubleshooting</h1>
+    <p>Find your problem below. Each one starts with the quickest thing to check. Updated 16 November 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#first">First, update</a></li>
+      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#sync">Sync</a></li>
+      <li><a href="#imports">Imports</a></li>
+      <li><a href="#numbers">Gas and SAC</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#sites">Sites and the Watch</a></li>
+      <li><a href="#send-log">Send a report</a></li>
+    </ol>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <h2 id="first">First, update every device</h2>
+    <p>Many problems go away when every device runs the latest build. Open TestFlight on each iPhone, iPad and Mac you use and install any update. An older build stops sending changes until it's updated, and says <strong>Update Thermocline to keep syncing</strong>. Your changes are kept and send after updating.</p>
+
+    <h2 id="downloads">Downloads from a dive computer</h2>
+    <div class="faq">
+      <details>
+        <summary>The computer isn't found</summary>
+        <ul>
+          <li>Wake the computer and put it in its Bluetooth mode (Shearwater: <span class="path">Menu → Bluetooth</span>). It only stays there about two minutes.</li>
+          <li>Hold it close to the iPhone, iPad or Mac.</li>
+          <li><strong>Shearwater computers go back to the last device they used.</strong> If your phone or another Mac is nearby, turn Bluetooth off on that device, then try again.</li>
+          <li>Check Bluetooth is on, and that Thermocline is allowed to use it (iPhone: Settings → Thermocline; Mac: System Settings → Privacy &amp; Security → Bluetooth).</li>
+        </ul>
+      </details>
+      <details>
+        <summary>It's a Predator or Petrel 1 and the iPhone can't see it</summary>
+        <p>These use older Bluetooth (Bluetooth Classic) that iPhones and iPads can't use. Download them on the Mac (see the <a href="guide.html#download">guide</a>), or import their dives from Shearwater Cloud or a UDDF file.</p>
+      </details>
+      <details>
+        <summary>It connects but asks for a PIN</summary>
+        <p>Type the code shown on the computer's screen. It's only needed the first time.</p>
+      </details>
+      <details>
+        <summary>"No new dives"</summary>
+        <p>Only dives newer than your last download are fetched. If you deleted a dive and want it back, turn on <strong>Download every dive on the computer</strong> and download again. Dives already in your logbook are skipped.</p>
+      </details>
+      <details>
+        <summary>The download stopped part way</summary>
+        <p>Choose <strong>Keep</strong> to save the dives that arrived, then download again for the rest. If it keeps stopping, choose <strong>Try again</strong> close to the computer, and <a href="#send-log">send the download log</a>.</p>
+      </details>
+      <details>
+        <summary>A cable download fails on the Mac</summary>
+        <ul>
+          <li>Check the port matches the cable: the list says which kind each port is, and warns when it's not for the model you chose.</li>
+          <li>Unplug and replug the cable, then use the refresh button to look for cables again.</li>
+          <li>Follow the <strong>Before you start</strong> steps for your model.</li>
+          <li>Cable downloads are new. Please <a href="#send-log">send the download log</a> either way.</li>
+        </ul>
+      </details>
+    </div>
+
+    <h2 id="sync">Sync between devices</h2>
+    <div class="faq">
+      <details>
+        <summary>Dives are missing or doubled after a sync</summary>
+        <ol>
+          <li>Don't change anything yet. Take a screenshot of the Sync section (iPhone: <span class="path">Profile → Sync</span>; Mac: <span class="path">Thermocline → Settings → Sync</span>) on each device and send it.</li>
+          <li>Check every device is on the latest build.</li>
+          <li><span class="path">Profile → Your data → Restore points</span> can take your logbook back to before an import, merge or deletion. Restoring saves your current logbook first, so it can be undone.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>A change on one device doesn't show on the other</summary>
+        <ul>
+          <li>Check <strong>Sync with iCloud</strong> is on on both, signed in to the same Apple Account.</li>
+          <li>Look at <strong>Waiting to send</strong> on the device where you made the change, and open the app on both with a signal. The Sync section says when this device and your others match.</li>
+          <li>Press <strong>Sync now</strong>.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>"Not signed in to iCloud"</summary>
+        <p>Sign in to iCloud in the device's Settings. Until then your logbook stays on that device, safe, and syncs once you're signed in.</p>
+      </details>
+      <details>
+        <summary>"Your iCloud storage is full"</summary>
+        <p>Your logbook is safe on the device and syncs when there's room. Free some iCloud space, or turn on <strong>Save iCloud storage on dive photos</strong> so photos aren't stored twice.</p>
+      </details>
+      <details>
+        <summary>"Another device uses a newer version"</summary>
+        <p>Update Thermocline on this device in TestFlight. Your changes are safe here and send after updating.</p>
+      </details>
+    </div>
+
+    <h2 id="imports">Imports</h2>
+    <div class="faq">
+      <details>
+        <summary>Some dives or details didn't come in</summary>
+        <p>The import report lists everything under <strong>Not imported</strong> and <strong>Please check</strong>, with the reason. Every logbook writes UDDF a little differently, so missing values are normal and stay blank. If something you expected is missing, send the report and, if you can, the file.</p>
+      </details>
+      <details>
+        <summary>My MacDive gear, photos or dive types are missing</summary>
+        <p>MacDive's UDDF export leaves those out. On the Mac, use <span class="path">File → Import from MacDive…</span> and choose MacDive's folder to bring them across.</p>
+      </details>
+      <details>
+        <summary>Imported dives have no gas</summary>
+        <p>The file didn't say which gas was used. Those dives wait in <strong>To confirm</strong> so you can set it.</p>
+      </details>
+      <details>
+        <summary>I imported the wrong file</summary>
+        <p>On the Mac, use <strong>Undo Import…</strong> in the import report. On either device, a restore point named <strong>Before an import</strong> is saved before any import of more than one dive.</p>
+      </details>
+    </div>
+
+    <h2 id="numbers">Gas use and SAC</h2>
+    <div class="faq">
+      <details>
+        <summary>A SAC figure looks wrong</summary>
+        <p>Tap or click <strong>How?</strong> next to it. It shows every input: the cylinder and its water capacity, pressures, temperature, the real-gas correction, time and depth. The usual culprit is a wrong cylinder size; fix it in Gear. Send a screenshot of the How? screen if it still looks off.</p>
+        <div class="shots">
+          <figure class="shot"><img src="images/guide/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="The How? panel for gas use on iPhone, listing the cylinder, pressures, temperature and the calculation."><figcaption>The How? panel (sample dive).</figcaption></figure>
+        </div>
+      </details>
+      <details>
+        <summary>There's no SAC, only a message</summary>
+        <ul>
+          <li><strong>Add the cylinder size to see SAC</strong>: choose the tank's model or enter its size.</li>
+          <li><strong>Add start and end pressures to see SAC</strong>: there's no transmitter, so enter them on the tank.</li>
+          <li><strong>SAC needs a depth profile</strong>: dives logged by hand without a profile have no SAC.</li>
+          <li>Rebreather dives don't get a SAC figure.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>SAC only counts one tank</summary>
+        <p>On a dive with several gases, only the tank with the transmitter has pressures. Enter start and end pressures on the other tank and SAC covers all the gas.</p>
+      </details>
+    </div>
+
+    <h2 id="photos">Photos</h2>
+    <div class="faq">
+      <details>
+        <summary>A photo doesn't show on my other device</summary>
+        <p>With <strong>Save iCloud storage on dive photos</strong> on, a photo keeps its copy until your other device finds it in iCloud Photos. Turn the setting on on both devices, check iCloud Photos is on for both, and give it time to upload.</p>
+      </details>
+      <details>
+        <summary>Videos weren't added</summary>
+        <p>Videos from your library can only be linked, not copied. Turn on <span class="path">Sync → Save iCloud storage on dive photos</span>, and make sure the video is in iCloud Photos. Or paste a YouTube or Vimeo link under the dive's photos.</p>
+      </details>
+      <details>
+        <summary>"Thermocline can't read your photos"</summary>
+        <p>Photos access was refused, so photos are copied instead of linked. To link them, allow access in Settings → Privacy &amp; Security → Photos → Thermocline.</p>
+      </details>
+    </div>
+
+    <h2 id="sites">Sites and the Apple Watch</h2>
+    <div class="faq">
+      <details>
+        <summary>The suggested site is wrong, or there isn't one</summary>
+        <p>Choose a different site, search the built-in lists by name, or mark or type the position yourself. Inland quarries and lakes are often missing from public lists, so your own sites come first in suggestions from then on.</p>
+      </details>
+      <details>
+        <summary>A spot marked on the Watch didn't appear</summary>
+        <p>The watch sends it to your iPhone (its list shows <strong>Sent to iPhone</strong> or <strong>Waiting to send</strong>). Open Thermocline on the iPhone; the spot is looked up when you're online and appears in To confirm. The watch needs Location Services on for Thermocline.</p>
+      </details>
+    </div>
+
+    <h2 id="send-log">Send a report or a download log</h2>
+    <ul>
+      <li><strong>From the app:</strong> take a screenshot, then use <strong>Share Beta Feedback</strong> in TestFlight. It arrives with the build and device attached.</li>
+      <li><strong>Download log, iPhone:</strong> on the download screen, tap <strong>Download log</strong>, then share it. It lists Bluetooth and computer messages only, with no dive data.</li>
+      <li><strong>Download log, Mac:</strong> in the download window, choose <strong>Download Log…</strong>, then <strong>Save Log…</strong>, and attach the file.</li>
+      <li><strong>Email:</strong> <a href="mailto:support@thermoclineapp.com">support@thermoclineapp.com</a>, with your device, the build number (shown in TestFlight) and what you expected to happen.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong style="color:var(--on-deep)">Thermocline</strong>, a dive logbook. Not for dive planning or navigation.</p>
+      <p>Dive-site lists © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available under the Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
