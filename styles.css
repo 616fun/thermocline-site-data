@@ -610,3 +610,36 @@ section { padding: 96px 0; }
   width: fit-content; max-width: 100%;
 }
 .closing h2 { margin-left: auto; margin-right: auto; }
+
+/* ---------- Share button in the header (phones: icon only) ---------- */
+.share-btn {
+  display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, .28); border-radius: 999px;
+  background: rgba(255, 255, 255, .08); color: var(--on-deep);
+  font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.share-btn svg { width: 17px; height: 17px; flex: none; }
+.share-btn:hover { background: rgba(255, 255, 255, .16); border-color: rgba(255, 255, 255, .45); }
+.share-btn:focus-visible { outline: 3px solid var(--warm); outline-offset: 3px; }
+@media (max-width: 760px) {
+  .share-btn { width: 38px; padding: 0; justify-content: center; }
+  .share-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+.share-note {
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); z-index: 100;
+  padding: 10px 18px; border-radius: 999px; background: #04223f; color: #fff;
+  font-size: .95rem; font-weight: 600; box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
+  opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;
+}
+.share-note.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* Phone header with the share button: tighter spacing; on the narrowest phones the
+   header Guide link gives way (the hero's "Read the guide" link stays). */
+@media (max-width: 420px) {
+  .brand .wordmark { font-size: 1.14rem; }
+  .nav { gap: 8px; }
+  .nav .btn { padding: 8px 10px; }
+  .share-btn { width: 34px; height: 34px; }
+}
+@media (max-width: 369px) { .nav a.keep { display: none; } }
