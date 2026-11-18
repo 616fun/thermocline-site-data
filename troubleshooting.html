@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 <a class="skip" href="#content">Skip to troubleshooting</a>
@@ -54,7 +54,8 @@
 
 <div class="doc-layout">
   <nav class="toc" aria-label="On this page">
-    <p>On this page</p>
+    <details open>
+      <summary>On this page</summary>
     <ol>
       <li><a href="#first">First, update</a></li>
       <li><a href="#downloads">Downloads</a></li>
@@ -65,16 +66,24 @@
       <li><a href="#sites">Sites and the Watch</a></li>
       <li><a href="#send-log">Send a report</a></li>
     </ol>
+    </details>
   </nav>
 
   <main class="doc" id="content">
 
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Search for your problem</label>
+      <input id="faq-q" type="search" placeholder="For example: NDL, Garmin, PIN, sync" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
     <h2 id="first">First, update every device</h2>
     <p>Many problems go away when every device runs the latest build. Open TestFlight on each iPhone, iPad and Mac you use and install any update. An older build stops sending changes until it's updated, and says <strong>Update Thermocline to keep syncing</strong>. Your changes are kept and send after updating.</p>
 
+    <section class="faq-group">
     <h2 id="downloads">Downloads from a dive computer</h2>
     <div class="faq">
-      <details>
+      <details id="not-found">
         <summary>The computer isn't found</summary>
         <ul>
           <li>Wake the computer and put it in its Bluetooth mode (Shearwater: <span class="path">Menu → Bluetooth</span>). It only stays there about two minutes.</li>
@@ -83,23 +92,23 @@
           <li>Check Bluetooth is on, and that Thermocline is allowed to use it (iPhone: Settings → Thermocline; Mac: System Settings → Privacy &amp; Security → Bluetooth).</li>
         </ul>
       </details>
-      <details>
+      <details id="predator">
         <summary>It's a Predator or Petrel 1 and the iPhone can't see it</summary>
         <p>These use older Bluetooth (Bluetooth Classic) that iPhones and iPads can't use. Download them on the Mac (see the <a href="guide.html#download">guide</a>), or import their dives from Shearwater Cloud or a UDDF file.</p>
       </details>
-      <details>
+      <details id="pin">
         <summary>It connects but asks for a PIN</summary>
         <p>Type the code shown on the computer's screen. It's only needed the first time.</p>
       </details>
-      <details>
+      <details id="no-new-dives">
         <summary>"No new dives"</summary>
         <p>Only dives newer than your last download are fetched. If you deleted a dive and want it back, turn on <strong>Download every dive on the computer</strong> and download again. Dives already in your logbook are skipped.</p>
       </details>
-      <details>
+      <details id="download-stopped">
         <summary>The download stopped part way</summary>
         <p>Choose <strong>Keep</strong> to save the dives that arrived, then download again for the rest. If it keeps stopping, choose <strong>Try again</strong> close to the computer, and <a href="#send-log">send the download log</a>.</p>
       </details>
-      <details>
+      <details id="cable">
         <summary>A cable download fails on the Mac</summary>
         <ul>
           <li>Check the port matches the cable: the list says which kind each port is, and warns when it's not for the model you chose.</li>
@@ -109,10 +118,12 @@
         </ul>
       </details>
     </div>
+    </section>
 
+    <section class="faq-group">
     <h2 id="sync">Sync between devices</h2>
     <div class="faq">
-      <details>
+      <details id="missing-or-doubled">
         <summary>Dives are missing or doubled after a sync</summary>
         <ol>
           <li>Don't change anything yet. Take a screenshot of the Sync section (iPhone: <span class="path">Profile → Sync</span>; Mac: <span class="path">Thermocline → Settings → Sync</span>) on each device and send it.</li>
@@ -120,7 +131,7 @@
           <li><span class="path">Profile → Your data → Restore points</span> can take your logbook back to before an import, merge or deletion. Restoring saves your current logbook first, so it can be undone.</li>
         </ol>
       </details>
-      <details>
+      <details id="change-not-showing">
         <summary>A change on one device doesn't show on the other</summary>
         <ul>
           <li>Check <strong>Sync with iCloud</strong> is on on both, signed in to the same Apple Account.</li>
@@ -128,34 +139,36 @@
           <li>Press <strong>Sync now</strong>.</li>
         </ul>
       </details>
-      <details>
+      <details id="not-signed-in">
         <summary>"Not signed in to iCloud"</summary>
         <p>Sign in to iCloud in the device's Settings. Until then your logbook stays on that device, safe, and syncs once you're signed in.</p>
       </details>
-      <details>
+      <details id="icloud-full">
         <summary>"Your iCloud storage is full"</summary>
         <p>Your logbook is safe on the device and syncs when there's room. Free some iCloud space, or turn on <strong>Save iCloud storage on dive photos</strong> so photos aren't stored twice.</p>
       </details>
-      <details>
+      <details id="newer-version">
         <summary>"Another device uses a newer version"</summary>
         <p>Update Thermocline on this device in TestFlight. Your changes are safe here and send after updating.</p>
       </details>
     </div>
+    </section>
 
+    <section class="faq-group">
     <h2 id="imports">Imports</h2>
     <div class="faq">
-      <details>
+      <details id="not-imported">
         <summary>Some dives or details didn't come in</summary>
         <p>The import report lists everything under <strong>Not imported</strong> and <strong>Please check</strong>, with the reason. Every logbook writes UDDF a little differently, so missing values are normal and stay blank. If something you expected is missing, send the report and, if you can, the file.</p>
       </details>
-      <details>
+      <details id="macdive-gear">
         <summary>My MacDive gear, photos or dive types are missing</summary>
-        <p>MacDive's UDDF export leaves those out. Import MacDive's XML over it to add gear, tags and dive types. For photos, use <span class="path">File → Import from MacDive…</span> on the Mac and choose MacDive's folder. Dives already in your logbook aren't added twice.</p>
+        <p>MacDive's UDDF export leaves those out. Import its XML on top for gear, tags and dive types, and on the Mac import MacDive's folder for photos. Dives already in your logbook aren't added twice. See <a href="guide.html#macdive-files">Which MacDive file to use</a>.</p>
       </details>
       <details id="macdive-ndl">
         <summary>NDL, ppO₂ or CNS is missing on dives from MacDive</summary>
         <p>The dive page shows NDL as "—" and Deco as "Not recorded", or ppO₂ says "Calculated from gas and depth". MacDive's UDDF export doesn't include the computer's NDL, ppO₂ or CNS. Its folder has no profile for dives MacDive downloaded on an iPhone or iPad, because it stores those encrypted.</p>
-        <p>Export your dives from MacDive as XML and import that file too. It fills in what's missing on the dives you already have, without adding them again and without changing anything you've edited. See <a href="guide.html#macdive-files">Which MacDive file to use</a>.</p>
+        <p>Import MacDive's XML too: it fills in what's missing without adding dives again. See <a href="guide.html#macdive-files">Which MacDive file to use</a>.</p>
       </details>
       <details id="no-data-lost">
         <summary>Will moving between files or apps lose anything?</summary>
@@ -166,11 +179,11 @@
           <li><strong>Leaving Thermocline:</strong> its UDDF export is the complete one. It includes the computer's NDL, ppO₂ and CNS along each dive, gear, tags, dive types and video links. Photos aren't inside any export file.</li>
         </ul>
       </details>
-      <details>
+      <details id="no-gas">
         <summary>Imported dives have no gas</summary>
         <p>The file didn't say which gas was used. Those dives wait in <strong>To confirm</strong> so you can set it.</p>
       </details>
-      <details>
+      <details id="wrong-file">
         <summary>I imported the wrong file</summary>
         <p>On the Mac, use <strong>Undo Import…</strong> in the import report. On either device, a restore point named <strong>Before an import</strong> is saved before any import of more than one dive.</p>
       </details>
@@ -184,30 +197,32 @@
           <li><strong>Choosing a Garmin file with another logbook file</strong> isn't possible in one go: import the logbook file, then the Garmin files.</li>
         </ul>
       </details>
-      <details>
+      <details id="garmin-tanks">
         <summary>A Garmin dive asks me to check its tanks</summary>
         <p>With more than one tank transmitter, Garmin's file doesn't say which gas each one was on, so they were matched to the dive's tanks in order. Open the dive's gas section and make sure each pressure is on the right tank.</p>
       </details>
-      <details>
+      <details id="garmin-time">
         <summary>A Garmin dive's time is an hour off</summary>
         <p>The time comes from the watch's clock. If it wasn't set to local time where you dived, the dive shows at the watch's time. Edit the dive's time, or set the watch's time zone before the next trip.</p>
       </details>
-      <details>
+      <details id="drift-site">
         <summary>A drift dive has the wrong site</summary>
         <p>A dive is matched to the nearer of where you went in and where you came up, which on a drift is usually where you went in. If it matched the wrong site or none, choose the site on the dive, and add any other wrecks you passed to the notes.</p>
       </details>
     </div>
+    </section>
 
+    <section class="faq-group">
     <h2 id="numbers">Gas use and SAC</h2>
     <div class="faq">
-      <details>
+      <details id="sac-wrong">
         <summary>A SAC figure looks wrong</summary>
         <p>Tap or click <strong>How?</strong> next to it. It shows every input: the cylinder and its water capacity, pressures, temperature, the real-gas correction, time and depth. The usual culprit is a wrong cylinder size; fix it in Gear. Send a screenshot of the How? screen if it still looks off.</p>
         <div class="shots">
           <figure class="shot"><img src="images/guide/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="The How? panel for gas use on iPhone, listing the cylinder, pressures, temperature and the calculation."><figcaption>The How? panel (sample dive).</figcaption></figure>
         </div>
       </details>
-      <details>
+      <details id="no-sac">
         <summary>There's no SAC, only a message</summary>
         <ul>
           <li><strong>Add the cylinder size to see SAC</strong>: choose the tank's model or enter its size.</li>
@@ -216,46 +231,51 @@
           <li>Rebreather dives don't get a SAC figure.</li>
         </ul>
       </details>
-      <details>
+      <details id="sac-one-tank">
         <summary>SAC only counts one tank</summary>
         <p>On a dive with several gases, only the tank with the transmitter has pressures. Enter start and end pressures on the other tank and SAC covers all the gas.</p>
       </details>
       <details id="breathing">
         <summary>Summary's Breathing says no dive has a tank size</summary>
-        <p>Breathing averages only dives with a tank size and start and end pressures. Some imported dives have neither: MacDive's UDDF doesn't say how much water a tank holds, so Thermocline leaves the size blank rather than guess. MacDive's XML and folder do give sizes, and importing the XML on top of a UDDF fills them in. Otherwise set the tank on your dives (choose its model, or a gear set) and add pressures where you have them. Under the figure, Breathing says how many dives weren't counted.</p>
+        <p>Breathing averages only dives with a tank size and start and end pressures. Dives from MacDive's UDDF have no tank size, because its sizes aren't water capacities; importing the XML on top fills them in (see <a href="guide.html#macdive-files">Which MacDive file to use</a>). Otherwise set the tank on your dives (choose its model, or a gear set) and add pressures where you have them. Under the figure, Breathing says how many dives weren't counted.</p>
         <div class="shots">
           <figure class="shot"><img src="images/guide/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Breathing on the Summary tab: SAC and RMV over 14 dives, and one dive not counted because it has no tank size or pressures."><figcaption>The count of dives left out is under the figure (sample logbook).</figcaption></figure>
         </div>
       </details>
     </div>
+    </section>
 
+    <section class="faq-group">
     <h2 id="photos">Photos</h2>
     <div class="faq">
-      <details>
+      <details id="photo-missing">
         <summary>A photo doesn't show on my other device</summary>
         <p>With <strong>Save iCloud storage on dive photos</strong> on, a photo keeps its copy until your other device finds it in iCloud Photos. Turn the setting on on both devices, check iCloud Photos is on for both, and give it time to upload.</p>
       </details>
-      <details>
+      <details id="videos">
         <summary>Videos weren't added</summary>
         <p>Videos from your library can only be linked, not copied. Turn on <span class="path">Sync → Save iCloud storage on dive photos</span>, and make sure the video is in iCloud Photos. Or paste a YouTube or Vimeo link under the dive's photos.</p>
       </details>
-      <details>
+      <details id="photos-access">
         <summary>"Thermocline can't read your photos"</summary>
         <p>Photos access was refused, so photos are copied instead of linked. To link them, allow access in Settings → Privacy &amp; Security → Photos → Thermocline.</p>
       </details>
     </div>
+    </section>
 
+    <section class="faq-group">
     <h2 id="sites">Sites and the Apple Watch</h2>
     <div class="faq">
-      <details>
+      <details id="wrong-site">
         <summary>The suggested site is wrong, or there isn't one</summary>
         <p>Choose a different site, search the built-in lists by name, or mark or type the position yourself. Inland quarries and lakes are often missing from public lists, so your own sites come first in suggestions from then on.</p>
       </details>
-      <details>
+      <details id="watch-spot">
         <summary>A spot marked on the Watch didn't appear</summary>
         <p>The watch sends it to your iPhone (its list shows <strong>Sent to iPhone</strong> or <strong>Waiting to send</strong>). Open Thermocline on the iPhone; the spot is looked up when you're online and appears in To confirm. The watch needs Location Services on for Thermocline.</p>
       </details>
     </div>
+    </section>
 
     <h2 id="send-log">Send a report or a download log</h2>
     <ul>
@@ -284,5 +304,6 @@
 </footer>
 <!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
 <script src="share.js?v=1" defer></script>
+<script src="doc.js?v=1" defer></script>
 </body>
 </html>
