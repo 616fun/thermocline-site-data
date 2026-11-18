@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
 <a class="skip" href="#content">Skip to the guide</a>
@@ -73,7 +73,11 @@
         <li><a href="#computers">Supported computers</a></li>
         <li><a href="#confirm">Confirm site and gases</a></li>
         <li><a href="#dive">Read a dive</a></li>
-        <li><a href="#sites">Sites and the Watch</a></li>
+        <li><a href="#sites">Sites and the Watch</a>
+          <ol>
+            <li><a href="#watch">Apple Watch</a></li>
+          </ol>
+        </li>
         <li><a href="#gear">Gear and tanks</a></li>
         <li><a href="#merge">Merge and join dives</a></li>
         <li><a href="#photos">Photos and video</a></li>
@@ -285,13 +289,35 @@
         <tr><th scope="row">Find a position</th><td class="ios" data-label="iPhone and iPad">A site without one offers <strong>Find position</strong>: check the suggestion on the map, type in coordinates, or drop a pin.</td><td class="mac" data-label="Mac"><strong>Find Positions…</strong> works through every site without one, one at a time.</td></tr>
       </tbody>
     </table>
-    <p><strong>Apple Watch:</strong> at the surface, open Thermocline on the watch and press <strong>Mark spot</strong> once it has a good fix. You can add a name. The spot goes to your iPhone, which looks it up and puts it in To confirm.</p>
+    <p><strong>Apple Watch:</strong> mark a spot at the surface and it waits on your iPhone in To confirm. See <a href="#watch">Apple Watch</a>.</p>
     <p class="note">Site positions are for logging, not for navigation.</p>
       </div>
       <div class="shots">
       <figure class="shot"><a href="images/guide/ios-sites-map.jpg"><img src="images/guide/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="The sites map on iPhone, with your sites and the built-in dive-site lists marked."></a><figcaption>Your sites and the built-in lists on the map.</figcaption></figure>
     </div>
     </div>
+
+    <h3 id="watch">Apple Watch</h3>
+    <p>The Watch app does one thing: it marks where you are at the surface, so the site of a dive is easy to log. It doesn't record dives; those come from your dive computer. It needs watchOS&nbsp;11 or later and an iPhone with Thermocline.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="wa"><col class="ph"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Task</span></th><th scope="col" class="wa">Apple Watch</th><th scope="col" class="ph">iPhone</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Install</th><td class="both" colspan="2">It comes with the iPhone app. If it isn't on the watch, open the Watch app on your iPhone, find Thermocline under <strong>Available Apps</strong> and tap <strong>Install</strong>. The first time, allow location for Thermocline on the watch.</td></tr>
+        <tr><th scope="row">Mark a spot</th><td class="wa" data-label="Apple Watch">At the surface, over the site, open Thermocline. Wait for <strong>Good fix</strong>, then tap <strong>Mark spot</strong>. The watch taps your wrist when it's saved.</td><td class="ph" data-label="iPhone">The spot arrives on its own. If the iPhone is out of reach, it's sent when they're together again.</td></tr>
+        <tr><th scope="row">Name it</th><td class="wa" data-label="Apple Watch">Optional. Tap <strong>Add a name</strong> after marking, or later in <strong>Marked spots</strong>, and say, scribble or type it, for example "bow of the wreck". It saves when you finish.</td><td class="ph" data-label="iPhone">The name is offered as the new site's name. You can use it or choose another site.</td></tr>
+        <tr><th scope="row">Confirm it</th><td class="none wa" data-label="Apple Watch">Nothing to do on the watch.</td><td class="ph" data-label="iPhone"><span class="path">Logbook → To confirm</span>. The iPhone looks the spot up when it's online, suggests the nearest known site, and shows the dive it most likely belongs to. Confirm or discard it.</td></tr>
+        <tr><th scope="row">Check it was sent</th><td class="wa" data-label="Apple Watch"><strong>Marked spots</strong> shows each one with <strong>Sent to iPhone</strong> or <strong>Waiting to send to iPhone</strong>, and a map. A spot leaves the watch once it's confirmed or discarded on the iPhone.</td><td class="ph" data-label="iPhone">Once confirmed, the site syncs to your other devices like any other.</td></tr>
+      </tbody>
+    </table>
+    <div class="watch-shots">
+      <figure class="shot"><a href="images/guide/watch-waiting.jpg"><img src="images/guide/watch-waiting.jpg" width="422" height="514" loading="lazy" alt="The watch waiting for GPS, at plus or minus 60 metres, with the Mark spot button greyed out."></a><figcaption>Waiting for a good fix.</figcaption></figure>
+      <figure class="shot"><a href="images/guide/watch-good-fix.jpg"><img src="images/guide/watch-good-fix.jpg" width="422" height="514" loading="lazy" alt="The watch showing Good fix at plus or minus 6 metres, with the Mark spot button ready."></a><figcaption>Good fix: tap Mark spot.</figcaption></figure>
+      <figure class="shot"><a href="images/guide/watch-marked.jpg"><img src="images/guide/watch-marked.jpg" width="422" height="514" loading="lazy" alt="The watch after marking: Spot marked, your iPhone looks it up and puts it in To confirm, with an Add a name button."></a><figcaption>Marked. Add a name if you like.</figcaption></figure>
+      <figure class="shot"><a href="images/guide/watch-spot-map.jpg"><img src="images/guide/watch-spot-map.jpg" width="422" height="514" loading="lazy" alt="A marked spot on the watch's map, a pin in open ocean at 41.73250, -49.94690."></a><figcaption>Marked spots show on a map.</figcaption></figure>
+    </div>
+    <p>The watch saves a spot only from a fix within &plusmn;30&nbsp;m and under 30&nbsp;seconds old, and it ignores an old cached position. Mark it at the surface, not underwater.</p>
+    <p class="note">Site positions are for logging, not for navigation.</p>
 
     <h2 id="gear">Gear and tanks</h2>
     <table class="how">

@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
 <a class="skip" href="#content">Skip to troubleshooting</a>
@@ -282,9 +282,33 @@
         <summary>The suggested site is wrong, or there isn't one</summary>
         <p>Choose a different site, search the built-in lists by name, or mark or type the position yourself. Inland quarries and lakes are often missing from public lists, so your own sites come first in suggestions from then on.</p>
       </details>
+      <details id="watch-install">
+        <summary>Thermocline isn't on my Apple Watch</summary>
+        <p>The Watch app comes with the iPhone app from TestFlight. On your iPhone, open the Watch app, find Thermocline under <strong>Available Apps</strong> and tap <strong>Install</strong>. It needs watchOS&nbsp;11 or later. If you moved from the old iPhone app, install it again: the old Watch app belongs to the old iPhone app.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>The watch says "Waiting for a good fix" and Mark spot stays grey</summary>
+        <p>A spot is saved only from a fix within &plusmn;30&nbsp;m and under 30&nbsp;seconds old, so a wrong position never reaches your logbook. Stay at the surface with the watch out of the water and a clear view of the sky, and give it a minute. <strong>Ignoring an old cached position</strong> means it's waiting for a fresh one. GPS doesn't work underwater: mark the spot before you descend or when you surface.</p>
+      </details>
+      <details id="watch-location">
+        <summary>"Location access is off for Thermocline" on the watch</summary>
+        <p>On the watch, open <span class="path">Settings → Privacy &amp; Security → Location Services</span>, turn Location Services on and allow Thermocline while using the app.</p>
+      </details>
       <details id="watch-spot">
-        <summary>A spot marked on the Watch didn't appear</summary>
-        <p>The watch sends it to your iPhone (its list shows <strong>Sent to iPhone</strong> or <strong>Waiting to send</strong>). Open Thermocline on the iPhone; the spot is looked up when you're online and appears in To confirm. The watch needs Location Services on for Thermocline.</p>
+        <summary>A spot marked on the Watch didn't appear on the iPhone</summary>
+        <p>On the watch, open <strong>Marked spots</strong>. <strong>Waiting to send to iPhone</strong> means the iPhone hasn't had it yet: keep the watch near your iPhone and open Thermocline on the iPhone. <strong>Sent to iPhone</strong> means it's there: look in <span class="path">Logbook → To confirm</span>. The iPhone looks the spot up when it's online, so with no signal it waits with <strong>waiting for signal to look up</strong>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>The name I said on the watch didn't save</summary>
+        <p>The name saves when the dictation or keyboard closes, or when you go back. Open <strong>Marked spots</strong>, tap the spot and check its name; tap <strong>Change the name</strong> to try again. If the spot was already sent, the name follows it to the iPhone.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Does the watch record my dives?</summary>
+        <p>No. The Thermocline Watch app only marks spots at the surface. Your dives come from your dive computer. For Garmin Descent watches, import their .fit files: see <a href="guide.html#garmin">Garmin Descent</a> in the guide.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>A spot disappeared from the watch</summary>
+        <p>That's expected. A spot leaves the watch once it's confirmed or discarded on the iPhone. A confirmed spot is a site in your logbook and syncs to your other devices.</p>
       </details>
     </div>
     </section>
