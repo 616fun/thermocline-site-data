@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=17">
+  <link rel="stylesheet" href="styles.css?v=18">
   <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
 {
@@ -46,10 +46,10 @@
     {
       "@type": "MobileApplication",
       "@id": "https://thermoclineapp.com/#iphone-app",
-      "name": "Thermocline for iPhone and iPad",
-      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, watchOS",
-      "description": "Dive logbook for iPhone, iPad and Apple Watch. Download dives over Bluetooth, import your MacDive or Shearwater Cloud logbook, and read gas, depth and ppO2 at a glance.",
-      "installUrl": "https://testflight.apple.com/join/6NnXJzDP",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "Dive logbook for iPhone, iPad, Mac and Apple Watch: one app, one beta link. Download dives over Bluetooth, import your MacDive or Shearwater Cloud logbook, and read gas, depth and ppO2 at a glance.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
       "screenshot": [
         "https://thermoclineapp.com/images/guide/ios-logbook.jpg",
         "https://thermoclineapp.com/images/guide/ios-dive.jpg",
@@ -122,13 +122,9 @@
       <h1 id="hero-title"><span class="grad lines">The dive logbook that shows what your computer recorded.</span></h1>
       <p class="lede">Download your dives over Bluetooth or cable, bring in your whole logbook history, and read gas, depth and ppO₂ at a glance.</p>
       <div class="cta-row">
-        <a class="btn cold" href="https://testflight.apple.com/join/6NnXJzDP">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
-          iPhone &amp; iPad beta
-        </a>
-        <a class="btn mac" href="https://testflight.apple.com/join/ygF4ngNd">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-          Mac beta
+          Join the beta
         </a>
       </div>
       <div class="apple-only" role="note">
@@ -203,28 +199,21 @@
     <div class="section-head reveal">
       <p class="kicker">Testers wanted</p>
       <h2 id="testers-title">Join the beta</h2>
-      <p>Every diver helps: import your logbook, log a few dives, and tell us what's confusing, missing or wrong. Pick the app for your device.</p>
+      <p>Every diver helps: import your logbook, log a few dives, and tell us what's confusing, missing or wrong. One link covers every device.</p>
     </div>
 
-    <div class="join-cards" id="join">
+    <div class="join-cards one" id="join">
       <div class="join reveal">
         <div>
-          <h3>iPhone and iPad</h3>
-          <p>Includes the Apple Watch app · iOS 18 or later</p>
+          <h3>iPhone, iPad, Mac and Apple Watch</h3>
+          <p>One app, one beta link · iOS 18 or later, macOS 15 or later</p>
         </div>
-        <a class="btn cold" href="https://testflight.apple.com/join/6NnXJzDP"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Join the iPhone &amp; iPad beta</a>
-      </div>
-      <div class="join reveal">
-        <div>
-          <h3>Mac</h3>
-          <p>Bluetooth and cable downloads · macOS 15 or later</p>
-        </div>
-        <a class="btn mac" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>Join the Mac beta</a>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Join the beta</a>
       </div>
     </div>
     <ol class="steps-line">
       <li><b>1</b>Install Apple's TestFlight app</li>
-      <li><b>2</b>Open the link for your device and tap Accept</li>
+      <li><b>2</b>Open the link on your iPhone, iPad or Mac and tap Accept</li>
       <li><b>3</b>Send feedback with Share Beta Feedback in TestFlight</li>
     </ol>
 
@@ -384,7 +373,11 @@
       </details>
       <details>
         <summary>Is the Mac app the same app?</summary>
-        <p>It's a separate app with its own beta link. Both apps use the same iCloud logbook, so a dive downloaded on the Mac shows up on your phone. Keep both on the latest build.</p>
+        <p>Yes. iPhone, iPad, Mac and Apple Watch are one app with one beta link. Join once, then install it from TestFlight on each device. They all use the same iCloud logbook, so a dive downloaded on the Mac shows up on your phone. Keep every device on the latest build.</p>
+      </details>
+      <details>
+        <summary>I joined the iPhone beta before 18 November 2026. What do I do?</summary>
+        <p>That app has moved. Open it and turn on Sync with iCloud (or export a UDDF file), then join the beta at the link on this page and install the new app beside it. Turn on sync in the new app and your logbook comes back. When it looks right, delete the old one. <a href="troubleshooting.html#moved">Step by step</a>.</p>
       </details>
       <details>
         <summary>What do I need?</summary>
@@ -407,8 +400,7 @@
     <h2 id="closing-title">Bring your logbook along.</h2>
     <p>Join the beta on your iPhone, iPad or Mac, import your dives, and tell us what's confusing, missing or wrong, however small.</p>
     <div class="cta-row">
-      <a class="btn cold" href="https://testflight.apple.com/join/6NnXJzDP">iPhone &amp; iPad beta</a>
-      <a class="btn mac" href="https://testflight.apple.com/join/ygF4ngNd">Mac beta</a>
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">Join the beta</a>
     </div>
   </div>
 </section>
