@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=16">
   <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
 {
@@ -281,12 +281,12 @@
       <article class="feature reveal">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
         <h3>Bring your whole history</h3>
-        <p>Import from MacDive, a Shearwater Cloud database, UDDF or CSV, and choose which dives to add. Anything it can't read is listed for you, never silently dropped.</p>
+        <p>Import from MacDive, a Shearwater Cloud database, Garmin .fit files, UDDF or CSV, and choose which dives to add. Anything it can't read is listed for you, never silently dropped.</p>
       </article>
       <article class="feature reveal">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
         <h3>Safety values first</h3>
-        <p>Six key values sit in a fixed strip at the top of every dive. Show tank, SAC, temperature, ppO₂, CNS and ascent rate as strips or one overlay.</p>
+        <p>Six key values sit in a fixed strip at the top of every dive. Show tank, ppO₂, NDL, SAC, temperature, CNS and ascent rate as strips or one overlay.</p>
       </article>
       <article class="feature reveal">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
@@ -376,11 +376,11 @@
       </details>
       <details>
         <summary>Which dive computers does it work with?</summary>
-        <p>Bluetooth downloads are tested with Shearwater Perdix and Perdix 2, on iPhone, iPad and Mac. The Mac also downloads by USB and serial cable from many other computers, including Suunto, older Oceanic, Aeris and Sherwood, Uwatec and Scubapro, Cressi, Mares, OSTC and Atomic. Those cable downloads haven't been tried on real hardware yet, so if you own one, please test it. Dives from any computer can also come in through a logbook file.</p>
+        <p>Bluetooth downloads are tested with Shearwater Perdix and Perdix 2, on iPhone, iPad and Mac. The Mac also downloads by USB and serial cable from many other computers, including Suunto, older Oceanic, Aeris and Sherwood, Uwatec and Scubapro, Cressi, Mares, OSTC and Atomic. Those cable downloads haven't been tried on real hardware yet, so if you own one, please test it. Garmin Descent dives come in from their .fit files, on iPhone, iPad and Mac. Dives from any computer can also come in through a logbook file.</p>
       </details>
       <details>
         <summary>I use MacDive. Will my logbook come across?</summary>
-        <p>Yes. Export from MacDive as XML or UDDF and import the file. You choose which dives to add, tanks come in as real cylinders (size, pressure, doubles and +), and MacDive's dive IDs are kept, so an export back to MacDive doesn't make duplicates.</p>
+        <p>Yes. Export from MacDive as XML and import the file. XML is the fuller of MacDive's two exports: its UDDF leaves out the computer's NDL, ppO₂ and CNS, gear and dive types. If you've already imported the UDDF, import the XML on top and the gaps are filled without duplicates. You choose which dives to add, tanks come in as real cylinders (size, pressure, doubles and +), and MacDive's dive IDs are kept, so an export back to MacDive doesn't make duplicates.</p>
       </details>
       <details>
         <summary>Is the Mac app the same app?</summary>
@@ -433,7 +433,7 @@
 </footer>
 
 <script src="dive-data.js"></script>
-<script src="profile-demo.js"></script>
+<script src="profile-demo.js?v=4"></script>
 <script>
   // Fade sections in as they scroll into view.
   (function () {

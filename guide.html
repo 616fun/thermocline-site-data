@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 <a class="skip" href="#content">Skip to the guide</a>
@@ -48,7 +48,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Guide</h1>
-    <p>How to use Thermocline on iPhone, iPad and Mac, task by task. Written for the beta; menus can still change between builds. Updated 16 November 2026.</p>
+    <p>How to use Thermocline on iPhone, iPad and Mac, task by task. Written for the beta; menus can still change between builds. Updated 18 November 2026.</p>
   </div>
 </div>
 
@@ -67,6 +67,7 @@
       <li><a href="#gear">Gear and tanks</a></li>
       <li><a href="#merge">Merge and join dives</a></li>
       <li><a href="#photos">Photos and video</a></li>
+      <li><a href="#summary">Summary and breathing</a></li>
       <li><a href="#sync">Sync with iCloud</a></li>
       <li><a href="#data">Export, undo, erase</a></li>
     </ol>
@@ -98,25 +99,51 @@
     <p class="note">Screenshots on this page show the sample logbook from the tour: the dives and sites are made up.</p>
 
     <h2 id="import">Bring your logbook</h2>
-    <p>Thermocline reads MacDive (its database, XML or UDDF), a Shearwater Cloud database, UDDF from any logbook, and CSV. You choose which dives to add, and anything it can't read is listed, never silently dropped.</p>
+    <p>Thermocline reads MacDive (its database, XML or UDDF), a Shearwater Cloud database, Garmin .fit files, UDDF from any logbook, and CSV. You choose which dives to add, and anything it can't read is listed, never silently dropped.</p>
     <div class="plat">
       <div><h4>iPhone and iPad</h4>
         <ol>
           <li><span class="path">Profile → Your data → Import a logbook file</span>.</li>
-          <li>Pick the file, from iCloud Drive or Files.</li>
+          <li>Pick the file, from iCloud Drive or Files. For Garmin, select several .fit files at once.</li>
           <li>Untick any dives you don't want, then <strong>Import</strong>.</li>
         </ol>
       </div>
       <div><h4>Mac</h4>
         <ul>
           <li><span class="path">File → Import from MacDive…</span> and choose MacDive's folder. This is the fullest route: dives, dive photos and card photos. MacDive's files aren't changed.</li>
-          <li>For exported files (UDDF, MacDive, Shearwater Cloud, CSV), use the File menu's import command (⇧⌘I).</li>
+          <li>For exported files (UDDF, MacDive, Shearwater Cloud, Garmin, CSV), use the File menu's import command (⇧⌘I). For Garmin you can choose several .fit files, or a whole folder.</li>
         </ul>
       </div>
     </div>
-    <p><strong>Coming from MacDive on iPhone only?</strong> In MacDive on your Mac, select your dives, choose Export → Dives → Selected as UDDF, save the file to iCloud Drive, and import it on the iPhone.</p>
+    <h3 id="garmin">Garmin Descent watches</h3>
+    <p>A Garmin Descent keeps one .fit file per dive. There are two ways to get them:</p>
+    <ul>
+      <li><strong>From the watch:</strong> connect it to the Mac with its cable and open the <span class="path">GARMIN → Activity</span> folder. On the Mac you can import the whole GARMIN folder; files that aren't dives, such as runs and settings, are skipped.</li>
+      <li><strong>From Garmin Connect:</strong> open the dive and choose <strong>Export Original</strong>. That gives a .zip: unzip it first, then import the .fit file inside.</li>
+    </ul>
+    <p>Positions come from the watch's GPS. On a drift dive the site is matched to where you went in, not where you came up; add any other wrecks you passed to the notes. On a rebreather dive the setpoints and switches the watch recorded come in too.</p>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-garmin-import.jpg" width="600" height="1304" loading="lazy" alt="The import screen on iPhone for a Garmin .fit file: made by Garmin (FIT), one dive at 103 feet for 35 minutes on air then EAN50, with its position from the computer's GPS."><figcaption>A Garmin dive ready to import, with its GPS position.</figcaption></figure>
+    </div>
+    <h3 id="macdive-files">Which MacDive file to use</h3>
+    <p>MacDive can give you its XML, its UDDF, or (on the Mac) its whole folder. They don't carry the same things:</p>
+    <table>
+      <thead><tr><th scope="col"></th><th scope="col">MacDive XML</th><th scope="col">MacDive UDDF</th><th scope="col">MacDive folder (Mac)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Dives, sites, buddies, gases, tanks</th><td data-label="MacDive XML">Yes</td><td data-label="MacDive UDDF">Yes</td><td data-label="MacDive folder">Yes</td></tr>
+        <tr><th scope="row">Depth profiles</th><td data-label="MacDive XML">Every dive</td><td data-label="MacDive UDDF">Every dive</td><td data-label="MacDive folder">All but dives MacDive downloaded on iPhone or iPad, which it stores encrypted</td></tr>
+        <tr><th scope="row">The computer's NDL and ppO₂ along the dive</th><td data-label="MacDive XML">Yes</td><td data-label="MacDive UDDF">No</td><td data-label="MacDive folder">Yes, except those encrypted dives</td></tr>
+        <tr><th scope="row">The computer's CNS</th><td data-label="MacDive XML">Yes</td><td data-label="MacDive UDDF">No</td><td data-label="MacDive folder">Yes</td></tr>
+        <tr><th scope="row">Gear, tags and dive types</th><td data-label="MacDive XML">Yes</td><td data-label="MacDive UDDF">No</td><td data-label="MacDive folder">Yes</td></tr>
+        <tr><th scope="row">Dive and card photos</th><td data-label="MacDive XML">No</td><td data-label="MacDive UDDF">No</td><td data-label="MacDive folder">Yes</td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li><strong>iPhone or iPad:</strong> export your dives from MacDive as <strong>XML</strong>, save the file to iCloud Drive, and import it. Bring the photos across later with the Mac app.</li>
+      <li><strong>Mac:</strong> import MacDive's folder first, then import the XML on top of it. The XML fills in the profiles, NDL and ppO₂ of the encrypted dives.</li>
+    </ul>
+    <p>Already imported the UDDF? Nothing is lost: import the XML too. Dives already in your logbook are matched, not added again, and only what's missing is filled in. Nothing you've entered or corrected is changed.</p>
     <p>When the import finishes, a report shows how many dives were added, which items were <strong>not imported</strong> and why, and anything to <strong>check</strong>. Dives whose file had no gas wait in <a href="#confirm">To confirm</a>. A restore point is saved before any import of more than one dive, and on the Mac <strong>Undo Import…</strong> takes it back.</p>
-    <p class="note">MacDive's UDDF export leaves out gear, gear sets, dive types and photos. Importing MacDive's folder on the Mac brings those across too.</p>
 
     <h2 id="download">Download dives from your computer</h2>
     <p>Put the dive computer in its Bluetooth mode first. On a Shearwater: <span class="path">Menu → Bluetooth</span>. It stays there about two minutes. Only dives newer than your last download are fetched.</p>
@@ -153,6 +180,7 @@
         <tr><td>Bluetooth LE</td><td>iPhone, iPad and Mac</td><td>Shearwater Perdix and Perdix 2. Other models should work: tell us.</td></tr>
         <tr><td>USB or serial cable</td><td>Mac only</td><td>Built, not yet tried on real hardware.</td></tr>
         <tr><td>Bluetooth Classic (Predator, Petrel 1 and other older models)</td><td>Mac only, paired as a serial port</td><td>Not yet tried.</td></tr>
+        <tr><td>Garmin Descent (.fit files)</td><td>Import on iPhone, iPad and Mac (<a href="#garmin">how</a>)</td><td>Descent dives, including drift dives.</td></tr>
       </tbody>
     </table>
     <p>Got a computer we haven't tried? <a href="/#testers">Help us test it</a>.</p>
@@ -171,14 +199,18 @@
     <h2 id="dive">Read a dive</h2>
     <ul>
       <li><strong>Safety values</strong> sit in a fixed strip at the top of every dive, always in the same place.</li>
-      <li><strong>The profile:</strong> drag across the chart (iPhone) or point at it (Mac) to read any moment. Chips under the chart show or hide Tank, SAC, Temp, ppO₂, CNS and Ascent, as <strong>Stacked</strong> strips or one <strong>Overlay</strong>. <a href="/#chart">Try it on the home page.</a></li>
+      <li><strong>The profile:</strong> drag across the chart (iPhone) or point at it (Mac) to read any moment. Chips under the chart show or hide Tank, ppO₂, NDL, SAC, Temp, CNS and Ascent, as <strong>Stacked</strong> strips or one <strong>Overlay</strong>. Only what the dive recorded gets a chip. NDL is the computer's own and stops during deco, where the red band shows the stops. On a narrow iPhone the chips stay on one line and scroll sideways. <a href="/#chart">Try it on the home page.</a></li>
       <li><strong>Gas use:</strong> tap or click <strong>How?</strong> next to the SAC figure to see every input: the cylinder, its water capacity, pressures, temperature and the real-gas correction.</li>
       <li><strong>Editing:</strong> edit any dive, or log one by hand (<span class="path">Logbook → Log by Hand</span>, or ⌘N on the Mac). A correction keeps the computer's original reading.</li>
+      <li><strong>Weight:</strong> the first tap on + sets <strong>No weight</strong>, for a dive with none worn. Tap − from there to clear it.</li>
+      <li><strong>Links in notes:</strong> web links in a dive's notes can be tapped or clicked. When you've finished typing, tap <strong>Done</strong> above the keyboard: the links then show, and a YouTube or Vimeo link gets an <strong>Add … to video links</strong> button below the notes. To type in the notes again, choose <strong>Edit notes</strong>.</li>
     </ul>
     <div class="shots">
       <figure class="shot"><img src="images/guide/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="A dive on iPhone: the safety strip with depth, time, gases, deco, ppO2 and CNS above the profile."><figcaption>The safety strip, then the profile.</figcaption></figure>
       <figure class="shot"><img src="images/guide/ios-chart.jpg" width="600" height="1304" loading="lazy" alt="Stacked strips under the iPhone profile for tank pressure, SAC, temperature and ppO2, with chips to show or hide each one."><figcaption>Chips choose the strips under the profile.</figcaption></figure>
       <figure class="shot"><img src="images/guide/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="The How? panel for gas use on iPhone, listing the cylinder, pressures, temperature and the calculation."><figcaption>How? shows every input behind SAC.</figcaption></figure>
+      <figure class="shot"><img src="images/guide/ios-no-weight.jpg" width="600" height="1304" loading="lazy" alt="A dive's exposure and weight section on iPhone with the weight set to No weight and a How it felt choice below it."><figcaption>No weight, for a dive with none worn.</figcaption></figure>
+      <figure class="shot"><img src="images/guide/ios-notes-links.jpg" width="600" height="1304" loading="lazy" alt="A dive's notes on iPhone with two tappable links, and buttons below them: Add YouTube video to video links, and Edit notes."><figcaption>Links in notes, and a video link added from them.</figcaption></figure>
       <figure class="shot wide"><img src="images/guide/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="The Mac app: the dive list beside a dive with its safety values, site, buddies, gear and depth profile, with a readout of the deepest point."><figcaption>The same dive on the Mac. Point at the profile to read any moment.</figcaption></figure>
     </div>
 
@@ -225,8 +257,19 @@
     <ul>
       <li><strong>Add photos</strong> on a dive copies them from your library into the logbook.</li>
       <li>To save iCloud space, turn on <span class="path">Sync → Save iCloud storage on dive photos</span> on every device. Photos are then linked to iCloud Photos instead of copied, and videos from your library can be added. Thermocline asks for Photos access only when you turn this on.</li>
-      <li><strong>Video links:</strong> paste a YouTube or Vimeo link under a dive's photos. Only the link is kept.</li>
+      <li><strong>Video links:</strong> paste a YouTube or Vimeo link under a dive's photos. Only the link is kept. A link already in the notes can be added from there (see <a href="#dive">Read a dive</a>).</li>
+      <li><strong>The same video on several dives:</strong> select the dives (on iPhone, tap Select first), choose <strong>Edit … Dives…</strong>, and add the link under <strong>Video links</strong>. It's added to every selected dive, and links they already have are kept.</li>
     </ul>
+
+    <h2 id="summary">Summary and breathing</h2>
+    <p>The <strong>Summary</strong> tab (Summary in the Mac's sidebar) counts your logbook: dives per year and per month, depths, gases, records, where you dive, and your most-used site and buddy. Choose a range at the top, such as one year, and tap any number or bar to see the dives behind it.</p>
+    <ul>
+      <li><strong>Breathing</strong> shows your SAC and RMV over every dive in the range that has a tank size and start and end pressures, weighted by time and depth. Tap it to see which dives were counted.</li>
+      <li>Imported logbooks often have no tank sizes (MacDive's export doesn't say how much water a tank holds), so Breathing may be empty at first. Set the tanks on your dives, in Gear or on each dive, and it fills in.</li>
+    </ul>
+    <div class="shots">
+      <figure class="shot"><img src="images/guide/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="The Summary tab on iPhone: when in the year, most used site, buddy and cylinder, and Breathing with SAC 0.36 cubic feet per minute and RMV 10.2 litres per minute over 14 dives."><figcaption>Breathing on the Summary tab (sample logbook).</figcaption></figure>
+    </div>
 
     <h2 id="sync">Sync with iCloud</h2>
     <p>Turn on <strong>Sync with iCloud</strong> on each device: <span class="path">Profile → Sync</span> on iPhone, <span class="path">Thermocline → Settings → Sync</span> on the Mac. Every device signed in to the same Apple Account then shares one logbook, stored in your own private iCloud. Changes made offline wait on the device and send when it's back online.</p>

@@ -7,14 +7,16 @@
 
   const SERIES = {
     tank:   { label: 'Tank',   color: '--d-tank' },
+    ndl:    { label: 'NDL',    color: '--d-ndl' },
     use:    { label: 'SAC',    color: '--d-use' },
     temp:   { label: 'Temp',   color: '--d-temp' },
     ppo2:   { label: 'ppO₂',   color: '--d-ppo2' },
     ascent: { label: 'Ascent', color: '--d-asc' },
   };
-  const ORDER = ['tank', 'use', 'temp', 'ppo2', 'ascent'];
+  // The app's order: safety values first, so on a phone they're the chips in view.
+  const ORDER = ['tank', 'ppo2', 'ndl', 'use', 'temp', 'ascent'];
   const GASCOL = ['--d-blue', '--d-orange', '--d-teal', '--d-purple'];
-  const st = { dive: 1, units: 'imp', layout: 'overlay', chips: new Set(['tank', 'use', 'temp', 'ppo2']), t: null };
+  const st = { dive: 1, units: 'imp', layout: 'overlay', chips: new Set(['tank', 'ppo2', 'ndl', 'use', 'temp']), t: null };
   const css = v => getComputedStyle(root).getPropertyValue(v).trim();
   const nf = (v, d = 0) => v.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
 
@@ -59,7 +61,7 @@
     for (let i = 0; i < s.length; i++) { let j = i; while (j > 0 && s[i].t - s[j - 1].t <= 30) j--; const dt = (s[i].t - s[j].t) / 60; s[i].asc = dt > 0 ? Math.max(0, (s[j].m - s[i].m) / dt) : 0; }
     let cold = null; for (const x of s) { if (x.c != null && (cold == null || x.c < cold.c - 1e-9)) cold = x; }
     const deepest = s.reduce((a, b) => b.m > a.m ? b : a);
-    const avail = { tank: hasTank, use: hasTank && !!waterL, temp: s.some(x => x.c != null), ppo2: s.some(x => x.pp > 0), ascent: true };
+    const avail = { tank: hasTank, use: hasTank && !!waterL, temp: s.some(x => x.c != null), ppo2: s.some(x => x.pp > 0), ndl: s.some(x => x.ndt > 0), ascent: true };
     return { ...d, s, gasOrder, tx, avgUse, cold, deepest, avail, dur: s[s.length - 1].t };
   });
 
@@ -162,11 +164,17 @@
       f.name = 'ppO₂ · bar'; f.vals = s.map(q => q.pp); f.y0 = 0; f.y1 = Math.max(1.7, ...f.vals.filter(v => v != null)) * 1.02; f.fmt = q => `ppO₂ ${nf(q.pp, 2)}`;
       f.sum = `peak ${nf(Math.max(...f.vals.filter(v => v != null)), 2)}`; f.refs.push({ v: 1.4, color: '--d-yellow' }, { v: 1.6, color: '--d-red', overlay: true });
     }
+    if (key === 'ndl') {
+      // The computer's NDL; none while in deco, so the line breaks there. Shearwater shows 99 for longer.
+      f.name = 'NDL · min'; f.vals = s.map(q => q.ndt > 0 ? Math.min(q.ndt, 99) : null); f.step = true; f.y0 = 0; f.y1 = 104;
+      f.fmt = q => q.ndt >= 99 ? 'NDL 99+ min' : `NDL ${q.ndt} min`;
+      const deep = s.filter(q => q.ndt > 0 && q.m > 3).map(q => q.ndt); f.sum = deep.length ? `shortest ${Math.min(...deep)} min` : '';
+    }
     if (key === 'ascent') {
       f.name = `Ascent · ${U.du()}/min`; f.vals = s.map(q => U.dv(q.asc)); f.y0 = 0; f.y1 = Math.max(U.dv(20), ...f.vals) * 1.05; f.fmt = q => `↑ ${U.asc(q.asc)}`;
       f.sum = `fastest ${U.asc(Math.max(...s.map(q => q.asc)))}`; f.refs.push({ v: U.dv(9), color: '--d-yellow' }, { v: U.dv(18), color: '--d-red' });
     }
-    f.ov = { tank: f.vals, use: smooth(f.vals, 6, false), temp: smooth(f.vals, 4, true), ppo2: smooth(f.vals || [], 2, false), ascent: smooth(f.vals, 2, false) }[key];
+    f.ov = { tank: f.vals, use: smooth(f.vals, 6, false), temp: smooth(f.vals, 4, true), ppo2: smooth(f.vals || [], 2, false), ndl: f.vals, ascent: smooth(f.vals, 2, false) }[key];
     if (key === 'temp') { const vv = f.vals.filter(v => v != null), lo = Math.min(...vv), hi = Math.max(...vv), sp = Math.max(hi - lo, 4); f.oy0 = lo - sp * .7; f.oy1 = hi + sp * .7; }
     f.points = (x, y, ov) => {
       const vals = ov ? f.ov : f.vals, step = f.step && !ov; const pts = [];
@@ -261,8 +269,8 @@
   function readoutHTML() {
     const d = dives[st.dive]; const q = st.t == null ? d.deepest : d.s[idxAt(st.t)];
     const items = [['Time', mmss(q.t)], ['Depth', U.depth(q.m)], ['Gas', q.gas, GASCOL[d.gasOrder.indexOf(q.gas)]]];
-    if (d.s.some(x => x.ndt > 0)) items.push(['NDL', q.ndt >= 99 ? '99+ min' : q.ndt <= 0 && q.m > 3 ? 'Deco' : `${q.ndt} min`]);
     const on = k => st.chips.has(k) && d.avail[k];
+    if (d.s.some(x => x.ndt > 0)) items.push(['NDL', q.ndt >= 99 ? '99+ min' : q.ndt <= 0 && q.m > 3 ? 'Deco' : `${q.ndt} min`, on('ndl') ? '--d-ndl' : undefined]);
     if (on('tank')) items.push(['Tank', q.bar == null ? '—' : U.pres(q.bar), '--d-tank']);
     if (on('use')) items.push(['SAC', q.use == null ? '—' : U.use(q.use), '--d-use']);
     if (on('temp')) items.push(['Water', q.c == null ? '—' : U.temp(q.c), '--d-temp']);
@@ -300,9 +308,18 @@
     const depthBox = document.createElement('div'); depthBox.className = 'd-chart'; root.appendChild(depthBox);
     const h = document.createElement('div'); h.className = 'd-hint' + (hintShown ? '' : ' gone'); h.innerHTML = '<span>⟷</span> Drag across the dive'; depthBox.appendChild(h);
 
-    const chips = document.createElement('div'); chips.className = 'd-chips';
-    chips.appendChild(seg([['stacked', 'Stacked'], ['overlay', 'Overlay']], st.layout, v => { st.layout = v; render(); }, 'Layout'));
-    const lbl = document.createElement('span'); lbl.className = 'd-lbl'; lbl.textContent = 'Show'; chips.appendChild(lbl);
+    // As in the app: Stacked/Overlay, then the chips on one line that never wraps. When they don't
+    // fit, the row scrolls sideways and fades at an edge with more chips past it.
+    const controls = document.createElement('div'); controls.className = 'd-chipbar';
+    controls.appendChild(seg([['stacked', 'Stacked'], ['overlay', 'Overlay']], st.layout, v => { st.layout = v; render(); }, 'Layout'));
+    const chips = document.createElement('div'); chips.className = 'd-chips'; chips.setAttribute('role', 'group'); chips.setAttribute('aria-label', 'Shown on the profile');
+    controls.appendChild(chips);
+    const edges = () => {
+      const more = chips.scrollWidth - chips.clientWidth > 2;
+      chips.classList.toggle('fade-r', more && chips.scrollLeft < chips.scrollWidth - chips.clientWidth - 2);
+      chips.classList.toggle('fade-l', more && chips.scrollLeft > 2);
+    };
+    chips.addEventListener('scroll', edges, { passive: true });
     for (const k of ORDER.filter(k => d.avail[k])) {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'd-chip' + (st.chips.has(k) ? ' on' : '');
       b.setAttribute('aria-pressed', st.chips.has(k));
@@ -313,7 +330,9 @@
     const legend = document.createElement('div'); legend.className = 'd-legend';
     legend.innerHTML = d.gasOrder.map((g, i) => `<span><span class="d-dot" style="background:var(${GASCOL[i]})"></span>${g}</span>`).join('') + (ov && shownKeys(d).length ? '<span class="d-note">Each line has its own scale; the tags give the values.</span>' : '');
     root.appendChild(legend);
-    root.appendChild(chips);
+    root.appendChild(controls);
+    // On first layout and whenever the row or a chip changes size (fonts loading, a resize).
+    if (window.ResizeObserver) { const ro = new ResizeObserver(edges); ro.observe(chips); for (const b of chips.children) ro.observe(b); } else requestAnimationFrame(edges);
 
     const strips = document.createElement('div'); root.appendChild(strips);
     depthChart(depthBox);

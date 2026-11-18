@@ -210,14 +210,14 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .demo {
   --d-card: #ffffff; --d-fill: rgba(120, 120, 128, .10); --d-text: #000; --d-sec: rgba(60, 60, 67, .62); --d-grid: rgba(60, 60, 67, .13);
   --d-blue: #007aff; --d-orange: #ff9500; --d-teal: #30b0c7; --d-purple: #af52de;
-  --d-tank: #34c759; --d-use: #5856d6; --d-temp: #30b0c7; --d-ppo2: #ff2d55; --d-asc: #8e8e93; --d-yellow: #ffcc00; --d-red: #ff3b30;
+  --d-tank: #34c759; --d-use: #5856d6; --d-temp: #30b0c7; --d-ppo2: #ff2d55; --d-ndl: #8f6b42; --d-asc: #8e8e93; --d-yellow: #ffcc00; --d-red: #ff3b30;
   color: var(--d-text);
   font: 15px/1.35 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   .demo {
     --d-card: #1c1c1e; --d-fill: rgba(120, 120, 128, .24); --d-text: #fff; --d-sec: rgba(235, 235, 245, .6); --d-grid: rgba(235, 235, 245, .13);
-    --d-blue: #0a84ff; --d-orange: #ff9f0a; --d-teal: #40c8e0; --d-tank: #30d158; --d-use: #7d7aff; --d-temp: #40c8e0; --d-ppo2: #ff375f; --d-asc: #98989d; --d-yellow: #ffd60a; --d-red: #ff453a;
+    --d-blue: #0a84ff; --d-orange: #ff9f0a; --d-teal: #40c8e0; --d-tank: #30d158; --d-use: #7d7aff; --d-temp: #40c8e0; --d-ppo2: #ff375f; --d-ndl: #c49c6c; --d-asc: #98989d; --d-yellow: #ffd60a; --d-red: #ff453a;
   }
   .chart-card .inner { background: #1c1c1e; }
 }
@@ -248,8 +248,14 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .d-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--d-sec); padding: 4px 6px 0; }
 .d-legend span { display: inline-flex; align-items: center; gap: 5px; }
 .d-note { margin-left: auto; font-size: 13px; color: var(--d-sec); }
-.d-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 4px 4px; align-items: center; }
-.d-lbl { font-size: 13px; color: var(--d-sec); margin-left: 4px; }
+.d-chipbar { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 12px 4px 4px; }
+/* One line, never wrapping: it scrolls sideways when the chips don't fit, faded where more wait. */
+.d-chips { display: flex; flex-wrap: nowrap; gap: 8px; align-items: center; max-width: 100%; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.d-chips::-webkit-scrollbar { display: none; }
+.d-chips .d-chip { flex: none; }
+.d-chips.fade-r { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent); }
+.d-chips.fade-l { -webkit-mask-image: linear-gradient(90deg, transparent, #000 32px); mask-image: linear-gradient(90deg, transparent, #000 32px); }
+.d-chips.fade-l.fade-r { -webkit-mask-image: linear-gradient(90deg, transparent, #000 32px, #000 calc(100% - 32px), transparent); mask-image: linear-gradient(90deg, transparent, #000 32px, #000 calc(100% - 32px), transparent); }
 .d-chip { border: 1px solid var(--d-grid); background: transparent; color: var(--d-text); font: inherit; font-size: 14px; padding: 6px 13px 6px 10px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; transition: background .15s ease; }
 .d-chip.on { background: var(--d-fill); border-color: transparent; font-weight: 650; }
 .d-chip:not(.on) .d-dot { background: transparent !important; box-shadow: inset 0 0 0 1.5px var(--d-sec); }
@@ -488,6 +494,11 @@ section { padding: 96px 0; }
   .doc table, .doc tbody, .doc tr, .doc td, .doc th { display: block; }
   .doc thead { display: none; }
   .doc td:first-child { font-weight: 680; color: var(--text); border-bottom: 0; padding-bottom: 0; }
+  /* Comparison tables: each stacked cell names its column. */
+  .doc th[scope="row"] { border-bottom: 0; padding-bottom: 2px; }
+  .doc td[data-label] { border-bottom: 0; padding-top: 4px; padding-bottom: 4px; }
+  .doc td[data-label]::before { content: attr(data-label) ": "; color: var(--text); font-weight: 600; }
+  .doc tr:has(td[data-label]) { border-bottom: 1px solid var(--line); padding-bottom: 8px; }
 }
 .callout { background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 14px; padding: 18px 20px; margin: 4px 0 20px; }
 .callout p { margin: 0; color: var(--text); }

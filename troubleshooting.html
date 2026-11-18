@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 <a class="skip" href="#content">Skip to troubleshooting</a>
@@ -48,7 +48,7 @@
 <div class="doc-hero" style="--photo:url('images/wreck-hatch.jpg')">
   <div class="wrap">
     <h1>Troubleshooting</h1>
-    <p>Find your problem below. Each one starts with the quickest thing to check. Updated 16 November 2026.</p>
+    <p>Find your problem below. Each one starts with the quickest thing to check. Updated 18 November 2026.</p>
   </div>
 </div>
 
@@ -150,7 +150,21 @@
       </details>
       <details>
         <summary>My MacDive gear, photos or dive types are missing</summary>
-        <p>MacDive's UDDF export leaves those out. On the Mac, use <span class="path">File → Import from MacDive…</span> and choose MacDive's folder to bring them across.</p>
+        <p>MacDive's UDDF export leaves those out. Import MacDive's XML over it to add gear, tags and dive types. For photos, use <span class="path">File → Import from MacDive…</span> on the Mac and choose MacDive's folder. Dives already in your logbook aren't added twice.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>NDL, ppO₂ or CNS is missing on dives from MacDive</summary>
+        <p>The dive page shows NDL as "—" and Deco as "Not recorded", or ppO₂ says "Calculated from gas and depth". MacDive's UDDF export doesn't include the computer's NDL, ppO₂ or CNS. Its folder has no profile for dives MacDive downloaded on an iPhone or iPad, because it stores those encrypted.</p>
+        <p>Export your dives from MacDive as XML and import that file too. It fills in what's missing on the dives you already have, without adding them again and without changing anything you've edited. See <a href="guide.html#macdive-files">Which MacDive file to use</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Will moving between files or apps lose anything?</summary>
+        <ul>
+          <li><strong>Your original files are never changed.</strong> Keep your MacDive exports, and keep MacDive itself until you've compared a few dives.</li>
+          <li><strong>A second import adds, it doesn't replace.</strong> Dives already in your logbook are matched and only gain what they're missing, so you can import the XML after the UDDF, or the folder after either.</li>
+          <li><strong>You can go back.</strong> A restore point named <strong>Before an import</strong> is saved before any import of more than one dive (<span class="path">Profile → Your data → Restore points</span> on iPhone, <span class="path">Settings → Restore Points</span> on the Mac). On the Mac, <strong>Undo Import…</strong> in the report also takes it back.</li>
+          <li><strong>Leaving Thermocline:</strong> its UDDF export is the complete one. It includes the computer's NDL, ppO₂ and CNS along each dive, gear, tags, dive types and video links. Photos aren't inside any export file.</li>
+        </ul>
       </details>
       <details>
         <summary>Imported dives have no gas</summary>
@@ -159,6 +173,28 @@
       <details>
         <summary>I imported the wrong file</summary>
         <p>On the Mac, use <strong>Undo Import…</strong> in the import report. On either device, a restore point named <strong>Before an import</strong> is saved before any import of more than one dive.</p>
+      </details>
+      <details id="garmin">
+        <summary>A Garmin file won't import</summary>
+        <ul>
+          <li><strong>"That's a zip file"</strong>: Garmin Connect's Export Original gives a .zip. Unzip it, then choose the .fit file inside.</li>
+          <li><strong>"This isn't a Garmin FIT file"</strong>: the file isn't from a Garmin watch, or only its name ends in .fit. Use the file from the watch's <span class="path">GARMIN → Activity</span> folder, or Export Original.</li>
+          <li><strong>"Garmin files hold no dive"</strong>: runs, walks, settings and health files are skipped. Only dives come in.</li>
+          <li><strong>"Look cut short or damaged"</strong>: the file stopped part way, often from a copy or download that didn't finish. What could be read is shown; copy the file again from the watch and re-import to get the rest. Dives already in your logbook are skipped.</li>
+          <li><strong>Choosing a Garmin file with another logbook file</strong> isn't possible in one go: import the logbook file, then the Garmin files.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>A Garmin dive asks me to check its tanks</summary>
+        <p>With more than one tank transmitter, Garmin's file doesn't say which gas each one was on, so they were matched to the dive's tanks in order. Open the dive's gas section and make sure each pressure is on the right tank.</p>
+      </details>
+      <details>
+        <summary>A Garmin dive's time is an hour off</summary>
+        <p>The time comes from the watch's clock. If it wasn't set to local time where you dived, the dive shows at the watch's time. Edit the dive's time, or set the watch's time zone before the next trip.</p>
+      </details>
+      <details>
+        <summary>A Garmin drift dive has the wrong site</summary>
+        <p>A drift dive is named after where you went in. If it matched the wrong site or none, choose the site on the dive, and add any other wrecks you passed to the notes.</p>
       </details>
     </div>
 
@@ -183,6 +219,13 @@
       <details>
         <summary>SAC only counts one tank</summary>
         <p>On a dive with several gases, only the tank with the transmitter has pressures. Enter start and end pressures on the other tank and SAC covers all the gas.</p>
+      </details>
+      <details id="breathing">
+        <summary>Summary's Breathing says no dive has a tank size</summary>
+        <p>Breathing averages only dives with a tank size and start and end pressures. Imported dives often have neither: MacDive's export doesn't say how much water a tank holds, so Thermocline leaves the size blank rather than guess. Set the tank on your dives (choose its model, or a gear set) and add pressures where you have them. Under the figure, Breathing says how many dives weren't counted.</p>
+        <div class="shots">
+          <figure class="shot"><img src="images/guide/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Breathing on the Summary tab: SAC and RMV over 14 dives, and one dive not counted because it has no tank size or pressures."><figcaption>The count of dives left out is under the figure (sample logbook).</figcaption></figure>
+        </div>
       </details>
     </div>
 
