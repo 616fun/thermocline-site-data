@@ -121,7 +121,7 @@
       <li><strong>From the watch:</strong> connect it to the Mac with its cable and open the <span class="path">GARMIN → Activity</span> folder. On the Mac you can import the whole GARMIN folder; files that aren't dives, such as runs and settings, are skipped.</li>
       <li><strong>From Garmin Connect:</strong> open the dive and choose <strong>Export Original</strong>. That gives a .zip: unzip it first, then import the .fit file inside.</li>
     </ul>
-    <p>Positions come from the watch's GPS. On a drift dive the site is matched to where you went in, not where you came up; add any other wrecks you passed to the notes. On a rebreather dive the setpoints and switches the watch recorded come in too.</p>
+    <p>Positions come from the watch's GPS. On a drift the watch saves where you surfaced as the start; the import finds where you actually went in, so the dive is matched to that site. Add any other wrecks you passed to the notes.</p>
     <div class="shots">
       <figure class="shot"><img src="images/guide/ios-garmin-import.jpg" width="600" height="1304" loading="lazy" alt="The import screen on iPhone for a Garmin .fit file: made by Garmin (FIT), one dive at 103 feet for 35 minutes on air then EAN50, with its position from the computer's GPS."><figcaption>A Garmin dive ready to import, with its GPS position.</figcaption></figure>
     </div>
@@ -200,6 +200,7 @@
     <ul>
       <li><strong>Safety values</strong> sit in a fixed strip at the top of every dive, always in the same place.</li>
       <li><strong>The profile:</strong> drag across the chart (iPhone) or point at it (Mac) to read any moment. Chips under the chart show or hide Tank, ppO₂, NDL, SAC, Temp, CNS and Ascent, as <strong>Stacked</strong> strips or one <strong>Overlay</strong>. Only what the dive recorded gets a chip. NDL is the computer's own and stops during deco, where the red band shows the stops. On a narrow iPhone the chips stay on one line and scroll sideways. <a href="/#chart">Try it on the home page.</a></li>
+      <li><strong>Rebreathers:</strong> from any computer or file that records them, the ppO₂ strip shows the setpoint with the voted ppO₂ (and each cell, where recorded), and the readout gives the setpoint at that moment. A switch from the diluent to any other gas is labelled as a bailout.</li>
       <li><strong>Gas use:</strong> tap or click <strong>How?</strong> next to the SAC figure to see every input: the cylinder, its water capacity, pressures, temperature and the real-gas correction.</li>
       <li><strong>Editing:</strong> edit any dive, or log one by hand (<span class="path">Logbook → Log by Hand</span>, or ⌘N on the Mac). A correction keeps the computer's original reading.</li>
       <li><strong>Weight:</strong> the first tap on + sets <strong>No weight</strong>, for a dive with none worn. Tap − from there to clear it.</li>
@@ -265,7 +266,7 @@
     <p>The <strong>Summary</strong> tab (Summary in the Mac's sidebar) counts your logbook: dives per year and per month, depths, gases, records, where you dive, and your most-used site and buddy. Choose a range at the top, such as one year, and tap any number or bar to see the dives behind it.</p>
     <ul>
       <li><strong>Breathing</strong> shows your SAC and RMV over every dive in the range that has a tank size and start and end pressures, weighted by time and depth. Tap it to see which dives were counted.</li>
-      <li>Imported logbooks often have no tank sizes (MacDive's export doesn't say how much water a tank holds), so Breathing may be empty at first. Set the tanks on your dives, in Gear or on each dive, and it fills in.</li>
+      <li>Some imported dives have no tank size, so Breathing may be empty at first. MacDive's UDDF doesn't say how much water a tank holds; its XML and its folder do, and importing the XML on top of a UDDF fills the sizes in. Otherwise set the tanks on your dives, in Gear or on each dive.</li>
     </ul>
     <div class="shots">
       <figure class="shot"><img src="images/guide/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="The Summary tab on iPhone: when in the year, most used site, buddy and cylinder, and Breathing with SAC 0.36 cubic feet per minute and RMV 10.2 litres per minute over 14 dives."><figcaption>Breathing on the Summary tab (sample logbook).</figcaption></figure>

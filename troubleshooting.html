@@ -193,8 +193,8 @@
         <p>The time comes from the watch's clock. If it wasn't set to local time where you dived, the dive shows at the watch's time. Edit the dive's time, or set the watch's time zone before the next trip.</p>
       </details>
       <details>
-        <summary>A Garmin drift dive has the wrong site</summary>
-        <p>A drift dive is named after where you went in. If it matched the wrong site or none, choose the site on the dive, and add any other wrecks you passed to the notes.</p>
+        <summary>A drift dive has the wrong site</summary>
+        <p>A dive is matched to the nearer of where you went in and where you came up, which on a drift is usually where you went in. If it matched the wrong site or none, choose the site on the dive, and add any other wrecks you passed to the notes.</p>
       </details>
     </div>
 
@@ -222,7 +222,7 @@
       </details>
       <details id="breathing">
         <summary>Summary's Breathing says no dive has a tank size</summary>
-        <p>Breathing averages only dives with a tank size and start and end pressures. Imported dives often have neither: MacDive's export doesn't say how much water a tank holds, so Thermocline leaves the size blank rather than guess. Set the tank on your dives (choose its model, or a gear set) and add pressures where you have them. Under the figure, Breathing says how many dives weren't counted.</p>
+        <p>Breathing averages only dives with a tank size and start and end pressures. Some imported dives have neither: MacDive's UDDF doesn't say how much water a tank holds, so Thermocline leaves the size blank rather than guess. MacDive's XML and folder do give sizes, and importing the XML on top of a UDDF fills them in. Otherwise set the tank on your dives (choose its model, or a gear set) and add pressures where you have them. Under the figure, Breathing says how many dives weren't counted.</p>
         <div class="shots">
           <figure class="shot"><img src="images/guide/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Breathing on the Summary tab: SAC and RMV over 14 dives, and one dive not counted because it has no tank size or pressures."><figcaption>The count of dives left out is under the figure (sample logbook).</figcaption></figure>
         </div>
