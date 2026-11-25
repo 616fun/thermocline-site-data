@@ -229,7 +229,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .demo.live .fallback { display: none; }
 .demo svg { display: block; width: 100%; touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: crosshair; }
 .demo svg:focus-visible { outline: 2px solid var(--d-blue); outline-offset: 2px; border-radius: 4px; }
-.demo svg text { fill: var(--d-sec); font-size: 12px; font-family: inherit; }
+.demo svg text { fill: var(--d-sec); font-size: 13px; font-family: inherit; }
 .d-head { display: flex; flex-wrap: wrap; gap: 10px 16px; justify-content: space-between; align-items: center; padding: 6px 4px 12px; }
 .d-title b { display: block; font-size: 1.15rem; letter-spacing: -0.01em; }
 .d-title span { font-size: .82rem; color: var(--d-sec); }
@@ -573,7 +573,7 @@ html[data-plat="ios"] .how col.ios, html[data-plat="mac"] .how col.mac { width: 
   .doc table.how tr { border-bottom: 1px solid var(--line); padding: 10px 0; }
   .doc table.how tbody th { border: 0; padding: 0 0 4px; }
   .doc table.how td { border: 0; padding: 3px 0; }
-  .doc table.how td[data-label]::before { content: attr(data-label); display: block; font-size: .75rem; font-style: normal; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 1px; }
+  .doc table.how td[data-label]::before { content: attr(data-label); display: block; font-size: .8125rem; font-style: normal; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 1px; }
   .doc table.how td + td { padding-top: 8px; }
   html[data-plat] .how .ios, html[data-plat] .how .mac { display: block; }
   html[data-plat="ios"] .how td.mac, html[data-plat="mac"] .how td.ios { display: none; }
