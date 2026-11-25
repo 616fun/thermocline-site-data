@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – dykkeloggboken for iPhone, iPad og Mac</title>
+  <meta name="description" content="Thermocline er en dykkeloggbok for Apple-enheter: iPhone, iPad, Mac og Apple Watch. Last ned dykk via Bluetooth eller kabel, importer loggboken fra MacDive eller Shearwater Cloud, og se hva computeren registrerte. Offentlig beta på TestFlight.">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/nb/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="nb_NO">
+  <meta property="og:title" content="Thermocline – dykkeloggboken for iPhone, iPad og Mac">
+  <meta property="og:description" content="For Apple-enheter. Last ned dykk via Bluetooth eller kabel, importer den gamle loggboken din, og se hva computeren registrerte. Bli med i betaen.">
+  <meta property="og:url" content="https://thermoclineapp.com/nb/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/nb.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Thermocline-appikonet og navnet over et bilde av baugen på et skip under et vrakdykk, med dykkere og fisk. Dykkeloggboken for iPhone, iPad og Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – dykkeloggboken for iPhone, iPad og Mac">
+  <meta name="twitter:description" content="For Apple-enheter. Last ned dykk via Bluetooth eller kabel, importer den gamle loggboken din, og se hva computeren registrerte. Bli med i betaen.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/nb.jpg">
+  <meta name="twitter:image:alt" content="Thermocline-appikonet og navnet over et bilde av baugen på et skip under et vrakdykk, med dykkere og fisk. Dykkeloggboken for iPhone, iPad og Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/nb/#website",
+      "url": "https://thermoclineapp.com/nb/",
+      "name": "Thermocline",
+      "description": "Thermocline er en dykkeloggbok for Apple-enheter: iPhone, iPad, Mac og Apple Watch. Last ned dykk via Bluetooth eller kabel, importer loggboken fra MacDive eller Shearwater Cloud, og se hva computeren registrerte. Offentlig beta på TestFlight.",
+      "inLanguage": "nb"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/nb/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "Dykkeloggbok for iPhone, iPad, Mac og Apple Watch: én app, én betalenke. Last ned dykk via Bluetooth, importer loggboken din fra MacDive eller Shearwater Cloud, og les gass, dybde og ppO2 med et blikk.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/nb/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/nb/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/nb/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/nb/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Dykkeloggbok",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/nb/",
+      "inLanguage": "nb"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/nb/#mac-app",
+      "name": "Thermocline for Mac",
+      "operatingSystem": "macOS 15 or later",
+      "description": "Dykkeloggbok for Mac. Last ned dykk via Bluetooth eller kabel, importer loggboken din fra MacDive eller Shearwater Cloud, og les hvert dykk i sin helhet.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/nb/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Dykkeloggbok",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/nb/",
+      "inLanguage": "nb"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">Gå til innholdet</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Hovedmeny">
+      <a href="#app">Se appen</a>
+      <a href="#features">Funksjoner</a>
+      <a class="keep" href="guide.html">Veiledning</a>
+      <a href="troubleshooting.html">Feilsøking</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Del denne siden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Del</span></button>
+      <a class="btn" href="#testers">Bli med i betaen</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Offentlig beta på TestFlight</span>
+      <h1 id="hero-title"><span class="grad lines">Dykkeloggboken som viser hva computeren din registrerte.</span></h1>
+      <p class="lede">Last ned dykkene dine via Bluetooth eller kabel, ta med hele loggbokhistorikken din, og les gass, dybde og ppO₂ med et blikk.</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          Bli med i betaen
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>Laget for Apple-enheter.</b> <span>iPhone, iPad, Mac og Apple Watch.</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">Se appen</a> · <a href="guide.html">Les veiledningen</a> · <a href="troubleshooting.html">Feilsøking</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="En dykkeprofil i Thermocline: dybde over 43 minutter med flasketrykk, SAC, temperatur og ppO2 tegnet over, og et gassbytte fra EAN30 til Air og tilbake.">
+        </div>
+      </div>
+      <figcaption>Prøv selv: tre ekte dykk, tegnet slik appen tegner dem. Trykk på brikkene, bytt mellom Stablet og Lagt over, og dra over dykket.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Se appen</p>
+      <h2 id="app-title">Dykkene dine, slik du leser dem</h2>
+      <p>Sikkerhetsverdier på samme sted på hvert dykk, en profil du kan lese øyeblikk for øyeblikk, og utregningen bak hvert gasstall. Vist her med appens eksempelloggbok.</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="En 22 sekunder lang omvisning i Thermocline: en dykkeprofil, nedlasting av dykk, sikkerhetsverdiene og utregningen bak SAC."><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="En 22 sekunder lang omvisning i Thermocline: en dykkeprofil, nedlasting av dykk, sikkerhetsverdiene og utregningen bak SAC."><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/nb/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="Loggboken på iPhone: ett dykk venter under Må bekreftes, deretter dykkelisten med dykkested, dato, dybde og tid."><figcaption><b>Loggbok</b>Dykk som mangler dykkested eller gass, venter øverst.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/nb/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Et dykk på iPhone: sikkerhetsstripen med dybde, tid, gasser, deko, ppO2 og CNS over profilen."><figcaption><b>Hvert dykk</b>Dybde, gasser, deko, ppO₂ og CNS først.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/nb/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Hvordan?-panelet for gassforbruk på iPhone, med flasken, trykkene, temperaturen og utregningen."><figcaption><b>Gassforbruk</b>Trykk på Hvordan? for å se alle verdiene bak SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/nb/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="Kartet over dykkesteder på iPhone, med dine egne dykkesteder og de innebygde listene over dykkesteder markert."><figcaption><b>Dykkesteder</b>Dine dykkesteder og over 76&nbsp;000 til, uten nett.</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/nb/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac-appen: dykkelisten ved siden av et dykk med sikkerhetsverdier, dykkested, makkere, utstyr og dybdeprofil, med en avlesning av det dypeste punktet."><figcaption><b>På Macen</b>Hele loggboken ved siden av dykket. Pek på profilen for å lese av et hvilket som helst øyeblikk.</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">Veiledning</span>
+        <h3>Slik bruker du Thermocline</h3>
+        <p>Importer loggboken, last ned fra computeren, bekreft dykkesteder og gasser, synkroniser og eksporter. Steg for steg, for iPhone og Mac.</p>
+        <span class="go">Les veiledningen →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">Feilsøking</span>
+        <h3>Er det noe som ikke virker?</h3>
+        <p>Computeren blir ikke funnet, ingen nye dykk, forskjeller etter synkronisering, hull etter import og rare SAC-tall, hver med det raskeste du kan sjekke.</p>
+        <span class="go">Finn en løsning →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76&nbsp;000+</strong><span>dykkesteder og vrak over hele verden, uten nett</span></div>
+    <div class="stat reveal"><strong>4</strong><span>Apple-enheter, én loggbok</span></div>
+    <div class="stat reveal"><strong>17</strong><span>språk</span></div>
+    <div class="stat reveal"><strong>0</strong><span>kontoer, annonser eller sporere</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Testere søkes</p>
+      <h2 id="testers-title">Bli med i betaen</h2>
+      <p>Alle dykkere er til hjelp: importer loggboken din, logg noen dykk, og fortell oss hva som er forvirrende, mangler eller er feil. Én lenke gjelder alle enheter.</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone, iPad, Mac og Apple Watch</h3>
+          <p>Én app, én beta-lenke · iOS 18 eller nyere, macOS 15 eller nyere</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Bli med i betaen</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>Installer Apples TestFlight-app</li>
+      <li><b>2</b>Åpne lenken på iPhonen, iPaden eller Macen din og trykk på Godta</li>
+      <li><b>3</b>Send tilbakemelding med Del betatilbakemelding i TestFlight</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>Har du en dykkecomputer? Hjelp oss å teste den.</h3>
+      <p>Nedlasting via Bluetooth er testet på Shearwater. Nedlasting via kabel og seriellport på Macen er bygget for mange andre computere, men er ennå ikke prøvd på ekte maskinvare. Har du en, hjelper ett enkelt nedlastingsforsøk, enten det virker eller ikke.</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">Mest ønsket · Mac</span>
+          <h3>USB- og seriellkabel</h3>
+          <p>For computere som kobles til med kabel, via en USB-seriell-adapter eller koblet rett i USB.</p>
+          <p class="ask"><strong>Slik gjør du:</strong> Fil → Last ned fra dykkecomputer → USB-kabel. Velg modell og port. Hvis det mislykkes, bruk Nedlastingslogg… og deretter Lagre logg…, og send den.</p>
+        </div>
+        <ul class="models" aria-label="Computere som skal testes">
+          <li>Suunto Vyper-familien og EON Steel</li>
+          <li>Eldre Oceanic, Aeris og Sherwood</li>
+          <li>Uwatec Aladin, Scubapro Aladin Square, G2 og G3</li>
+          <li>Cressi og Mares</li>
+          <li>OSTC og Atomic Cobalt</li>
+          <li>…og flere</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Ønsket · Mac</span>
+        <h3>Shearwater Predator og Petrel 1</h3>
+        <p>Disse bruker eldre Bluetooth som telefoner ikke kan bruke. Macen kan nå dem som en seriellport når de er paret.</p>
+        <p class="ask"><strong>Slik gjør du:</strong> Par den i Systeminnstillinger → Bluetooth, og velg så porten i nedlastingsvinduet med computeren i opplastingsmodus. Send nedlastingsloggen uansett.</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Testet · iPhone, iPad og Mac</span>
+        <h3>Bluetooth</h3>
+        <p>Testet med Shearwater Perdix og Perdix 2. Andre Bluetooth-computere skal også virke, og rapporter om dem er velkomne.</p>
+        <p class="ask"><strong>Slik gjør du:</strong> Loggbok → Last ned dykk på iPhone, eller Fil → Last ned fra dykkecomputer på Macen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Funksjoner</p>
+      <h2 id="features-title">Alt dykkene dine registrerte, i én loggbok</h2>
+      <p>Laget av en ivrig sportsdykker for fritids-, tek- og grottedykkere som vil ha tallene sine riktige.</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>Last ned via Bluetooth eller kabel</h3>
+        <p>Rett fra dykkecomputeren til iPhonen eller Macen din, og du legger til dykkested, makkere, utstyr og forhold etter hvert som dykkene kommer inn. Macen laster også ned via USB- og seriellkabel.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>Ta med hele historikken</h3>
+        <p>Importer fra MacDive, en Shearwater Cloud-database, Garmin .fit-filer, UDDF eller CSV, og velg hvilke dykk som skal legges til. Alt den ikke kan lese, blir listet opp for deg, aldri forkastet i det stille.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>Sikkerhetsverdier først</h3>
+        <p>Seks nøkkelverdier ligger i en fast stripe øverst på hvert dykk. Vis flaske, ppO₂, NDL, SAC, temperatur, CNS og oppstigningshastighet som striper eller lagt over i én graf.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>SAC som viser utregningen</h3>
+        <p>Regnet ut fra flaskens vannvolum med realgassberegning, så den er riktig ved hvilken som helst fylling. Trykk på Hvordan? for å se alle verdiene. Sidemount, dobbelsett og dykk med flere gasser telles riktig.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>Over 76&nbsp;000 dykkesteder og vrak over hele verden</h3>
+        <p>Finn og navngi et dykkested hvor som helst i verden, også uten dekning, fra åpne lister over dykkesteder som er bygget inn i appen. Dine egne dykkesteder kommer alltid først.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>Apple Watch på overflaten</h3>
+        <p>Marker dykkestedet fra håndleddet når du kommer opp. Posisjonen venter i loggboken til du navngir den senere.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>To computere, ett dykk</h3>
+        <p>Dykker du med en reservecomputer? Thermocline tilbyr å slå sammen de to opptakene, eller å skjøte sammen et dykk som ble delt i to. Den gjør aldri noen av delene uten å spørre.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>Synkronisert via din iCloud</h3>
+        <p>Loggboken, utstyret, makkerne og bildene dine følger deg mellom iPhone, iPad og Mac. Gjenopprettingspunkter kan ta deg tilbake til før en import eller sammenslåing.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>Alltid en vei ut</h3>
+        <p>Eksporter alt, når som helst, som UDDF, CSV eller MacDive XML. Loggboken din er aldri låst inne.</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>Også i appen</h3>
+      <div class="formats">
+        <span class="chip">Utstyr og flasker, også med +-merking</span>
+        <span class="chip">Makkere, koblet til Kontakter</span>
+        <span class="chip">Sertifikatkort</span>
+        <span class="chip">Dykkebilder og videolenker</span>
+        <span class="chip">Søk etter dykkested, makker, gass, notater, dato eller #nummer</span>
+        <span class="chip">Sammendrag av dybder, gasser og rekorder</span>
+        <span class="chip">Metrisk eller imperisk</span>
+        <span class="chip">17 språk</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Slik er den bygget</p>
+      <h2 id="principles-title">En loggbok du kan stole på med tallene dine</h2>
+      <p>Tre regler former hver skjerm.</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>En loggbok, ikke en planlegger</h3>
+        <p>Thermocline viser hva dykkecomputeren din registrerte. Den beregner aldri dekompresjon, og den setter aldri sin egen gjetning i stedet for computerens tall.</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>Dataene dine forblir dine</h3>
+        <p>Ingen konto, ingen annonser, ingen analyse og ingen utviklerservere. Loggboken din ligger på enhetene dine og i din egen iCloud, og kan eksporteres i sin helhet når du vil. <a href="privacy.html" style="color:#fff">Personvernerklæring</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>Advar, aldri blokker</h3>
+        <p>Hvis en nedlasting eller synkronisering bare delvis virker, får du vite hva som skjedde, og ingenting kastes. Endringer beholder computerens original ved siden av rettelsen din.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">Spørsmål</p>
+      <h2 id="faq-title">Før du blir med</h2>
+      <p>Tester du allerede? Sidene <a href="guide.html">Veiledning</a> og <a href="troubleshooting.html">Feilsøking</a> går gjennom appen steg for steg.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Virker den på Android, Windows eller nettet?</summary>
+        <p>Nei. Thermocline er laget bare for Apple-enheter: iPhone, iPad, Mac og Apple Watch. Den er bygget med Apples egne verktøy, slik at den kan samarbeide tett med iCloud, Bluetooth, Bilder og Kart.</p>
+      </details>
+      <details>
+        <summary>Hvilke dykkecomputere virker den med?</summary>
+        <p>Nedlasting via Bluetooth er testet med Shearwater Perdix og Perdix 2, på iPhone, iPad og Mac. Macen laster også ned via USB- og seriellkabel fra mange andre computere, blant annet Suunto, eldre Oceanic, Aeris og Sherwood, Uwatec og Scubapro, Cressi, Mares, OSTC og Atomic. Disse kabelnedlastingene er ennå ikke prøvd på ekte maskinvare, så har du en, test den gjerne. Dykk fra Garmin Descent kommer inn fra .fit-filene, på iPhone, iPad og Mac. Dykk fra hvilken som helst computer kan også komme inn via en loggbokfil.</p>
+      </details>
+      <details>
+        <summary>Jeg bruker MacDive. Blir loggboken min med over?</summary>
+        <p>Ja. Eksporter fra MacDive som XML og importer filen. XML er den mest komplette av MacDives to eksporter: UDDF-filen utelater computerens NDL, ppO₂ og CNS, utstyr og dykketyper. Hvis du allerede har importert UDDF-filen, importerer du XML-filen oppå, så fylles hullene uten duplikater. Du velger hvilke dykk som skal legges til, flasker kommer inn som ekte flasker (størrelse, trykk, dobbelsett og +), og MacDives dykke-ID-er beholdes, så en eksport tilbake til MacDive lager ikke duplikater.</p>
+      </details>
+      <details>
+        <summary>Er Mac-appen den samme appen?</summary>
+        <p>Ja. iPhone, iPad, Mac og Apple Watch er én app med én beta-lenke. Bli med én gang, og installer den deretter fra TestFlight på hver enhet. Alle bruker den samme iCloud-loggboken, så et dykk som er lastet ned på Macen, dukker opp på telefonen din. Hold alle enhetene på det nyeste bygget.</p>
+      </details>
+      <details>
+        <summary>Jeg ble med i iPhone-betaen før 18. november 2026. Hva gjør jeg?</summary>
+        <p>Den appen har flyttet. Åpne den og slå på Synkroniser med iCloud (eller eksporter en UDDF-fil), bli deretter med i betaen via lenken på denne siden, og installer den nye appen ved siden av. Slå på synkronisering i den nye appen, så kommer loggboken din tilbake. Når alt ser riktig ut, sletter du den gamle. <a href="troubleshooting.html#moved">Steg for steg</a>.</p>
+      </details>
+      <details>
+        <summary>Hva trenger jeg?</summary>
+        <p>En iPhone eller iPad med iOS eller iPadOS 18 eller nyere, eller en Mac med macOS 15 eller nyere. Apple Watch-appen trenger watchOS 11. For å synkronisere mellom enheter logger du på den samme iCloud-kontoen på hver av dem.</p>
+      </details>
+      <details>
+        <summary>Kan et betabygg miste dykkene mine?</summary>
+        <p>Den er bygget for ikke å gjøre det. Importer endrer aldri filen du importerer fra, og gjenopprettingspunkter kan ta loggboken din tilbake til før en import eller sammenslåing. Ta vare på de opprinnelige eksportene dine, og hvis dykk forsvinner eller blir doble, send en skjermdump av Profil → Synkronisering før du endrer noe.</p>
+      </details>
+      <details>
+        <summary>Kan jeg bruke posisjonene til dykkestedene til navigasjon?</summary>
+        <p>Nei. Posisjonene til dykkestedene er for logging, ikke for navigasjon.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">Ta med deg loggboken din.</h2>
+    <p>Bli med i betaen på iPhonen, iPaden eller Macen din, importer dykkene dine, og fortell oss hva som er forvirrende, mangler eller er feil, uansett hvor lite.</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">Bli med i betaen</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, en dykkeloggbok for iPhone, iPad, Mac og Apple Watch. Ikke for dykkeplanlegging eller navigasjon.</p>
+      <p>Lister over dykkesteder © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-bidragsytere</a>, tilgjengelig under Open Database License. <a href="https://github.com/616fun/thermocline-site-data">Last ned listene over dykkesteder</a>.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch, iCloud og TestFlight er varemerker for Apple Inc.</p>
+    </div>
+    <nav class="foot-links" aria-label="Bunntekst">
+      <a href="guide.html">Veiledning</a>
+      <a href="troubleshooting.html">Feilsøking</a>
+      <a href="support.html">Støtte</a>
+      <a href="privacy.html">Personvern</a>
+      <a href="#testers">Bli med i betaen</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Språk">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="index.html" hreflang="nb" lang="nb" aria-current="page">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

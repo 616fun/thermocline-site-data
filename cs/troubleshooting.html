@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Řešení potíží – Thermocline</title>
+  <meta name="description" content="Řešení častých potíží s Thermocline: potápěčský počítač se nepřipojí, žádné nové ponory, rozdíly při synchronizaci, mezery po importu, fotky a SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/cs/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Řešení potíží – Thermocline">
+  <meta property="og:description" content="Řešení častých potíží s Thermocline: potápěčský počítač se nepřipojí, žádné nové ponory, rozdíly při synchronizaci, mezery po importu, fotky a SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/cs/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/cs.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ikona a název aplikace Thermocline přes fotku přídě lodi při ponoru na vrak, s potápěči a rybami. Potápěčský logbook pro iPhone, iPad a Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Řešení potíží – Thermocline">
+  <meta name="twitter:description" content="Řešení častých potíží s Thermocline: potápěčský počítač se nepřipojí, žádné nové ponory, rozdíly při synchronizaci, mezery po importu, fotky a SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/cs.jpg">
+  <meta name="twitter:image:alt" content="Ikona a název aplikace Thermocline přes fotku přídě lodi při ponoru na vrak, s potápěči a rybami. Potápěčský logbook pro iPhone, iPad a Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Přeskočit na řešení potíží</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Hlavní">
+      <a href="guide.html">Průvodce</a>
+      <a href="troubleshooting.html" aria-current="page">Řešení potíží</a>
+      <a href="support.html">Podpora</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Sdílet tuto stránku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Sdílet</span></button>
+      <a class="btn" href="./#testers">Zapojte se do bety</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Řešení potíží</h1>
+    <p>Najděte svůj problém níže. Každý začíná tím, co zkontrolovat nejdřív. Aktualizováno 18. listopadu 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="Na této stránce">
+    <details open>
+      <summary>Na této stránce</summary>
+    <ol>
+      <li><a href="#first">Nejdřív aktualizujte</a></li>
+      <li><a href="#downloads">Stahování</a></li>
+      <li><a href="#sync">Synchronizace</a></li>
+      <li><a href="#imports">Importy</a></li>
+      <li><a href="#numbers">Plyn a SAC</a></li>
+      <li><a href="#photos">Fotky</a></li>
+      <li><a href="#sites">Lokality a hodinky</a></li>
+      <li><a href="#send-log">Odeslání zprávy</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Vyhledejte svůj problém</label>
+      <input id="faq-q" type="search" placeholder="Například: NDL, Garmin, PIN, synchronizace" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Nejdřív aktualizujte všechna zařízení</h2>
+    <p>Mnoho problémů zmizí, když na všech zařízeních běží nejnovější build. Otevřete TestFlight na každém iPhonu, iPadu a Macu, který používáte, a nainstalujte všechny aktualizace. Starší build přestane odesílat změny, dokud ho neaktualizujete, a zobrazí <strong>Aktualizujte Thermocline, aby synchronizace pokračovala</strong>. Vaše změny zůstanou zachované a po aktualizaci se odešlou.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Stahování z potápěčského počítače</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>Počítač nebyl nalezen</summary>
+        <ul>
+          <li>Probuďte počítač a přepněte ho do režimu Bluetooth (Shearwater: <span class="path">Menu → Bluetooth</span>). Vydrží v něm jen asi dvě minuty.</li>
+          <li>Držte ho blízko iPhonu, iPadu nebo Macu.</li>
+          <li><strong>Počítače Shearwater se vracejí k poslednímu zařízení, které použily.</strong> Pokud je poblíž váš telefon nebo jiný Mac, vypněte na tom zařízení Bluetooth a zkuste to znovu.</li>
+          <li>Zkontrolujte, že je Bluetooth zapnuté a že ho Thermocline smí používat (iPhone: Nastavení → Thermocline; Mac: Nastavení systému → Soukromí a zabezpečení → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Je to Predator nebo Petrel 1 a iPhone ho nevidí</summary>
+        <p>Používají starší Bluetooth (Bluetooth Classic), které iPhony a iPady používat neumí. Stáhněte je na Macu (viz <a href="guide.html#download">průvodce</a>), nebo jejich ponory importujte ze Shearwater Cloud či ze souboru UDDF.</p>
+      </details>
+      <details id="pin">
+        <summary>Připojí se, ale chce PIN</summary>
+        <p>Zadejte kód zobrazený na displeji počítače. Je potřeba jen poprvé.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>„Žádné nové ponory“</summary>
+        <p>Stahují se jen ponory novější než vaše poslední stahování. Pokud jste ponor smazali a chcete ho zpět, zapněte <strong>Stáhnout všechny ponory z počítače</strong> a stáhněte znovu. Ponory, které už v logbooku máte, se přeskočí.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>Stahování se v půlce zastavilo</summary>
+        <p>Zvolte <strong>Ponechat</strong>, aby se uložily ponory, které dorazily, a pak stáhněte znovu zbytek. Pokud se to zastavuje opakovaně, zvolte <strong>Zkusit znovu</strong> blízko počítače a <a href="#send-log">pošlete log stahování</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>Stahování kabelem na Macu selhává</summary>
+        <ul>
+          <li>Zkontrolujte, že port odpovídá kabelu: seznam uvádí, jakého druhu je každý port, a upozorní, když není pro zvolený model.</li>
+          <li>Odpojte a znovu připojte kabel a pak tlačítkem obnovení znovu vyhledejte kabely.</li>
+          <li>Postupujte podle kroků <strong>Než začnete</strong> pro váš model.</li>
+          <li>Stahování kabelem je novinka. <a href="#send-log">Pošlete prosím log stahování</a> v každém případě.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Synchronizace mezi zařízeními</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>Aplikace na iPhonu píše, že Thermocline je teď jedna aplikace, nebo vidím dvě aplikace Thermocline</summary>
+        <p>18.&nbsp;listopadu&nbsp;2026 se aplikace pro iPhone, iPad, Mac a Apple Watch spojily v jednu aplikaci s jedním odkazem na betu. Aplikace pro iPhone, kterou jste měli dřív, vám teď pomůže jen s přechodem.</p>
+        <ol>
+          <li>Otevřete starou aplikaci. Pokud píše, že je synchronizace vypnutá, klepněte na <strong>Zapnout „Synchronizovat s iCloudem“</strong> a nechte ji minutu otevřenou, nebo klepněte na <strong>Exportovat můj logbook jako UDDF</strong> a soubor uložte.</li>
+          <li>Klepněte na <strong>Připojit se k nové betě</strong>, nebo na iPhonu otevřete <a href="https://testflight.apple.com/join/ygF4ngNd">odkaz na betu</a>, a nainstalujte novou aplikaci. Bude vedle té staré.</li>
+          <li>V nové aplikaci zapněte <span class="path">Profil → Synchronizovat s iCloudem</span>. Vaše ponory, lokality, výstroj a nastavení se vrátí. Pokud jste místo toho exportovali, použijte <span class="path">Profil → Importovat soubor logbooku</span>.</li>
+          <li>Možná bude potřeba znovu spárovat potápěčský počítač a znovu nainstalovat aplikaci pro hodinky z aplikace Watch na iPhonu.</li>
+          <li>Až nová aplikace ukáže stejné ponory, starou smažte.</li>
+        </ol>
+        <p>Na Macu se nic nemění: aplikaci pro Mac aktualizujte jako obvykle.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>Po synchronizaci ponory chybí nebo jsou zdvojené</summary>
+        <ol>
+          <li>Zatím nic neměňte. Na každém zařízení pořiďte snímek obrazovky části Synchronizace (iPhone: <span class="path">Profil → Synchronizace</span>; Mac: <span class="path">Thermocline → Nastavení → Synchronizace</span>) a pošlete ho.</li>
+          <li>Zkontrolujte, že je na všech zařízeních nejnovější build.</li>
+          <li><span class="path">Profil → Vaše data → Body obnovení</span> umí vrátit váš logbook do stavu před importem, sloučením nebo smazáním. Obnovení nejprve uloží váš současný logbook, takže ho lze vrátit zpět.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>Změna na jednom zařízení se na druhém neprojeví</summary>
+        <ul>
+          <li>Zkontrolujte, že je <strong>Synchronizovat s iCloudem</strong> zapnuté na obou a že jsou přihlášená ke stejnému účtu Apple.</li>
+          <li>Podívejte se na <strong>Čeká na odeslání</strong> na zařízení, kde jste změnu udělali, a otevřete aplikaci na obou se signálem. Část Synchronizace ukáže, kdy se toto zařízení a vaše ostatní shodují.</li>
+          <li>Stiskněte <strong>Synchronizovat nyní</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>„Nejste přihlášeni k iCloudu“</summary>
+        <p>Přihlaste se k iCloudu v Nastavení zařízení. Do té doby váš logbook zůstává v bezpečí na tomto zařízení a po přihlášení se synchronizuje.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>„Vaše úložiště iCloud je plné“</summary>
+        <p>Váš logbook je v bezpečí na zařízení a synchronizuje se, až bude místo. Uvolněte místo na iCloudu, nebo zapněte <strong>Šetřit úložiště iCloud u fotek z ponorů</strong>, aby se fotky neukládaly dvakrát.</p>
+      </details>
+      <details id="newer-version">
+        <summary>„Jiné zařízení používá novější verzi“</summary>
+        <p>Aktualizujte Thermocline na tomto zařízení v TestFlightu. Vaše změny jsou zde v bezpečí a odešlou se po aktualizaci.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Importy</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Některé ponory nebo údaje se nenačetly</summary>
+        <p>Zpráva o importu vypíše vše v části <strong>Neimportováno</strong> a <strong>Zkontrolujte prosím</strong> i s důvodem. Každý logbook zapisuje UDDF trochu jinak, takže chybějící hodnoty jsou normální a zůstanou prázdné. Pokud chybí něco, co jste čekali, pošlete zprávu a pokud můžete, i soubor.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>Chybí mi výstroj, fotky nebo typy ponoru z MacDive</summary>
+        <p>Export UDDF z MacDive je vynechává. Pro výstroj, štítky a typy ponoru importujte navrch jeho XML a pro fotky na Macu importujte složku MacDive. Ponory, které už v logbooku máte, se nepřidají dvakrát. Viz <a href="guide.html#macdive-files">Který soubor z MacDive použít</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>U ponorů z MacDive chybí NDL, ppO₂ nebo CNS</summary>
+        <p>Stránka ponoru ukazuje NDL jako „—“ a Deko jako „Nezaznamenáno“, nebo u ppO₂ stojí „Vypočteno z plynu a hloubky“. Export UDDF z MacDive neobsahuje NDL, ppO₂ ani CNS z počítače. Jeho složka nemá profil u ponorů, které MacDive stáhl na iPhonu nebo iPadu, protože je ukládá šifrované.</p>
+        <p>Importujte také XML z MacDive: doplní, co chybí, aniž by ponory přidal znovu. Viz <a href="guide.html#macdive-files">Který soubor z MacDive použít</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Ztratím něco při přechodu mezi soubory nebo aplikacemi?</summary>
+        <ul>
+          <li><strong>Vaše původní soubory se nikdy nemění.</strong> Exporty z MacDive si ponechte a MacDive samotný si nechte, dokud neporovnáte pár ponorů.</li>
+          <li><strong>Druhý import přidává, nenahrazuje.</strong> Ponory, které už v logbooku máte, se spárují a získají jen to, co jim chybí, takže můžete importovat XML po UDDF, nebo složku po kterémkoli z nich.</li>
+          <li><strong>Můžete se vrátit.</strong> Před každým importem více než jednoho ponoru se uloží bod obnovení s názvem <strong>Před importem</strong> (<span class="path">Profil → Vaše data → Body obnovení</span> na iPhonu, <span class="path">Nastavení → Body obnovení</span> na Macu). Na Macu ho vrátí také <strong>Vrátit import…</strong> ve zprávě.</li>
+          <li><strong>Odchod z Thermocline:</strong> jeho export UDDF je ten úplný. Obsahuje NDL, ppO₂ a CNS z počítače v průběhu každého ponoru, výstroj, štítky, typy ponoru a odkazy na videa. Fotky nejsou v žádném exportním souboru.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>Importované ponory nemají plyn</summary>
+        <p>Soubor neuváděl, jaký plyn byl použit. Tyto ponory čekají v <strong>K potvrzení</strong>, abyste ho mohli nastavit.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Importoval(a) jsem špatný soubor</summary>
+        <p>Na Macu použijte <strong>Vrátit import…</strong> ve zprávě o importu. Na obou zařízeních se před každým importem více než jednoho ponoru uloží bod obnovení s názvem <strong>Před importem</strong>.</p>
+      </details>
+      <details id="garmin">
+        <summary>Soubor z Garminu nejde importovat</summary>
+        <ul>
+          <li><strong>„To je soubor zip“</strong>: <strong>Exportovat původní</strong> v Garmin Connect vytvoří .zip. Rozbalte ho a pak vyberte soubor .fit uvnitř.</li>
+          <li><strong>„Toto není soubor Garmin FIT“</strong>: soubor nepochází z hodinek Garmin, nebo jen jeho název končí na .fit. Použijte soubor ze složky <span class="path">GARMIN → Activity</span> v hodinkách, nebo <strong>Exportovat původní</strong>.</li>
+          <li><strong>„soubory Garmin neobsahují žádný ponor“</strong>: běhy, chůze, nastavení a zdravotní soubory se přeskakují. Načtou se jen ponory.</li>
+          <li><strong>„se zdají useknuté nebo poškozené“</strong>: soubor skončil v půlce, často kvůli kopírování nebo stahování, které nedoběhlo. Zobrazí se, co šlo přečíst; zkopírujte soubor z hodinek znovu a importujte ho znovu, abyste získali zbytek. Ponory, které už v logbooku máte, se přeskočí.</li>
+          <li><strong>Vybrat soubor z Garminu spolu s jiným souborem logbooku</strong> najednou nejde: importujte soubor logbooku a pak soubory z Garminu.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Ponor z Garminu mě žádá o kontrolu láhví</summary>
+        <p>Při více vysílačích na láhvích soubor Garminu neuvádí, na jakém plynu byl každý z nich, takže se přiřadily k láhvím ponoru popořadě. Otevřete část ponoru s plyny a ujistěte se, že je každý tlak u správné láhve.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Čas ponoru z Garminu je o hodinu posunutý</summary>
+        <p>Čas pochází z hodin v hodinkách. Pokud nebyly nastavené na místní čas tam, kde jste se potápěli, ponor se zobrazí v čase hodinek. Upravte čas ponoru, nebo před další cestou nastavte v hodinkách časové pásmo.</p>
+      </details>
+      <details id="drift-site">
+        <summary>Ponor v proudu má špatnou lokalitu</summary>
+        <p>Ponor se přiřadí k bližšímu z míst, kde jste vstoupili do vody a kde jste se vynořili, což je při ponoru v proudu obvykle místo vstupu. Pokud se přiřadil ke špatné lokalitě nebo k žádné, vyberte lokalitu u ponoru a další vraky, kolem kterých jste proplouvali, připište do poznámek.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Spotřeba plynu a SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>Hodnota SAC vypadá špatně</summary>
+        <p>Klepněte nebo klikněte vedle ní na <strong>Jak?</strong>. Zobrazí každý vstup: láhev a její vodní objem, tlaky, teplotu, korekci pro reálný plyn, čas a hloubku. Obvyklým viníkem je špatná velikost láhve; opravte ji ve Výstroji. Pokud to i tak nesedí, pošlete snímek obrazovky Jak?.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/cs/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panel Jak? pro spotřebu plynu na iPhonu se seznamem láhve, tlaků, teploty a výpočtu."><figcaption>Panel Jak? (ukázkový ponor).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>Není tu SAC, jen zpráva</summary>
+        <ul>
+          <li><strong>Pro SAC doplňte velikost láhve</strong>: zvolte model láhve nebo zadejte její velikost.</li>
+          <li><strong>Pro SAC doplňte počáteční a koncový tlak</strong>: není tu vysílač, tak je zadejte u láhve.</li>
+          <li><strong>SAC vyžaduje profil ponoru</strong>: ponory zapsané ručně bez profilu nemají SAC.</li>
+          <li>Ponory s rebreatherem hodnotu SAC nedostávají.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC počítá jen jednu láhev</summary>
+        <p>U ponoru s více plyny má tlaky jen láhev s vysílačem. Zadejte počáteční a koncový tlak u druhé láhve a SAC pokryje veškerý plyn.</p>
+      </details>
+      <details id="breathing">
+        <summary>Dýchání v Přehledu hlásí, že žádný ponor nemá velikost láhve</summary>
+        <p>Dýchání průměruje jen ponory s velikostí láhve a počátečním a koncovým tlakem. Ponory z UDDF z MacDive velikost láhve nemají, protože jeho velikosti nejsou vodní objemy; import XML navrch je doplní (viz <a href="guide.html#macdive-files">Který soubor z MacDive použít</a>). Jinak nastavte láhev u svých ponorů (zvolte její model nebo sestavu výstroje) a doplňte tlaky, kde je máte. Pod hodnotou Dýchání uvádí, kolik ponorů se nezapočítalo.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/cs/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Dýchání na kartě Přehled: SAC a RMV za 14 ponorů a jeden nezapočtený ponor, protože nemá velikost láhve ani tlaky."><figcaption>Počet vynechaných ponorů je pod hodnotou (ukázkový logbook).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Fotky</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Fotka se na mém druhém zařízení nezobrazuje</summary>
+        <p>Se zapnutým <strong>Šetřit úložiště iCloud u fotek z ponorů</strong> si fotka ponechá svou kopii, dokud ji vaše druhé zařízení nenajde ve Fotkách na iCloudu. Zapněte toto nastavení na obou zařízeních, zkontrolujte, že jsou na obou zapnuté Fotky na iCloudu, a dejte jim čas na nahrání.</p>
+      </details>
+      <details id="videos">
+        <summary>Videa se nepřidala</summary>
+        <p>Videa z knihovny lze pouze propojit, ne zkopírovat. Zapněte <span class="path">Synchronizace → Šetřit úložiště iCloud u fotek z ponorů</span> a ujistěte se, že je video ve Fotkách na iCloudu. Nebo pod fotky ponoru vložte odkaz na YouTube nebo Vimeo.</p>
+      </details>
+      <details id="photos-access">
+        <summary>„Thermocline nemůže číst vaše fotky“</summary>
+        <p>Přístup k Fotkám byl odepřen, takže se fotky kopírují místo propojení. Chcete-li je propojit, povolte přístup v Nastavení → Soukromí a zabezpečení → Fotky → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Lokality a Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>Navržená lokalita je špatná, nebo žádná není</summary>
+        <p>Vyberte jinou lokalitu, vyhledejte ve vestavěných seznamech podle názvu, nebo polohu označte či zadejte sami. Vnitrozemské lomy a jezera ve veřejných seznamech často chybí, a proto jsou vaše vlastní lokality od té doby v návrzích na prvním místě.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Thermocline není na mých Apple Watch</summary>
+        <p>Aplikace pro hodinky přichází spolu s aplikací pro iPhone z TestFlightu. Na iPhonu otevřete aplikaci Watch, najděte Thermocline v části <strong>Dostupné aplikace</strong> a klepněte na <strong>Nainstalovat</strong>. Vyžaduje watchOS&nbsp;11 nebo novější. Pokud jste přešli ze staré aplikace pro iPhone, nainstalujte ji znovu: stará aplikace pro hodinky patří ke staré aplikaci pro iPhone.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>Hodinky píšou „Čeká se na dobrý fix“ a tlačítko Označit místo zůstává šedé</summary>
+        <p>Místo se uloží jen z fixu s přesností &plusmn;30&nbsp;m, který je mladší než 30&nbsp;sekund, takže se do logbooku nikdy nedostane špatná poloha. Zůstaňte na hladině s hodinkami nad vodou a s volným výhledem na oblohu a dejte jim minutu. <strong>Stará poloha z mezipaměti se ignoruje</strong> znamená, že čekají na čerstvou. GPS pod vodou nefunguje: místo označte před zanořením nebo po vynoření.</p>
+      </details>
+      <details id="watch-location">
+        <summary>„Thermocline nemá přístup k poloze“ na hodinkách</summary>
+        <p>Na hodinkách otevřete <span class="path">Nastavení → Soukromí a zabezpečení → Polohové služby</span>, zapněte Polohové služby a povolte Thermocline při používání aplikace.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Místo označené na hodinkách se na iPhonu neobjevilo</summary>
+        <p>Na hodinkách otevřete <strong>Označená místa</strong>. <strong>Čeká na odeslání do iPhonu</strong> znamená, že ho iPhone ještě nedostal: mějte hodinky u iPhonu a otevřete Thermocline na iPhonu. <strong>Odesláno do iPhonu</strong> znamená, že tam je: podívejte se do <span class="path">Logbook → K potvrzení</span>. iPhone místo vyhledá, když je online, takže bez signálu čeká se stavem <strong>čeká se na signál pro vyhledání</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>Hodinky po označení místa nezobrazily název lokality</summary>
+        <p>Název přichází z iPhonu: když je poblíž a Thermocline může odpovědět, hodinky pod místem ukážou lokalitu, kterou by navrhl, vaši nebo ze seznamů potápěčských lokalit, i s tím, jak je daleko. Když je iPhone mimo dosah, hodinky pojmenují vaše vlastní lokality z kopie, kterou v nich iPhone nechal, ale ne lokality ze seznamů potápěčských lokalit. Pokud do vzdálenosti asi 1,5&nbsp;km žádná lokalita není, místo se označí bez názvu. Lokalitu v každém případě vybíráte na iPhonu, v <span class="path">Logbook → K potvrzení</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>Název, který jsem řekl(a) hodinkám, se neuložil</summary>
+        <p>Název se uloží, když se zavře diktování nebo klávesnice, nebo když se vrátíte zpět. Otevřete <strong>Označená místa</strong>, klepněte na místo a zkontrolujte jeho název; klepnutím na <strong>Změnit název</strong> to zkuste znovu. Pokud už bylo místo odesláno, název ho do iPhonu následuje.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Zaznamenávají hodinky moje ponory?</summary>
+        <p>Ne. Aplikace Thermocline pro hodinky jen označuje místa na hladině. Vaše ponory pocházejí z potápěčského počítače. U hodinek Garmin Descent importujte jejich soubory .fit: viz <a href="guide.html#garmin">Garmin Descent</a> v průvodci.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Místo z hodinek zmizelo</summary>
+        <p>To je v pořádku. Místo z hodinek zmizí, jakmile ho na iPhonu potvrdíte nebo zahodíte. Potvrzené místo je lokalita ve vašem logbooku a synchronizuje se do vašich ostatních zařízení.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Odeslání zprávy nebo logu stahování</h2>
+    <ul>
+      <li><strong>Z aplikace:</strong> pořiďte snímek obrazovky a pak použijte <strong>Sdílet odezvu na betaverzi</strong> v TestFlightu. Dorazí i s údaji o buildu a zařízení.</li>
+      <li><strong>Log stahování, iPhone:</strong> na obrazovce stahování klepněte na <strong>Log stahování</strong> a pak ho sdílejte. Obsahuje jen zprávy Bluetooth a počítače, žádná data ponorů.</li>
+      <li><strong>Log stahování, Mac:</strong> v okně stahování zvolte <strong>Log stahování…</strong>, pak <strong>Uložit log…</strong> a soubor přiložte.</li>
+      <li><strong>E-mail:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, se zařízením, číslem buildu (zobrazuje se v TestFlightu) a tím, co jste očekávali, že se stane.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, potápěčský logbook. Není určen k plánování ponorů ani k navigaci.</p>
+      <p>Seznamy potápěčských lokalit © <a href="https://www.openstreetmap.org/copyright">přispěvatelé OpenStreetMap</a>, dostupné pod licencí Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Zápatí">
+      <a href="./">Domů</a>
+      <a href="guide.html">Průvodce</a>
+      <a href="troubleshooting.html">Řešení potíží</a>
+      <a href="support.html">Podpora</a>
+      <a href="privacy.html">Soukromí</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Jazyky">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="troubleshooting.html" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

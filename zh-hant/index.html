@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – 適用於 iPhone、iPad 和 Mac 的潛水日誌</title>
+  <meta name="description" content="Thermocline 是一款適用於 Apple 裝置的潛水日誌：iPhone、iPad、Mac 和 Apple Watch。透過藍牙或傳輸線下載潛水，輸入你的 MacDive 或 Shearwater Cloud 潛水日誌，查看你的潛水電腦記錄了什麼。TestFlight 公開測試版。">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/zh-hant/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="Thermocline – 適用於 iPhone、iPad 和 Mac 的潛水日誌">
+  <meta property="og:description" content="適用於 Apple 裝置。透過藍牙或傳輸線下載潛水，輸入你原來的潛水日誌，查看你的潛水電腦記錄了什麼。加入測試版。">
+  <meta property="og:url" content="https://thermoclineapp.com/zh-hant/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/zh-hant.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Thermocline 的 App 圖像和名稱，背景是一張沉船潛水的照片：船首、潛水員和魚群。適用於 iPhone、iPad 和 Mac 的潛水日誌。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – 適用於 iPhone、iPad 和 Mac 的潛水日誌">
+  <meta name="twitter:description" content="適用於 Apple 裝置。透過藍牙或傳輸線下載潛水，輸入你原來的潛水日誌，查看你的潛水電腦記錄了什麼。加入測試版。">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/zh-hant.jpg">
+  <meta name="twitter:image:alt" content="Thermocline 的 App 圖像和名稱，背景是一張沉船潛水的照片：船首、潛水員和魚群。適用於 iPhone、iPad 和 Mac 的潛水日誌。">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/zh-hant/#website",
+      "url": "https://thermoclineapp.com/zh-hant/",
+      "name": "Thermocline",
+      "description": "Thermocline 是一款適用於 Apple 裝置的潛水日誌：iPhone、iPad、Mac 和 Apple Watch。透過藍牙或傳輸線下載潛水，輸入你的 MacDive 或 Shearwater Cloud 潛水日誌，查看你的潛水電腦記錄了什麼。TestFlight 公開測試版。",
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/zh-hant/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "適用於 iPhone、iPad、Mac 和 Apple Watch 的潛水日誌：一個 App，一個 Beta 版連結。透過藍牙下載潛水，輸入你的 MacDive 或 Shearwater Cloud 日誌，一眼看懂氣體、深度和 ppO2。",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/zh-hant/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/zh-hant/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/zh-hant/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/zh-hant/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "潛水日誌",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/zh-hant/",
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/zh-hant/#mac-app",
+      "name": "Thermocline Mac 版",
+      "operatingSystem": "macOS 15 or later",
+      "description": "適用於 Mac 的潛水日誌。透過藍牙或傳輸線下載潛水，輸入你的 MacDive 或 Shearwater Cloud 日誌，完整查看每一次潛水。",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/zh-hant/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "潛水日誌",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/zh-hant/",
+      "inLanguage": "zh-Hant"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">跳至內容</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="#app">查看 App</a> <a href="#features">功能</a> <a class="keep" href="guide.html">指南</a> <a href="troubleshooting.html">疑難排解</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="分享此頁面"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">分享</span></button>
+      <a class="btn" href="#testers">加入測試版</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>TestFlight 公開測試版</span>
+      <h1 id="hero-title"><span class="grad lines">一款如實呈現潛水電腦記錄的潛水日誌。</span></h1>
+      <p class="lede">透過藍牙或傳輸線下載你的潛水，輸入你的全部潛水日誌歷史，一眼讀出氣體、深度和 ppO₂。</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          加入測試版
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>為 Apple 裝置打造。</b> <span>iPhone、iPad、Mac 和 Apple Watch。</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">查看 App</a> · <a href="guide.html">閱讀指南</a> · <a href="troubleshooting.html">疑難排解</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Thermocline 中的一條潛水曲線：43 分鐘內的深度，疊加顯示氣瓶壓力、SAC、水溫和 ppO2，以及一次從 EAN30 切換到 Air 再切換回來的氣體切換。">
+        </div>
+      </div>
+      <figcaption>試一試：三次真實的潛水，依 App 的方式繪製。點一下標籤，在「堆疊」和「疊加」之間切換，並在潛水曲線上拖移。</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">查看 App</p>
+      <h2 id="app-title">你的潛水，照你的閱讀方式呈現</h2>
+      <p>每次潛水的安全數值都在同一位置，曲線可以逐時逐刻讀取，每個氣體消耗數字背後的計算過程都會顯示出來。此處使用 App 的範例潛水日誌展示。</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="22 秒的 Thermocline 導覽：潛水曲線、下載潛水、安全數值，以及 SAC 背後的計算過程。"><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="22 秒的 Thermocline 導覽：潛水曲線、下載潛水、安全數值，以及 SAC 背後的計算過程。"><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hant/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的潛水日誌：一次潛水在「待確認」下等待，下面是列出潛點、日期、深度和時間的潛水清單。"><figcaption><b>潛水日誌</b>需要潛點或氣體的潛水在頂部等待。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hant/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的一次潛水：曲線上方的安全數值欄，顯示深度、時間、氣體、減壓、ppO2 和 CNS。"><figcaption><b>每次潛水</b>深度、氣體、減壓、ppO₂ 和 CNS 排在最前。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hant/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上氣體消耗的「怎麼算？」面板，列出氣瓶、壓力、溫度和計算過程。"><figcaption><b>氣體消耗</b>點一下「怎麼算？」查看 SAC 背後的每一項輸入。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hant/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的潛點地圖，標出了你的潛點和內建潛點清單中的潛點。"><figcaption><b>潛點</b>你的潛點，外加 76,000+ 個其他潛點，可離線使用。</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/zh-hant/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac App：潛水清單旁邊是一次潛水，顯示其安全數值、潛點、潛伴、裝備和深度曲線，以及最深點的讀數。"><figcaption><b>在 Mac 上</b>整本潛水日誌就在潛水旁邊。指向曲線即可讀取任意時刻。</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">指南</span>
+        <h3>如何使用 Thermocline</h3>
+        <p>輸入你的潛水日誌，從潛水電腦下載，確認潛點和氣體，同步和輸出。逐步說明，適用於 iPhone 和 Mac。</p>
+        <span class="go">閱讀指南 →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">疑難排解</span>
+        <h3>遇到問題？</h3>
+        <p>找不到潛水電腦、沒有新的潛水、同步不一致、輸入有缺漏以及 SAC 數字異常，每一項都附有最快的檢查方法。</p>
+        <span class="go">尋找解決方法 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76,000+</strong><span>全球潛點和沉船，可離線使用</span></div>
+    <div class="stat reveal"><strong>4</strong><span>種 Apple 裝置，一本潛水日誌</span></div>
+    <div class="stat reveal"><strong>17</strong><span>種語言</span></div>
+    <div class="stat reveal"><strong>0</strong><span>帳號、廣告或追蹤器</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">招募測試者</p>
+      <h2 id="testers-title">加入測試版</h2>
+      <p>每位潛水員都能幫上忙：輸入你的潛水日誌，記錄幾次潛水，然後告訴我們哪裡令人困惑、缺少什麼或有什麼錯誤。一個連結適用於所有裝置。</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone、iPad、Mac 和 Apple Watch</h3>
+          <p>一個 App，一個測試版連結 · iOS 18 或更高版本，macOS 15 或更高版本</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>加入測試版</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>安裝 Apple 的 TestFlight App</li>
+      <li><b>2</b>在你的 iPhone、iPad 或 Mac 上打開連結，然後點一下「接受」</li>
+      <li><b>3</b>在 TestFlight 中透過「分享Beta版使用者意見」傳送意見回饋</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>有潛水電腦嗎？幫我們測試一下。</h3>
+      <p>藍牙下載已在 Shearwater 上測試過。Mac 上的傳輸線和序列埠下載是為許多其他潛水電腦開發的，但還沒有在真實硬體上試過。如果你有這樣的潛水電腦，嘗試下載一次就有幫助，無論成功與否。</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">最需要 · Mac</span>
+          <h3>USB 和序列埠傳輸線</h3>
+          <p>適用於透過傳輸線下載的潛水電腦，可經 USB 轉序列埠轉接器連接，也可直接插入 USB。</p>
+          <p class="ask"><strong>方法：</strong>檔案 → 從潛水電腦下載⋯ → USB 傳輸線。選擇型號和連接埠。如果失敗，使用「下載記錄⋯」，然後「儲存記錄⋯」，並傳送該記錄。</p>
+        </div>
+        <ul class="models" aria-label="待測試的潛水電腦">
+          <li>Suunto Vyper 系列和 EON Steel</li>
+          <li>較早的 Oceanic、Aeris 和 Sherwood</li>
+          <li>Uwatec Aladin、Scubapro Aladin Square、G2 和 G3</li>
+          <li>Cressi 和 Mares</li>
+          <li>OSTC 和 Atomic Cobalt</li>
+          <li>…以及更多</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">需要 · Mac</span>
+        <h3>Shearwater Predator 和 Petrel 1</h3>
+        <p>它們使用手機無法使用的較早藍牙。配對後，Mac 可以把它們作為序列埠連接。</p>
+        <p class="ask"><strong>方法：</strong>在「系統設定」→「藍牙」中配對，然後在潛水電腦處於上傳模式時，在下載視窗中選擇它的連接埠。無論成功與否，都請傳送下載記錄。</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">已測試 · iPhone、iPad 和 Mac</span>
+        <h3>藍牙</h3>
+        <p>已用 Shearwater Perdix 和 Perdix 2 測試。其他藍牙潛水電腦應該也能使用，歡迎回報使用情況。</p>
+        <p class="ask"><strong>方法：</strong>在 iPhone 上：潛水日誌 → 下載潛水；在 Mac 上：檔案 → 從潛水電腦下載⋯。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">功能</p>
+      <h2 id="features-title">你的潛水記錄下的一切，都在一本潛水日誌裡</h2>
+      <p>由一位熱衷水肺潛水的潛水員打造，適合希望數字準確無誤的休閒、技術和洞穴潛水員。</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>透過藍牙或傳輸線下載</h3>
+        <p>直接從你的潛水電腦傳到你的 iPhone 或 Mac，每次潛水傳入時即可加入潛點、潛伴、裝備和環境狀況。Mac 還可以透過 USB 和序列埠傳輸線下載。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>帶上你的全部歷史</h3>
+        <p>從 MacDive、Shearwater Cloud 資料庫、Garmin .fit 檔案、UDDF 或 CSV 輸入，並選擇要加入哪些潛水。無法讀取的內容都會為你列出，絕不會悄悄丟棄。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>安全數值優先</h3>
+        <p>六個關鍵數值固定在每次潛水頂部的一欄中。氣瓶、ppO₂、NDL、SAC、水溫、CNS 和上升速度可以顯示為分欄，也可以疊加為一張圖。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>展示計算過程的 SAC</h3>
+        <p>根據氣瓶的水容積依真實氣體算法計算，因此任何充氣量下都準確。點一下「怎麼算？」查看每一項輸入。側掛、雙瓶和多氣體潛水都會正確計算。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>全球 76,000+ 個潛點和沉船</h3>
+        <p>借助 App 內建的開放潛點清單，在世界任何地方尋找並命名潛點，即使沒有訊號也可以。你自己的潛點始終排在最前。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>在水面使用 Apple Watch</h3>
+        <p>出水後在手腕上標記潛點。該位置會在你的潛水日誌中等待，供你之後命名。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>兩台潛水電腦，一次潛水</h3>
+        <p>帶著備用潛水電腦潛水？Thermocline 會建議合併兩份記錄，或接合被分成兩段的潛水。未經詢問，它絕不會執行其中任何一項操作。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>透過你的 iCloud 同步</h3>
+        <p>你的潛水日誌、裝備、潛伴和照片在 iPhone、iPad 和 Mac 之間隨你同步。還原點可以讓你回到輸入或合併之前。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>隨時可以離開</h3>
+        <p>隨時以 UDDF、CSV 或 MacDive XML 輸出全部內容。你的潛水日誌絕不會被鎖定。</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>App 中還有</h3>
+      <div class="formats">
+        <span class="chip">裝備和氣瓶，包括「+」標記</span> <span class="chip">潛伴，可關聯聯絡人</span> <span class="chip">潛水證照卡</span> <span class="chip">潛水照片和影片連結</span> <span class="chip">依潛點、潛伴、氣體、備註、日期或 #編號搜尋</span> <span class="chip">深度、氣體和紀錄摘要</span> <span class="chip">公制或英制</span> <span class="chip">17 種語言</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">設計原則</p>
+      <h2 id="principles-title">數字可以放心託付的潛水日誌</h2>
+      <p>每個畫面都遵循三條規則。</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>是潛水日誌，不是計畫工具</h3>
+        <p>Thermocline 顯示你的潛水電腦記錄的內容。它從不計算減壓，也從不用自己的推測取代你潛水電腦的數字。</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>你的資料始終屬於你</h3>
+        <p>沒有帳號、沒有廣告、沒有分析，也沒有開發者伺服器。你的潛水日誌儲存在你的裝置上和你自己的 iCloud 中，隨時可以完整輸出。<a href="privacy.html" style="color:#fff">隱私權政策</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>只提醒，不阻止</h3>
+        <p>如果下載或同步只部分成功，你會被告知發生了什麼，且不會丟棄任何內容。編輯時，潛水電腦的原始資料會保留在你的修正旁邊。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">常見問題</p>
+      <h2 id="faq-title">加入之前</h2>
+      <p>已經在測試了？<a href="guide.html">指南</a>和<a href="troubleshooting.html">疑難排解</a>頁面會逐步介紹這款 App。</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>能在 Android、Windows 或網頁上使用嗎？</summary>
+        <p>不能。Thermocline 只為 Apple 裝置打造：iPhone、iPad、Mac 和 Apple Watch。它使用 Apple 自己的工具開發，因此能與 iCloud、藍牙、照片和地圖緊密配合。</p>
+      </details>
+      <details>
+        <summary>支援哪些潛水電腦？</summary>
+        <p>藍牙下載已在 iPhone、iPad 和 Mac 上用 Shearwater Perdix 和 Perdix 2 測試過。Mac 還可以透過 USB 和序列埠傳輸線從許多其他潛水電腦下載，包括 Suunto、較早的 Oceanic、Aeris 和 Sherwood、Uwatec 和 Scubapro、Cressi、Mares、OSTC 和 Atomic。這些傳輸線下載還沒有在真實硬體上試過，所以如果你有其中一款，請測試一下。Garmin Descent 的潛水透過其 .fit 檔案輸入，可在 iPhone、iPad 和 Mac 上進行。任何潛水電腦的潛水也都可以透過潛水日誌檔案輸入。</p>
+      </details>
+      <details>
+        <summary>我用 MacDive。我的潛水日誌能遷移過來嗎？</summary>
+        <p>能。從 MacDive 輸出 XML，然後輸入該檔案。XML 是 MacDive 兩種輸出格式中內容更完整的一種：它的 UDDF 會漏掉潛水電腦的 NDL、ppO₂ 和 CNS、裝備以及潛水類型。如果你已經輸入了 UDDF，再在其上輸入 XML，缺漏就會補齊，且不會產生重複。你可以選擇要加入哪些潛水，氣瓶會作為真實氣瓶輸入（容量、壓力、雙瓶和「+」），MacDive 的潛水 ID 也會保留，因此輸出回 MacDive 時不會產生重複。</p>
+      </details>
+      <details>
+        <summary>Mac App 是同一個 App 嗎？</summary>
+        <p>是的。iPhone、iPad、Mac 和 Apple Watch 是同一個 App，使用同一個測試版連結。加入一次，然後在每台裝置上從 TestFlight 安裝。它們都使用同一本 iCloud 潛水日誌，所以在 Mac 上下載的潛水會出現在你的手機上。請讓每台裝置都保持最新版本。</p>
+      </details>
+      <details>
+        <summary>我在 2026年11月18日之前加入了 iPhone 測試版。該怎麼做？</summary>
+        <p>那個 App 已經遷移。打開它並開啟「與 iCloud 同步」（或輸出 UDDF 檔案），然後透過本頁的連結加入測試版，並在旁邊安裝新的 App。在新 App 中開啟同步，你的潛水日誌就會回來。確認無誤後，刪除舊的 App。<a href="troubleshooting.html#moved">逐步說明</a>。</p>
+      </details>
+      <details>
+        <summary>我需要什麼？</summary>
+        <p>一台裝有 iOS 或 iPadOS 18 或更高版本的 iPhone 或 iPad，或一台裝有 macOS 15 或更高版本的 Mac。Apple Watch App 需要 watchOS 11。要在裝置之間同步，請在每台裝置上登入同一個 iCloud 帳號。</p>
+      </details>
+      <details>
+        <summary>測試版會遺失我的潛水嗎？</summary>
+        <p>它的設計就是為了不遺失。輸入絕不會變更你輸入的原始檔案，還原點可以把你的潛水日誌帶回輸入或合併之前。請保留你的原始輸出檔案；如果潛水遺失或重複，請在變更任何內容之前傳送「個人檔案」→「同步」的截圖。</p>
+      </details>
+      <details>
+        <summary>我可以用潛點位置來導航嗎？</summary>
+        <p>不可以。潛點位置用於記錄，不用於導航。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">帶上你的潛水日誌。</h2>
+    <p>在你的 iPhone、iPad 或 Mac 上加入測試版，輸入你的潛水，然後告訴我們哪裡令人困惑、缺少什麼或有什麼錯誤，再小的問題也可以。</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">加入測試版</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>，適用於 iPhone、iPad、Mac 和 Apple Watch 的潛水日誌。不可用於潛水計畫或導航。</p>
+      <p>潛點清單 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap 貢獻者</a>，依據 Open Database License 提供。<a href="https://github.com/616fun/thermocline-site-data">下載潛點清單</a>。</p>
+      <p>Apple、iPhone、iPad、Mac、Apple Watch、iCloud 和 TestFlight 是 Apple Inc. 的商標。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾">
+      <a href="guide.html">指南</a> <a href="troubleshooting.html">疑難排解</a> <a href="support.html">支援</a> <a href="privacy.html">隱私權</a> <a href="#testers">加入測試版</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="語言">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="index.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

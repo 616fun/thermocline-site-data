@@ -4,27 +4,33 @@
   const root = document.getElementById('demo');
   if (!root || typeof DIVES === 'undefined') return;
   root.classList.add('live');
+  // The page's language: labels come from site-strings.js (the app's own words), numbers and dates
+  // follow the language, and every language but English starts in metric, as the app does.
+  const LANG = document.documentElement.lang || 'en';
+  const TR = (window.SITE_T && window.SITE_T[LANG]) || {};
+  const tr = (s, ...v) => { let r = TR[s] || s; v.forEach((x, i) => { r = r.split(`{${i}}`).join(x); }); return r; };
+  const LOC = LANG === 'en' ? 'en-US' : LANG;
 
   const SERIES = {
-    tank:   { label: 'Tank',   color: '--d-tank' },
-    ndl:    { label: 'NDL',    color: '--d-ndl' },
-    use:    { label: 'SAC',    color: '--d-use' },
-    temp:   { label: 'Temp',   color: '--d-temp' },
+    tank:   { label: tr('Tank'),   color: '--d-tank' },
+    ndl:    { label: tr('NDL'),    color: '--d-ndl' },
+    use:    { label: tr('SAC'),    color: '--d-use' },
+    temp:   { label: tr('Temp'),   color: '--d-temp' },
     ppo2:   { label: 'ppO₂',   color: '--d-ppo2' },
-    ascent: { label: 'Ascent', color: '--d-asc' },
+    ascent: { label: tr('Ascent'), color: '--d-asc' },
   };
   // The app's order: safety values first, so on a phone they're the chips in view.
   const ORDER = ['tank', 'ppo2', 'ndl', 'use', 'temp', 'ascent'];
   const GASCOL = ['--d-blue', '--d-orange', '--d-teal', '--d-purple'];
-  const st = { dive: 1, units: 'imp', layout: 'overlay', chips: new Set(['tank', 'ppo2', 'ndl', 'use', 'temp']), t: null };
+  const st = { dive: 1, units: LANG === 'en' ? 'imp' : 'met', layout: 'overlay', chips: new Set(['tank', 'ppo2', 'ndl', 'use', 'temp']), t: null };
   const css = v => getComputedStyle(root).getPropertyValue(v).trim();
-  const nf = (v, d = 0) => v.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const nf = (v, d = 0) => v.toLocaleString(LOC, { minimumFractionDigits: d, maximumFractionDigits: d });
 
   const FRESH = { 'Haigh Quarry': true };
   const ABOUT = {
-    270: 'Bonaire reef dive: one tank of EAN33 with a transmitter. Warm water, so the temperature barely moves.',
-    281: 'Wreck dive off North Carolina: EAN30 with a transmitter, a switch to air from a second tank, then back. SAC leaves the air stretch blank rather than guess.',
-    213: 'Cold quarry dive on a Predator, no transmitter, so there is no Tank or SAC. Watch the water drop through the thermocline.',
+    270: tr('Bonaire reef dive: one tank of EAN33 with a transmitter. Warm water, so the temperature barely moves.'),
+    281: tr('Wreck dive off North Carolina: EAN30 with a transmitter, a switch to air from a second tank, then back. SAC leaves the air stretch blank rather than guess.'),
+    213: tr('Cold quarry dive on a Predator, no transmitter, so there is no Tank or SAC. Watch the water drop through the thermocline.'),
   };
 
   const dives = DIVES.map(d => {
@@ -97,7 +103,7 @@
   const charts = [];
   function chart(container, { h, y0, y1, invert = false, draw, yFmt = v => nf(v), xAxis = false, cursorDots }) {
     const W = Math.max(280, container.clientWidth || 600), L = 34, R = 8, T = 8, B = xAxis ? 20 : 6;
-    const svg = el('svg', { viewBox: `0 0 ${W} ${h}`, height: h, role: 'img', 'aria-label': xAxis ? 'Dive profile. Drag across it, or use the arrow keys, to read any moment.' : 'Strip chart' }); container.appendChild(svg);
+    const svg = el('svg', { viewBox: `0 0 ${W} ${h}`, height: h, role: 'img', 'aria-label': xAxis ? tr('Dive profile. Drag across it, or use the arrow keys, to read any moment.') : tr('Strip chart') }); container.appendChild(svg);
     const d = dives[st.dive];
     const x = t => L + (t / d.dur) * (W - L - R);
     const y = v => invert ? T + (v - y0) / (y1 - y0) * (h - T - B) : h - B - (v - y0) / (y1 - y0) * (h - T - B);
@@ -141,38 +147,38 @@
     const d = dives[st.dive], s = d.s, col = SERIES[key].color;
     const f = { key, col, refs: [], step: false, extra: null };
     if (key === 'tank') {
-      f.name = `Tank · ${U.pu()}`; f.vals = s.map(q => q.bar == null ? null : U.pv(q.bar)); f.fmt = q => U.pres(q.bar);
+      f.name = tr('Tank · {0}', U.pu()); f.vals = s.map(q => q.bar == null ? null : U.pv(q.bar)); f.fmt = q => U.pres(q.bar);
       const ps = s.filter(q => q.bar != null); f.sum = `${U.pres(ps[0].bar)} → ${U.pres(ps[ps.length - 1].bar)}`;
       f.y0 = 0; f.y1 = Math.max(...f.vals.filter(v => v != null)) * 1.05;
     }
     if (key === 'use') {
-      f.name = st.units === 'imp' ? 'SAC · ft³/min' : 'SAC · L/min'; f.vals = s.map(q => q.use == null ? null : U.uv(q.use)); f.fmt = q => `SAC ${U.use(q.use)}`;
+      f.name = tr('SAC · {0}', st.units === 'imp' ? 'ft³/min' : 'L/min'); f.vals = s.map(q => q.use == null ? null : U.uv(q.use)); f.fmt = q => `${tr('SAC')} ${U.use(q.use)}`;
       const vv = f.vals.filter(v => v != null); f.y0 = 0; f.y1 = Math.max(...vv, U.uv(d.avgUse)) * 1.1;
-      f.sum = `dive average ${U.use(d.avgUse)}`; f.refs.push({ v: U.uv(d.avgUse), color: '--d-use', label: 'avg', overlay: true });
+      f.sum = tr('dive average {0}', U.use(d.avgUse)); f.refs.push({ v: U.uv(d.avgUse), color: '--d-use', label: 'avg', overlay: true });
     }
     if (key === 'temp') {
-      f.name = `Water · ${U.tu()}`; f.vals = s.map(q => q.c == null ? null : U.tv(q.c)); f.step = true; f.fmt = q => U.temp(q.c);
+      f.name = tr('Water · {0}', U.tu()); f.vals = s.map(q => q.c == null ? null : U.tv(q.c)); f.step = true; f.fmt = q => U.temp(q.c);
       const vv = f.vals.filter(v => v != null); const lo = Math.min(...vv), hi = Math.max(...vv); f.y0 = lo - Math.max(2, (hi - lo) * .25); f.y1 = hi + Math.max(1, (hi - lo) * .15);
-      f.sum = `${U.temp(d.cold.c)} coldest`;
+      f.sum = tr('{0} coldest', U.temp(d.cold.c));
       f.extra = (svg, x, y, ov) => {
         const cx = x(d.cold.t), cy = y(U.tv(d.cold.c)); el('circle', { cx, cy, r: 4, fill: 'none', stroke: css(col), 'stroke-width': 2 }, svg);
         const t = el('text', ov ? { x: cx, y: cy + 16, 'text-anchor': 'middle', style: `fill:${css(col)}` } : { x: Math.min(cx + 7, x(d.dur) - 130), y: cy > 36 ? cy - 7 : cy + 13 }, svg);
-        t.textContent = ov ? `❄︎ ${U.temp(d.cold.c)}` : `coldest ${U.temp(d.cold.c)} at ${U.depth(d.cold.m)}`;
+        t.textContent = ov ? `❄︎ ${U.temp(d.cold.c)}` : tr('coldest {0} at {1}', U.temp(d.cold.c), U.depth(d.cold.m));
       };
     }
     if (key === 'ppo2') {
       f.name = 'ppO₂ · bar'; f.vals = s.map(q => q.pp); f.y0 = 0; f.y1 = Math.max(1.7, ...f.vals.filter(v => v != null)) * 1.02; f.fmt = q => `ppO₂ ${nf(q.pp, 2)}`;
-      f.sum = `peak ${nf(Math.max(...f.vals.filter(v => v != null)), 2)}`; f.refs.push({ v: 1.4, color: '--d-yellow' }, { v: 1.6, color: '--d-red', overlay: true });
+      f.sum = tr('peak {0}', nf(Math.max(...f.vals.filter(v => v != null)), 2)); f.refs.push({ v: 1.4, color: '--d-yellow' }, { v: 1.6, color: '--d-red', overlay: true });
     }
     if (key === 'ndl') {
       // The computer's NDL; none while in deco, so the line breaks there. Shearwater shows 99 for longer.
-      f.name = 'NDL · min'; f.vals = s.map(q => q.ndt > 0 ? Math.min(q.ndt, 99) : null); f.step = true; f.y0 = 0; f.y1 = 104;
-      f.fmt = q => q.ndt >= 99 ? 'NDL 99+ min' : `NDL ${q.ndt} min`;
-      const deep = s.filter(q => q.ndt > 0 && q.m > 3).map(q => q.ndt); f.sum = deep.length ? `shortest ${Math.min(...deep)} min` : '';
+      f.name = tr('NDL · min'); f.vals = s.map(q => q.ndt > 0 ? Math.min(q.ndt, 99) : null); f.step = true; f.y0 = 0; f.y1 = 104;
+      f.fmt = q => q.ndt >= 99 ? `${tr('NDL')} 99+ min` : `${tr('NDL')} ${q.ndt} min`;
+      const deep = s.filter(q => q.ndt > 0 && q.m > 3).map(q => q.ndt); f.sum = deep.length ? tr('shortest {0} min', Math.min(...deep)) : '';
     }
     if (key === 'ascent') {
-      f.name = `Ascent · ${U.du()}/min`; f.vals = s.map(q => U.dv(q.asc)); f.y0 = 0; f.y1 = Math.max(U.dv(20), ...f.vals) * 1.05; f.fmt = q => `↑ ${U.asc(q.asc)}`;
-      f.sum = `fastest ${U.asc(Math.max(...s.map(q => q.asc)))}`; f.refs.push({ v: U.dv(9), color: '--d-yellow' }, { v: U.dv(18), color: '--d-red' });
+      f.name = tr('Ascent · {0}/min', U.du()); f.vals = s.map(q => U.dv(q.asc)); f.y0 = 0; f.y1 = Math.max(U.dv(20), ...f.vals) * 1.05; f.fmt = q => `↑ ${U.asc(q.asc)}`;
+      f.sum = tr('fastest {0}', U.asc(Math.max(...s.map(q => q.asc)))); f.refs.push({ v: U.dv(9), color: '--d-yellow' }, { v: U.dv(18), color: '--d-red' });
     }
     f.ov = { tank: f.vals, use: smooth(f.vals, 6, false), temp: smooth(f.vals, 4, true), ppo2: smooth(f.vals || [], 2, false), ndl: f.vals, ascent: smooth(f.vals, 2, false) }[key];
     if (key === 'temp') { const vv = f.vals.filter(v => v != null), lo = Math.min(...vv), hi = Math.max(...vv), sp = Math.max(hi - lo, 4); f.oy0 = lo - sp * .7; f.oy1 = hi + sp * .7; }
@@ -230,7 +236,7 @@
       const over = tags.length ? tags[tags.length - 1].ty - (h - geo.B - 9) : 0; if (over > 0) for (const g of tags) g.ty -= over;
       const left = sx > geo.W - 130;
       for (const g of tags) {
-        const w = g.txt.length * 6.6 + 12, tx = left ? sx - 10 - w : sx + 10;
+        const w = [...g.txt].reduce((a, ch) => a + (/[\u2E80-\u9FFF\uAC00-\uD7AF\uFF00-\uFFEF]/.test(ch) ? 11.5 : 6.6), 0) + 12, tx = left ? sx - 10 - w : sx + 10;
         if (Math.abs(g.ty - g.y) > 2) el('line', { x1: sx, y1: g.y, x2: left ? tx + w : tx, y2: g.ty, stroke: css(g.col), 'stroke-width': 1, 'stroke-opacity': .6 }, layer);
         el('rect', { x: tx, y: g.ty - 8.5, width: w, height: 17, rx: 8.5, fill: css('--d-card'), stroke: css(g.col), 'stroke-width': 1.3 }, layer);
         const t = el('text', { x: tx + w / 2, y: g.ty + 4, 'text-anchor': 'middle', style: `fill:${css(g.col)};font-weight:650;font-size:11px` }, layer); t.textContent = g.txt;
@@ -250,7 +256,7 @@
       draw(svg, x, y) {
         for (const r of f.refs) {
           el('line', { x1: x(0), x2: x(d.dur), y1: y(r.v), y2: y(r.v), stroke: css(r.color), 'stroke-width': 1.2, 'stroke-dasharray': '4 3' }, svg);
-          if (r.label === 'avg') { const t = el('text', { x: x(d.dur) - 2, y: y(r.v) - 3, 'text-anchor': 'end' }, svg); t.textContent = 'avg'; }
+          if (r.label === 'avg') { const t = el('text', { x: x(d.dur) - 2, y: y(r.v) - 3, 'text-anchor': 'end' }, svg); t.textContent = tr('avg'); }
         }
         el('path', { d: pathOf(f.points(x, y)), fill: 'none', stroke: css(col), 'stroke-width': 1.9, 'stroke-linejoin': 'round' }, svg);
         if (f.extra) f.extra(svg, x, y);
@@ -259,7 +265,7 @@
           for (let i = 0; i <= s.length; i++) {
             const gap = i < s.length && s[i].gas !== d.tx.name;
             if (gap && a == null) a = i;
-            if (!gap && a != null) { const x0 = x(s[a].t), x1 = x(s[i - 1].t); el('rect', { x: x0, y: y(f.y1), width: x1 - x0, height: y(f.y0) - y(f.y1), fill: css('--d-fill') }, svg); const t = el('text', { x: (x0 + x1) / 2, y: y(f.y1) + 11, 'text-anchor': 'middle' }, svg); t.textContent = `${s[a].gas}: no transmitter`; a = null; }
+            if (!gap && a != null) { const x0 = x(s[a].t), x1 = x(s[i - 1].t); el('rect', { x: x0, y: y(f.y1), width: x1 - x0, height: y(f.y0) - y(f.y1), fill: css('--d-fill') }, svg); const t = el('text', { x: (x0 + x1) / 2, y: y(f.y1) + 11, 'text-anchor': 'middle' }, svg); t.textContent = tr('{0}: no transmitter', s[a].gas); a = null; }
           }
         }
       }
@@ -268,14 +274,14 @@
 
   function readoutHTML() {
     const d = dives[st.dive]; const q = st.t == null ? d.deepest : d.s[idxAt(st.t)];
-    const items = [['Time', mmss(q.t)], ['Depth', U.depth(q.m)], ['Gas', q.gas, GASCOL[d.gasOrder.indexOf(q.gas)]]];
+    const items = [[tr('Time'), mmss(q.t)], [tr('Depth'), U.depth(q.m)], [tr('Gas'), q.gas, GASCOL[d.gasOrder.indexOf(q.gas)]]];
     const on = k => st.chips.has(k) && d.avail[k];
-    if (d.s.some(x => x.ndt > 0)) items.push(['NDL', q.ndt >= 99 ? '99+ min' : q.ndt <= 0 && q.m > 3 ? 'Deco' : `${q.ndt} min`, on('ndl') ? '--d-ndl' : undefined]);
-    if (on('tank')) items.push(['Tank', q.bar == null ? '—' : U.pres(q.bar), '--d-tank']);
-    if (on('use')) items.push(['SAC', q.use == null ? '—' : U.use(q.use), '--d-use']);
-    if (on('temp')) items.push(['Water', q.c == null ? '—' : U.temp(q.c), '--d-temp']);
+    if (d.s.some(x => x.ndt > 0)) items.push([tr('NDL'), q.ndt >= 99 ? '99+ min' : q.ndt <= 0 && q.m > 3 ? tr('Deco') : `${q.ndt} min`, on('ndl') ? '--d-ndl' : undefined]);
+    if (on('tank')) items.push([tr('Tank'), q.bar == null ? '—' : U.pres(q.bar), '--d-tank']);
+    if (on('use')) items.push([tr('SAC'), q.use == null ? '—' : U.use(q.use), '--d-use']);
+    if (on('temp')) items.push([tr('Water'), q.c == null ? '—' : U.temp(q.c), '--d-temp']);
     if (on('ppo2')) items.push(['ppO₂', q.pp == null ? '—' : nf(q.pp, 2), '--d-ppo2']);
-    if (on('ascent')) items.push(['Ascent', U.asc(q.asc), '--d-asc']);
+    if (on('ascent')) items.push([tr('Ascent'), U.asc(q.asc), '--d-asc']);
     return items.map(([k, v, c]) => `<div class="d-kv"><i>${c ? `<span class="d-dot" style="background:var(${c})"></span>` : ''}${k}</i><b>${v}</b></div>`).join('');
   }
 
@@ -297,22 +303,22 @@
     const head = document.createElement('div'); head.className = 'd-head';
     const date = new Date(d.date.replace(' ', 'T'));
     const title = document.createElement('div'); title.className = 'd-title';
-    title.innerHTML = `<b>${d.site}</b><span>${date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} · ${d.computer} · ${U.depth(d.maxDepth / 3.28084)} · ${Math.round(d.duration / 60)} min</span>`;
+    title.innerHTML = `<b>${d.site}</b><span>${date.toLocaleDateString(LOC, { month: 'short', year: 'numeric' })} · ${d.computer} · ${U.depth(d.maxDepth / 3.28084)} · ${Math.round(d.duration / 60)} min</span>`;
     const ctr = document.createElement('div'); ctr.className = 'd-controls';
-    ctr.appendChild(seg(dives.map((x, i) => [String(i), x.site]), String(st.dive), v => { st.dive = +v; st.t = null; render(); }, 'Choose a dive'));
-    ctr.appendChild(seg([['imp', 'ft · psi'], ['met', 'm · bar']], st.units, v => { st.units = v; render(); }, 'Units'));
+    ctr.appendChild(seg(dives.map((x, i) => [String(i), x.site]), String(st.dive), v => { st.dive = +v; st.t = null; render(); }, tr('Choose a dive')));
+    ctr.appendChild(seg([['imp', 'ft · psi'], ['met', 'm · bar']], st.units, v => { st.units = v; render(); }, tr('Units')));
     head.appendChild(title); head.appendChild(ctr); root.appendChild(head);
 
     const ro = document.createElement('div'); ro.className = 'd-readout'; ro.id = 'd-readout'; root.appendChild(ro);
 
     const depthBox = document.createElement('div'); depthBox.className = 'd-chart'; root.appendChild(depthBox);
-    const h = document.createElement('div'); h.className = 'd-hint' + (hintShown ? '' : ' gone'); h.innerHTML = '<span>⟷</span> Drag across the dive'; depthBox.appendChild(h);
+    const h = document.createElement('div'); h.className = 'd-hint' + (hintShown ? '' : ' gone'); h.innerHTML = '<span>⟷</span> ' + tr('Drag across the dive'); depthBox.appendChild(h);
 
     // As in the app: Stacked/Overlay, then the chips on one line that never wraps. When they don't
     // fit, the row scrolls sideways and fades at an edge with more chips past it.
     const controls = document.createElement('div'); controls.className = 'd-chipbar';
-    controls.appendChild(seg([['stacked', 'Stacked'], ['overlay', 'Overlay']], st.layout, v => { st.layout = v; render(); }, 'Layout'));
-    const chips = document.createElement('div'); chips.className = 'd-chips'; chips.setAttribute('role', 'group'); chips.setAttribute('aria-label', 'Shown on the profile');
+    controls.appendChild(seg([['stacked', tr('Stacked')], ['overlay', tr('Overlay')]], st.layout, v => { st.layout = v; render(); }, tr('Layout')));
+    const chips = document.createElement('div'); chips.className = 'd-chips'; chips.setAttribute('role', 'group'); chips.setAttribute('aria-label', tr('Shown on the profile'));
     controls.appendChild(chips);
     const edges = () => {
       const more = chips.scrollWidth - chips.clientWidth > 2;
@@ -328,7 +334,7 @@
       chips.appendChild(b);
     }
     const legend = document.createElement('div'); legend.className = 'd-legend';
-    legend.innerHTML = d.gasOrder.map((g, i) => `<span><span class="d-dot" style="background:var(${GASCOL[i]})"></span>${g}</span>`).join('') + (ov && shownKeys(d).length ? '<span class="d-note">Each line has its own scale; the tags give the values.</span>' : '');
+    legend.innerHTML = d.gasOrder.map((g, i) => `<span><span class="d-dot" style="background:var(${GASCOL[i]})"></span>${g}</span>`).join('') + (ov && shownKeys(d).length ? `<span class="d-note">${tr('Each line has its own scale; the tags give the values.')}</span>` : '');
     root.appendChild(legend);
     root.appendChild(controls);
     // On first layout and whenever the row or a chip changes size (fonts loading, a resize).
@@ -339,7 +345,7 @@
     if (!ov) {
       const shown = shownKeys(d);
       for (const k of shown) strip(strips, k);
-      if (!shown.length) { const n = document.createElement('div'); n.className = 'd-note'; n.textContent = 'No strips on. Tap a chip to add one.'; strips.appendChild(n); }
+      if (!shown.length) { const n = document.createElement('div'); n.className = 'd-note'; n.textContent = tr('No strips on. Tap a chip to add one.'); strips.appendChild(n); }
     }
     const about = document.createElement('p'); about.className = 'd-about'; about.textContent = ABOUT[d.number] || ''; root.appendChild(about);
     sync();

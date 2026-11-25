@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>疑難排解 – Thermocline</title>
+  <meta name="description" content="Thermocline 常見問題的解決方法：潛水電腦連不上、沒有新的潛水、同步不一致、輸入有缺漏、照片和 SAC。">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="疑難排解 – Thermocline">
+  <meta property="og:description" content="Thermocline 常見問題的解決方法：潛水電腦連不上、沒有新的潛水、同步不一致、輸入有缺漏、照片和 SAC。">
+  <meta property="og:url" content="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/zh-hant.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Thermocline 的 App 圖像和名稱，背景是一張沉船潛水的照片：船首、潛水員和魚群。適用於 iPhone、iPad 和 Mac 的潛水日誌。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="疑難排解 – Thermocline">
+  <meta name="twitter:description" content="Thermocline 常見問題的解決方法：潛水電腦連不上、沒有新的潛水、同步不一致、輸入有缺漏、照片和 SAC。">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/zh-hant.jpg">
+  <meta name="twitter:image:alt" content="Thermocline 的 App 圖像和名稱，背景是一張沉船潛水的照片：船首、潛水員和魚群。適用於 iPhone、iPad 和 Mac 的潛水日誌。">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">跳至疑難排解</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="主要導覽">
+      <a href="guide.html">指南</a> <a href="troubleshooting.html" aria-current="page">疑難排解</a> <a href="support.html">支援</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="分享此頁面"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">分享</span></button>
+      <a class="btn" href="/#testers">加入測試版</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>疑難排解</h1>
+    <p>在下方找到你的問題。每一項都從最快的檢查方法開始。更新於 2026年11月18日。</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="本頁內容">
+    <details open>
+      <summary>本頁內容</summary>
+    <ol>
+      <li><a href="#first">首先，更新</a></li>
+      <li><a href="#downloads">下載</a></li>
+      <li><a href="#sync">同步</a></li>
+      <li><a href="#imports">輸入</a></li>
+      <li><a href="#numbers">氣體和 SAC</a></li>
+      <li><a href="#photos">照片</a></li>
+      <li><a href="#sites">潛點和手錶</a></li>
+      <li><a href="#send-log">傳送報告</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">搜尋你的問題</label>
+      <input id="faq-q" type="search" placeholder="例如：NDL、Garmin、PIN、同步" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">首先，更新每台裝置</h2>
+    <p>當每台裝置都執行最新版本時，許多問題就會消失。在你使用的每台 iPhone、iPad 和 Mac 上打開 TestFlight，安裝所有更新。較舊的版本在更新之前會停止傳送變更，並提示<strong>更新 Thermocline 以繼續同步</strong>。你的變更會保留，並在更新後傳送。</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">從潛水電腦下載</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>找不到潛水電腦</summary>
+        <ul>
+          <li>喚醒潛水電腦，讓它進入藍牙模式（Shearwater：<span class="path">Menu → Bluetooth</span>）。它只會在該模式下保持大約兩分鐘。</li>
+          <li>讓它靠近 iPhone、iPad 或 Mac。</li>
+          <li><strong>Shearwater 潛水電腦會回到它上次使用的裝置。</strong>如果你的手機或另一台 Mac 在附近，請在那台裝置上關閉藍牙，然後重試。</li>
+          <li>檢查藍牙是否已開啟，以及是否允許 Thermocline 使用藍牙（iPhone：設定 → Thermocline；Mac：系統設定 → 隱私權與安全性 → 藍牙）。</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>是 Predator 或 Petrel 1，iPhone 找不到它</summary>
+        <p>它們使用 iPhone 和 iPad 無法使用的較早藍牙（經典藍牙）。請在 Mac 上下載（請參閱<a href="guide.html#download">指南</a>），或從 Shearwater Cloud 或 UDDF 檔案輸入它們的潛水。</p>
+      </details>
+      <details id="pin">
+        <summary>已連接，但要求輸入 PIN 碼</summary>
+        <p>輸入潛水電腦螢幕上顯示的代碼。只有第一次需要。</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>「沒有新的潛水」</summary>
+        <p>只會取得比你上次下載更新的潛水。如果你刪除了一次潛水並想找回來，請開啟<strong>下載電腦上的每一次潛水</strong>，然後再次下載。已在你潛水日誌中的潛水會被略過。</p>
+      </details>
+      <details id="download-stopped">
+        <summary>下載中途停止</summary>
+        <p>選擇<strong>保留</strong>以儲存已傳來的潛水，然後再次下載其餘潛水。如果總是停止，請在靠近潛水電腦的地方選擇<strong>再試一次</strong>，並<a href="#send-log">傳送下載記錄</a>。</p>
+      </details>
+      <details id="cable">
+        <summary>Mac 上的傳輸線下載失敗</summary>
+        <ul>
+          <li>檢查連接埠是否與傳輸線相符：清單會註明每個連接埠的類型，並在連接埠不適用於你所選型號時發出提醒。</li>
+          <li>拔下傳輸線再重新插上，然後使用重新整理按鈕重新尋找傳輸線。</li>
+          <li>按照你的型號的<strong>開始之前</strong>步驟操作。</li>
+          <li>傳輸線下載是新功能。無論成功與否，都請<a href="#send-log">傳送下載記錄</a>。</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">裝置之間的同步</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>我的 iPhone App 顯示 Thermocline 現在是一個 App，或者我看到兩個 Thermocline App</summary>
+        <p>2026年11月18日，iPhone、iPad、Mac 和 Apple Watch App 合併為一個 App，使用同一個測試版連結。你之前的 iPhone App 現在只用於幫你遷移。</p>
+        <ol>
+          <li>打開舊的 App。如果它顯示同步已關閉，請點一下<strong>開啟「與 iCloud 同步」</strong>並讓它保持打開一分鐘，或者點一下<strong>將我的潛水日誌匯出為 UDDF</strong>並儲存該檔案。</li>
+          <li>點一下<strong>加入新的 Beta 版</strong>，或在你的 iPhone 上打開<a href="https://testflight.apple.com/join/ygF4ngNd">測試版連結</a>，然後安裝新的 App。它會和舊的 App 並存。</li>
+          <li>在新的 App 中，開啟<span class="path">個人檔案 → 與 iCloud 同步</span>。你的潛水、潛點、裝備和設定都會回來。如果你選擇的是輸出，請使用<span class="path">個人檔案 → 輸入潛水日誌檔案</span>。</li>
+          <li>你可能需要重新配對潛水電腦，並透過 iPhone 上的 Apple Watch App 重新安裝手錶 App。</li>
+          <li>當新的 App 顯示相同的潛水後，刪除舊的 App。</li>
+        </ol>
+        <p>在 Mac 上，什麼都不變：照常更新 Mac App 即可。</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>同步後潛水遺失或重複</summary>
+        <ol>
+          <li>先不要變更任何內容。在每台裝置上擷取「同步」部分的畫面（iPhone：<span class="path">個人檔案 → 同步</span>；Mac：<span class="path">Thermocline → 設定 → 同步</span>）並傳送。</li>
+          <li>檢查每台裝置是否都是最新版本。</li>
+          <li><span class="path">個人檔案 → 你的資料 → 還原點</span>可以把你的潛水日誌帶回輸入、合併或刪除之前。還原時會先儲存你當前的潛水日誌，因此可以還原。</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>在一台裝置上的變更沒有出現在另一台裝置上</summary>
+        <ul>
+          <li>檢查兩台裝置上是否都已開啟<strong>與 iCloud 同步</strong>，並登入了同一個 Apple帳號。</li>
+          <li>查看你做出變更的那台裝置上的<strong>等待傳送</strong>，並在兩台裝置都有訊號時打開 App。「同步」部分會顯示此裝置與你的其他裝置何時一致。</li>
+          <li>按下<strong>立即同步</strong>。</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>「未登入 iCloud」</summary>
+        <p>在裝置的「設定」中登入 iCloud。在此之前，你的潛水日誌會安全地保留在該裝置上，登入後即會同步。</p>
+      </details>
+      <details id="icloud-full">
+        <summary>「你的 iCloud 儲存空間已滿」</summary>
+        <p>你的潛水日誌在裝置上是安全的，有空間時會同步。請釋放一些 iCloud 空間，或開啟<strong>節省潛水照片佔用的 iCloud 儲存空間</strong>，這樣照片就不會儲存兩份。</p>
+      </details>
+      <details id="newer-version">
+        <summary>「另一台裝置使用的是較新版本」</summary>
+        <p>在 TestFlight 中更新此裝置上的 Thermocline。你的變更在這裡是安全的，並會在更新後傳送。</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">輸入</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>有些潛水或細節沒有輸入</summary>
+        <p>輸入報告會在<strong>未輸入</strong>和<strong>請檢查</strong>下列出所有內容，並附上原因。每種潛水日誌寫入 UDDF 的方式都略有不同，因此缺少某些數值是正常的，它們會保持空白。如果你預期的內容缺失，請傳送該報告，如果可以的話，也請傳送該檔案。</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>我的 MacDive 裝備、照片或潛水類型缺失</summary>
+        <p>MacDive 的 UDDF 輸出不包含這些內容。在其上輸入它的 XML 以取得裝備、標籤和潛水類型，並在 Mac 上輸入 MacDive 的檔案夾以取得照片。已在你潛水日誌中的潛水不會被加入兩次。請參閱<a href="guide.html#macdive-files">選擇哪個 MacDive 檔案</a>。</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>來自 MacDive 的潛水缺少 NDL、ppO₂ 或 CNS</summary>
+        <p>潛水頁面上 NDL 顯示為「—」，減壓顯示為「未記錄」，或 ppO₂ 顯示「根據氣體和深度計算」。MacDive 的 UDDF 輸出不包含潛水電腦的 NDL、ppO₂ 或 CNS。對於 MacDive 在 iPhone 或 iPad 上下載的潛水，它的檔案夾中沒有潛水曲線，因為它會加密儲存這些潛水。</p>
+        <p>也輸入 MacDive 的 XML：它會補齊缺少的內容，而不會重複加入潛水。請參閱<a href="guide.html#macdive-files">選擇哪個 MacDive 檔案</a>。</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>在檔案或 App 之間遷移會遺失內容嗎？</summary>
+        <ul>
+          <li><strong>你的原始檔案絕不會被變更。</strong>請保留你的 MacDive 輸出檔案，並在比較過幾次潛水之前保留 MacDive 本身。</li>
+          <li><strong>第二次輸入只會加入，不會替換。</strong>已在你潛水日誌中的潛水會被比對，只會補上它們缺少的內容，因此你可以在 UDDF 之後輸入 XML，或在兩者之一之後輸入檔案夾。</li>
+          <li><strong>你可以回到之前的狀態。</strong>在任何包含多次潛水的輸入之前，都會儲存一個名為<strong>輸入之前</strong>的還原點（iPhone 上為<span class="path">個人檔案 → 你的資料 → 還原點</span>，Mac 上為<span class="path">設定 → 還原點</span>）。在 Mac 上，報告中的<strong>還原輸入⋯</strong>也可以撤回輸入。</li>
+          <li><strong>離開 Thermocline：</strong>它的 UDDF 輸出是完整的輸出。其中包括每次潛水過程中潛水電腦的 NDL、ppO₂ 和 CNS，以及裝備、標籤、潛水類型和影片連結。照片不包含在任何輸出檔案中。</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>輸入的潛水沒有氣體</summary>
+        <p>檔案中沒有註明使用了哪種氣體。這些潛水會在<strong>待確認</strong>中等待，以便你設定氣體。</p>
+      </details>
+      <details id="wrong-file">
+        <summary>我輸入了錯誤的檔案</summary>
+        <p>在 Mac 上，使用輸入報告中的<strong>還原輸入⋯</strong>。在任一裝置上，任何包含多次潛水的輸入之前都會儲存一個名為<strong>輸入之前</strong>的還原點。</p>
+      </details>
+      <details id="garmin">
+        <summary>Garmin 檔案無法輸入</summary>
+        <ul>
+          <li><strong>「這是 zip 檔案」</strong>：Garmin Connect 的 <strong>匯出原始檔案</strong> 會產生一個 .zip 檔案。請先解壓縮，然後選擇其中的 .fit 檔案。</li>
+          <li><strong>「這不是 Garmin FIT 檔案」</strong>：該檔案不是來自 Garmin 手錶，或者只是檔名以 .fit 結尾。請使用手錶 <span class="path">GARMIN → Activity</span> 檔案夾中的檔案，或使用 <strong>匯出原始檔案</strong>。</li>
+          <li><strong>「Garmin 檔案中沒有潛水」</strong>：跑步、步行、設定和健康檔案會被略過。只有潛水會被輸入。</li>
+          <li><strong>「似乎不完整或已損壞」</strong>：檔案在中途中斷，通常是因為拷貝或下載沒有完成。能讀取的內容會顯示出來；請從手錶重新拷貝該檔案並重新輸入，以取得其餘部分。已在你潛水日誌中的潛水會被略過。</li>
+          <li><strong>將 Garmin 檔案與其他潛水日誌檔案一起選擇</strong>無法一次完成：請先輸入潛水日誌檔案，再輸入 Garmin 檔案。</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Garmin 潛水要求我檢查氣瓶</summary>
+        <p>有多個氣壓發射器時，Garmin 的檔案不會註明每個發射器對應哪種氣體，因此它們會依序比對到該潛水的氣瓶。請打開該潛水的氣體部分，確保每個壓力都對應正確的氣瓶。</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Garmin 潛水的時間差了一小時</summary>
+        <p>時間來自手錶的時鐘。如果手錶沒有設定為你潛水地點的當地時間，潛水就會顯示手錶的時間。請編輯潛水的時間，或在下次出行前設定手錶的時區。</p>
+      </details>
+      <details id="drift-site">
+        <summary>放流潛水的潛點不對</summary>
+        <p>潛水會比對到入水點和出水點中較近的那個潛點，放流潛水時通常是你入水的位置。如果比對到錯誤的潛點或沒有比對到潛點，請在該潛水上選擇潛點，並把途經的其他沉船加入到備註中。</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">氣體消耗和 SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>某個 SAC 數字看起來不對</summary>
+        <p>點一下或按一下旁邊的<strong>怎麼算？</strong>。它會顯示每一項輸入：氣瓶及其水容積、壓力、溫度、真實氣體修正、時間和深度。最常見的原因是氣瓶容量錯誤；請在「裝備」中修正。如果仍然看起來不對，請傳送「怎麼算？」畫面的截圖。</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/zh-hant/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上氣體消耗的「怎麼算？」面板，列出氣瓶、壓力、溫度和計算過程。"><figcaption>「怎麼算？」面板（範例潛水）。</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>沒有 SAC，只有一條訊息</summary>
+        <ul>
+          <li><strong>加入氣瓶容量以查看 SAC</strong>：選擇氣瓶的型號或輸入其容量。</li>
+          <li><strong>加入起始和結束壓力以查看 SAC</strong>：沒有氣壓發射器，因此請在氣瓶上輸入壓力。</li>
+          <li><strong>SAC 需要潛水曲線</strong>：手動記錄且沒有曲線的潛水沒有 SAC。</li>
+          <li>循環呼吸器潛水不會有 SAC 數字。</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC 只計算了一個氣瓶</summary>
+        <p>在使用多種氣體的潛水中，只有帶氣壓發射器的氣瓶有壓力資料。在另一個氣瓶上輸入起始和結束壓力，SAC 就會涵蓋所有氣體。</p>
+      </details>
+      <details id="breathing">
+        <summary>「摘要」中的「呼吸」顯示沒有潛水具有氣瓶容量</summary>
+        <p>「呼吸」只對具有氣瓶容量以及起始和結束壓力的潛水取平均值。來自 MacDive UDDF 的潛水沒有氣瓶容量，因為它的容量不是水容積；在其上輸入 XML 可以補齊（請參閱<a href="guide.html#macdive-files">選擇哪個 MacDive 檔案</a>）。否則，請在你的潛水上設定氣瓶（選擇其型號或裝備組合），並在有資料時加入壓力。在數字下方，「呼吸」會顯示有多少次潛水未被計入。</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/zh-hant/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="「摘要」標籤頁上的呼吸：14 次潛水的 SAC 和 RMV，另有一次潛水因沒有氣瓶容量或壓力而未計入。"><figcaption>未計入的潛水數量顯示在數字下方（範例潛水日誌）。</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">照片</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>照片沒有出現在我的另一台裝置上</summary>
+        <p>開啟<strong>節省潛水照片佔用的 iCloud 儲存空間</strong>後，照片會保留其副本，直到你的另一台裝置在 iCloud照片中找到它。請在兩台裝置上都開啟此設定，檢查兩台裝置都已開啟 iCloud照片，並給它一些時間上傳。</p>
+      </details>
+      <details id="videos">
+        <summary>影片沒有加入</summary>
+        <p>圖庫中的影片只能連結，不能拷貝。請開啟<span class="path">同步 → 節省潛水照片佔用的 iCloud 儲存空間</span>，並確保該影片在 iCloud照片中。或者在潛水的照片下方貼上 YouTube 或 Vimeo 連結。</p>
+      </details>
+      <details id="photos-access">
+        <summary>「Thermocline 無法讀取你的照片」</summary>
+        <p>照片取用被拒絕，因此照片會被拷貝而不是連結。要連結照片，請在「設定」→「隱私權與安全性」→「照片」→「Thermocline」中允許取用。</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">潛點和 Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>推薦的潛點不對，或者沒有推薦</summary>
+        <p>選擇其他潛點，依名稱搜尋內建清單，或者自己標記或輸入位置。內陸採石場和湖泊在公開清單中經常缺失，因此此後你自己的潛點會在推薦中排在最前。</p>
+      </details>
+      <details id="watch-install">
+        <summary>我的 Apple Watch 上沒有 Thermocline</summary>
+        <p>手錶 App 隨 TestFlight 中的 iPhone App 一起提供。在你的 iPhone 上打開 Apple Watch App，在<strong>可用App</strong>下找到 Thermocline，然後點一下<strong>安裝</strong>。它需要 watchOS&nbsp;11 或更高版本。如果你是從舊的 iPhone App 遷移過來的，請重新安裝：舊的手錶 App 屬於舊的 iPhone App。</p>
+      </details>
+      <details id="watch-fix">
+        <summary>手錶顯示「正在等待良好的定位」，「標記地點」一直是灰色</summary>
+        <p>只有誤差在 &plusmn;30&nbsp;m 以內、且在最近 30&nbsp;秒內取得的定位才會儲存位置，因此錯誤的位置絕不會進入你的潛水日誌。請留在水面，讓手錶露出水面並能清楚看到天空，然後等一分鐘。<strong>忽略舊的快取位置</strong>表示它在等待新的定位。GPS 在水下無法使用：請在下潛之前或出水時標記地點。</p>
+      </details>
+      <details id="watch-location">
+        <summary>手錶上顯示「Thermocline 的定位服務已關閉」</summary>
+        <p>在手錶上，打開<span class="path">設定 → 隱私權與安全性 → 定位服務</span>，開啟「定位服務」，並允許 Thermocline 在使用 App 期間取用。</p>
+      </details>
+      <details id="watch-spot">
+        <summary>在手錶上標記的位置沒有出現在 iPhone 上</summary>
+        <p>在手錶上打開<strong>已標記的地點</strong>。<strong>等待傳送到 iPhone</strong>表示 iPhone 還沒有收到：請讓手錶靠近你的 iPhone，並在 iPhone 上打開 Thermocline。<strong>已傳送到 iPhone</strong>表示它已在那裡：請查看<span class="path">潛水日誌 → 待確認</span>。iPhone 連網時才會查詢該位置，因此沒有訊號時，它會顯示<strong>等待訊號以查詢</strong>並等待。</p>
+      </details>
+      <details id="watch-hint">
+        <summary>我標記地點後，手錶沒有顯示潛點名稱</summary>
+        <p>名稱來自你的 iPhone：當 iPhone 在附近且 Thermocline 能夠回應時，手錶會在位置下方顯示它將推薦的潛點（你的潛點或潛點清單中的潛點）以及距離。當 iPhone 不在範圍內時，手錶會根據 iPhone 留在手錶上的副本顯示你自己潛點的名稱，但不包括潛點清單。如果大約 1.5&nbsp;km 內沒有潛點，該位置會在沒有名稱的情況下標記。無論哪種情況，你都在 iPhone 上的<span class="path">潛水日誌 → 待確認</span>中選擇潛點。</p>
+      </details>
+      <details id="watch-name">
+        <summary>我在手錶上說出的名稱沒有儲存</summary>
+        <p>名稱會在聽寫或鍵盤關閉時，或在你返回時儲存。打開<strong>已標記的地點</strong>，點一下該位置並檢查其名稱；點一下<strong>更改名稱</strong>再試一次。如果該位置已經傳送，名稱會隨之同步到 iPhone。</p>
+      </details>
+      <details id="watch-dives">
+        <summary>手錶會記錄我的潛水嗎？</summary>
+        <p>不會。Thermocline 手錶 App 只在水面標記地點。你的潛水來自你的潛水電腦。對於 Garmin Descent 手錶，請輸入它們的 .fit 檔案：請參閱指南中的<a href="guide.html#garmin">Garmin Descent</a>。</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>一個位置從手錶上消失了</summary>
+        <p>這是正常的。位置在 iPhone 上被確認或放棄後，就會從手錶上移除。已確認的位置會成為你潛水日誌中的一個潛點，並同步到你的其他裝置。</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">傳送報告或下載記錄</h2>
+    <ul>
+      <li><strong>從 App 傳送：</strong>截圖，然後在 TestFlight 中使用<strong>分享Beta版使用者意見</strong>。意見回饋送達時會附帶版本號和裝置資訊。</li>
+      <li><strong>下載記錄，iPhone：</strong>在下載畫面上點一下<strong>下載記錄</strong>，然後分享。它只列出藍牙和潛水電腦的訊息，不含任何潛水資料。</li>
+      <li><strong>下載記錄，Mac：</strong>在下載視窗中選擇<strong>下載記錄⋯</strong>，然後選擇<strong>儲存記錄⋯</strong>，並附上該檔案。</li>
+      <li><strong>電子郵件：</strong><a href="mailto:brian@616labs.net">brian@616labs.net</a>，請寫明你的裝置、版本號（顯示在 TestFlight 中）以及你預期會發生什麼。</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>，一款潛水日誌。不可用於潛水計畫或導航。</p>
+      <p>潛點清單 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap 貢獻者</a>，依據 Open Database License 提供。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾">
+      <a href="./">首頁</a> <a href="guide.html">指南</a> <a href="troubleshooting.html">疑難排解</a> <a href="support.html">支援</a> <a href="privacy.html">隱私權</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="語言">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

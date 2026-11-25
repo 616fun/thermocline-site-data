@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – o logbook de mergulho para iPhone, iPad e Mac</title>
+  <meta name="description" content="O Thermocline é um logbook de mergulho para dispositivos Apple: iPhone, iPad, Mac e Apple Watch. Baixe mergulhos por Bluetooth ou cabo, importe seu logbook do MacDive ou do Shearwater Cloud e veja o que seu computador registrou. Beta público no TestFlight.">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/pt-br/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Thermocline – o logbook de mergulho para iPhone, iPad e Mac">
+  <meta property="og:description" content="Para dispositivos Apple. Baixe mergulhos por Bluetooth ou cabo, importe seu logbook antigo e veja o que seu computador registrou. Entre no beta.">
+  <meta property="og:url" content="https://thermoclineapp.com/pt-br/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/pt-br.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="O ícone e o nome do app Thermocline sobre a foto da proa de um navio em um mergulho de naufrágio, com mergulhadores e peixes. O logbook de mergulho para iPhone, iPad e Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – o logbook de mergulho para iPhone, iPad e Mac">
+  <meta name="twitter:description" content="Para dispositivos Apple. Baixe mergulhos por Bluetooth ou cabo, importe seu logbook antigo e veja o que seu computador registrou. Entre no beta.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/pt-br.jpg">
+  <meta name="twitter:image:alt" content="O ícone e o nome do app Thermocline sobre a foto da proa de um navio em um mergulho de naufrágio, com mergulhadores e peixes. O logbook de mergulho para iPhone, iPad e Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/pt-br/#website",
+      "url": "https://thermoclineapp.com/pt-br/",
+      "name": "Thermocline",
+      "description": "O Thermocline é um logbook de mergulho para dispositivos Apple: iPhone, iPad, Mac e Apple Watch. Baixe mergulhos por Bluetooth ou cabo, importe seu logbook do MacDive ou do Shearwater Cloud e veja o que seu computador registrou. Beta público no TestFlight.",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/pt-br/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "Logbook de mergulho para iPhone, iPad, Mac e Apple Watch: um app, um link de beta. Baixe mergulhos por Bluetooth, importe seu logbook do MacDive ou do Shearwater Cloud e leia gás, profundidade e ppO2 num relance.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/pt-br/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/pt-br/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/pt-br/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/pt-br/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Logbook de mergulho",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/pt-br/",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/pt-br/#mac-app",
+      "name": "Thermocline para Mac",
+      "operatingSystem": "macOS 15 or later",
+      "description": "Logbook de mergulho para Mac. Baixe mergulhos por Bluetooth ou cabo, importe seu logbook do MacDive ou do Shearwater Cloud e leia cada mergulho por completo.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/pt-br/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Logbook de mergulho",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/pt-br/",
+      "inLanguage": "pt-BR"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#app">Conheça o app</a>
+      <a href="#features">Recursos</a>
+      <a class="keep" href="guide.html">Guia</a>
+      <a href="troubleshooting.html">Solução de problemas</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Compartilhar esta página"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Compartilhar</span></button>
+      <a class="btn" href="#testers">Entre no beta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Beta público no TestFlight</span>
+      <h1 id="hero-title"><span class="grad lines">O logbook de mergulho que mostra o que seu computador registrou.</span></h1>
+      <p class="lede">Baixe seus mergulhos por Bluetooth ou cabo, traga todo o histórico do seu logbook e leia gás, profundidade e ppO₂ num relance.</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          Entre no beta
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>Feito para dispositivos Apple.</b> <span>iPhone, iPad, Mac e Apple Watch.</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">Conheça o app</a> · <a href="guide.html">Leia o guia</a> · <a href="troubleshooting.html">Solução de problemas</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Um perfil de mergulho no Thermocline: profundidade ao longo de 43 minutos com a pressão do cilindro, SAC, temperatura e ppO2 desenhados por cima, e uma troca de gás de EAN30 para Air e de volta.">
+        </div>
+      </div>
+      <figcaption>Experimente: três mergulhos reais, desenhados como o app os desenha. Toque nos chips, alterne entre Empilhado e Sobreposto e arraste ao longo do mergulho.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Conheça o app</p>
+      <h2 id="app-title">Seus mergulhos, do jeito que você os lê</h2>
+      <p>Valores de segurança no mesmo lugar em todo mergulho, um perfil que você lê momento a momento e o cálculo exposto por trás de cada número de gás. Mostrado aqui com o logbook de exemplo do app.</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="Um tour de 22 segundos pelo Thermocline: um perfil de mergulho, o download de mergulhos, os valores de segurança e o cálculo por trás do SAC."><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="Um tour de 22 segundos pelo Thermocline: um perfil de mergulho, o download de mergulhos, os valores de segurança e o cálculo por trás do SAC."><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/pt-br/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="O logbook no iPhone: um mergulho aguardando em A confirmar e, abaixo, a lista de mergulhos com ponto, data, profundidade e tempo."><figcaption><b>Logbook</b>Mergulhos que precisam de ponto ou gás aguardam no topo.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/pt-br/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Um mergulho no iPhone: a faixa de segurança com profundidade, tempo, gases, deco, ppO2 e CNS acima do perfil."><figcaption><b>Cada mergulho</b>Profundidade, gases, deco, ppO₂ e CNS primeiro.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/pt-br/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="O painel Como? do consumo de gás no iPhone, listando o cilindro, as pressões, a temperatura e o cálculo."><figcaption><b>Consumo de gás</b>Toque em Como? para ver cada dado por trás do SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/pt-br/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="O mapa de pontos no iPhone, com seus pontos e as listas de pontos de mergulho integradas marcadas."><figcaption><b>Pontos</b>Seus pontos e mais de 76.000 outros, offline.</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/pt-br/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="O app para Mac: a lista de mergulhos ao lado de um mergulho com seus valores de segurança, ponto, duplas, equipamento e perfil de profundidade, com a leitura do ponto mais profundo."><figcaption><b>No Mac</b>O logbook inteiro ao lado do mergulho. Aponte para o perfil para ler qualquer momento.</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">Guia</span>
+        <h3>Como usar o Thermocline</h3>
+        <p>Importe seu logbook, baixe do seu computador, confirme pontos e gases, sincronize e exporte. Passo a passo, para iPhone e Mac.</p>
+        <span class="go">Leia o guia →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">Solução de problemas</span>
+        <h3>Algo não está funcionando?</h3>
+        <p>Computador não encontrado, nenhum mergulho novo, diferenças na sincronização, lacunas na importação e números de SAC estranhos, cada um com a verificação mais rápida.</p>
+        <span class="go">Encontre uma solução →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76.000+</strong><span>pontos de mergulho e naufrágios no mundo todo, offline</span></div>
+    <div class="stat reveal"><strong>4</strong><span>dispositivos Apple, um logbook</span></div>
+    <div class="stat reveal"><strong>17</strong><span>idiomas</span></div>
+    <div class="stat reveal"><strong>0</strong><span>contas, anúncios ou rastreadores</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Procuramos testadores</p>
+      <h2 id="testers-title">Entre no beta</h2>
+      <p>Todo mergulhador ajuda: importe seu logbook, registre alguns mergulhos e conte o que está confuso, faltando ou errado. Um link serve para todos os dispositivos.</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone, iPad, Mac e Apple Watch</h3>
+          <p>Um app, um link do beta · iOS 18 ou posterior, macOS 15 ou posterior</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Entre no beta</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>Instale o app TestFlight da Apple</li>
+      <li><b>2</b>Abra o link no seu iPhone, iPad ou Mac e toque em Aceitar</li>
+      <li><b>3</b>Envie feedback com Compartilhar Feedback Sobre a Versão Beta no TestFlight</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>Tem um computador de mergulho? Ajude a testá-lo.</h3>
+      <p>Os downloads por Bluetooth são testados em Shearwater. Os downloads por cabo e serial no Mac foram feitos para muitos outros computadores, mas ainda não foram testados em hardware real. Se você tem um, uma única tentativa de download já ajuda, funcionando ou não.</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">Mais procurado · Mac</span>
+          <h3>Cabo USB e serial</h3>
+          <p>Para computadores que baixam por cabo, por um adaptador USB-serial ou ligados direto na USB.</p>
+          <p class="ask"><strong>Como:</strong> Arquivo → Baixar do Computador de Mergulho… → Cabo USB. Escolha o modelo e a porta. Se falhar, use Log de Download… e depois Salvar Log… e envie o arquivo.</p>
+        </div>
+        <ul class="models" aria-label="Computadores para testar">
+          <li>Família Suunto Vyper e EON Steel</li>
+          <li>Oceanic, Aeris e Sherwood mais antigos</li>
+          <li>Uwatec Aladin, Scubapro Aladin Square, G2 e G3</li>
+          <li>Cressi e Mares</li>
+          <li>OSTC e Atomic Cobalt</li>
+          <li>…e mais</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Procurado · Mac</span>
+        <h3>Shearwater Predator e Petrel 1</h3>
+        <p>Eles usam um Bluetooth mais antigo que os celulares não conseguem usar. O Mac consegue acessá-los como porta serial depois de emparelhados.</p>
+        <p class="ask"><strong>Como:</strong> Emparelhe em Ajustes do Sistema → Bluetooth e depois escolha a porta dele na janela de download, com o computador no modo de upload. Envie o log de download de qualquer forma.</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Testado · iPhone, iPad e Mac</span>
+        <h3>Bluetooth</h3>
+        <p>Testado com Shearwater Perdix e Perdix 2. Outros computadores Bluetooth também devem funcionar, e relatos sobre eles são bem-vindos.</p>
+        <p class="ask"><strong>Como:</strong> Logbook → Baixar Mergulhos no iPhone, ou Arquivo → Baixar do Computador de Mergulho no Mac.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Recursos</p>
+      <h2 id="features-title">Tudo o que seus mergulhos registraram, em um logbook</h2>
+      <p>Feito por um mergulhador apaixonado para mergulhadores recreativos, técnicos e de caverna que querem seus números corretos.</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>Baixe por Bluetooth ou cabo</h3>
+        <p>Direto do seu computador de mergulho para o seu iPhone ou Mac, adicionando ponto, duplas, equipamento e condições à medida que cada mergulho chega. O Mac também baixa por cabo USB e serial.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>Traga todo o seu histórico</h3>
+        <p>Importe do MacDive, de um banco de dados do Shearwater Cloud, de arquivos .fit da Garmin, UDDF ou CSV, e escolha quais mergulhos adicionar. Tudo o que ele não consegue ler é listado para você, nunca descartado em silêncio.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>Valores de segurança primeiro</h3>
+        <p>Seis valores principais ficam numa faixa fixa no topo de cada mergulho. Mostre cilindro, ppO₂, NDL, SAC, temperatura, CNS e velocidade de subida como faixas ou numa única sobreposição.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>SAC que mostra o cálculo</h3>
+        <p>Calculado a partir do volume hidráulico do seu cilindro com aritmética de gás real, para estar certo com qualquer carga. Toque em Como? para ver cada dado. Mergulhos em sidemount, com duplo e com vários gases são contados corretamente.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>76.000+ pontos e naufrágios no mundo todo</h3>
+        <p>Encontre e nomeie um ponto de mergulho em qualquer lugar do mundo, mesmo sem sinal, a partir de listas abertas de pontos integradas ao app. Seus próprios pontos sempre vêm primeiro.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>Apple Watch na superfície</h3>
+        <p>Marque o ponto no pulso quando subir à superfície. A posição aguarda no seu logbook para você dar um nome depois.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>Dois computadores, um mergulho</h3>
+        <p>Mergulha com um computador reserva? O Thermocline oferece mesclar as duas gravações, ou juntar um mergulho que foi dividido em dois. Ele nunca faz nenhuma das duas coisas sem perguntar.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>Sincronizado pelo seu iCloud</h3>
+        <p>Seu logbook, equipamento, duplas e fotos acompanham você entre iPhone, iPad e Mac. Pontos de restauração podem levar você de volta a antes de uma importação ou mesclagem.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>Sempre uma saída</h3>
+        <p>Exporte tudo, a qualquer momento, como UDDF, CSV ou MacDive XML. Seu logbook nunca fica preso.</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>Também no app</h3>
+      <div class="formats">
+        <span class="chip">Equipamento e cilindros, incluindo marcação plus</span>
+        <span class="chip">Duplas, vinculadas aos Contatos</span>
+        <span class="chip">Carteirinhas de certificação</span>
+        <span class="chip">Fotos de mergulho e links de vídeo</span>
+        <span class="chip">Pesquisa por ponto, dupla, gás, notas, data ou #número</span>
+        <span class="chip">Resumo de profundidades, gases e recordes</span>
+        <span class="chip">Métrico ou imperial</span>
+        <span class="chip">17 idiomas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Como é feito</p>
+      <h2 id="principles-title">Um logbook em que você pode confiar seus números</h2>
+      <p>Três regras moldam cada tela.</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>Um logbook, não um planejador</h3>
+        <p>O Thermocline mostra o que seu computador de mergulho registrou. Ele nunca calcula descompressão e nunca coloca um palpite próprio no lugar dos números do seu computador.</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>Seus dados continuam seus</h3>
+        <p>Sem conta, sem anúncios, sem análises e sem servidores do desenvolvedor. Seu logbook fica nos seus dispositivos e no seu próprio iCloud, e pode ser exportado por completo quando você quiser. <a href="privacy.html" style="color:#fff">Política de privacidade</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>Avisar, nunca bloquear</h3>
+        <p>Se um download ou uma sincronização funcionar só em parte, você fica sabendo o que aconteceu e nada é jogado fora. As edições mantêm o original do computador ao lado da sua correção.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">Perguntas</p>
+      <h2 id="faq-title">Antes de entrar</h2>
+      <p>Já está testando? As páginas <a href="guide.html">Guia</a> e <a href="troubleshooting.html">Solução de problemas</a> explicam o app passo a passo.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Funciona no Android, no Windows ou na web?</summary>
+        <p>Não. O Thermocline é feito só para dispositivos Apple: iPhone, iPad, Mac e Apple Watch. Ele é construído com as ferramentas da própria Apple para poder trabalhar de perto com iCloud, Bluetooth, Fotos e Mapas.</p>
+      </details>
+      <details>
+        <summary>Com quais computadores de mergulho ele funciona?</summary>
+        <p>Os downloads por Bluetooth são testados com Shearwater Perdix e Perdix 2, no iPhone, iPad e Mac. O Mac também baixa por cabo USB e serial de muitos outros computadores, incluindo Suunto, Oceanic, Aeris e Sherwood mais antigos, Uwatec e Scubapro, Cressi, Mares, OSTC e Atomic. Esses downloads por cabo ainda não foram testados em hardware real, então, se você tem um, teste por favor. Mergulhos do Garmin Descent entram pelos arquivos .fit, no iPhone, iPad e Mac. Mergulhos de qualquer computador também podem entrar por um arquivo de logbook.</p>
+      </details>
+      <details>
+        <summary>Uso o MacDive. Meu logbook vem junto?</summary>
+        <p>Sim. Exporte do MacDive como XML e importe o arquivo. O XML é a mais completa das duas exportações do MacDive: o UDDF dele deixa de fora NDL, ppO₂ e CNS do computador, equipamento e tipos de mergulho. Se você já importou o UDDF, importe o XML por cima e as lacunas são preenchidas sem duplicatas. Você escolhe quais mergulhos adicionar, os cilindros entram como cilindros reais (tamanho, pressão, duplo e +) e os IDs de mergulho do MacDive são mantidos, então uma exportação de volta para o MacDive não cria duplicatas.</p>
+      </details>
+      <details>
+        <summary>O app para Mac é o mesmo app?</summary>
+        <p>Sim. iPhone, iPad, Mac e Apple Watch são um só app com um só link do beta. Entre uma vez e depois instale pelo TestFlight em cada dispositivo. Todos usam o mesmo logbook no iCloud, então um mergulho baixado no Mac aparece no seu celular. Mantenha todos os dispositivos na build mais recente.</p>
+      </details>
+      <details>
+        <summary>Entrei no beta do iPhone antes de 18 de novembro de 2026. O que faço?</summary>
+        <p>Aquele app mudou de lugar. Abra-o e ative Sincronizar com o iCloud (ou exporte um arquivo UDDF), depois entre no beta pelo link desta página e instale o novo app ao lado dele. Ative a sincronização no novo app e seu logbook volta. Quando estiver tudo certo, apague o antigo. <a href="troubleshooting.html#moved">Passo a passo</a>.</p>
+      </details>
+      <details>
+        <summary>Do que eu preciso?</summary>
+        <p>Um iPhone ou iPad com iOS ou iPadOS 18 ou posterior, ou um Mac com macOS 15 ou posterior. O app para Apple Watch precisa do watchOS 11. Para sincronizar entre dispositivos, inicie sessão na mesma conta do iCloud em cada um.</p>
+      </details>
+      <details>
+        <summary>Uma build beta pode perder meus mergulhos?</summary>
+        <p>Ela foi feita para não perder. As importações nunca alteram o arquivo de onde você importa, e os pontos de restauração podem levar seu logbook de volta a antes de uma importação ou mesclagem. Guarde suas exportações originais e, se mergulhos sumirem ou aparecerem em dobro, envie uma captura de tela de Perfil → Sincronização antes de mudar qualquer coisa.</p>
+      </details>
+      <details>
+        <summary>Posso usar as posições dos pontos para navegação?</summary>
+        <p>Não. As posições dos pontos são para registro, não para navegação.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">Traga seu logbook junto.</h2>
+    <p>Entre no beta no seu iPhone, iPad ou Mac, importe seus mergulhos e conte o que está confuso, faltando ou errado, por menor que seja.</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">Entre no beta</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, um logbook de mergulho para iPhone, iPad, Mac e Apple Watch. Não se destina ao planejamento de mergulho nem à navegação.</p>
+      <p>Listas de pontos de mergulho © <a href="https://www.openstreetmap.org/copyright">colaboradores do OpenStreetMap</a>, disponíveis sob a Open Database License. <a href="https://github.com/616fun/thermocline-site-data">Baixe as listas de pontos</a>.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch, iCloud e TestFlight são marcas comerciais da Apple Inc.</p>
+    </div>
+    <nav class="foot-links" aria-label="Rodapé">
+      <a href="guide.html">Guia</a>
+      <a href="troubleshooting.html">Solução de problemas</a>
+      <a href="support.html">Suporte</a>
+      <a href="privacy.html">Privacidade</a>
+      <a href="#testers">Entre no beta</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Idiomas">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="index.html" hreflang="pt-BR" lang="pt-BR" aria-current="page">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

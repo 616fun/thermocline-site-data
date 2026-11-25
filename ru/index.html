@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – логбук для iPhone, iPad и Mac</title>
+  <meta name="description" content="Thermocline — это логбук для устройств Apple: iPhone, iPad, Mac и Apple Watch. Загружайте погружения по Bluetooth или кабелю, импортируйте логбук из MacDive или Shearwater Cloud и смотрите, что записал ваш компьютер. Публичная бета в TestFlight.">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Thermocline – логбук для iPhone, iPad и Mac">
+  <meta property="og:description" content="Для устройств Apple. Загружайте погружения по Bluetooth или кабелю, импортируйте старый логбук и смотрите, что записал ваш компьютер. Присоединяйтесь к бете.">
+  <meta property="og:url" content="https://thermoclineapp.com/ru/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/ru.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Значок и название приложения Thermocline на фото носа судна во время погружения на затонувшее судно, с дайверами и рыбами. Логбук для iPhone, iPad и Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – логбук для iPhone, iPad и Mac">
+  <meta name="twitter:description" content="Для устройств Apple. Загружайте погружения по Bluetooth или кабелю, импортируйте старый логбук и смотрите, что записал ваш компьютер. Присоединяйтесь к бете.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/ru.jpg">
+  <meta name="twitter:image:alt" content="Значок и название приложения Thermocline на фото носа судна во время погружения на затонувшее судно, с дайверами и рыбами. Логбук для iPhone, iPad и Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/ru/#website",
+      "url": "https://thermoclineapp.com/ru/",
+      "name": "Thermocline",
+      "description": "Thermocline — это логбук для устройств Apple: iPhone, iPad, Mac и Apple Watch. Загружайте погружения по Bluetooth или кабелю, импортируйте логбук из MacDive или Shearwater Cloud и смотрите, что записал ваш компьютер. Публичная бета в TestFlight.",
+      "inLanguage": "ru"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/ru/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "Логбук для iPhone, iPad, Mac и Apple Watch: одно приложение, одна ссылка на бету. Загружайте погружения по Bluetooth, импортируйте логбук из MacDive или Shearwater Cloud и видите газ, глубину и ppO2 с одного взгляда.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/ru/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/ru/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/ru/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/ru/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Логбук дайвера",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/ru/",
+      "inLanguage": "ru"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/ru/#mac-app",
+      "name": "Thermocline для Mac",
+      "operatingSystem": "macOS 15 or later",
+      "description": "Логбук для Mac. Загружайте погружения по Bluetooth или кабелю, импортируйте логбук из MacDive или Shearwater Cloud и читайте каждое погружение целиком.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/ru/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Логбук дайвера",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/ru/",
+      "inLanguage": "ru"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#app">О приложении</a>
+      <a href="#features">Возможности</a>
+      <a class="keep" href="guide.html">Руководство</a>
+      <a href="troubleshooting.html">Решение проблем</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Поделиться этой страницей"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Поделиться</span></button>
+      <a class="btn" href="#testers">Присоединиться к бете</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Публичная бета в TestFlight</span>
+      <h1 id="hero-title"><span class="grad lines">Логбук, который показывает то, что записал ваш компьютер.</span></h1>
+      <p class="lede">Загружайте погружения по Bluetooth или кабелю, перенесите всю историю своего логбука и смотрите газ, глубину и ppO₂ с одного взгляда.</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          Присоединиться к бете
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>Создано для устройств Apple.</b> <span>iPhone, iPad, Mac и Apple Watch.</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">О приложении</a> · <a href="guide.html">Читать руководство</a> · <a href="troubleshooting.html">Решение проблем</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Профиль погружения в Thermocline: глубина за 43 минуты, поверх неё давление в баллоне, SAC, температура и ppO2, а также переключение газа с EAN30 на Air и обратно.">
+        </div>
+      </div>
+      <figcaption>Попробуйте: три реальных погружения, нарисованные так же, как их рисует приложение. Касайтесь кнопок, переключайте «Раздельно» и «Совмещённо» и проведите пальцем по погружению.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">О приложении</p>
+      <h2 id="app-title">Ваши погружения такими, какими вы их читаете</h2>
+      <p>Значения безопасности на одном и том же месте в каждом погружении, профиль, который можно прочитать момент за моментом, и расчёт за каждой цифрой газа. Здесь показано на примере логбука из приложения.</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="22-секундный обзор Thermocline: профиль погружения, загрузка погружений, значения безопасности и расчёт SAC."><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="22-секундный обзор Thermocline: профиль погружения, загрузка погружений, значения безопасности и расчёт SAC."><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ru/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="Логбук на iPhone: одно погружение ждёт в разделе «Проверить», затем список погружений с дайв-сайтом, датой, глубиной и временем."><figcaption><b>Логбук</b>Погружения, которым нужен дайв-сайт или газ, ждут наверху.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ru/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Погружение на iPhone: полоса безопасности с глубиной, временем, газами, деко, ppO2 и CNS над профилем."><figcaption><b>Каждое погружение</b>Глубина, газы, деко, ppO₂ и CNS — в первую очередь.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ru/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Панель «Как?» для расхода газа на iPhone с баллоном, давлениями, температурой и расчётом."><figcaption><b>Расход газа</b>Коснитесь «Как?», чтобы увидеть все исходные данные SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ru/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="Карта дайв-сайтов на iPhone с отмеченными вашими дайв-сайтами и встроенными списками дайв-сайтов."><figcaption><b>Дайв-сайты</b>Ваши дайв-сайты и ещё 76 000+, без сети.</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/ru/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Приложение для Mac: список погружений рядом с погружением, его значениями безопасности, дайв-сайтом, напарниками, снаряжением и профилем глубины, с показанием в самой глубокой точке."><figcaption><b>На Mac</b>Весь логбук рядом с погружением. Наведите указатель на профиль, чтобы прочитать любой момент.</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">Руководство</span>
+        <h3>Как пользоваться Thermocline</h3>
+        <p>Импортируйте логбук, загрузите погружения с компьютера, подтвердите дайв-сайты и газы, синхронизируйте и экспортируйте. Шаг за шагом, для iPhone и Mac.</p>
+        <span class="go">Читать руководство →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">Решение проблем</span>
+        <h3>Что-то не работает?</h3>
+        <p>Компьютер не найден, нет новых погружений, расхождения при синхронизации, пробелы после импорта и странные значения SAC — для каждого случая то, что проверить в первую очередь.</p>
+        <span class="go">Найти решение →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76 000+</strong><span>дайв-сайтов и затонувших судов по всему миру, без сети</span></div>
+    <div class="stat reveal"><strong>4</strong><span>устройства Apple, один логбук</span></div>
+    <div class="stat reveal"><strong>17</strong><span>языков</span></div>
+    <div class="stat reveal"><strong>0</strong><span>аккаунтов, рекламы и трекеров</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Нужны тестировщики</p>
+      <h2 id="testers-title">Присоединиться к бете</h2>
+      <p>Помогает каждый дайвер: импортируйте свой логбук, запишите несколько погружений и расскажите нам, что непонятно, чего не хватает или что неверно. Одна ссылка подходит для всех устройств.</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone, iPad, Mac и Apple Watch</h3>
+          <p>Одно приложение, одна ссылка на бету · iOS 18 или новее, macOS 15 или новее</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Присоединиться к бете</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>Установите приложение TestFlight от Apple</li>
+      <li><b>2</b>Откройте ссылку на iPhone, iPad или Mac и коснитесь «Принять»</li>
+      <li><b>3</b>Отправляйте отзывы через «Поделиться отзывом о бете» в TestFlight</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>Есть дайв-компьютер? Помогите нам его протестировать.</h3>
+      <p>Загрузка по Bluetooth протестирована на Shearwater. Загрузка по кабелю и последовательному порту на Mac сделана для многих других компьютеров, но ещё не проверялась на реальном оборудовании. Если у вас есть такой компьютер, поможет даже одна попытка загрузки — получится она или нет.</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">Нужнее всего · Mac</span>
+          <h3>USB и последовательный кабель</h3>
+          <p>Для компьютеров, которые загружают погружения по кабелю — через адаптер USB‑serial или напрямую через USB.</p>
+          <p class="ask"><strong>Как:</strong> Файл → Загрузить с дайв-компьютера → USB-кабель. Выберите модель и порт. Если не получится, используйте «Лог загрузки…», затем «Сохранить лог…» и отправьте его.</p>
+        </div>
+        <ul class="models" aria-label="Компьютеры для тестирования">
+          <li>Семейство Suunto Vyper и EON Steel</li>
+          <li>Старые Oceanic, Aeris и Sherwood</li>
+          <li>Uwatec Aladin, Scubapro Aladin Square, G2 и G3</li>
+          <li>Cressi и Mares</li>
+          <li>OSTC и Atomic Cobalt</li>
+          <li>…и другие</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Нужны · Mac</span>
+        <h3>Shearwater Predator и Petrel 1</h3>
+        <p>Они используют старый Bluetooth, с которым телефоны работать не могут. Mac может подключиться к ним как к последовательному порту после создания пары.</p>
+        <p class="ask"><strong>Как:</strong> создайте пару в Системных настройках → Bluetooth, затем выберите его порт в окне загрузки, переведя компьютер в режим выгрузки. В любом случае отправьте лог загрузки.</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Протестировано · iPhone, iPad и Mac</span>
+        <h3>Bluetooth</h3>
+        <p>Протестировано с Shearwater Perdix и Perdix 2. Другие компьютеры с Bluetooth тоже должны работать, и мы будем рады отчётам о них.</p>
+        <p class="ask"><strong>Как:</strong> Логбук → Загрузить погружения на iPhone или Файл → Загрузить с дайв-компьютера на Mac.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Возможности</p>
+      <h2 id="features-title">Всё, что записали ваши погружения, в одном логбуке</h2>
+      <p>Создано увлечённым дайвером для любителей, технических и пещерных дайверов, которым нужны точные цифры.</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>Загрузка по Bluetooth или кабелю</h3>
+        <p>Прямо с дайв-компьютера на iPhone или Mac, с добавлением дайв-сайта, напарников, снаряжения и условий по мере поступления каждого погружения. Mac также загружает по USB и последовательному кабелю.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>Перенесите всю историю</h3>
+        <p>Импорт из MacDive, базы данных Shearwater Cloud, файлов Garmin .fit, UDDF или CSV, и вы выбираете, какие погружения добавить. Всё, что не удалось прочитать, показывается вам списком и никогда не отбрасывается молча.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>Сначала значения безопасности</h3>
+        <p>Шесть ключевых значений находятся в фиксированной полосе вверху каждого погружения. Баллон, ppO₂, NDL, SAC, температура, CNS и скорость всплытия показываются отдельными полосами или одним совмещённым графиком.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>SAC, который показывает расчёт</h3>
+        <p>Рассчитывается по объёму баллона по воде с учётом свойств реального газа, поэтому верен при любой заправке. Коснитесь «Как?», чтобы увидеть все исходные данные. Сайдмаунт, спарки и погружения на нескольких газах учитываются правильно.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>76 000+ дайв-сайтов и затонувших судов по всему миру</h3>
+        <p>Находите дайв-сайт и давайте ему название в любой точке мира, даже без сигнала, по открытым спискам дайв-сайтов, встроенным в приложение. Ваши собственные дайв-сайты всегда на первом месте.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>Apple Watch на поверхности</h3>
+        <p>Отметьте дайв-сайт с запястья, когда всплывёте. Координаты ждут в вашем логбуке, пока вы позже не дадите им название.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>Два компьютера, одно погружение</h3>
+        <p>Ныряете с запасным компьютером? Thermocline предложит объединить две записи или соединить погружение, разделённое на два. Ни то, ни другое он никогда не делает без спроса.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>Синхронизация через ваш iCloud</h3>
+        <p>Ваш логбук, снаряжение, напарники и фото следуют за вами между iPhone, iPad и Mac. Точки восстановления позволяют вернуться к состоянию до импорта или объединения.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>Выход есть всегда</h3>
+        <p>Экспортируйте всё в любое время в UDDF, CSV или MacDive XML. Ваш логбук никогда не заперт.</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>Также в приложении</h3>
+      <div class="formats">
+        <span class="chip">Снаряжение и баллоны, включая маркировку «+»</span>
+        <span class="chip">Напарники, связанные с Контактами</span>
+        <span class="chip">Карточки сертификатов</span>
+        <span class="chip">Фото погружений и ссылки на видео</span>
+        <span class="chip">Поиск по дайв-сайту, напарнику, газу, заметкам, дате или #номеру</span>
+        <span class="chip">Сводка глубин, газов и рекордов</span>
+        <span class="chip">Метрическая или имперская система</span>
+        <span class="chip">17 языков</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Как это устроено</p>
+      <h2 id="principles-title">Логбук, которому можно доверить ваши цифры</h2>
+      <p>Три правила определяют каждый экран.</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>Логбук, а не планировщик</h3>
+        <p>Thermocline показывает то, что записал ваш дайв-компьютер. Он никогда не рассчитывает декомпрессию и никогда не подставляет собственные догадки вместо цифр вашего компьютера.</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>Ваши данные остаются вашими</h3>
+        <p>Без аккаунта, без рекламы, без аналитики и без серверов разработчика. Ваш логбук хранится на ваших устройствах и в вашем собственном iCloud и полностью экспортируется, когда захотите. <a href="privacy.html" style="color:#fff">Политика конфиденциальности</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>Предупреждать, но никогда не блокировать</h3>
+        <p>Если загрузка или синхронизация удалась лишь частично, вам сообщат, что произошло, и ничего не будет выброшено. При правке исходные данные компьютера сохраняются рядом с вашим исправлением.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">Вопросы</p>
+      <h2 id="faq-title">Прежде чем присоединиться</h2>
+      <p>Уже тестируете? Страницы <a href="guide.html">Руководство</a> и <a href="troubleshooting.html">Решение проблем</a> описывают приложение шаг за шагом.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Работает ли оно на Android, Windows или в браузере?</summary>
+        <p>Нет. Thermocline создан только для устройств Apple: iPhone, iPad, Mac и Apple Watch. Он сделан собственными инструментами Apple, чтобы тесно работать с iCloud, Bluetooth, Фото и Картами.</p>
+      </details>
+      <details>
+        <summary>С какими дайв-компьютерами оно работает?</summary>
+        <p>Загрузка по Bluetooth протестирована с Shearwater Perdix и Perdix 2 на iPhone, iPad и Mac. Mac также загружает по USB и последовательному кабелю со многих других компьютеров, включая Suunto, старые Oceanic, Aeris и Sherwood, Uwatec и Scubapro, Cressi, Mares, OSTC и Atomic. Эти загрузки по кабелю ещё не проверялись на реальном оборудовании, поэтому, если у вас есть такой компьютер, пожалуйста, протестируйте его. Погружения Garmin Descent поступают из их файлов .fit на iPhone, iPad и Mac. Погружения с любого компьютера также можно перенести через файл логбука.</p>
+      </details>
+      <details>
+        <summary>Я пользуюсь MacDive. Перенесётся ли мой логбук?</summary>
+        <p>Да. Экспортируйте из MacDive в XML и импортируйте файл. XML — более полный из двух экспортов MacDive: его UDDF не включает NDL, ppO₂ и CNS компьютера, снаряжение и типы погружений. Если вы уже импортировали UDDF, импортируйте поверх XML, и пробелы заполнятся без дубликатов. Вы выбираете, какие погружения добавить, баллоны переносятся как настоящие баллоны (объём, давление, спарки и +), а идентификаторы погружений MacDive сохраняются, поэтому экспорт обратно в MacDive не создаёт дубликатов.</p>
+      </details>
+      <details>
+        <summary>Приложение для Mac — это то же приложение?</summary>
+        <p>Да. iPhone, iPad, Mac и Apple Watch — это одно приложение с одной ссылкой на бету. Присоединитесь один раз, затем установите его из TestFlight на каждом устройстве. Все они используют один и тот же логбук в iCloud, поэтому погружение, загруженное на Mac, появляется на вашем телефоне. Держите все устройства на последней сборке.</p>
+      </details>
+      <details>
+        <summary>Я присоединился к бете для iPhone до 18 ноября 2026 г. Что мне делать?</summary>
+        <p>То приложение переехало. Откройте его и включите «Синхронизация с iCloud» (или экспортируйте файл UDDF), затем присоединитесь к бете по ссылке на этой странице и установите новое приложение рядом со старым. Включите синхронизацию в новом приложении, и ваш логбук вернётся. Когда всё будет выглядеть правильно, удалите старое. <a href="troubleshooting.html#moved">Пошагово</a>.</p>
+      </details>
+      <details>
+        <summary>Что мне нужно?</summary>
+        <p>iPhone или iPad с iOS или iPadOS 18 или новее либо Mac с macOS 15 или новее. Приложению для Apple Watch нужна watchOS 11. Для синхронизации между устройствами войдите в одну и ту же учётную запись iCloud на каждом из них.</p>
+      </details>
+      <details>
+        <summary>Может ли бета-сборка потерять мои погружения?</summary>
+        <p>Она сделана так, чтобы этого не случилось. Импорт никогда не изменяет файл, из которого вы импортируете, а точки восстановления позволяют вернуть логбук к состоянию до импорта или объединения. Храните исходные экспорты, а если погружения пропали или задвоились, отправьте снимок экрана «Профиль → Синхронизация», прежде чем что-либо менять.</p>
+      </details>
+      <details>
+        <summary>Можно ли использовать координаты дайв-сайтов для навигации?</summary>
+        <p>Нет. Координаты дайв-сайтов предназначены для ведения записей, а не для навигации.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">Возьмите свой логбук с собой.</h2>
+    <p>Присоединитесь к бете на iPhone, iPad или Mac, импортируйте свои погружения и расскажите нам, что непонятно, чего не хватает или что неверно, даже если это мелочь.</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">Присоединиться к бете</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong> — логбук для iPhone, iPad, Mac и Apple Watch. Не для планирования погружений и не для навигации.</p>
+      <p>Списки дайв-сайтов © <a href="https://www.openstreetmap.org/copyright">участники OpenStreetMap</a>, доступны по лицензии Open Database License. <a href="https://github.com/616fun/thermocline-site-data">Скачать списки дайв-сайтов</a>.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch, iCloud и TestFlight являются товарными знаками Apple Inc.</p>
+    </div>
+    <nav class="foot-links" aria-label="Нижняя навигация">
+      <a href="guide.html">Руководство</a>
+      <a href="troubleshooting.html">Решение проблем</a>
+      <a href="support.html">Поддержка</a>
+      <a href="privacy.html">Конфиденциальность</a>
+      <a href="#testers">Присоединиться к бете</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Языки">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="index.html" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

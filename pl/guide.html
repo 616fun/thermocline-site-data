@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Przewodnik – Thermocline</title>
+  <meta name="description" content="Jak korzystać z Thermocline, logbooka nurkowego na iPhone’a, iPada i Maca: zaimportuj logbook, pobierz dane z komputera nurkowego, potwierdź miejsca i gazy, synchronizuj i eksportuj.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/pl/guide.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Przewodnik – Thermocline">
+  <meta property="og:description" content="Jak korzystać z Thermocline, logbooka nurkowego na iPhone’a, iPada i Maca: zaimportuj logbook, pobierz dane z komputera nurkowego, potwierdź miejsca i gazy, synchronizuj i eksportuj.">
+  <meta property="og:url" content="https://thermoclineapp.com/pl/guide.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/pl.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ikona i nazwa aplikacji Thermocline na zdjęciu dziobu statku podczas nurkowania na wraku, z nurkami i rybami. Logbook nurkowy na iPhone’a, iPada i Maca.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Przewodnik – Thermocline">
+  <meta name="twitter:description" content="Jak korzystać z Thermocline, logbooka nurkowego na iPhone’a, iPada i Maca: zaimportuj logbook, pobierz dane z komputera nurkowego, potwierdź miejsca i gazy, synchronizuj i eksportuj.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/pl.jpg">
+  <meta name="twitter:image:alt" content="Ikona i nazwa aplikacji Thermocline na zdjęciu dziobu statku podczas nurkowania na wraku, z nurkami i rybami. Logbook nurkowy na iPhone’a, iPada i Maca.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/guide.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/guide.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/guide.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/guide.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/guide.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/guide.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/guide.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/guide.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/guide.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/guide.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/guide.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/guide.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/guide.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/guide.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/guide.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/guide.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Przejdź do przewodnika</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Główna">
+      <a href="guide.html" aria-current="page">Przewodnik</a>
+      <a href="troubleshooting.html">Rozwiązywanie problemów</a>
+      <a href="support.html">Wsparcie</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Udostępnij tę stronę"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Udostępnij</span></button>
+      <a class="btn" href="./#testers">Dołącz do bety</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero">
+  <div class="wrap">
+    <h1>Przewodnik</h1>
+    <p>Jak korzystać z Thermocline na iPhonie, iPadzie i Macu, zadanie po zadaniu. Napisany dla wersji beta; menu mogą się jeszcze zmieniać między kompilacjami. Zaktualizowano 18 listopada 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="Na tej stronie">
+    <details open>
+      <summary>Na tej stronie</summary>
+      <ol>
+        <li><a href="#start">Pobierz aplikację</a></li>
+        <li><a href="#first">Pierwsze uruchomienie</a></li>
+        <li><a href="#import">Przenieś swój logbook</a>
+          <ol>
+            <li><a href="#macdive-files">Który plik MacDive</a></li>
+            <li><a href="#garmin">Garmin Descent</a></li>
+          </ol>
+        </li>
+        <li><a href="#download">Pobieranie nurkowań</a>
+          <ol>
+            <li><a href="#predator">Predator i Petrel 1</a></li>
+          </ol>
+        </li>
+        <li><a href="#computers">Obsługiwane komputery</a></li>
+        <li><a href="#confirm">Potwierdź miejsce i gazy</a></li>
+        <li><a href="#dive">Odczytywanie nurkowania</a></li>
+        <li><a href="#sites">Miejsca i zegarek</a>
+          <ol>
+            <li><a href="#watch">Apple Watch</a></li>
+          </ol>
+        </li>
+        <li><a href="#gear">Sprzęt i butle</a></li>
+        <li><a href="#merge">Scalanie i łączenie nurkowań</a></li>
+        <li><a href="#photos">Zdjęcia i filmy</a></li>
+        <li><a href="#summary">Podsumowanie i zużycie gazu</a></li>
+        <li><a href="#sync">Synchronizuj z iCloud</a></li>
+        <li><a href="#data">Eksport i punkty przywracania</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <ul class="paths" aria-label="Zacznij tutaj">
+      <li><a href="#macdive-files"><strong>Przechodzisz z MacDive</strong>Który plik wyeksportować i jak się przenieść, niczego nie tracąc.</a></li>
+      <li><a href="#download"><strong>Pobieranie z komputera</strong>Shearwater i inne komputery Bluetooth albo kabel na Macu.</a></li>
+      <li><a href="#garmin"><strong>Garmin Descent</strong>Importuj pliki .fit z zegarka lub z Garmin Connect.</a></li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>Coś nie działa?</strong> Zobacz <a href="troubleshooting.html">Rozwiązywanie problemów</a>. Thermocline to logbook: pokazuje, co zapisał Twój komputer nurkowy, i nigdy nie oblicza dekompresji.</p>
+    </div>
+
+    <div class="pf" hidden>
+      <span id="pf-label">Pokaż kroki dla</span>
+      <div class="seg" role="group" aria-labelledby="pf-label">
+        <button type="button" data-plat="both" aria-pressed="true">Oba</button>
+        <button type="button" data-plat="ios" aria-pressed="false">iPhone i iPad</button>
+        <button type="button" data-plat="mac" aria-pressed="false">Mac</button>
+      </div>
+    </div>
+
+    <h2 id="start">Pobierz aplikację</h2>
+    <p>Thermocline jest wyłącznie na urządzenia Apple: iPhone’a, iPada, Maca i Apple Watch. W czasie bety instaluje się ją przez aplikację TestFlight od Apple.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Dołącz do bety</th><td class="both" colspan="2"><a href="https://testflight.apple.com/join/ygF4ngNd">Dołącz do bety</a>: jeden link dla iPhone’a, iPada, Maca i Apple Watch. Otwórz go na każdym urządzeniu i zainstaluj z TestFlight. Aplikacja na Apple Watch jest dołączona do aplikacji na iPhone’a. Wszystkie urządzenia korzystają z tego samego logbooka przez iCloud.</td></tr>
+        <tr><th scope="row">Dołączono do bety na iPhone’a przed 18&nbsp;listopada&nbsp;2026</th><td class="both" colspan="2">Ta aplikacja została przeniesiona. Zobacz <a href="troubleshooting.html#moved">przejście ze starej aplikacji na iPhone’a</a>.</td></tr>
+        <tr><th scope="row">Aktualizuj na bieżąco</th><td class="both" colspan="2">Gdy TestFlight zaproponuje nową kompilację, zaktualizuj każde używane urządzenie. Starsza kompilacja przestaje wysyłać zmiany, dopóki nie zostanie zaktualizowana, i informuje o tym. Nic nie zostaje utracone.</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="first">Pierwsze uruchomienie i prezentacja</h2>
+    <div class="with-shot">
+      <div class="body">
+    <p>Przy pierwszym uruchomieniu aplikacja pyta o Twoje imię, jednostki i to, skąd pochodzą Twoje nurkowania. Jednostki są przechowywane w systemie metrycznym; ich zmiana zmienia tylko sposób wyświetlania.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Ustawienia</th><td class="ios" data-label="iPhone i iPad">Karta <span class="path">Profil</span></td><td class="mac" data-label="Mac"><span class="path">Thermocline → Ustawienia</span></td></tr>
+        <tr><th scope="row">Prezentacja</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Pomoc → Pokaż prezentację</span></td><td class="mac" data-label="Mac"><span class="path">Pomoc → Obejrzyj prezentację</span></td></tr>
+      </tbody>
+    </table>
+    <p>Prezentacja przechodzi przez każdy ekran na przykładowym logbooku, a nie na Twoim.</p>
+    <p class="note">Zrzuty ekranu na tej stronie pokazują przykładowy logbook z prezentacji: nurkowania i miejsca są zmyślone. Stuknij zrzut, aby zobaczyć go w pełnym rozmiarze.</p>
+      </div>
+      <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-logbook.jpg"><img src="../images/guide/pl/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="Logbook na iPhonie: jedno nurkowanie czeka w sekcji Do potwierdzenia, a pod nim lista nurkowań z miejscem, datą, głębokością i czasem."></a><figcaption>Logbook na iPhonie. Nurkowania bez miejsca nurkowego lub gazu czekają na górze.</figcaption></figure>
+    </div>
+    </div>
+
+    <h2 id="import">Przenieś swój logbook</h2>
+    <p>Thermocline odczytuje MacDive (jego folder, XML lub UDDF), bazę danych Shearwater Cloud, pliki .fit Garmina, UDDF z dowolnego logbooka i CSV. Sam wybierasz, które nurkowania dodać, a wszystko, czego nie da się odczytać, zostaje wypisane, nigdy po cichu pominięte.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Importuj plik</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Twoje dane → Importuj plik logbooka</span>, a potem wybierz go z iCloud Drive lub z Plików.</td><td class="mac" data-label="Mac">Polecenie importu w menu Plik (⇧⌘I).</td></tr>
+        <tr><th scope="row">Pliki .fit Garmina</th><td class="ios" data-label="iPhone i iPad">Zaznacz kilka naraz.</td><td class="mac" data-label="Mac">Zaznacz kilka albo cały folder.</td></tr>
+        <tr><th scope="row">Folder MacDive ze zdjęciami</th><td class="none ios" data-label="iPhone i iPad">Tylko na Macu. Zdjęcia przeniesiesz później aplikacją na Maca.</td><td class="mac" data-label="Mac"><span class="path">Plik → Importuj z MacDive…</span> i wybierz folder MacDive: nurkowania, zdjęcia z nurkowań i zdjęcia kart. Pliki MacDive nie są zmieniane.</td></tr>
+        <tr><th scope="row">Wybierz nurkowania</th><td class="both" colspan="2">Odznacz te, których nie chcesz, a potem <strong>Importuj</strong>.</td></tr>
+        <tr><th scope="row">Cofnij import</th><td class="ios" data-label="iPhone i iPad">Punkt przywracania <strong>Przed importem</strong>, zapisywany przed każdym importem więcej niż jednego nurkowania.</td><td class="mac" data-label="Mac"><strong>Cofnij import…</strong> w raporcie z importu albo ten sam punkt przywracania.</td></tr>
+      </tbody>
+    </table>
+    <p>Po zakończeniu importu raport pokazuje, ile nurkowań dodano, które elementy <strong>nie zostały zaimportowane</strong> i dlaczego, oraz co trzeba <strong>sprawdzić</strong>. Nurkowania, których plik nie zawierał gazu, czekają w sekcji <a href="#confirm">Do potwierdzenia</a>.</p>
+
+    <h3 id="macdive-files">Którego pliku MacDive użyć</h3>
+    <p>MacDive może dać Ci swój XML, swój UDDF lub (na Macu) cały swój folder. Nie zawierają one tego samego:</p>
+    <table>
+      <thead><tr><th scope="col"><span class="sr">Co zawiera</span></th><th scope="col">MacDive XML</th><th scope="col">MacDive UDDF</th><th scope="col">Folder MacDive (Mac)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Nurkowania, miejsca, partnerzy, gazy</th><td data-label="MacDive XML">Tak</td><td data-label="MacDive UDDF">Tak</td><td data-label="Folder MacDive">Tak</td></tr>
+        <tr><th scope="row">Rozmiary butli</th><td data-label="MacDive XML">Tak</td><td data-label="MacDive UDDF">Nie: jego rozmiary nie są pojemnościami wodnymi, więc pozostają puste</td><td data-label="Folder MacDive">Tak</td></tr>
+        <tr><th scope="row">Profile głębokości</th><td data-label="MacDive XML">Każde nurkowanie</td><td data-label="MacDive UDDF">Każde nurkowanie</td><td data-label="Folder MacDive">Wszystkie oprócz nurkowań pobranych przez MacDive na iPhonie lub iPadzie, które przechowuje on w postaci zaszyfrowanej</td></tr>
+        <tr><th scope="row">NDL i ppO₂ z komputera w trakcie nurkowania</th><td data-label="MacDive XML">Tak</td><td data-label="MacDive UDDF">Nie</td><td data-label="Folder MacDive">Tak, z wyjątkiem tych zaszyfrowanych nurkowań</td></tr>
+        <tr><th scope="row">CNS z komputera</th><td data-label="MacDive XML">Tak</td><td data-label="MacDive UDDF">Nie</td><td data-label="Folder MacDive">Tak</td></tr>
+        <tr><th scope="row">Sprzęt, tagi i typy nurkowań</th><td data-label="MacDive XML">Tak</td><td data-label="MacDive UDDF">Nie</td><td data-label="Folder MacDive">Tak</td></tr>
+        <tr><th scope="row">Zdjęcia z nurkowań i zdjęcia kart</th><td data-label="MacDive XML">Nie</td><td data-label="MacDive UDDF">Nie</td><td data-label="Folder MacDive">Tak</td></tr>
+      </tbody>
+    </table>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Najlepsza droga</th><td class="ios" data-label="iPhone i iPad">Wyeksportuj nurkowania z MacDive jako <strong>XML</strong>, zapisz plik w iCloud Drive i zaimportuj go.</td><td class="mac" data-label="Mac">Zaimportuj folder MacDive, a potem XML na wierzch. XML uzupełnia profile, NDL i ppO₂ zaszyfrowanych nurkowań.</td></tr>
+        <tr><th scope="row">UDDF już zaimportowany</th><td class="both" colspan="2">Zaimportuj też XML. Nurkowania, które już są w logbooku, zostają dopasowane, a nie dodane ponownie, i uzupełniane jest tylko to, czego brakuje, łącznie z rozmiarami butli. Nic, co wpisano lub poprawiono, nie zostaje zmienione.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 id="garmin">Zegarki Garmin Descent</h3>
+    <div class="with-shot">
+      <div class="body">
+    <p>Garmin Descent przechowuje jeden plik .fit na każde nurkowanie. Można je pozyskać na dwa sposoby:</p>
+    <ul>
+      <li><strong>Z zegarka:</strong> podłącz go do Maca kablem i otwórz folder <span class="path">GARMIN → Activity</span>. Na Macu możesz zaimportować cały folder GARMIN; pliki, które nie są nurkowaniami, takie jak biegi i ustawienia, są pomijane.</li>
+      <li><strong>Z Garmin Connect:</strong> otwórz nurkowanie i wybierz <strong>Eksportuj oryginał</strong>. Otrzymasz plik .zip: najpierw go rozpakuj, a potem zaimportuj plik .fit, który jest w środku.</li>
+    </ul>
+    <p>Pozycje pochodzą z GPS zegarka. Przy nurkowaniu w dryfie zegarek zapisuje jako początek miejsce, w którym się wynurzyłeś; import znajduje miejsce, w którym naprawdę wszedłeś do wody, więc nurkowanie zostaje dopasowane do tego miejsca. Inne mijane wraki dopisz do notatek.</p>
+      </div>
+      <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-garmin-import.jpg"><img src="../images/guide/pl/ios-garmin-import.jpg" width="600" height="1304" loading="lazy" alt="Ekran importu na iPhonie dla pliku .fit Garmina: utworzony przez Garmin (FIT), jedno nurkowanie na 31,5 m przez 35 minut na Air, potem EAN50, z pozycją z GPS komputera."></a><figcaption>Nurkowanie z Garmina gotowe do importu, z pozycją GPS.</figcaption></figure>
+    </div>
+    </div>
+
+    <h2 id="download">Pobieranie nurkowań z komputera</h2>
+    <div class="with-shot">
+      <div class="body">
+    <p>Najpierw przełącz komputer nurkowy w tryb Bluetooth. W Shearwater: <span class="path">Menu → Bluetooth</span>. Pozostaje w nim około dwóch minut. Pobierane są tylko nurkowania nowsze niż ostatnie pobranie.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Otwórz</th><td class="ios" data-label="iPhone i iPad"><span class="path">Logbook → Pobierz nurkowania</span></td><td class="mac" data-label="Mac"><span class="path">Plik → Pobierz z komputera nurkowego…</span> (⇧⌘D)</td></tr>
+        <tr><th scope="row">Połącz</th><td class="ios" data-label="iPhone i iPad">Bluetooth. Wybierz swój komputer w sekcji <strong>W pobliżu</strong>; za pierwszym razem wpisz PIN pokazany na jego ekranie.</td><td class="mac" data-label="Mac">Wybierz <strong>Bluetooth</strong> lub <strong>Kabel USB</strong>. W przypadku kabla wybierz model komputera i jego port oraz wykonaj kroki z sekcji <strong>Zanim zaczniesz</strong>.</td></tr>
+        <tr><th scope="row">Zakończ</th><td class="ios" data-label="iPhone i iPad">Odznacz nurkowania, których nie chcesz, a potem <strong>Zachowaj</strong>. Odznaczone nurkowania zostają na komputerze i zostaną zaproponowane ponownie następnym razem.</td><td class="mac" data-label="Mac"><strong>Pobierz</strong>.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Pytanie o zegar.</strong> Przy pierwszym pobraniu z każdego komputera aplikacja pyta: <strong>Na jaką strefę jest ustawiony zegar komputera?</strong> Większość komputerów zapisuje czas lokalny bez strefy czasowej, więc dzięki temu godziny nurkowań są prawidłowe, gdy podróżujesz. Odpowiedź jest zapamiętywana dla tego komputera.</p>
+    <p>Po wybraniu nurkowań możesz przejść przez nie po kolei, aby ustawić miejsce i gazy, albo wybrać <strong>Dokończ później</strong>: czekają wtedy w sekcji <a href="#confirm">Do potwierdzenia</a>.</p>
+    <p><strong>Usunięto nurkowanie i chcesz je odzyskać?</strong> Włącz <strong>Pobierz wszystkie nurkowania z komputera</strong>. Trwa to dłużej; nurkowania, które już są w logbooku, są pomijane.</p>
+      </div>
+      <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-download.jpg"><img src="../images/guide/pl/ios-download.jpg" width="600" height="1304" loading="lazy" alt="Ekran pobierania na iPhonie: pytanie o strefę zegara dla Perdix 2, trzy zaznaczone nowe nurkowania i przycisk Zachowaj 3 nurkowania."></a><figcaption>Pobieranie na iPhonie: pytanie o zegar, nowe nurkowania, a potem Zachowaj.</figcaption></figure>
+    </div>
+    </div>
+
+    <h3 id="predator">Shearwater Predator i Petrel 1</h3>
+    <p>Używają starszego Bluetooth (Bluetooth Classic), z którego iPhone’y i iPady nie mogą korzystać. Na Macu najpierw sparuj komputer w <span class="path">Ustawienia systemowe → Bluetooth</span>, a potem w oknie pobierania wybierz <strong>Kabel USB</strong>: jego port może pojawić się na liście. Przełącz komputer w tryb wysyłania przez Bluetooth i wybierz Pobierz. Nie zostało to jeszcze wypróbowane na prawdziwym Predatorze ani Petrelu 1, więc <a href="troubleshooting.html#send-log">wyślij log pobierania</a> niezależnie od tego, czy zadziała. Na iPhonie zamiast tego zaimportuj ich nurkowania z Shearwater Cloud lub z pliku UDDF.</p>
+
+    <h2 id="computers">Obsługiwane komputery</h2>
+    <p>Thermocline pobiera dane za pomocą libdivecomputer – biblioteki open source, z której korzysta wiele logbooków. Zna ona kilkaset modeli większości producentów. Aby sprawdzić swój, otwórz ekran pobierania i wybierz <strong>Obsługiwane komputery</strong>; przy każdym widać, czy działa na iPhonie i iPadzie, czy wymaga Maca.</p>
+    <table class="compat">
+      <thead><tr><th scope="col">Połączenie</th><th scope="col">Gdzie działa</th><th scope="col">Dotychczas wypróbowane</th></tr></thead>
+      <tbody>
+        <tr><td>Bluetooth LE</td><td>iPhone, iPad i Mac</td><td>Shearwater Perdix i Perdix 2. Inne modele powinny działać: daj nam znać.</td></tr>
+        <tr><td>Kabel USB lub szeregowy</td><td>Tylko Mac</td><td>Przygotowane, jeszcze niewypróbowane na prawdziwym sprzęcie.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 i inne starsze modele)</td><td>Tylko Mac, sparowany jako port szeregowy (<a href="#predator">jak</a>)</td><td>Jeszcze niewypróbowane.</td></tr>
+        <tr><td>Garmin Descent (pliki .fit)</td><td>Import na iPhonie, iPadzie i Macu (<a href="#garmin">jak</a>)</td><td>Nurkowania z Descent, w tym nurkowania w dryfie.</td></tr>
+      </tbody>
+    </table>
+    <p>Masz komputer, którego jeszcze nie wypróbowaliśmy? <a href="./#testers">Pomóż nam go przetestować</a>.</p>
+
+    <h2 id="confirm">Potwierdź miejsce i gazy</h2>
+    <div class="with-shot">
+      <div class="body">
+    <p>Nurkowania, którym wciąż brakuje miejsca nurkowego lub potwierdzonych gazów, czekają w sekcji <strong>Do potwierdzenia</strong>. Nic nie blokuje ich zapisania; uzupełnij je, kiedy zechcesz.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Znajdź je</th><td class="ios" data-label="iPhone i iPad">Na górze karty <span class="path">Logbook</span>, w sekcji <strong>Do potwierdzenia</strong>.</td><td class="mac" data-label="Mac"><span class="path">Idź → Do potwierdzenia</span> (⌘2)</td></tr>
+        <tr><th scope="row">Potwierdź</th><td class="ios" data-label="iPhone i iPad">Otwórz nurkowanie, potem <strong>Wybierz miejsce</strong> i stuknij <strong>Tak, te gazy są prawidłowe</strong> (lub <strong>Popraw gaz…</strong>).</td><td class="mac" data-label="Mac">Baner przy każdym nurkowaniu proponuje <strong>Potwierdź miejsce i gazy…</strong>, <strong>Wybierz miejsce…</strong> lub <strong>Potwierdź gazy…</strong>.</td></tr>
+      </tbody>
+    </table>
+    <p>Thermocline podpowiada miejsce na podstawie pozycji nurkowania: najpierw Twoje własne miejsca, potem wbudowane listy ponad 76&nbsp;000 miejsc nurkowych i wraków, które działają offline.</p>
+      </div>
+      <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-confirm.jpg"><img src="../images/guide/pl/ios-confirm.jpg" width="600" height="1304" loading="lazy" alt="Nurkowanie czekające na potwierdzenie na iPhonie, z pytaniem, czy jego gazy są prawidłowe."></a><figcaption>Nurkowanie w sekcji Do potwierdzenia, z pytaniem o gazy.</figcaption></figure>
+    </div>
+    </div>
+
+    <h2 id="dive">Odczytywanie nurkowania</h2>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Odczytaj dowolną chwilę</th><td class="ios" data-label="iPhone i iPad">Przeciągnij po wykresie.</td><td class="mac" data-label="Mac">Wskaż wykres.</td></tr>
+        <tr><th scope="row">Zapisz nurkowanie ręcznie</th><td class="ios" data-label="iPhone i iPad"><span class="path">Logbook → Zapisz ręcznie</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li><strong>Wartości bezpieczeństwa</strong> są na stałym pasku u góry każdego nurkowania, zawsze w tym samym miejscu.</li>
+      <li><strong>Profil:</strong> etykiety pod wykresem pokazują lub ukrywają Butla, ppO₂, NDL, SAC, Temp., CNS i Wynurzanie – jako paski <strong>Osobno</strong> lub jeden wykres <strong>Nałożone</strong>. Etykietę dostaje tylko to, co nurkowanie zapisało. NDL pochodzi z komputera i znika podczas deko, gdzie czerwony pas pokazuje przystanki. Na wąskim iPhonie etykiety zostają w jednym wierszu i przewijają się w bok. <a href="./#chart">Wypróbuj na stronie głównej.</a></li>
+      <li><strong>Rebreathery:</strong> z każdego komputera lub pliku, który je zapisuje, pasek ppO₂ pokazuje setpoint razem z ppO₂ „Voted”, czyli wartością, którą komputer wybiera na podstawie ogniw (oraz każdym ogniwem, jeśli zostało zapisane), a odczyt podaje setpoint w danej chwili. Przejście z diluentu na dowolny inny gaz jest oznaczane jako bailout.</li>
+      <li><strong>Zużycie gazu:</strong> stuknij lub kliknij <strong>Jak?</strong> obok wartości SAC, aby zobaczyć wszystkie dane: butlę, jej pojemność wodną, ciśnienia, temperaturę i poprawkę na gaz rzeczywisty.</li>
+      <li><strong>Edycja:</strong> możesz edytować każde nurkowanie. Poprawka zachowuje oryginalny odczyt z komputera.</li>
+      <li><strong>Balast:</strong> pierwsze stuknięcie + ustawia <strong>Bez balastu</strong> – dla nurkowania bez żadnego balastu. Następnie stuknij −, aby wyczyścić tę wartość.</li>
+      <li><strong>Linki w notatkach:</strong> linki internetowe w notatkach nurkowania można stukać lub klikać. Gdy skończysz pisać, stuknij <strong>Gotowe</strong> nad klawiaturą: wtedy linki się pokazują, a link do YouTube lub Vimeo dostaje pod notatkami przycisk <strong>Dodaj … do linków do filmów</strong>. Aby znowu pisać w notatkach, wybierz <strong>Edytuj notatki</strong>.</li>
+    </ul>
+    <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-dive.jpg"><img src="../images/guide/pl/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Nurkowanie na iPhonie: pasek bezpieczeństwa z głębokością, czasem, gazami, deko, ppO2 i CNS nad profilem."></a><figcaption>Pasek bezpieczeństwa, a pod nim profil.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/ios-chart.jpg"><img src="../images/guide/pl/ios-chart.jpg" width="600" height="1304" loading="lazy" alt="Osobne paski pod profilem na iPhonie dla ciśnienia w butli, SAC, temperatury i ppO2, z etykietami do pokazywania lub ukrywania każdego z nich."></a><figcaption>Etykiety wybierają paski pod profilem.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/ios-sac-how.jpg"><img src="../images/guide/pl/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panel Jak? dla zużycia gazu na iPhonie, z butlą, ciśnieniami, temperaturą i obliczeniem."></a><figcaption>Jak? pokazuje wszystkie dane, z których wyliczono SAC.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/ios-no-weight.jpg"><img src="../images/guide/pl/ios-no-weight.jpg" width="600" height="1304" loading="lazy" alt="Sekcja ochrony termicznej i balastu nurkowania na iPhonie z balastem ustawionym na Bez balastu i wyborem Jak się czułeś poniżej."></a><figcaption>Bez balastu – dla nurkowania bez żadnego balastu.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/ios-notes-links.jpg"><img src="../images/guide/pl/ios-notes-links.jpg" width="600" height="1304" loading="lazy" alt="Notatki nurkowania na iPhonie z dwoma linkami do stuknięcia i przyciskami pod nimi: Dodaj film z YouTube do linków do filmów oraz Edytuj notatki."></a><figcaption>Linki w notatkach i dodany z nich link do filmu.</figcaption></figure>
+      <figure class="shot wide"><a href="../images/guide/pl/mac-dive.jpg"><img src="../images/guide/pl/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Aplikacja na Maca: lista nurkowań obok nurkowania z wartościami bezpieczeństwa, miejscem, partnerami, sprzętem i profilem głębokości oraz odczytem najgłębszego punktu."></a><figcaption>To samo nurkowanie na Macu. Wskaż profil, aby odczytać dowolną chwilę.</figcaption></figure>
+    </div>
+
+    <h2 id="sites">Miejsca, pozycje i Apple Watch</h2>
+    <div class="with-shot">
+      <div class="body">
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Dodaj miejsce</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Miejsca</span>, a potem przycisk dodawania: <strong>Znajdź lub nazwij miejsce</strong> albo <strong>Zaznacz punkt tutaj (GPS)</strong>.</td><td class="mac" data-label="Mac"><span class="path">Idź → Miejsca</span> (⌘4), a potem <strong>Dodaj miejsce…</strong></td></tr>
+        <tr><th scope="row">Zobacz wszystkie miejsca z list</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Miejsca → Mapa</span>, a potem przycisk globusa albo zsuń palce, aby maksymalnie oddalić mapę. Wraki są pomarańczowe, rafy i miejsca nurkowe niebieskie, a Twoje własne miejsca to czerwone flagi.</td><td class="mac" data-label="Mac"><span class="path">Miejsca</span>, a potem <strong>Pokaż globus</strong> na pasku narzędzi albo oddal maksymalnie.</td></tr>
+        <tr><th scope="row">Znajdź pozycję</th><td class="ios" data-label="iPhone i iPad">Miejsce bez pozycji proponuje <strong>Znajdź pozycję</strong>: sprawdź podpowiedź na mapie, wpisz współrzędne lub upuść pinezkę.</td><td class="mac" data-label="Mac"><strong>Znajdź pozycje…</strong> przechodzi po kolei przez każde miejsce bez pozycji.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Apple Watch:</strong> zaznacz punkt na powierzchni, a będzie czekał na iPhonie w sekcji Do potwierdzenia. Zobacz <a href="#watch">Apple Watch</a>.</p>
+    <p class="note">Pozycje miejsc służą do prowadzenia logbooka, a nie do nawigacji.</p>
+      </div>
+      <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-sites-map.jpg"><img src="../images/guide/pl/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="Mapa miejsc na iPhonie z zaznaczonymi Twoimi miejscami i wbudowanymi listami miejsc nurkowych."></a><figcaption>Twoje miejsca i wbudowane listy na mapie.</figcaption></figure>
+    </div>
+    </div>
+
+    <h3 id="watch">Apple Watch</h3>
+    <p>Aplikacja na zegarek robi jedną rzecz: zaznacza, gdzie jesteś na powierzchni, aby łatwo było zapisać miejsce nurkowania. Nie zapisuje nurkowań; te pochodzą z Twojego komputera nurkowego. Wymaga watchOS&nbsp;11 lub nowszego oraz iPhone’a z Thermocline.</p>
+    <table class="how">
+      <colgroup><col class="act"><col class="wa"><col class="ph"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="wa">Apple Watch</th><th scope="col" class="ph">iPhone</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Instalacja</th><td class="both" colspan="2">Jest dołączona do aplikacji na iPhone’a. Jeśli nie ma jej na zegarku, otwórz aplikację Watch na iPhonie, znajdź Thermocline w sekcji <strong>Dostępne aplikacje</strong> i stuknij <strong>Instaluj</strong>. Za pierwszym razem zezwól Thermocline na zegarku na dostęp do lokalizacji.</td></tr>
+        <tr><th scope="row">Zaznacz punkt</th><td class="wa" data-label="Apple Watch">Na powierzchni, nad miejscem, otwórz Thermocline. Poczekaj na <strong>Dobry fix</strong>, a potem stuknij <strong>Zaznacz punkt</strong>. Zegarek stuknie Cię w nadgarstek, gdy punkt zostanie zapisany.</td><td class="ph" data-label="iPhone">Punkt dociera sam. Jeśli iPhone jest poza zasięgiem, punkt zostanie wysłany, gdy znów będą razem.</td></tr>
+        <tr><th scope="row">Nazwij go</th><td class="wa" data-label="Apple Watch">Opcjonalnie. Stuknij <strong>Dodaj nazwę</strong> po zaznaczeniu albo później w <strong>Zaznaczone</strong> i powiedz, napisz odręcznie lub wpisz ją, na przykład „dziób wraku”. Zapisuje się, gdy skończysz.</td><td class="ph" data-label="iPhone">Nazwa jest proponowana jako nazwa nowego miejsca. Możesz jej użyć lub wybrać inne miejsce.</td></tr>
+        <tr><th scope="row">Potwierdź go</th><td class="none wa" data-label="Apple Watch">Na zegarku nie trzeba nic robić.</td><td class="ph" data-label="iPhone"><span class="path">Logbook → Do potwierdzenia</span>. Gdy iPhone jest online, wyszukuje punkt, podpowiada najbliższe znane miejsce i pokazuje nurkowanie, do którego najprawdopodobniej należy. Potwierdź go lub odrzuć.</td></tr>
+        <tr><th scope="row">Sprawdź, czy został wysłany</th><td class="wa" data-label="Apple Watch"><strong>Zaznaczone</strong> pokazuje każdy punkt ze stanem <strong>Wysłano do iPhone’a</strong> lub <strong>Czeka na wysłanie do iPhone’a</strong> oraz mapę. Punkt znika z zegarka, gdy zostanie potwierdzony lub odrzucony na iPhonie.</td><td class="ph" data-label="iPhone">Po potwierdzeniu miejsce synchronizuje się z innymi urządzeniami jak każde inne.</td></tr>
+      </tbody>
+    </table>
+    <div class="watch-shots">
+      <figure class="shot"><a href="../images/guide/pl/watch-waiting.jpg"><img src="../images/guide/pl/watch-waiting.jpg" width="422" height="514" loading="lazy" alt="Zegarek czeka na GPS przy dokładności plus minus 60 metrów, a przycisk Zaznacz punkt jest wyszarzony."></a><figcaption>Oczekiwanie na dobry fix.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/watch-good-fix.jpg"><img src="../images/guide/pl/watch-good-fix.jpg" width="422" height="514" loading="lazy" alt="Zegarek pokazuje Dobry fix przy dokładności plus minus 6 metrów, a przycisk Zaznacz punkt jest gotowy."></a><figcaption>Dobry fix: stuknij Zaznacz punkt.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/watch-marked.jpg"><img src="../images/guide/pl/watch-marked.jpg" width="422" height="514" loading="lazy" alt="Zegarek po zaznaczeniu: Punkt zaznaczony, pod nim najbliższe miejsce z list miejsc nurkowych i przycisk Dodaj nazwę."></a><figcaption>Zaznaczono. Jeśli chcesz, dodaj nazwę.</figcaption></figure>
+      <figure class="shot"><a href="../images/guide/pl/watch-spot-map.jpg"><img src="../images/guide/pl/watch-spot-map.jpg" width="422" height="514" loading="lazy" alt="Zaznaczony punkt na mapie zegarka: pinezka na otwartym oceanie w punkcie 41,73250, -49,94690."></a><figcaption>Zaznaczone punkty są widoczne na mapie.</figcaption></figure>
+    </div>
+    <p>Zegarek zapisuje punkt tylko z fixu o dokładności do &plusmn;30&nbsp;m, nie starszego niż 30&nbsp;sekund, i pomija starą pozycję z pamięci podręcznej. Zaznaczaj punkt na powierzchni, nie pod wodą.</p>
+    <p class="note">Pozycje miejsc służą do prowadzenia logbooka, a nie do nawigacji.</p>
+
+    <h2 id="gear">Sprzęt i butle</h2>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Otwórz Sprzęt</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Sprzęt</span></td><td class="mac" data-label="Mac"><span class="path">Idź → Sprzęt</span></td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>Przy butli pole <strong>Model</strong> otwiera katalog butli: szukaj według producenta lub modelu (na przykład „PST LP104”), aby uzupełnić jej katalogowe rozmiary, albo wpisz własne wartości.</li>
+      <li>Zaznacz <strong>Twinset (para z manifoldem)</strong> dla twinsetu.</li>
+      <li>Butla stalowa z wybitym znakiem +: włącz <strong>Oznaczenie plus</strong>, jeśli ostatnia próba ciśnieniowa utrzymała +. Jest wtedy pokazywana na przykład jako 2400+. Ten przełącznik pojawia się, gdy rozmiary butli są pokazywane w stopach sześciennych.</li>
+      <li>Butle w każdym nurkowaniu są w sekcji gazów nurkowania (<strong>Dodaj butlę</strong>, <strong>Zestaw sprzętu</strong>).</li>
+    </ul>
+
+    <h2 id="merge">Scalanie i łączenie nurkowań</h2>
+    <ul>
+      <li><strong>Scal</strong> służy do jednego nurkowania zapisanego przez dwa komputery. Oba zapisy są zachowywane i możesz przełączać się między nimi na wykresie.</li>
+      <li><strong>Połącz</strong> służy do jednego nurkowania podzielonego na dwa przez krótkie wynurzenie.</li>
+      <li>Thermocline nigdy nie robi żadnej z tych rzeczy sam. Gdy wykryje prawdopodobną parę, baner u góry logbooka proponuje, aby je <strong>Przejrzeć</strong>.</li>
+    </ul>
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Zrób to sam</th><td class="ios" data-label="iPhone i iPad">Stuknij <strong>Wybierz</strong>, wybierz dwa nurkowania, a potem <strong>Scal</strong> lub <strong>Połącz</strong>.</td><td class="mac" data-label="Mac">Zaznacz dwa nurkowania i kliknij prawym przyciskiem: <strong>Scal te nurkowania…</strong> lub <strong>Połącz te nurkowania…</strong></td></tr>
+        <tr><th scope="row">Zmiana zdania</th><td class="both" colspan="2"><strong>Cofnij</strong> od razu albo w dowolnym momencie <strong>Rozdziel te nurkowania</strong> w nurkowaniu.</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="photos">Zdjęcia i linki do filmów</h2>
+    <ul>
+      <li><strong>Dodaj zdjęcia</strong> w nurkowaniu kopiuje je z Twojej biblioteki do logbooka.</li>
+      <li>Aby oszczędzać miejsce w iCloud, włącz <span class="path">Synchronizacja → Oszczędzaj miejsce w iCloud przy zdjęciach z nurkowań</span> na każdym urządzeniu. Zdjęcia są wtedy powiązane ze Zdjęciami w iCloud zamiast kopiowane, a do nurkowań można dodawać filmy z biblioteki. Thermocline prosi o dostęp do Zdjęć tylko wtedy, gdy to włączysz.</li>
+      <li><strong>Linki do filmów:</strong> wklej link do YouTube lub Vimeo pod zdjęciami nurkowania. Zachowywany jest tylko link. Link, który już jest w notatkach, można dodać stamtąd (zobacz <a href="#dive">Odczytywanie nurkowania</a>).</li>
+      <li><strong>Ten sam film w kilku nurkowaniach:</strong> zaznacz nurkowania (na iPhonie najpierw stuknij Wybierz), wybierz <strong>Edytuj … nurkowania…</strong> i dodaj link w sekcji <strong>Linki do filmów</strong>. Zostanie dodany do każdego zaznaczonego nurkowania, a linki, które już mają, zostają zachowane.</li>
+    </ul>
+
+    <h2 id="summary">Podsumowanie i zużycie gazu</h2>
+    <div class="with-shot">
+      <div class="body">
+    <p>Karta <strong>Podsumowanie</strong> (Podsumowanie na pasku bocznym Maca) liczy Twój logbook: nurkowania w roku i w miesiącu, głębokości, gazy, rekordy, gdzie nurkujesz oraz Twoje najczęstsze miejsce i partnera. Wybierz zakres na górze, na przykład jeden rok, i stuknij dowolną liczbę lub słupek, aby zobaczyć nurkowania, które się za nimi kryją.</p>
+    <ul>
+      <li><strong>Oddychanie</strong> pokazuje Twój SAC i RMV ze wszystkich nurkowań w zakresie, które mają rozmiar butli oraz ciśnienie początkowe i końcowe, ważone czasem i głębokością. Stuknij, aby zobaczyć, które nurkowania zostały uwzględnione.</li>
+      <li>Niektóre zaimportowane nurkowania nie mają rozmiaru butli, więc Oddychanie może być na początku puste (zobacz <a href="#macdive-files">Którego pliku MacDive użyć</a>). Ustaw butle w swoich nurkowaniach, w Sprzęcie lub w każdym nurkowaniu, a się wypełni.</li>
+    </ul>
+      </div>
+      <div class="shots">
+      <figure class="shot"><a href="../images/guide/pl/ios-summary-breathing.jpg"><img src="../images/guide/pl/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Karta Podsumowanie na iPhonie: kiedy w roku, najczęstsze miejsce, partner i butla oraz Oddychanie z SAC 0,36 stopy sześciennej na minutę i RMV 10,2 litra na minutę z 14 nurkowań."></a><figcaption>Oddychanie na karcie Podsumowanie (przykładowy logbook).</figcaption></figure>
+    </div>
+    </div>
+
+    <h2 id="sync">Synchronizuj z iCloud</h2>
+    <div class="with-shot">
+      <div class="body">
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Włącz synchronizację</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Synchronizacja</span></td><td class="mac" data-label="Mac"><span class="path">Thermocline → Ustawienia → Synchronizacja</span></td></tr>
+      </tbody>
+    </table>
+    <p>Każde urządzenie zalogowane na to samo Konto Apple korzysta wtedy z jednego logbooka, przechowywanego w Twoim własnym prywatnym iCloud. Zmiany wprowadzone offline czekają na urządzeniu i są wysyłane, gdy wróci ono do sieci.</p>
+    <p>Sekcja Synchronizacja pokazuje stan, wszystko, co <strong>Oczekuje na wysłanie</strong>, oraz to, czy to urządzenie i Twoje pozostałe są zgodne. <strong>Synchronizuj teraz</strong> sprawdza od razu.</p>
+      </div>
+      <div class="shots">
+      <figure class="shot part"><a href="../images/guide/pl/ios-sync.jpg"><img src="../images/guide/pl/ios-sync.jpg" width="600" height="394" loading="lazy" alt="Przełącznik Synchronizuj z iCloud na iPhonie z opisem tego, co utrzymuje takie samo na wszystkich urządzeniach."></a><figcaption>Profil → Synchronizacja na iPhonie.</figcaption></figure>
+    </div>
+    </div>
+
+    <h2 id="data">Eksport, punkty przywracania i wymazywanie</h2>
+    <div class="with-shot">
+      <div class="body">
+    <table class="how">
+      <colgroup><col class="act"><col class="ios"><col class="mac"></colgroup>
+      <thead><tr><th scope="col"><span class="sr">Zadanie</span></th><th scope="col" class="ios">iPhone i iPad</th><th scope="col" class="mac">Mac</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Eksport</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Twoje dane</span></td><td class="mac" data-label="Mac">Menu Plik</td></tr>
+        <tr><th scope="row">Punkty przywracania</th><td class="ios" data-label="iPhone i iPad"><span class="path">Profil → Twoje dane → Punkty przywracania</span></td><td class="mac" data-label="Mac"><span class="path">Ustawienia → Twoje dane → Punkty przywracania</span></td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li><strong>Eksport:</strong> UDDF to pełny eksport i Twoja droga wyjścia do dowolnego logbooka. Dostępne są też: arkusz kalkulacyjny (CSV), MacDive XML, zakładki do pomiarów jaskini (CSV) i podsumowanie doświadczenia (tekst) na potrzeby wymagań kursowych.</li>
+      <li><strong>Punkty przywracania:</strong> punkt jest zapisywany przed włączeniem synchronizacji, przed dużym importem, scaleniem, połączeniem, wymazaniem i przed każdym usunięciem. Przywracanie najpierw zapisuje Twój bieżący logbook jako punkt przywracania, więc można je cofnąć.</li>
+      <li><strong>Wymazywanie:</strong> <strong>Wymaż logbook…</strong> proponuje najpierw eksport. Przy włączonej synchronizacji Twoje pozostałe urządzenia zrobią to samo.</li>
+    </ul>
+      </div>
+      <div class="shots">
+      <figure class="shot part"><a href="../images/guide/pl/ios-yourdata.jpg"><img src="../images/guide/pl/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="Twoje dane na iPhonie: Importuj plik logbooka, Eksportuj logbook (UDDF), Eksportuj w innym formacie, Punkty przywracania i Wymaż logbook."></a><figcaption>Profil → Twoje dane na iPhonie.</figcaption></figure>
+    </div>
+    </div>
+
+    <h2 id="stuck">Nadal coś nie działa?</h2>
+    <p>Zobacz <a href="troubleshooting.html">Rozwiązywanie problemów</a> albo wyślij opinię z TestFlight lub na adres <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, logbook nurkowy. Nie służy do planowania nurkowań ani do nawigacji.</p>
+      <p>Listy miejsc nurkowych © <a href="https://www.openstreetmap.org/copyright">współtwórcy OpenStreetMap</a>, dostępne na licencji Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Stopka">
+      <a href="./">Strona główna</a>
+      <a href="guide.html">Przewodnik</a>
+      <a href="troubleshooting.html">Rozwiązywanie problemów</a>
+      <a href="support.html">Wsparcie</a>
+      <a href="privacy.html">Prywatność</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Języki">
+      <a href="../guide.html" hreflang="en" lang="en">English</a>
+      <a href="../de/guide.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/guide.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/guide.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/guide.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/guide.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/guide.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/guide.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/guide.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/guide.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/guide.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="guide.html" hreflang="pl" lang="pl" aria-current="page">Polski</a>
+      <a href="../cs/guide.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/guide.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/guide.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/guide.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/guide.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/guide.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

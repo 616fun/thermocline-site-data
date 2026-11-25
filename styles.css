@@ -753,3 +753,11 @@ html[data-plat="ios"] .how col.ios, html[data-plat="mac"] .how col.mac { width: 
 .watch-shots .shot { margin: 0; }
 .watch-shots img { display: block; width: 100%; height: auto; border-radius: 22px; background: #000; }
 .watch-shots figcaption { font-size: .875rem; color: var(--text-2); margin-top: 6px; }
+
+/* Languages (24 Nov 2026): footer list of translations, and the notice lang.js shows. */
+.lang-list { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 16px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, .08); }
+.lang-list a { color: var(--on-deep-2); text-decoration: none; }
+.lang-list a:hover, .lang-list a[aria-current="page"] { color: var(--on-deep); text-decoration: underline; }
+.lang-note { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 8px 16px; background: var(--accent-soft); color: var(--text); font-size: .95rem; }
+.lang-note a { color: var(--text); font-weight: 600; }
+.lang-note-close { min-width: 44px; min-height: 44px; border: 0; background: none; color: var(--text); font-size: 1.3rem; cursor: pointer; }

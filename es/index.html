@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – la bitácora de buceo para iPhone, iPad y Mac</title>
+  <meta name="description" content="Thermocline es una bitácora de buceo para dispositivos Apple: iPhone, iPad, Mac y Apple Watch. Descarga inmersiones por Bluetooth o cable, importa tu bitácora de MacDive o Shearwater Cloud y ve lo que registró tu computadora. Beta pública en TestFlight.">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/es/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Thermocline – la bitácora de buceo para iPhone, iPad y Mac">
+  <meta property="og:description" content="Para dispositivos Apple. Descarga inmersiones por Bluetooth o cable, importa tu bitácora anterior y ve lo que registró tu computadora. Únete a la beta.">
+  <meta property="og:url" content="https://thermoclineapp.com/es/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/es.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="El ícono y el nombre de la app Thermocline sobre una foto de la proa de un barco en una inmersión en un pecio, con buzos y peces. La bitácora de buceo para iPhone, iPad y Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – la bitácora de buceo para iPhone, iPad y Mac">
+  <meta name="twitter:description" content="Para dispositivos Apple. Descarga inmersiones por Bluetooth o cable, importa tu bitácora anterior y ve lo que registró tu computadora. Únete a la beta.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/es.jpg">
+  <meta name="twitter:image:alt" content="El ícono y el nombre de la app Thermocline sobre una foto de la proa de un barco en una inmersión en un pecio, con buzos y peces. La bitácora de buceo para iPhone, iPad y Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/es/#website",
+      "url": "https://thermoclineapp.com/es/",
+      "name": "Thermocline",
+      "description": "Thermocline es una bitácora de buceo para dispositivos Apple: iPhone, iPad, Mac y Apple Watch. Descarga inmersiones por Bluetooth o cable, importa tu bitácora de MacDive o Shearwater Cloud y ve lo que registró tu computadora. Beta pública en TestFlight.",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/es/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "Bitácora de buceo para iPhone, iPad, Mac y Apple Watch: una app, un enlace de beta. Descarga inmersiones por Bluetooth, importa tu bitácora de MacDive o Shearwater Cloud y lee gas, profundidad y ppO2 de un vistazo.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/es/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/es/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/es/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/es/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Bitácora de buceo",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/es/",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/es/#mac-app",
+      "name": "Thermocline para Mac",
+      "operatingSystem": "macOS 15 or later",
+      "description": "Bitácora de buceo para Mac. Descarga inmersiones por Bluetooth o cable, importa tu bitácora de MacDive o Shearwater Cloud y lee cada inmersión completa.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/es/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Bitácora de buceo",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/es/",
+      "inLanguage": "es"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#app">Ver la app</a>
+      <a href="#features">Funciones</a>
+      <a class="keep" href="guide.html">Guía</a>
+      <a href="troubleshooting.html">Solución de problemas</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Compartir esta página"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Compartir</span></button>
+      <a class="btn" href="#testers">Únete a la beta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Beta pública en TestFlight</span>
+      <h1 id="hero-title"><span class="grad lines">La bitácora de buceo que muestra lo que registró tu computadora.</span></h1>
+      <p class="lede">Descarga tus inmersiones por Bluetooth o cable, trae todo el historial de tu bitácora y lee el gas, la profundidad y la ppO₂ de un vistazo.</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          Únete a la beta
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>Hecha para dispositivos Apple.</b> <span>iPhone, iPad, Mac y Apple Watch.</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">Ver la app</a> · <a href="guide.html">Leer la guía</a> · <a href="troubleshooting.html">Solución de problemas</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Un perfil de inmersión en Thermocline: la profundidad durante 43 minutos con la presión del tanque, el SAC, la temperatura y la ppO2 trazados encima, y un cambio de gas de EAN30 a Air y de vuelta.">
+        </div>
+      </div>
+      <figcaption>Pruébalo: tres inmersiones reales, trazadas como las traza la app. Toca los botones, cambia entre Apilado y Superpuesto, y arrastra a lo largo de la inmersión.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Ver la app</p>
+      <h2 id="app-title">Tus inmersiones, como tú las lees</h2>
+      <p>Los valores de seguridad en el mismo lugar en cada inmersión, un perfil que puedes leer momento a momento y el cálculo detrás de cada cifra de gas. Aquí se muestra con la bitácora de ejemplo de la app.</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="Un recorrido de 22 segundos por Thermocline: un perfil de inmersión, la descarga de inmersiones, los valores de seguridad y el cálculo detrás del SAC."><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="Un recorrido de 22 segundos por Thermocline: un perfil de inmersión, la descarga de inmersiones, los valores de seguridad y el cálculo detrás del SAC."><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/es/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="La bitácora en el iPhone: una inmersión esperando en Por confirmar y luego la lista de inmersiones con sitio, fecha, profundidad y tiempo."><figcaption><b>Bitácora</b>Las inmersiones que necesitan un sitio o un gas esperan arriba.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/es/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Una inmersión en el iPhone: la franja de seguridad con profundidad, tiempo, gases, deco, ppO2 y CNS sobre el perfil."><figcaption><b>Cada inmersión</b>Profundidad, gases, deco, ppO₂ y CNS primero.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/es/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="El panel ¿Cómo? del consumo de gas en el iPhone, con el tanque, las presiones, la temperatura y el cálculo."><figcaption><b>Consumo de gas</b>Toca ¿Cómo? para ver cada dato detrás del SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/es/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="El mapa de sitios en el iPhone, con tus sitios y los puntos de inmersión de las listas integradas marcados."><figcaption><b>Sitios</b>Tus sitios y 76,000+ más, sin conexión.</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/es/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="La app para Mac: la lista de inmersiones junto a una inmersión con sus valores de seguridad, sitio, compañeros, equipo y perfil de profundidad, con la lectura del punto más profundo."><figcaption><b>En la Mac</b>Toda la bitácora junto a la inmersión. Apunta al perfil para leer cualquier momento.</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">Guía</span>
+        <h3>Cómo usar Thermocline</h3>
+        <p>Importa tu bitácora, descarga tu computadora, confirma sitios y gases, sincroniza y exporta. Paso a paso, para iPhone y Mac.</p>
+        <span class="go">Leer la guía →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">Solución de problemas</span>
+        <h3>¿Algo no funciona?</h3>
+        <p>Computadora no encontrada, sin inmersiones nuevas, diferencias de sincronización, huecos en una importación y cifras de SAC raras, cada uno con lo más rápido que hay que revisar.</p>
+        <span class="go">Buscar una solución →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76,000+</strong><span>puntos de inmersión y pecios en todo el mundo, sin conexión</span></div>
+    <div class="stat reveal"><strong>4</strong><span>dispositivos Apple, una bitácora</span></div>
+    <div class="stat reveal"><strong>17</strong><span>idiomas</span></div>
+    <div class="stat reveal"><strong>0</strong><span>cuentas, anuncios o rastreadores</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Buscamos testers</p>
+      <h2 id="testers-title">Únete a la beta</h2>
+      <p>Cada buzo ayuda: importa tu bitácora, registra algunas inmersiones y cuéntanos qué es confuso, qué falta o qué está mal. Un solo enlace sirve para todos los dispositivos.</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone, iPad, Mac y Apple Watch</h3>
+          <p>Una sola app, un solo enlace de la beta · iOS 18 o posterior, macOS 15 o posterior</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Únete a la beta</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>Instala la app TestFlight de Apple</li>
+      <li><b>2</b>Abre el enlace en tu iPhone, iPad o Mac y toca Aceptar</li>
+      <li><b>3</b>Envía comentarios con Compartir opinión sobre versión en TestFlight</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>¿Tienes una computadora de buceo? Ayúdanos a probarla.</h3>
+      <p>Las descargas por Bluetooth están probadas con Shearwater. Las descargas por cable y puerto serie en la Mac están hechas para muchas otras computadoras, pero todavía no se han probado con hardware real. Si tienes una, un solo intento de descarga ayuda, funcione o no.</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">Lo más buscado · Mac</span>
+          <h3>Cable USB y serie</h3>
+          <p>Para computadoras que se descargan por cable, a través de un adaptador USB-serie o conectadas directamente por USB.</p>
+          <p class="ask"><strong>Cómo:</strong> Archivo → Descargar de la computadora de buceo… → Cable USB. Elige el modelo y el puerto. Si falla, usa Registro de descarga… y luego Guardar registro…, y envíalo.</p>
+        </div>
+        <ul class="models" aria-label="Computadoras por probar">
+          <li>Familia Suunto Vyper y EON Steel</li>
+          <li>Oceanic, Aeris y Sherwood antiguas</li>
+          <li>Uwatec Aladin, Scubapro Aladin Square, G2 y G3</li>
+          <li>Cressi y Mares</li>
+          <li>OSTC y Atomic Cobalt</li>
+          <li>…y más</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Buscado · Mac</span>
+        <h3>Shearwater Predator y Petrel 1</h3>
+        <p>Usan un Bluetooth antiguo que los teléfonos no pueden usar. La Mac puede conectarse a ellas como puerto serie una vez enlazadas.</p>
+        <p class="ask"><strong>Cómo:</strong> Enlázala en Configuración del Sistema → Bluetooth y luego elige su puerto en la ventana de descarga, con la computadora en modo de transferencia. Envía el registro de descarga en cualquier caso.</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Probado · iPhone, iPad y Mac</span>
+        <h3>Bluetooth</h3>
+        <p>Probado con Shearwater Perdix y Perdix 2. Otras computadoras Bluetooth también deberían funcionar, y los informes sobre ellas son bienvenidos.</p>
+        <p class="ask"><strong>Cómo:</strong> Bitácora → Descargar inmersiones en el iPhone, o Archivo → Descargar de la computadora de buceo en la Mac.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Funciones</p>
+      <h2 id="features-title">Todo lo que registraron tus inmersiones, en una sola bitácora</h2>
+      <p>Hecha por un buzo apasionado para buzos recreativos, técnicos y de cuevas que quieren sus números claros.</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>Descarga por Bluetooth o cable</h3>
+        <p>Directo de tu computadora de buceo a tu iPhone o Mac, agregando el sitio, los compañeros, el equipo y las condiciones a medida que llega cada inmersión. La Mac también descarga por cable USB y serie.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>Trae todo tu historial</h3>
+        <p>Importa desde MacDive, una base de datos de Shearwater Cloud, archivos .fit de Garmin, UDDF o CSV, y elige qué inmersiones agregar. Todo lo que no puede leer aparece en una lista, nunca se descarta en silencio.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>Los valores de seguridad primero</h3>
+        <p>Seis valores clave están en una franja fija en la parte superior de cada inmersión. Puedes mostrar el tanque, la ppO₂, el NDL, el SAC, la temperatura, el CNS y la velocidad de ascenso como franjas o en una sola superposición.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>Un SAC que muestra su cálculo</h3>
+        <p>Se calcula a partir de la capacidad en agua de tu tanque con aritmética de gas real, así que es correcto con cualquier llenado. Toca ¿Cómo? para ver cada dato. Las inmersiones en sidemount, con doble tanque y con varios gases se cuentan correctamente.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>76,000+ sitios y pecios en todo el mundo</h3>
+        <p>Encuentra y nombra un punto de inmersión en cualquier parte del mundo, incluso sin señal, con listas abiertas de sitios integradas en la app. Tus propios sitios siempre van primero.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>Apple Watch en superficie</h3>
+        <p>Marca el sitio desde tu muñeca al salir a la superficie. La posición espera en tu bitácora para que le pongas nombre más tarde.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>Dos computadoras, una inmersión</h3>
+        <p>¿Buceas con una computadora de respaldo? Thermocline te ofrece fusionar las dos grabaciones, o unir una inmersión que quedó dividida en dos. Nunca hace ninguna de las dos cosas sin preguntar.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>Sincronizada a través de tu iCloud</h3>
+        <p>Tu bitácora, tu equipo, tus compañeros y tus fotos te siguen entre el iPhone, el iPad y la Mac. Los puntos de restauración pueden llevarte a antes de una importación o una fusión.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>Siempre hay una salida</h3>
+        <p>Exporta todo, en cualquier momento, como UDDF, CSV o MacDive XML. Tu bitácora nunca queda atrapada.</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>También en la app</h3>
+      <div class="formats">
+        <span class="chip">Equipo y tanques, incluido el marcado +</span>
+        <span class="chip">Compañeros, vinculados a Contactos</span>
+        <span class="chip">Tarjetas de certificación</span>
+        <span class="chip">Fotos de inmersión y enlaces de video</span>
+        <span class="chip">Búsqueda por sitio, compañero, gas, notas, fecha o #número</span>
+        <span class="chip">Resumen de profundidades, gases y récords</span>
+        <span class="chip">Sistema métrico o imperial</span>
+        <span class="chip">17 idiomas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Cómo está hecha</p>
+      <h2 id="principles-title">Una bitácora a la que puedes confiar tus números</h2>
+      <p>Tres reglas dan forma a cada pantalla.</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>Una bitácora, no un planificador</h3>
+        <p>Thermocline muestra lo que registró tu computadora de buceo. Nunca calcula la descompresión y nunca pone su propia estimación en lugar de los números de tu computadora.</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>Tus datos siguen siendo tuyos</h3>
+        <p>Sin cuenta, sin anuncios, sin analíticas y sin servidores del desarrollador. Tu bitácora vive en tus dispositivos y en tu propio iCloud, y se exporta completa cuando quieras. <a href="privacy.html" style="color:#fff">Política de privacidad</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>Avisar, nunca bloquear</h3>
+        <p>Si una descarga o una sincronización solo funciona en parte, se te dice qué pasó y no se descarta nada. Las ediciones conservan el original de la computadora junto a tu corrección.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">Preguntas</p>
+      <h2 id="faq-title">Antes de unirte</h2>
+      <p>¿Ya estás probando? Las páginas <a href="guide.html">Guía</a> y <a href="troubleshooting.html">Solución de problemas</a> explican la app paso a paso.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>¿Funciona en Android, Windows o la web?</summary>
+        <p>No. Thermocline está hecha solo para dispositivos Apple: iPhone, iPad, Mac y Apple Watch. Está creada con las propias herramientas de Apple para poder trabajar de cerca con iCloud, Bluetooth, Fotos y Mapas.</p>
+      </details>
+      <details>
+        <summary>¿Con qué computadoras de buceo funciona?</summary>
+        <p>Las descargas por Bluetooth están probadas con Shearwater Perdix y Perdix 2, en iPhone, iPad y Mac. La Mac también descarga por cable USB y serie de muchas otras computadoras, entre ellas Suunto, Oceanic, Aeris y Sherwood antiguas, Uwatec y Scubapro, Cressi, Mares, OSTC y Atomic. Esas descargas por cable todavía no se han probado con hardware real, así que si tienes una, por favor pruébala. Las inmersiones de Garmin Descent llegan desde sus archivos .fit, en iPhone, iPad y Mac. Las inmersiones de cualquier computadora también pueden llegar a través de un archivo de bitácora.</p>
+      </details>
+      <details>
+        <summary>Uso MacDive. ¿Se pasará mi bitácora?</summary>
+        <p>Sí. Exporta desde MacDive como XML e importa el archivo. XML es la más completa de las dos exportaciones de MacDive: su UDDF deja fuera el NDL, la ppO₂ y el CNS de la computadora, el equipo y los tipos de inmersión. Si ya importaste el UDDF, importa el XML encima y los huecos se llenan sin duplicados. Tú eliges qué inmersiones agregar, los tanques llegan como tanques reales (tamaño, presión, doble tanque y +) y se conservan los ID de inmersión de MacDive, así que una exportación de vuelta a MacDive no crea duplicados.</p>
+      </details>
+      <details>
+        <summary>¿La app para Mac es la misma app?</summary>
+        <p>Sí. iPhone, iPad, Mac y Apple Watch son una sola app con un solo enlace de la beta. Únete una vez y luego instálala desde TestFlight en cada dispositivo. Todos usan la misma bitácora de iCloud, así que una inmersión descargada en la Mac aparece en tu teléfono. Mantén todos los dispositivos en la build más reciente.</p>
+      </details>
+      <details>
+        <summary>Me uní a la beta para iPhone antes del 18 de noviembre de 2026. ¿Qué hago?</summary>
+        <p>Esa app se mudó. Ábrela y activa Sincronizar con iCloud (o exporta un archivo UDDF), luego únete a la beta con el enlace de esta página e instala la nueva app junto a ella. Activa la sincronización en la nueva app y tu bitácora vuelve. Cuando todo se vea bien, elimina la anterior. <a href="troubleshooting.html#moved">Paso a paso</a>.</p>
+      </details>
+      <details>
+        <summary>¿Qué necesito?</summary>
+        <p>Un iPhone o iPad con iOS o iPadOS 18 o posterior, o una Mac con macOS 15 o posterior. La app para Apple Watch necesita watchOS 11. Para sincronizar entre dispositivos, inicia sesión en la misma cuenta de iCloud en cada uno.</p>
+      </details>
+      <details>
+        <summary>¿Una build beta podría hacerme perder inmersiones?</summary>
+        <p>Está diseñada para que eso no pase. Las importaciones nunca cambian el archivo del que importas, y los puntos de restauración pueden llevar tu bitácora a antes de una importación o una fusión. Conserva tus exportaciones originales y, si faltan inmersiones o aparecen duplicadas, envía una captura de pantalla de Perfil → Sincronización antes de cambiar nada.</p>
+      </details>
+      <details>
+        <summary>¿Puedo usar las posiciones de los sitios para navegar?</summary>
+        <p>No. Las posiciones de los sitios son para registrar, no para navegar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">Trae tu bitácora contigo.</h2>
+    <p>Únete a la beta en tu iPhone, iPad o Mac, importa tus inmersiones y cuéntanos qué es confuso, qué falta o qué está mal, por pequeño que sea.</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">Únete a la beta</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, una bitácora de buceo para iPhone, iPad, Mac y Apple Watch. No es para planificar inmersiones ni para navegar.</p>
+      <p>Listas de puntos de inmersión © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a>, disponibles bajo la Open Database License. <a href="https://github.com/616fun/thermocline-site-data">Descargar las listas de sitios</a>.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch, iCloud y TestFlight son marcas comerciales de Apple Inc.</p>
+    </div>
+    <nav class="foot-links" aria-label="Pie de página">
+      <a href="guide.html">Guía</a>
+      <a href="troubleshooting.html">Solución de problemas</a>
+      <a href="support.html">Soporte</a>
+      <a href="privacy.html">Privacidad</a>
+      <a href="#testers">Únete a la beta</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Idiomas">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="index.html" hreflang="es" lang="es" aria-current="page">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

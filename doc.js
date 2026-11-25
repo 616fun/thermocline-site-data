@@ -1,6 +1,14 @@
 // Guide and troubleshooting pages. Everything here is an extra: without it, every table shows
 // both devices, the contents list stays open and every answer can still be opened by hand.
 (function () {
+  // Text in the page's language, from site-strings.js; English when there's no translation.
+  var LANG = document.documentElement.lang || 'en';
+  var TR = (window.SITE_T && window.SITE_T[LANG]) || {};
+  function tr(s) { return typeof TR[s] === 'string' ? TR[s] : s; }
+  function count(key, n, en) {
+    var v = TR[key], form = v && typeof v === 'object' ? (v[new Intl.PluralRules(LANG).select(n)] || v.other) : en;
+    return form.split('{0}').join(n.toLocaleString(LANG === 'en' ? 'en-US' : LANG));
+  }
   var root = document.documentElement;
 
   // ---- Device filter (guide): narrows the iPhone/Mac tables to one column. ----
@@ -63,7 +71,7 @@
       var a = document.createElement('a');
       a.className = 'ans-link';
       a.href = '#' + d.id;
-      a.textContent = 'Link to this answer';
+      a.textContent = tr('Link to this answer');
       d.appendChild(a);
     });
     window.addEventListener('hashchange', openFromHash);
@@ -89,8 +97,8 @@
       });
       groups.forEach(function (g) { g.hidden = words.length > 0 && !g.querySelector('.faq details:not([hidden])'); });
       status.textContent = !words.length ? '' : shown === 0
-        ? 'Nothing matches. Try another word, or send a report (below).'
-        : shown + (shown === 1 ? ' problem matches.' : ' problems match.');
+        ? tr('Nothing matches. Try another word, or send a report (below).')
+        : count('{0} problems match.', shown, shown === 1 ? '{0} problem matches.' : '{0} problems match.');
       var send = document.getElementById('send-log-group');
       if (send) send.hidden = false;
     }

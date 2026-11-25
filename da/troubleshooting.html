@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fejlfinding – Thermocline</title>
+  <meta name="description" content="Løsninger på almindelige problemer i Thermocline: Dykkercomputeren vil ikke oprette forbindelse, ingen nye dyk, forskelle efter synkronisering, huller i en import, fotos og SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/da/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="Fejlfinding – Thermocline">
+  <meta property="og:description" content="Løsninger på almindelige problemer i Thermocline: Dykkercomputeren vil ikke oprette forbindelse, ingen nye dyk, forskelle efter synkronisering, huller i en import, fotos og SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/da/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/da.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Thermocline-appens ikon og navn over et foto af en skibsstævn på et vragdyk med dykkere og fisk. Dyklogbogen til iPhone, iPad og Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fejlfinding – Thermocline">
+  <meta name="twitter:description" content="Løsninger på almindelige problemer i Thermocline: Dykkercomputeren vil ikke oprette forbindelse, ingen nye dyk, forskelle efter synkronisering, huller i en import, fotos og SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/da.jpg">
+  <meta name="twitter:image:alt" content="Thermocline-appens ikon og navn over et foto af en skibsstævn på et vragdyk med dykkere og fisk. Dyklogbogen til iPhone, iPad og Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Gå til fejlfinding</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Hovedmenu">
+      <a href="guide.html">Vejledning</a>
+      <a href="troubleshooting.html" aria-current="page">Fejlfinding</a>
+      <a href="support.html">Support</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Del denne side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Del</span></button>
+      <a class="btn" href="./#testers">Deltag i betaen</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Fejlfinding</h1>
+    <p>Find dit problem nedenfor. Hvert punkt starter med det hurtigste, du kan tjekke. Opdateret 18. november 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="På denne side">
+    <details open>
+      <summary>På denne side</summary>
+    <ol>
+      <li><a href="#first">Opdater først</a></li>
+      <li><a href="#downloads">Hentning</a></li>
+      <li><a href="#sync">Synkronisering</a></li>
+      <li><a href="#imports">Import</a></li>
+      <li><a href="#numbers">Gas og SAC</a></li>
+      <li><a href="#photos">Fotos</a></li>
+      <li><a href="#sites">Dykkersteder og uret</a></li>
+      <li><a href="#send-log">Send en rapport</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Søg efter dit problem</label>
+      <input id="faq-q" type="search" placeholder="F.eks.: NDL, Garmin, pinkode, synkronisering" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Opdater først alle enheder</h2>
+    <p>Mange problemer forsvinder, når alle enheder kører det nyeste build. Åbn TestFlight på hver iPhone, iPad og Mac, du bruger, og installer eventuelle opdateringer. Et ældre build holder op med at sende ændringer, indtil det er opdateret, og viser <strong>Opdater Thermocline for at fortsætte synkroniseringen</strong>. Dine ændringer bevares og sendes efter opdateringen.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Hentning fra en dykkercomputer</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>Computeren bliver ikke fundet</summary>
+        <ul>
+          <li>Væk computeren, og sæt den i dens Bluetooth-tilstand (Shearwater: <span class="path">Menu → Bluetooth</span>). Den bliver der kun i cirka to minutter.</li>
+          <li>Hold den tæt på iPhone, iPad eller Mac.</li>
+          <li><strong>Shearwater-computere vender tilbage til den sidste enhed, de brugte.</strong> Hvis din telefon eller en anden Mac er i nærheden, så slå Bluetooth fra på den enhed, og prøv igen.</li>
+          <li>Tjek, at Bluetooth er slået til, og at Thermocline har tilladelse til at bruge det (iPhone: Indstillinger → Thermocline; Mac: Systemindstillinger → Anonymitet &amp; sikkerhed → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Det er en Predator eller Petrel 1, og iPhone kan ikke se den</summary>
+        <p>De bruger ældre Bluetooth (Bluetooth Classic), som iPhone og iPad ikke kan bruge. Hent dem på Mac (se <a href="guide.html#download">vejledningen</a>), eller importér deres dyk fra Shearwater Cloud eller en UDDF-fil.</p>
+      </details>
+      <details id="pin">
+        <summary>Den opretter forbindelse, men beder om en pinkode</summary>
+        <p>Indtast den kode, der vises på computerens skærm. Den skal kun bruges første gang.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>"Ingen nye dyk"</summary>
+        <p>Kun dyk, der er nyere end din seneste hentning, hentes. Hvis du har slettet et dyk og vil have det tilbage, så slå <strong>Hent alle dyk på computeren</strong> til, og hent igen. Dyk, der allerede er i din logbog, springes over.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>Hentningen stoppede halvvejs</summary>
+        <p>Vælg <strong>Behold</strong> for at gemme de dyk, der kom frem, og hent derefter igen for at få resten. Hvis den bliver ved med at stoppe, så vælg <strong>Prøv igen</strong> tæt på computeren, og <a href="#send-log">send hentningsloggen</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>En hentning via kabel mislykkes på Mac</summary>
+        <ul>
+          <li>Tjek, at porten passer til kablet: Listen viser, hvilken slags hver port er, og advarer, når den ikke passer til den model, du har valgt.</li>
+          <li>Tag kablet ud, og sæt det i igen, og brug derefter opdateringsknappen til at søge efter kabler igen.</li>
+          <li>Følg trinene under <strong>Før du starter</strong> for din model.</li>
+          <li>Hentning via kabel er nyt. <a href="#send-log">Send gerne hentningsloggen</a> under alle omstændigheder.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Synkronisering mellem enheder</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>Min iPhone-app siger, at Thermocline nu er én app, eller jeg ser to Thermocline-apps</summary>
+        <p>Den 18.&nbsp;november&nbsp;2026 blev appene til iPhone, iPad, Mac og Apple Watch til én app med ét beta-link. Den iPhone-app, du havde før, hjælper dig nu kun med at flytte.</p>
+        <ol>
+          <li>Åbn den gamle app. Hvis den siger, at synkronisering er slået fra, så tryk på <strong>Slå »Synkroniser med iCloud« til</strong>, og lad den være åben i et minut, eller tryk på <strong>Eksportér min logbog som UDDF</strong>, og gem filen.</li>
+          <li>Tryk på <strong>Tilmeld dig den nye beta</strong>, eller åbn <a href="https://testflight.apple.com/join/ygF4ngNd">beta-linket</a> på din iPhone, og installer den nye app. Den ligger ved siden af den gamle.</li>
+          <li>I den nye app skal du slå <span class="path">Profil → Synkroniser med iCloud</span> til. Dine dyk, dykkersteder, dit udstyr og dine indstillinger kommer tilbage. Hvis du eksporterede i stedet, så brug <span class="path">Profil → Importér en logbogsfil</span>.</li>
+          <li>Du skal måske parre din dykkercomputer igen og installere Watch-appen igen fra Watch-appen på din iPhone.</li>
+          <li>Når den nye app viser de samme dyk, så slet den gamle.</li>
+        </ol>
+        <p>På en Mac ændres intet: Bliv ved med at opdatere Mac-appen som sædvanligt.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>Dyk mangler eller er dobbelte efter en synkronisering</summary>
+        <ol>
+          <li>Lad være med at ændre noget endnu. Tag et skærmbillede af afsnittet Synkronisering (iPhone: <span class="path">Profil → Synkronisering</span>; Mac: <span class="path">Thermocline → Indstillinger → Synkronisering</span>) på hver enhed, og send det.</li>
+          <li>Tjek, at alle enheder har det nyeste build.</li>
+          <li><span class="path">Profil → Dine data → Gendannelsespunkter</span> kan føre din logbog tilbage til før en import, en fletning eller en sletning. En gendannelse gemmer først din nuværende logbog, så den kan fortrydes.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>En ændring på én enhed vises ikke på den anden</summary>
+        <ul>
+          <li>Tjek, at <strong>Synkroniser med iCloud</strong> er slået til på begge, og at de er logget ind på den samme Apple-konto.</li>
+          <li>Se på <strong>Venter på at sende</strong> på den enhed, hvor du lavede ændringen, og åbn appen på begge med signal. Afsnittet Synkronisering siger, når denne enhed og dine andre stemmer overens.</li>
+          <li>Tryk på <strong>Synkroniser nu</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>"Ikke logget ind på iCloud"</summary>
+        <p>Log ind på iCloud i enhedens Indstillinger. Indtil da bliver din logbog sikkert på den enhed og synkroniseres, når du er logget ind.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>"Din iCloud-lagerplads er fuld"</summary>
+        <p>Din logbog er sikker på enheden og synkroniseres, når der er plads. Frigør noget iCloud-plads, eller slå <strong>Spar iCloud-lagerplads på dykfotos</strong> til, så fotos ikke gemmes to gange.</p>
+      </details>
+      <details id="newer-version">
+        <summary>"En anden enhed bruger en nyere version"</summary>
+        <p>Opdater Thermocline på denne enhed i TestFlight. Dine ændringer er sikre her og sendes efter opdateringen.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Import</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Nogle dyk eller detaljer kom ikke med</summary>
+        <p>Importrapporten viser alt under <strong>Ikke importeret</strong> og <strong>Tjek venligst</strong> med årsagen. Hver logbog skriver UDDF lidt forskelligt, så manglende værdier er normale og forbliver tomme. Hvis noget, du forventede, mangler, så send rapporten og, hvis du kan, filen.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>Mit udstyr, mine fotos eller mine dyktyper fra MacDive mangler</summary>
+        <p>MacDives UDDF-eksport udelader dem. Importér dens XML oven i for udstyr, tags og dyktyper, og importér på Mac MacDives mappe for fotos. Dyk, der allerede er i din logbog, tilføjes ikke to gange. Se <a href="guide.html#macdive-files">Hvilken MacDive-fil du skal bruge</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>NDL, ppO₂ eller CNS mangler på dyk fra MacDive</summary>
+        <p>Dyksiden viser NDL som "—" og Deko som "Ikke registreret", eller ved ppO₂ står der "Beregnet ud fra gas og dybde". MacDives UDDF-eksport indeholder ikke computerens NDL, ppO₂ eller CNS. Dens mappe har ingen profil for dyk, som MacDive hentede på en iPhone eller iPad, fordi den gemmer dem krypteret.</p>
+        <p>Importér også MacDives XML: Den udfylder det, der mangler, uden at tilføje dyk igen. Se <a href="guide.html#macdive-files">Hvilken MacDive-fil du skal bruge</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Mister jeg noget ved at skifte mellem filer eller apps?</summary>
+        <ul>
+          <li><strong>Dine oprindelige filer ændres aldrig.</strong> Gem dine MacDive-eksporter, og behold selve MacDive, indtil du har sammenlignet et par dyk.</li>
+          <li><strong>En ny import tilføjer, den erstatter ikke.</strong> Dyk, der allerede er i din logbog, bliver matchet og får kun det, de mangler, så du kan importere XML-filen efter UDDF-filen eller mappen efter en af dem.</li>
+          <li><strong>Du kan gå tilbage.</strong> Et gendannelsespunkt med navnet <strong>Før en import</strong> gemmes før enhver import af mere end ét dyk (<span class="path">Profil → Dine data → Gendannelsespunkter</span> på iPhone, <span class="path">Indstillinger → Gendannelsespunkter</span> på Mac). På Mac kan <strong>Fortryd import…</strong> i rapporten også rulle den tilbage.</li>
+          <li><strong>Hvis du forlader Thermocline:</strong> Dens UDDF-eksport er den komplette. Den indeholder computerens NDL, ppO₂ og CNS gennem hvert dyk, udstyr, tags, dyktyper og videolinks. Fotos er ikke med i nogen eksportfil.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>Importerede dyk har ingen gas</summary>
+        <p>Filen sagde ikke, hvilken gas der blev brugt. De dyk venter i <strong>Skal bekræftes</strong>, så du kan angive den.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Jeg importerede den forkerte fil</summary>
+        <p>På Mac skal du bruge <strong>Fortryd import…</strong> i importrapporten. På begge enheder gemmes et gendannelsespunkt med navnet <strong>Før en import</strong> før enhver import af mere end ét dyk.</p>
+      </details>
+      <details id="garmin">
+        <summary>En Garmin-fil vil ikke importeres</summary>
+        <ul>
+          <li><strong>"Det er en zip-fil"</strong>: Garmin Connects <strong>Eksporter original</strong> giver en .zip-fil. Pak den ud, og vælg derefter .fit-filen i den.</li>
+          <li><strong>"Dette er ikke en Garmin FIT-fil"</strong>: Filen er ikke fra et Garmin-ur, eller kun dens navn ender på .fit. Brug filen fra urets mappe <span class="path">GARMIN → Activity</span> eller <strong>Eksporter original</strong>.</li>
+          <li><strong>"Garmin-filer indeholder intet dyk"</strong>: Løbeture, gåture, indstillinger og helbredsfiler springes over. Kun dyk kommer med.</li>
+          <li><strong>"Ser afkortet eller beskadiget ud"</strong>: Filen stoppede halvvejs, ofte på grund af en kopiering eller hentning, der ikke blev færdig. Det, der kunne læses, vises; kopiér filen fra uret igen, og importér den igen for at få resten. Dyk, der allerede er i din logbog, springes over.</li>
+          <li><strong>Valg af en Garmin-fil sammen med en anden logbogsfil</strong> er ikke muligt i én omgang: Importér logbogsfilen og derefter Garmin-filerne.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Et Garmin-dyk beder mig tjekke dets flasker</summary>
+        <p>Med mere end én flaskesender siger Garmins fil ikke, hvilken gas hver af dem sad på, så de blev matchet til dykkets flasker i rækkefølge. Åbn dykkets gasafsnit, og sørg for, at hvert tryk står på den rigtige flaske.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Tiden på et Garmin-dyk er en time forkert</summary>
+        <p>Tiden kommer fra urets klokke. Hvis den ikke var indstillet til lokal tid, der hvor du dykkede, vises dykket med urets tid. Ret dykkets tid, eller indstil urets tidszone før næste tur.</p>
+      </details>
+      <details id="drift-site">
+        <summary>Et driftdyk har det forkerte dykkersted</summary>
+        <p>Et dyk matches til det nærmeste af stedet, hvor du gik i vandet, og stedet, hvor du kom op, hvilket på et driftdyk normalt er der, hvor du gik i vandet. Hvis det matchede det forkerte dykkersted eller intet, så vælg dykkerstedet på dykket, og tilføj andre vrag, du passerede, i noterne.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Gasforbrug og SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>Et SAC-tal ser forkert ud</summary>
+        <p>Tryk eller klik på <strong>Hvordan?</strong> ved siden af det. Det viser alle værdier: flasken og dens vandvolumen, tryk, temperatur, realgaskorrektionen, tid og dybde. Den sædvanlige synder er en forkert flaskestørrelse; ret den i Udstyr. Send et skærmbillede af skærmen Hvordan?, hvis det stadig ser forkert ud.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/da/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panelet Hvordan? for gasforbrug på iPhone med flasken, trykkene, temperaturen og udregningen."><figcaption>Panelet Hvordan? (eksempeldyk).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>Der er ingen SAC, kun en besked</summary>
+        <ul>
+          <li><strong>Tilføj flaskestørrelsen for at se SAC</strong>: Vælg flaskens model, eller indtast dens størrelse.</li>
+          <li><strong>Tilføj start- og sluttryk for at se SAC</strong>: Der er ingen sender, så indtast dem på flasken.</li>
+          <li><strong>SAC kræver en dykprofil</strong>: Dyk, der er logget manuelt uden profil, har ingen SAC.</li>
+          <li>Rebreatherdyk får ikke noget SAC-tal.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC tæller kun én flaske</summary>
+        <p>På et dyk med flere gasser er det kun flasken med senderen, der har tryk. Indtast start- og sluttryk på den anden flaske, så dækker SAC al gassen.</p>
+      </details>
+      <details id="breathing">
+        <summary>Vejrtrækning i Oversigt siger, at intet dyk har en flaskestørrelse</summary>
+        <p>Vejrtrækning beregner kun gennemsnit over dyk med en flaskestørrelse samt start- og sluttryk. Dyk fra MacDives UDDF har ingen flaskestørrelse, fordi dens størrelser ikke er vandvolumener; hvis du importerer XML-filen oven i, udfyldes de (se <a href="guide.html#macdive-files">Hvilken MacDive-fil du skal bruge</a>). Ellers skal du angive flasken på dine dyk (vælg dens model eller et udstyrssæt) og tilføje tryk, hvor du har dem. Under tallet viser Vejrtrækning, hvor mange dyk der ikke blev talt med.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/da/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Vejrtrækning på fanen Oversigt: SAC og RMV over 14 dyk og ét dyk, der ikke er talt med, fordi det ikke har nogen flaskestørrelse eller tryk."><figcaption>Antallet af udeladte dyk står under tallet (eksempellogbog).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Fotos</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Et foto vises ikke på min anden enhed</summary>
+        <p>Med <strong>Spar iCloud-lagerplads på dykfotos</strong> slået til beholder et foto sin kopi, indtil din anden enhed finder det i iCloud-fotos. Slå indstillingen til på begge enheder, tjek, at iCloud-fotos er slået til på begge, og giv det tid til at blive overført.</p>
+      </details>
+      <details id="videos">
+        <summary>Videoer blev ikke tilføjet</summary>
+        <p>Videoer fra dit bibliotek kan kun knyttes, ikke kopieres. Slå <span class="path">Synkronisering → Spar iCloud-lagerplads på dykfotos</span> til, og sørg for, at videoen er i iCloud-fotos. Eller indsæt et YouTube- eller Vimeo-link under dykkets fotos.</p>
+      </details>
+      <details id="photos-access">
+        <summary>"Thermocline kan ikke læse dine fotos"</summary>
+        <p>Adgang til Fotos blev afvist, så fotos kopieres i stedet for at blive knyttet. For at knytte dem skal du tillade adgang i Indstillinger → Anonymitet &amp; sikkerhed → Fotos → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Dykkersteder og Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>Det foreslåede dykkersted er forkert, eller der er intet</summary>
+        <p>Vælg et andet dykkersted, søg i de indbyggede lister efter navn, eller markér eller indtast selv positionen. Indlandsstenbrud og søer mangler ofte på offentlige lister, så dine egne dykkersteder kommer først i forslagene fra da af.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Thermocline er ikke på mit Apple Watch</summary>
+        <p>Watch-appen følger med iPhone-appen fra TestFlight. Åbn Watch-appen på din iPhone, find Thermocline under <strong>Tilgængelige apps</strong>, og tryk på <strong>Installer</strong>. Den kræver watchOS&nbsp;11 eller nyere. Hvis du flyttede fra den gamle iPhone-app, så installer den igen: Den gamle Watch-app hører til den gamle iPhone-app.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>Uret siger "Venter på et godt fix", og Markér punkt forbliver grå</summary>
+        <p>Et punkt gemmes kun ud fra et fix inden for &plusmn;30&nbsp;m, der er under 30&nbsp;sekunder gammelt, så en forkert position når aldrig din logbog. Bliv ved overfladen med uret oven for vandet og frit udsyn til himlen, og giv det et minut. <strong>Ignorerer en gammel gemt position</strong> betyder, at det venter på en ny. GPS virker ikke under vandet: Markér punktet, før du går ned, eller når du kommer op.</p>
+      </details>
+      <details id="watch-location">
+        <summary>"Lokalitetsadgang er slået fra for Thermocline" på uret</summary>
+        <p>Åbn <span class="path">Indstillinger → Anonymitet &amp; sikkerhed → Lokalitetstjenester</span> på uret, slå Lokalitetstjenester til, og tillad Thermocline, mens appen bruges.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Et punkt markeret på uret dukkede ikke op på iPhone</summary>
+        <p>Åbn <strong>Markeringer</strong> på uret. <strong>Venter på at blive sendt til iPhone</strong> betyder, at iPhone ikke har fået det endnu: Hold uret tæt på din iPhone, og åbn Thermocline på iPhone. <strong>Sendt til iPhone</strong> betyder, at det er der: Kig i <span class="path">Logbog → Skal bekræftes</span>. iPhone slår punktet op, når den er online, så uden signal venter det med <strong>venter på signal for at slå op</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>Uret viste ikke noget navn på et dykkersted, efter jeg markerede et punkt</summary>
+        <p>Navnet kommer fra din iPhone: Når den er i nærheden, og Thermocline kan svare, viser uret det dykkersted, den ville foreslå, under punktet, dit eget eller et fra listerne over dykkersteder, med hvor langt væk det er. Når iPhone er uden for rækkevidde, navngiver uret dine egne dykkersteder ud fra den kopi, din iPhone har lagt på det, men ikke listerne over dykkersteder. Uden noget dykkersted inden for cirka 1,5&nbsp;km markeres punktet uden navn. Under alle omstændigheder vælger du dykkerstedet på iPhone i <span class="path">Logbog → Skal bekræftes</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>Det navn, jeg sagde på uret, blev ikke gemt</summary>
+        <p>Navnet gemmes, når diktering eller tastatur lukkes, eller når du går tilbage. Åbn <strong>Markeringer</strong>, tryk på punktet, og tjek dets navn; tryk på <strong>Skift navnet</strong> for at prøve igen. Hvis punktet allerede var sendt, følger navnet med det til iPhone.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Registrerer uret mine dyk?</summary>
+        <p>Nej. Thermoclines Watch-app markerer kun punkter ved overfladen. Dine dyk kommer fra din dykkercomputer. For Garmin Descent-ure skal du importere deres .fit-filer: se <a href="guide.html#garmin">Garmin Descent</a> i vejledningen.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Et punkt forsvandt fra uret</summary>
+        <p>Det er forventet. Et punkt forsvinder fra uret, når det er bekræftet eller kasseret på iPhone. Et bekræftet punkt er et dykkersted i din logbog og synkroniseres til dine andre enheder.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Send en rapport eller en hentningslog</h2>
+    <ul>
+      <li><strong>Fra appen:</strong> Tag et skærmbillede, og brug derefter <strong>Del Beta-feedback</strong> i TestFlight. Den kommer frem med build og enhed vedhæftet.</li>
+      <li><strong>Hentningslog, iPhone:</strong> På hentningsskærmen skal du trykke på <strong>Hentningslog</strong> og derefter dele den. Den indeholder kun Bluetooth- og computermeddelelser, ingen dykdata.</li>
+      <li><strong>Hentningslog, Mac:</strong> I hentevinduet skal du vælge <strong>Hentningslog…</strong>, derefter <strong>Gem log…</strong> og vedhæfte filen.</li>
+      <li><strong>E-mail:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, med din enhed, buildnummeret (vises i TestFlight), og hvad du forventede, der skulle ske.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, en dyklogbog. Ikke til dykplanlægning eller navigation.</p>
+      <p>Lister over dykkersteder © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-bidragydere</a>, tilgængelige under Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Sidefod">
+      <a href="./">Forside</a>
+      <a href="guide.html">Vejledning</a>
+      <a href="troubleshooting.html">Fejlfinding</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privatliv</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Sprog">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="troubleshooting.html" hreflang="da" lang="da" aria-current="page">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

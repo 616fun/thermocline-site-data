@@ -1,6 +1,8 @@
 // Share button in the header. Phones (and Safari on the Mac) open the system share sheet
 // with this page's title and link; elsewhere the link is copied and a short note confirms it.
 (function () {
+  var TR = (window.SITE_T && window.SITE_T[document.documentElement.lang || 'en']) || {};
+  function tr(s) { return TR[s] || s; }
   var btn = document.getElementById('share-btn');
   if (!btn) return;
   var canonical = document.querySelector('link[rel="canonical"]');
@@ -46,11 +48,11 @@
     var data = { title: document.title, text: desc ? desc.content : '', url: url };
     if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
       navigator.share(data).catch(function (e) {
-        if (e && e.name !== 'AbortError') copy().then(function () { note('Link copied'); });
+        if (e && e.name !== 'AbortError') copy().then(function () { note(tr('Link copied')); });
       });
       return;
     }
-    copy().then(function () { note('Link copied'); },
+    copy().then(function () { note(tr('Link copied')); },
                 function () { note(url); });
   });
 })();

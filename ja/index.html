@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – iPhone、iPad、Mac のためのダイブログブック</title>
+  <meta name="description" content="Thermocline は、iPhone、iPad、Mac、Apple Watch という Apple デバイスのためのダイブログブックです。Bluetooth またはケーブルでダイブをダウンロードし、MacDive や Shearwater Cloud のログブックを読み込んで、コンピューターが記録した内容を確認できます。TestFlight で公開ベータ中です。">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/ja/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="Thermocline – iPhone、iPad、Mac のためのダイブログブック">
+  <meta property="og:description" content="Apple デバイス向け。Bluetooth またはケーブルでダイブをダウンロードし、これまでのログブックを読み込んで、コンピューターが記録した内容を確認できます。ベータに参加してください。">
+  <meta property="og:url" content="https://thermoclineapp.com/ja/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/ja.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ダイバーと魚が写る沈船ダイブの船首の写真に、Thermocline のアプリアイコンと名前を重ねた画像。iPhone、iPad、Mac のためのダイブログブック。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – iPhone、iPad、Mac のためのダイブログブック">
+  <meta name="twitter:description" content="Apple デバイス向け。Bluetooth またはケーブルでダイブをダウンロードし、これまでのログブックを読み込んで、コンピューターが記録した内容を確認できます。ベータに参加してください。">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/ja.jpg">
+  <meta name="twitter:image:alt" content="ダイバーと魚が写る沈船ダイブの船首の写真に、Thermocline のアプリアイコンと名前を重ねた画像。iPhone、iPad、Mac のためのダイブログブック。">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/ja/#website",
+      "url": "https://thermoclineapp.com/ja/",
+      "name": "Thermocline",
+      "description": "Thermocline は、iPhone、iPad、Mac、Apple Watch という Apple デバイスのためのダイブログブックです。Bluetooth またはケーブルでダイブをダウンロードし、MacDive や Shearwater Cloud のログブックを読み込んで、コンピューターが記録した内容を確認できます。TestFlight で公開ベータ中です。",
+      "inLanguage": "ja"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/ja/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "iPhone、iPad、Mac、Apple Watch のためのダイブログブック。アプリもベータのリンクもひとつだけ。Bluetooth でダイブをダウンロードし、MacDive や Shearwater Cloud のログブックを読み込んで、ガス、水深、ppO2 をひと目で確認できます。",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/ja/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/ja/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/ja/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/ja/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "ダイブログブック",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/ja/",
+      "inLanguage": "ja"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/ja/#mac-app",
+      "name": "Thermocline for Mac",
+      "operatingSystem": "macOS 15 or later",
+      "description": "Mac のためのダイブログブック。Bluetooth またはケーブルでダイブをダウンロードし、MacDive や Shearwater Cloud のログブックを読み込んで、すべてのダイブを詳しく確認できます。",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/ja/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "ダイブログブック",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/ja/",
+      "inLanguage": "ja"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="メイン">
+      <a href="#app">アプリを見る</a>
+      <a href="#features">機能</a>
+      <a class="keep" href="guide.html">ガイド</a>
+      <a href="troubleshooting.html">トラブルシューティング</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="このページを共有"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">共有</span></button>
+      <a class="btn" href="#testers">ベータに参加</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>TestFlight で公開ベータ中</span>
+      <h1 id="hero-title"><span class="grad lines">コンピューターが記録した内容を見せる、ダイブログブック。</span></h1>
+      <p class="lede">Bluetooth またはケーブルでダイブをダウンロードし、これまでのログブックをまるごと取り込んで、ガス、水深、ppO₂ をひと目で確認できます。</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          ベータに参加
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>Apple デバイスのために作られています。</b> <span>iPhone、iPad、Mac、Apple Watch。</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">アプリを見る</a> · <a href="guide.html">ガイドを読む</a> · <a href="troubleshooting.html">トラブルシューティング</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Thermocline のダイブプロファイル: 43 分間の水深に、タンク圧、SAC、水温、ppO2 を重ねて描き、EAN30 から Air へ切り替えて、また EAN30 に戻るガス切り替えを示しています。">
+        </div>
+      </div>
+      <figcaption>試してみてください: 3 本の実際のダイブを、アプリと同じ方法で描いています。チップをタップし、「並べる」と「重ねる」を切り替え、ダイブの上をドラッグしてください。</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">アプリを見る</p>
+      <h2 id="app-title">ダイブを、あなたの読み方で</h2>
+      <p>安全に関わる値はどのダイブでも同じ場所にあり、プロファイルは一瞬ごとに読み取れ、ガスの数値にはすべて計算の過程が示されます。ここではアプリのサンプルログブックで紹介しています。</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="Thermocline を紹介する 22 秒の動画: ダイブプロファイル、ダイブのダウンロード、安全に関わる値、SAC の計算過程。"><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="Thermocline を紹介する 22 秒の動画: ダイブプロファイル、ダイブのダウンロード、安全に関わる値、SAC の計算過程。"><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ja/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="iPhone のログブック: 「要確認」の下で待っている 1 本のダイブと、その下のポイント、日付、水深、時間を並べたダイブ一覧。"><figcaption><b>ログブック</b>ポイントやガスが必要なダイブは、一番上で待っています。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ja/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="iPhone のダイブ画面: プロファイルの上に、水深、時間、ガス、減圧、ppO2、CNS を並べた安全情報の帯。"><figcaption><b>すべてのダイブ</b>水深、ガス、減圧、ppO₂、CNS を最初に。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ja/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="iPhone のガス消費の「計算方法」パネル: タンク、圧力、水温、計算式を表示しています。"><figcaption><b>ガス消費</b>「計算方法」をタップすると、SAC の元になったすべての入力値を確認できます。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/ja/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="iPhone のポイントの地図: 自分のポイントと内蔵のダイビングポイントリストを表示しています。"><figcaption><b>ポイント</b>自分のポイントに加え、76,000 件以上をオフラインで。</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/ja/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac アプリ: ダイブ一覧の横に、安全に関わる値、ポイント、バディ、器材、水深プロファイルを表示したダイブと、最大水深地点の読み取り値。"><figcaption><b>Mac で</b>ダイブの横にログブック全体。プロファイルにポインタを合わせると、どの時点の値も読み取れます。</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">ガイド</span>
+        <h3>Thermocline の使い方</h3>
+        <p>ログブックの読み込み、コンピューターからのダウンロード、ポイントとガスの確認、同期、書き出し。iPhone と Mac の手順を順番に説明します。</p>
+        <span class="go">ガイドを読む →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">トラブルシューティング</span>
+        <h3>うまく動かないときは？</h3>
+        <p>コンピューターが見つからない、新しいダイブがない、同期の食い違い、読み込みの抜け、おかしな SAC の数値。それぞれ、まず確認すべきことを紹介します。</p>
+        <span class="go">解決方法を探す →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76,000+</strong><span>世界中のダイビングポイントと沈船、オフラインで</span></div>
+    <div class="stat reveal"><strong>4</strong><span>種類の Apple デバイスで、ひとつのログブック</span></div>
+    <div class="stat reveal"><strong>17</strong><span>言語</span></div>
+    <div class="stat reveal"><strong>0</strong><span>アカウント、広告、トラッカー</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">テスター募集</p>
+      <h2 id="testers-title">ベータに参加</h2>
+      <p>どのダイバーの協力も役に立ちます: ログブックを読み込み、何本かダイブを記録して、わかりにくい点、足りない点、間違っている点を教えてください。ひとつのリンクですべてのデバイスに対応します。</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone、iPad、Mac、Apple Watch</h3>
+          <p>ひとつのアプリ、ひとつのベータリンク · iOS 18 以降、macOS 15 以降</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>ベータに参加</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>Apple の TestFlight アプリをインストールします</li>
+      <li><b>2</b>iPhone、iPad、Mac でリンクを開き、「承認」をタップします</li>
+      <li><b>3</b>TestFlight の「ベータフィードバックを共有」でフィードバックを送ります</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>ダイブコンピューターをお持ちですか？ テストにご協力ください。</h3>
+      <p>Bluetooth でのダウンロードは Shearwater でテスト済みです。Mac でのケーブルおよびシリアルでのダウンロードは、ほかの多くのコンピューター向けに作られていますが、まだ実機では試していません。お持ちの場合は、うまくいってもいかなくても、一度ダウンロードを試すだけで役に立ちます。</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">特に求めています · Mac</span>
+          <h3>USB ケーブルとシリアルケーブル</h3>
+          <p>ケーブルでダウンロードするコンピューター向けです。USB シリアルアダプターを介して、または USB に直接接続します。</p>
+          <p class="ask"><strong>方法:</strong> 「ファイル」→「ダイブコンピューターからダウンロード」→「USB ケーブル」。モデルとポートを選びます。失敗した場合は、「ダウンロードログ…」、次に「ログを保存…」を使って送ってください。</p>
+        </div>
+        <ul class="models" aria-label="テストしてほしいコンピューター">
+          <li>Suunto Vyper ファミリーと EON Steel</li>
+          <li>古い Oceanic、Aeris、Sherwood</li>
+          <li>Uwatec Aladin、Scubapro Aladin Square、G2、G3</li>
+          <li>Cressi と Mares</li>
+          <li>OSTC と Atomic Cobalt</li>
+          <li>…ほかにも</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">求めています · Mac</span>
+        <h3>Shearwater Predator と Petrel 1</h3>
+        <p>これらは、電話では使えない古い Bluetooth を使っています。Mac なら、ペアリングすればシリアルポートとして接続できます。</p>
+        <p class="ask"><strong>方法:</strong> 「システム設定」→「Bluetooth」でペアリングし、コンピューターをアップロードモードにした状態で、ダウンロードウインドウでそのポートを選びます。うまくいってもいかなくても、ダウンロードログを送ってください。</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">テスト済み · iPhone、iPad、Mac</span>
+        <h3>Bluetooth</h3>
+        <p>Shearwater Perdix と Perdix 2 でテスト済みです。ほかの Bluetooth コンピューターでも動作するはずで、それらについての報告も歓迎します。</p>
+        <p class="ask"><strong>方法:</strong> iPhone では「ログブック」→「ダイブをダウンロード」、Mac では「ファイル」→「ダイブコンピューターからダウンロード」。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">機能</p>
+      <h2 id="features-title">ダイブが記録したすべてを、ひとつのログブックに</h2>
+      <p>熱心なスクーバダイバーが、自分の数値を正確に知りたいレクリエーション、テクニカル、ケーブのダイバーのために作りました。</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>Bluetooth またはケーブルでダウンロード</h3>
+        <p>ダイブコンピューターから iPhone や Mac へ直接取り込み、ダイブが届くたびにポイント、バディ、器材、コンディションを追加できます。Mac では USB ケーブルやシリアルケーブルでもダウンロードできます。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>これまでの記録をまるごと</h3>
+        <p>MacDive、Shearwater Cloud データベース、Garmin の .fit ファイル、UDDF、CSV から読み込み、追加するダイブを選べます。読み込めなかったものは一覧で示され、黙って捨てられることは決してありません。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>安全に関わる値を最初に</h3>
+        <p>6 つの重要な値が、すべてのダイブの上部に固定された帯に並びます。タンク、ppO₂、NDL、SAC、水温、CNS、浮上速度を、並べた帯またはひとつの重ね表示で表示できます。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>計算の過程を見せる SAC</h3>
+        <p>タンクの内容積から実在気体の計算で求めるので、どの充填圧でも正確です。「計算方法」をタップすると、すべての入力値を確認できます。サイドマウント、ダブルタンク、マルチガスのダイブも正しく計算します。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>世界中の 76,000 件以上のポイントと沈船</h3>
+        <p>アプリに内蔵されたオープンなポイントリストから、電波がなくても、世界中どこでもダイビングポイントを探して名前を付けられます。自分のポイントが常に最初に表示されます。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>水面で使う Apple Watch</h3>
+        <p>浮上したら、手首からポイントをマークできます。位置はログブックで待機し、あとで名前を付けられます。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>2 台のコンピューター、1 本のダイブ</h3>
+        <p>バックアップのコンピューターを使っていますか？ Thermocline は 2 つの記録の統合や、2 つに分かれたダイブの結合を提案します。どちらも、確認せずに行うことは決してありません。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>あなたの iCloud で同期</h3>
+        <p>ログブック、器材、バディ、写真が、iPhone、iPad、Mac の間であなたについてきます。復元ポイントを使えば、読み込みや統合の前の状態に戻せます。</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>いつでも持ち出せる</h3>
+        <p>いつでも、すべてを UDDF、CSV、MacDive XML で書き出せます。ログブックが閉じ込められることは決してありません。</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>アプリにはほかにも</h3>
+      <div class="formats">
+        <span class="chip">器材とタンク（+ 刻印にも対応）</span>
+        <span class="chip">バディ（連絡先とリンク）</span>
+        <span class="chip">Cカード</span>
+        <span class="chip">ダイブの写真とビデオリンク</span>
+        <span class="chip">ポイント、バディ、ガス、メモ、日付、#番号で検索</span>
+        <span class="chip">水深、ガス、記録のサマリー</span>
+        <span class="chip">メートル法またはヤード・ポンド法</span>
+        <span class="chip">17 言語</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">設計の考え方</p>
+      <h2 id="principles-title">数値を安心して任せられるログブック</h2>
+      <p>3 つのルールが、すべての画面を形づくっています。</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>プランナーではなく、ログブック</h3>
+        <p>Thermocline は、ダイブコンピューターが記録した内容を表示します。減圧を計算することは決してなく、コンピューターの数値を独自の推測に置き換えることも決してありません。</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>データはあなたのもの</h3>
+        <p>アカウントなし、広告なし、アナリティクスなし、開発者のサーバーなし。ログブックはあなたのデバイスとあなた自身の iCloud にあり、いつでもすべてを書き出せます。 <a href="privacy.html" style="color:#fff">プライバシーポリシー</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>警告はしても、止めない</h3>
+        <p>ダウンロードや同期が一部しかうまくいかなかった場合も、何が起きたかが知らされ、何も捨てられません。編集しても、コンピューターの元の値が修正値と並んで残ります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">よくある質問</p>
+      <h2 id="faq-title">参加する前に</h2>
+      <p>すでにテスト中ですか？ <a href="guide.html">ガイド</a>と<a href="troubleshooting.html">トラブルシューティング</a>のページで、アプリを順を追って説明しています。</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Android、Windows、Web で使えますか？</summary>
+        <p>いいえ。Thermocline は、iPhone、iPad、Mac、Apple Watch という Apple デバイス専用です。iCloud、Bluetooth、写真、マップと密接に連携できるよう、Apple 自身のツールで作られています。</p>
+      </details>
+      <details>
+        <summary>どのダイブコンピューターに対応していますか？</summary>
+        <p>Bluetooth でのダウンロードは、iPhone、iPad、Mac で Shearwater Perdix と Perdix 2 を使ってテストしています。Mac では、Suunto、古い Oceanic、Aeris、Sherwood、Uwatec と Scubapro、Cressi、Mares、OSTC、Atomic など、ほかの多くのコンピューターから USB ケーブルやシリアルケーブルでもダウンロードできます。これらのケーブルでのダウンロードはまだ実機で試していないため、お持ちの方はぜひテストしてください。Garmin Descent のダイブは、iPhone、iPad、Mac で .fit ファイルから読み込めます。どのコンピューターのダイブも、ログブックファイルを介して読み込むことができます。</p>
+      </details>
+      <details>
+        <summary>MacDive を使っています。ログブックは移行できますか？</summary>
+        <p>はい。MacDive から XML で書き出し、そのファイルを読み込んでください。MacDive の 2 つの書き出し形式のうち、内容が豊富なのは XML です。UDDF には、コンピューターの NDL、ppO₂、CNS、器材、ダイブの種類が含まれません。すでに UDDF を読み込んでいる場合は、その上に XML を読み込むと、重複なしで不足分が補われます。追加するダイブを選べ、タンクは実際のタンク（容量、圧力、ダブルタンク、+）として取り込まれ、MacDive のダイブ ID も保持されるため、MacDive に書き出し直しても重複しません。</p>
+      </details>
+      <details>
+        <summary>Mac アプリは同じアプリですか？</summary>
+        <p>はい。iPhone、iPad、Mac、Apple Watch はひとつのアプリで、ベータリンクもひとつです。一度参加したら、各デバイスで TestFlight からインストールしてください。すべて同じ iCloud のログブックを使うので、Mac でダウンロードしたダイブがお使いの電話にも表示されます。すべてのデバイスを最新のビルドにしておいてください。</p>
+      </details>
+      <details>
+        <summary>2026年11月18日より前に iPhone のベータに参加しました。どうすればいいですか？</summary>
+        <p>そのアプリは移転しました。アプリを開いて「iCloud と同期」をオンにし（または UDDF ファイルを書き出し）、このページのリンクからベータに参加して、新しいアプリを横に並べてインストールしてください。新しいアプリで同期をオンにすると、ログブックが戻ってきます。問題がなければ、古いアプリを削除してください。<a href="troubleshooting.html#moved">詳しい手順</a>。</p>
+      </details>
+      <details>
+        <summary>何が必要ですか？</summary>
+        <p>iOS または iPadOS 18 以降の iPhone または iPad、または macOS 15 以降の Mac。Apple Watch アプリには watchOS 11 が必要です。デバイス間で同期するには、それぞれのデバイスで同じ iCloud アカウントにサインインしてください。</p>
+      </details>
+      <details>
+        <summary>ベータ版のビルドでダイブが失われることはありますか？</summary>
+        <p>そうならないように作られています。読み込みによって読み込み元のファイルが変更されることは決してなく、復元ポイントを使えば、ログブックを読み込みや統合の前の状態に戻せます。元の書き出しファイルは保管しておいてください。ダイブが消えたり重複したりした場合は、何も変更する前に「プロフィール」→「同期」のスクリーンショットを送ってください。</p>
+      </details>
+      <details>
+        <summary>ポイントの位置をナビゲーションに使えますか？</summary>
+        <p>いいえ。ポイントの位置は記録用であり、ナビゲーション用ではありません。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">ログブックも一緒に持ってきてください。</h2>
+    <p>iPhone、iPad、Mac でベータに参加し、ダイブを読み込んで、どんなに小さなことでも、わかりにくい点、足りない点、間違っている点を教えてください。</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">ベータに参加</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>、iPhone、iPad、Mac、Apple Watch のためのダイブログブック。ダイブの計画やナビゲーション用ではありません。</p>
+      <p>ダイビングポイントリスト © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap 貢献者</a>、Open Database License の下で利用できます。<a href="https://github.com/616fun/thermocline-site-data">ポイントリストをダウンロード</a>。</p>
+      <p>Apple、iPhone、iPad、Mac、Apple Watch、iCloud、TestFlight は Apple Inc. の商標です。</p>
+    </div>
+    <nav class="foot-links" aria-label="フッター">
+      <a href="guide.html">ガイド</a>
+      <a href="troubleshooting.html">トラブルシューティング</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="#testers">ベータに参加</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="言語">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="index.html" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

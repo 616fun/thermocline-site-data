@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solución de problemas – Thermocline</title>
+  <meta name="description" content="Soluciones para problemas comunes de Thermocline: la computadora de buceo no se conecta, no hay inmersiones nuevas, diferencias de sincronización, huecos en una importación, fotos y SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/es/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Solución de problemas – Thermocline">
+  <meta property="og:description" content="Soluciones para problemas comunes de Thermocline: la computadora de buceo no se conecta, no hay inmersiones nuevas, diferencias de sincronización, huecos en una importación, fotos y SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/es/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/es.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="El ícono y el nombre de la app Thermocline sobre una foto de la proa de un barco en una inmersión en un pecio, con buzos y peces. La bitácora de buceo para iPhone, iPad y Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Solución de problemas – Thermocline">
+  <meta name="twitter:description" content="Soluciones para problemas comunes de Thermocline: la computadora de buceo no se conecta, no hay inmersiones nuevas, diferencias de sincronización, huecos en una importación, fotos y SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/es.jpg">
+  <meta name="twitter:image:alt" content="El ícono y el nombre de la app Thermocline sobre una foto de la proa de un barco en una inmersión en un pecio, con buzos y peces. La bitácora de buceo para iPhone, iPad y Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Saltar a la solución de problemas</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="guide.html">Guía</a>
+      <a href="troubleshooting.html" aria-current="page">Solución de problemas</a>
+      <a href="support.html">Soporte</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Compartir esta página"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Compartir</span></button>
+      <a class="btn" href="./#testers">Únete a la beta</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Solución de problemas</h1>
+    <p>Busca tu problema abajo. Cada uno empieza por lo más rápido que hay que revisar. Actualizada el 18 de noviembre de 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="En esta página">
+    <details open>
+      <summary>En esta página</summary>
+    <ol>
+      <li><a href="#first">Primero, actualiza</a></li>
+      <li><a href="#downloads">Descargas</a></li>
+      <li><a href="#sync">Sincronización</a></li>
+      <li><a href="#imports">Importaciones</a></li>
+      <li><a href="#numbers">Gas y SAC</a></li>
+      <li><a href="#photos">Fotos</a></li>
+      <li><a href="#sites">Sitios y el Watch</a></li>
+      <li><a href="#send-log">Enviar un informe</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Busca tu problema</label>
+      <input id="faq-q" type="search" placeholder="Por ejemplo: NDL, Garmin, PIN, sincronización" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Primero, actualiza todos los dispositivos</h2>
+    <p>Muchos problemas desaparecen cuando todos los dispositivos tienen la build más reciente. Abre TestFlight en cada iPhone, iPad y Mac que uses e instala cualquier actualización. Una build anterior deja de enviar cambios hasta que se actualiza, y dice <strong>Actualiza Thermocline para seguir sincronizando</strong>. Tus cambios se conservan y se envían después de actualizar.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Descargas de una computadora de buceo</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>No se encuentra la computadora</summary>
+        <ul>
+          <li>Activa la computadora y ponla en su modo Bluetooth (Shearwater: <span class="path">Menu → Bluetooth</span>). Solo se queda así unos dos minutos.</li>
+          <li>Acércala al iPhone, iPad o Mac.</li>
+          <li><strong>Las computadoras Shearwater vuelven al último dispositivo que usaron.</strong> Si tu teléfono u otra Mac están cerca, desactiva el Bluetooth en ese dispositivo y vuelve a intentarlo.</li>
+          <li>Comprueba que el Bluetooth esté activado y que Thermocline tenga permiso para usarlo (iPhone: Configuración → Thermocline; Mac: Configuración del Sistema → Privacidad y seguridad → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Es una Predator o una Petrel 1 y el iPhone no la ve</summary>
+        <p>Usan un Bluetooth antiguo (Bluetooth Classic) que el iPhone y el iPad no pueden usar. Descárgalas en la Mac (consulta la <a href="guide.html#download">guía</a>), o importa sus inmersiones desde Shearwater Cloud o un archivo UDDF.</p>
+      </details>
+      <details id="pin">
+        <summary>Se conecta, pero pide un PIN</summary>
+        <p>Escribe el código que aparece en la pantalla de la computadora. Solo se necesita la primera vez.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>«No hay inmersiones nuevas»</summary>
+        <p>Solo se traen las inmersiones más nuevas que tu última descarga. Si eliminaste una inmersión y la quieres de vuelta, activa <strong>Descargar todas las inmersiones de la computadora</strong> y vuelve a descargar. Las inmersiones que ya están en tu bitácora se omiten.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>La descarga se detuvo a medias</summary>
+        <p>Elige <strong>Conservar</strong> para guardar las inmersiones que llegaron y luego vuelve a descargar para el resto. Si se sigue deteniendo, elige <strong>Reintentar</strong> cerca de la computadora y <a href="#send-log">envía el registro de descarga</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>Una descarga por cable falla en la Mac</summary>
+        <ul>
+          <li>Comprueba que el puerto coincida con el cable: la lista indica de qué tipo es cada puerto, y avisa cuando no es para el modelo que elegiste.</li>
+          <li>Desconecta y vuelve a conectar el cable, y luego usa el botón de actualizar para volver a buscar cables.</li>
+          <li>Sigue los pasos de <strong>Antes de empezar</strong> para tu modelo.</li>
+          <li>Las descargas por cable son nuevas. Por favor, <a href="#send-log">envía el registro de descarga</a> en cualquier caso.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Sincronización entre dispositivos</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>Mi app para iPhone dice que Thermocline ahora es una sola app, o veo dos apps Thermocline</summary>
+        <p>El 18&nbsp;de&nbsp;noviembre&nbsp;de&nbsp;2026, las apps para iPhone, iPad, Mac y Apple Watch se convirtieron en una sola app, con un solo enlace de la beta. La app para iPhone que tenías antes ahora solo te ayuda a cambiarte.</p>
+        <ol>
+          <li>Abre la app anterior. Si dice que la sincronización está desactivada, toca <strong>Activar «Sincronizar con iCloud»</strong> y déjala abierta un minuto, o toca <strong>Exportar mi bitácora como UDDF</strong> y guarda el archivo.</li>
+          <li>Toca <strong>Unirme a la nueva beta</strong>, o abre <a href="https://testflight.apple.com/join/ygF4ngNd">el enlace de la beta</a> en tu iPhone, e instala la nueva app. Aparece junto a la anterior.</li>
+          <li>En la nueva app, activa <span class="path">Perfil → Sincronizar con iCloud</span>. Tus inmersiones, sitios, equipo y ajustes vuelven. Si exportaste, usa <span class="path">Perfil → Importar un archivo de bitácora</span>.</li>
+          <li>Puede que tengas que volver a enlazar tu computadora de buceo y volver a instalar la app para Watch desde la app Watch de tu iPhone.</li>
+          <li>Cuando la nueva app muestre las mismas inmersiones, elimina la anterior.</li>
+        </ol>
+        <p>En una Mac no cambia nada: sigue actualizando la app para Mac como siempre.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>Faltan inmersiones o aparecen duplicadas después de sincronizar</summary>
+        <ol>
+          <li>No cambies nada todavía. Toma una captura de pantalla de la sección Sincronización (iPhone: <span class="path">Perfil → Sincronización</span>; Mac: <span class="path">Thermocline → Configuración → Sincronización</span>) en cada dispositivo y envíala.</li>
+          <li>Comprueba que todos los dispositivos tengan la build más reciente.</li>
+          <li><span class="path">Perfil → Tus datos → Puntos de restauración</span> puede llevar tu bitácora a antes de una importación, una fusión o una eliminación. Restaurar guarda primero tu bitácora actual, así que se puede deshacer.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>Un cambio en un dispositivo no aparece en el otro</summary>
+        <ul>
+          <li>Comprueba que <strong>Sincronizar con iCloud</strong> esté activado en los dos, con sesión iniciada en la misma Cuenta de Apple.</li>
+          <li>Mira <strong>Pendiente de enviar</strong> en el dispositivo donde hiciste el cambio, y abre la app en los dos con señal. La sección Sincronización indica cuándo este dispositivo y los demás coinciden.</li>
+          <li>Presiona <strong>Sincronizar ahora</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>«No has iniciado sesión en iCloud»</summary>
+        <p>Inicia sesión en iCloud en la Configuración del dispositivo. Mientras tanto, tu bitácora se queda en ese dispositivo, a salvo, y se sincroniza en cuanto inicias sesión.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>«Tu almacenamiento de iCloud está lleno»</summary>
+        <p>Tu bitácora está a salvo en el dispositivo y se sincroniza cuando haya espacio. Libera espacio de iCloud, o activa <strong>Ahorrar espacio de iCloud en las fotos de inmersión</strong> para que las fotos no se guarden dos veces.</p>
+      </details>
+      <details id="newer-version">
+        <summary>«Otro dispositivo usa una versión más nueva»</summary>
+        <p>Actualiza Thermocline en este dispositivo desde TestFlight. Tus cambios están a salvo aquí y se envían después de actualizar.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Importaciones</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Algunas inmersiones o datos no llegaron</summary>
+        <p>El informe de importación enumera todo en <strong>No importada</strong> y <strong>Por favor, revisa</strong>, con el motivo. Cada bitácora escribe el UDDF un poco distinto, así que es normal que falten valores, y se quedan en blanco. Si falta algo que esperabas, envía el informe y, si puedes, el archivo.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>Faltan mi equipo, mis fotos o mis tipos de inmersión de MacDive</summary>
+        <p>La exportación UDDF de MacDive los deja fuera. Importa su XML encima para el equipo, las etiquetas y los tipos de inmersión, y en la Mac importa la carpeta de MacDive para las fotos. Las inmersiones que ya están en tu bitácora no se agregan dos veces. Consulta <a href="guide.html#macdive-files">Qué archivo de MacDive usar</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>Faltan el NDL, la ppO₂ o el CNS en las inmersiones de MacDive</summary>
+        <p>La página de la inmersión muestra el NDL como «—» y Deco como «No registrado», o la ppO₂ dice «Calculado a partir del gas y la profundidad». La exportación UDDF de MacDive no incluye el NDL, la ppO₂ ni el CNS de la computadora. Su carpeta no tiene perfil para las inmersiones que MacDive descargó en un iPhone o iPad, porque las guarda cifradas.</p>
+        <p>Importa también el XML de MacDive: completa lo que falta sin volver a agregar inmersiones. Consulta <a href="guide.html#macdive-files">Qué archivo de MacDive usar</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>¿Cambiar entre archivos o apps hará que se pierda algo?</summary>
+        <ul>
+          <li><strong>Tus archivos originales nunca se modifican.</strong> Conserva tus exportaciones de MacDive, y conserva MacDive hasta que hayas comparado algunas inmersiones.</li>
+          <li><strong>Una segunda importación agrega, no reemplaza.</strong> Las inmersiones que ya están en tu bitácora se emparejan y solo reciben lo que les falta, así que puedes importar el XML después del UDDF, o la carpeta después de cualquiera de los dos.</li>
+          <li><strong>Puedes volver atrás.</strong> Se guarda un punto de restauración llamado <strong>Antes de una importación</strong> antes de cualquier importación de más de una inmersión (<span class="path">Perfil → Tus datos → Puntos de restauración</span> en el iPhone, <span class="path">Configuración → Puntos de restauración</span> en la Mac). En la Mac, <strong>Deshacer importación…</strong> en el informe también la revierte.</li>
+          <li><strong>Si dejas Thermocline:</strong> su exportación UDDF es la completa. Incluye el NDL, la ppO₂ y el CNS de la computadora a lo largo de cada inmersión, el equipo, las etiquetas, los tipos de inmersión y los enlaces de video. Las fotos no van dentro de ningún archivo de exportación.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>Las inmersiones importadas no tienen gas</summary>
+        <p>El archivo no indicaba qué gas se usó. Esas inmersiones esperan en <strong>Por confirmar</strong> para que lo indiques.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Importé el archivo equivocado</summary>
+        <p>En la Mac, usa <strong>Deshacer importación…</strong> en el informe de importación. En cualquiera de los dispositivos, se guarda un punto de restauración llamado <strong>Antes de una importación</strong> antes de cualquier importación de más de una inmersión.</p>
+      </details>
+      <details id="garmin">
+        <summary>Un archivo de Garmin no se importa</summary>
+        <ul>
+          <li><strong>«Es un archivo zip»</strong>: <strong>Exportar original</strong> de Garmin Connect da un .zip. Descomprímelo y luego elige el archivo .fit que contiene.</li>
+          <li><strong>«Este no es un archivo FIT de Garmin»</strong>: el archivo no es de un reloj Garmin, o solo su nombre termina en .fit. Usa el archivo de la carpeta <span class="path">GARMIN → Activity</span> del reloj, o <strong>Exportar original</strong>.</li>
+          <li><strong>«archivos de Garmin no contienen ninguna inmersión»</strong>: los archivos de carreras, caminatas, ajustes y salud se omiten. Solo llegan las inmersiones.</li>
+          <li><strong>«parecen incompletos o dañados»</strong>: el archivo se cortó a medias, a menudo por una copia o una descarga que no terminó. Se muestra lo que se pudo leer; vuelve a copiar el archivo desde el reloj y vuelve a importarlo para obtener el resto. Las inmersiones que ya están en tu bitácora se omiten.</li>
+          <li><strong>Elegir un archivo de Garmin junto con otro archivo de bitácora</strong> no se puede hacer de una vez: importa el archivo de bitácora y luego los archivos de Garmin.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Una inmersión de Garmin me pide revisar sus tanques</summary>
+        <p>Con más de un transmisor de tanque, el archivo de Garmin no indica en qué gas estaba cada uno, así que se emparejaron con los tanques de la inmersión por orden. Abre la sección de gas de la inmersión y asegúrate de que cada presión esté en el tanque correcto.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>La hora de una inmersión de Garmin tiene una hora de diferencia</summary>
+        <p>La hora viene del reloj del Garmin. Si no estaba en la hora local del lugar donde buceaste, la inmersión aparece con la hora del reloj. Edita la hora de la inmersión, o ajusta la zona horaria del reloj antes del próximo viaje.</p>
+      </details>
+      <details id="drift-site">
+        <summary>Una inmersión de deriva tiene el sitio equivocado</summary>
+        <p>Una inmersión se empareja con el más cercano de dos puntos, donde entraste y donde saliste, que en una deriva suele ser donde entraste. Si se emparejó con el sitio equivocado o con ninguno, elige el sitio en la inmersión y agrega a las notas cualquier otro pecio por el que hayas pasado.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Consumo de gas y SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>Una cifra de SAC parece incorrecta</summary>
+        <p>Toca o haz clic en <strong>¿Cómo?</strong> junto a ella. Muestra cada dato: el tanque y su capacidad en agua, las presiones, la temperatura, la corrección de gas real, el tiempo y la profundidad. La causa habitual es un tamaño de tanque incorrecto; corrígelo en Equipo. Envía una captura de pantalla de la pantalla ¿Cómo? si todavía parece incorrecta.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/es/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="El panel ¿Cómo? del consumo de gas en el iPhone, con el tanque, las presiones, la temperatura y el cálculo."><figcaption>El panel ¿Cómo? (inmersión de ejemplo).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>No hay SAC, solo un mensaje</summary>
+        <ul>
+          <li><strong>Agrega el tamaño del tanque para ver el SAC</strong>: elige el modelo del tanque o ingresa su tamaño.</li>
+          <li><strong>Agrega las presiones inicial y final para ver el SAC</strong>: no hay transmisor, así que ingrésalas en el tanque.</li>
+          <li><strong>El SAC necesita un perfil de profundidad</strong>: las inmersiones registradas a mano sin perfil no tienen SAC.</li>
+          <li>Las inmersiones con rebreather no tienen cifra de SAC.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>El SAC solo cuenta un tanque</summary>
+        <p>En una inmersión con varios gases, solo el tanque con el transmisor tiene presiones. Ingresa las presiones inicial y final en el otro tanque y el SAC cubre todo el gas.</p>
+      </details>
+      <details id="breathing">
+        <summary>Respiración, en Resumen, dice que ninguna inmersión tiene tamaño de tanque</summary>
+        <p>Respiración promedia solo las inmersiones con tamaño de tanque y presiones inicial y final. Las inmersiones del UDDF de MacDive no tienen tamaño de tanque, porque sus tamaños no son capacidades en agua; importar el XML encima los completa (consulta <a href="guide.html#macdive-files">Qué archivo de MacDive usar</a>). Si no, indica el tanque en tus inmersiones (elige su modelo, o un conjunto de equipo) y agrega las presiones donde las tengas. Bajo la cifra, Respiración indica cuántas inmersiones no se contaron.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/es/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Respiración en la pestaña Resumen: SAC y RMV en 14 inmersiones, y una inmersión no contada porque no tiene tamaño de tanque ni presiones."><figcaption>El número de inmersiones que quedaron fuera está bajo la cifra (bitácora de ejemplo).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Fotos</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Una foto no aparece en mi otro dispositivo</summary>
+        <p>Con <strong>Ahorrar espacio de iCloud en las fotos de inmersión</strong> activado, una foto conserva su copia hasta que tu otro dispositivo la encuentra en Fotos en iCloud. Activa el ajuste en los dos dispositivos, comprueba que Fotos en iCloud esté activado en ambos y dale tiempo para que se suba.</p>
+      </details>
+      <details id="videos">
+        <summary>No se agregaron los videos</summary>
+        <p>Los videos de tu biblioteca solo se pueden vincular, no copiar. Activa <span class="path">Sincronización → Ahorrar espacio de iCloud en las fotos de inmersión</span> y asegúrate de que el video esté en Fotos en iCloud. O pega un enlace de YouTube o Vimeo debajo de las fotos de la inmersión.</p>
+      </details>
+      <details id="photos-access">
+        <summary>«Thermocline no puede leer tus fotos»</summary>
+        <p>Se negó el acceso a Fotos, así que las fotos se copian en lugar de vincularse. Para vincularlas, permite el acceso en Configuración → Privacidad y seguridad → Fotos → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Sitios y el Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>El sitio sugerido es incorrecto, o no hay ninguno</summary>
+        <p>Elige otro sitio, busca por nombre en las listas integradas, o marca o escribe la posición tú mismo. Las canteras y los lagos de tierra adentro a menudo faltan en las listas públicas, así que a partir de entonces tus propios sitios van primero en las sugerencias.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Thermocline no está en mi Apple Watch</summary>
+        <p>La app para Watch viene con la app para iPhone de TestFlight. En tu iPhone, abre la app Watch, busca Thermocline en <strong>Apps disponibles</strong> y toca <strong>Instalar</strong>. Necesita watchOS&nbsp;11 o posterior. Si te cambiaste desde la app anterior para iPhone, vuelve a instalarla: la app para Watch anterior pertenece a la app anterior para iPhone.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>El reloj dice «Esperando una buena posición» y Marcar lugar sigue en gris</summary>
+        <p>Un lugar se guarda solo a partir de una posición dentro de &plusmn;30&nbsp;m y con menos de 30&nbsp;segundos de antigüedad, para que una posición equivocada nunca llegue a tu bitácora. Quédate en la superficie con el reloj fuera del agua y una vista despejada del cielo, y dale un minuto. <strong>Se ignora una posición antigua en caché</strong> significa que está esperando una nueva. El GPS no funciona bajo el agua: marca el lugar antes de descender o al salir a la superficie.</p>
+      </details>
+      <details id="watch-location">
+        <summary>«El acceso a la ubicación está desactivado para Thermocline» en el reloj</summary>
+        <p>En el reloj, abre <span class="path">Configuración → Privacidad y seguridad → Localización</span>, activa Localización y permite que Thermocline la use mientras usas la app.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Un lugar marcado en el Watch no apareció en el iPhone</summary>
+        <p>En el reloj, abre <strong>Marcaciones</strong>. <strong>Esperando para enviar al iPhone</strong> significa que el iPhone todavía no lo ha recibido: mantén el reloj cerca de tu iPhone y abre Thermocline en el iPhone. <strong>Enviado al iPhone</strong> significa que ya está ahí: búscalo en <span class="path">Bitácora → Por confirmar</span>. El iPhone busca el lugar cuando tiene conexión, así que sin señal espera con <strong>esperando señal para buscar</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>El reloj no mostró un nombre de sitio después de marcar un lugar</summary>
+        <p>El nombre viene de tu iPhone: cuando está cerca y Thermocline puede responder, el reloj muestra bajo el lugar el sitio que sugeriría, uno tuyo o uno de las listas de puntos de inmersión, con la distancia a la que está. Con el iPhone fuera de alcance, el reloj nombra tus propios sitios a partir de la copia que tu iPhone dejó en él, pero no los de las listas de puntos de inmersión. Si no hay ningún sitio a menos de unos 1.5&nbsp;km, el lugar se marca sin nombre. En cualquier caso, el sitio lo eliges en el iPhone, en <span class="path">Bitácora → Por confirmar</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>El nombre que dije en el reloj no se guardó</summary>
+        <p>El nombre se guarda cuando se cierra el dictado o el teclado, o cuando regresas. Abre <strong>Marcaciones</strong>, toca el lugar y revisa su nombre; toca <strong>Cambiar el nombre</strong> para intentarlo de nuevo. Si el lugar ya se envió, el nombre lo sigue hasta el iPhone.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>¿El reloj registra mis inmersiones?</summary>
+        <p>No. La app Thermocline para Watch solo marca lugares en la superficie. Tus inmersiones vienen de tu computadora de buceo. Para los relojes Garmin Descent, importa sus archivos .fit: consulta <a href="guide.html#garmin">Garmin Descent</a> en la guía.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Un lugar desapareció del reloj</summary>
+        <p>Es lo esperado. Un lugar sale del reloj una vez que se confirma o se descarta en el iPhone. Un lugar confirmado es un sitio en tu bitácora y se sincroniza con tus otros dispositivos.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Enviar un informe o un registro de descarga</h2>
+    <ul>
+      <li><strong>Desde la app:</strong> toma una captura de pantalla y luego usa <strong>Compartir opinión sobre versión</strong> en TestFlight. Llega con la build y el dispositivo adjuntos.</li>
+      <li><strong>Registro de descarga, iPhone:</strong> en la pantalla de descarga, toca <strong>Registro de descarga</strong> y luego compártelo. Solo incluye los mensajes de Bluetooth y de la computadora, sin datos de inmersiones.</li>
+      <li><strong>Registro de descarga, Mac:</strong> en la ventana de descarga, elige <strong>Registro de descarga…</strong>, luego <strong>Guardar registro…</strong>, y adjunta el archivo.</li>
+      <li><strong>Correo:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, con tu dispositivo, el número de build (aparece en TestFlight) y lo que esperabas que pasara.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, una bitácora de buceo. No es para planificar inmersiones ni para navegar.</p>
+      <p>Listas de puntos de inmersión © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a>, disponibles bajo la Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Pie de página">
+      <a href="./">Inicio</a>
+      <a href="guide.html">Guía</a>
+      <a href="troubleshooting.html">Solución de problemas</a>
+      <a href="support.html">Soporte</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Idiomas">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="troubleshooting.html" hreflang="es" lang="es" aria-current="page">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Problemen oplossen – Thermocline</title>
+  <meta name="description" content="Oplossingen voor veelvoorkomende problemen met Thermocline: duikcomputer maakt geen verbinding, geen nieuwe duiken, verschillen bij synchronisatie, gaten na een import, foto's en SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/nl/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Problemen oplossen – Thermocline">
+  <meta property="og:description" content="Oplossingen voor veelvoorkomende problemen met Thermocline: duikcomputer maakt geen verbinding, geen nieuwe duiken, verschillen bij synchronisatie, gaten na een import, foto's en SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/nl/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/nl.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Het app-symbool en de naam van Thermocline op een foto van de boeg van een schip tijdens een wrakduik, met duikers en vissen. Het duiklogboek voor iPhone, iPad en Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Problemen oplossen – Thermocline">
+  <meta name="twitter:description" content="Oplossingen voor veelvoorkomende problemen met Thermocline: duikcomputer maakt geen verbinding, geen nieuwe duiken, verschillen bij synchronisatie, gaten na een import, foto's en SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/nl.jpg">
+  <meta name="twitter:image:alt" content="Het app-symbool en de naam van Thermocline op een foto van de boeg van een schip tijdens een wrakduik, met duikers en vissen. Het duiklogboek voor iPhone, iPad en Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Naar problemen oplossen</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="guide.html">Handleiding</a>
+      <a href="troubleshooting.html" aria-current="page">Problemen oplossen</a>
+      <a href="support.html">Ondersteuning</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Deel deze pagina"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Deel</span></button>
+      <a class="btn" href="./#testers">Doe mee aan de bèta</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Problemen oplossen</h1>
+    <p>Zoek hieronder je probleem. Elk begint met wat je het snelst kunt controleren. Bijgewerkt op 18 november 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="Op deze pagina">
+    <details open>
+      <summary>Op deze pagina</summary>
+    <ol>
+      <li><a href="#first">Eerst bijwerken</a></li>
+      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#sync">Synchronisatie</a></li>
+      <li><a href="#imports">Imports</a></li>
+      <li><a href="#numbers">Gas en SAC</a></li>
+      <li><a href="#photos">Foto's</a></li>
+      <li><a href="#sites">Duikstekken en de Watch</a></li>
+      <li><a href="#send-log">Een melding sturen</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Zoek je probleem</label>
+      <input id="faq-q" type="search" placeholder="Bijvoorbeeld: NDL, Garmin, pincode, synchronisatie" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Werk eerst elk apparaat bij</h2>
+    <p>Veel problemen verdwijnen als elk apparaat de nieuwste build draait. Open TestFlight op elke iPhone, iPad en Mac die je gebruikt en installeer eventuele updates. Een oudere build stopt met het versturen van wijzigingen tot hij is bijgewerkt, en meldt <strong>Werk Thermocline bij om te blijven synchroniseren</strong>. Je wijzigingen blijven bewaard en worden na het bijwerken verstuurd.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Downloads van een duikcomputer</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>De computer wordt niet gevonden</summary>
+        <ul>
+          <li>Maak de computer wakker en zet hem in zijn Bluetooth-modus (Shearwater: <span class="path">Menu → Bluetooth</span>). Hij blijft daar maar ongeveer twee minuten in.</li>
+          <li>Houd hem dicht bij de iPhone, iPad of Mac.</li>
+          <li><strong>Shearwater-computers gaan terug naar het laatste apparaat dat ze gebruikten.</strong> Is je telefoon of een andere Mac in de buurt, zet dan Bluetooth uit op dat apparaat en probeer het opnieuw.</li>
+          <li>Controleer of Bluetooth aan staat en of Thermocline het mag gebruiken (iPhone: Instellingen → Thermocline; Mac: Systeeminstellingen → Privacy en beveiliging → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Het is een Predator of Petrel 1 en de iPhone ziet hem niet</summary>
+        <p>Deze gebruiken ouder Bluetooth (Bluetooth Classic) dat iPhones en iPads niet kunnen gebruiken. Download ze op de Mac (zie de <a href="guide.html#download">handleiding</a>), of importeer hun duiken uit Shearwater Cloud of een UDDF-bestand.</p>
+      </details>
+      <details id="pin">
+        <summary>Hij maakt verbinding maar vraagt om een pincode</summary>
+        <p>Typ de code die op het scherm van de computer staat. Dat is alleen de eerste keer nodig.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>‘Geen nieuwe duiken’</summary>
+        <p>Alleen duiken die nieuwer zijn dan je laatste download, worden opgehaald. Heb je een duik verwijderd en wil je hem terug, zet dan <strong>Download elke duik op de computer</strong> aan en download opnieuw. Duiken die al in je logboek staan, worden overgeslagen.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>De download stopte halverwege</summary>
+        <p>Kies <strong>Bewaar</strong> om de duiken die zijn binnengekomen te bewaren, en download dan opnieuw voor de rest. Blijft hij stoppen, kies dan <strong>Probeer opnieuw</strong> dicht bij de computer, en <a href="#send-log">stuur het downloadlog op</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>Een kabeldownload mislukt op de Mac</summary>
+        <ul>
+          <li>Controleer of de poort bij de kabel past: de lijst laat zien wat voor soort poort elke poort is, en waarschuwt als hij niet past bij het model dat je hebt gekozen.</li>
+          <li>Trek de kabel eruit en steek hem er weer in, en gebruik dan de vernieuwknop om opnieuw naar kabels te zoeken.</li>
+          <li>Volg de stappen onder <strong>Voordat je begint</strong> voor je model.</li>
+          <li>Kabeldownloads zijn nieuw. <a href="#send-log">Stuur het downloadlog</a> hoe dan ook op.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Synchronisatie tussen apparaten</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>Mijn iPhone-app zegt dat Thermocline nu één app is, of ik zie twee Thermocline-apps</summary>
+        <p>Op 18&nbsp;november&nbsp;2026 werden de apps voor iPhone, iPad, Mac en Apple Watch één app, met één bètalink. De iPhone-app die je eerder had, helpt je nu alleen nog met overstappen.</p>
+        <ol>
+          <li>Open de oude app. Zegt hij dat synchronisatie uit staat, tik dan op <strong>Zet ‘Synchroniseer met iCloud’ aan</strong> en laat hem een minuut open, of tik op <strong>Exporteer mijn logboek als UDDF</strong> en bewaar het bestand.</li>
+          <li>Tik op <strong>Doe mee aan de nieuwe bèta</strong>, of open <a href="https://testflight.apple.com/join/ygF4ngNd">de bètalink</a> op je iPhone, en installeer de nieuwe app. Die staat naast de oude.</li>
+          <li>Zet in de nieuwe app <span class="path">Profiel → Synchroniseer met iCloud</span> aan. Je duiken, duikstekken, uitrusting en instellingen komen terug. Heb je in plaats daarvan geëxporteerd, gebruik dan <span class="path">Profiel → Importeer een logboekbestand</span>.</li>
+          <li>Misschien moet je je duikcomputer opnieuw koppelen, en de Watch-app opnieuw installeren vanuit de Watch-app op je iPhone.</li>
+          <li>Toont de nieuwe app dezelfde duiken, verwijder dan de oude.</li>
+        </ol>
+        <p>Op een Mac verandert er niets: blijf de Mac-app zoals gewoonlijk bijwerken.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>Na een synchronisatie ontbreken duiken of staan ze dubbel</summary>
+        <ol>
+          <li>Verander nog niets. Maak op elk apparaat een schermafbeelding van het onderdeel Synchronisatie (iPhone: <span class="path">Profiel → Synchronisatie</span>; Mac: <span class="path">Thermocline → Instellingen → Synchronisatie</span>) en stuur die op.</li>
+          <li>Controleer of elk apparaat de nieuwste build heeft.</li>
+          <li><span class="path">Profiel → Je gegevens → Herstelpunten</span> kan je logboek terugzetten naar vóór een import, samenvoeging of verwijdering. Bij herstellen wordt je huidige logboek eerst bewaard, zodat het ongedaan kan worden gemaakt.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>Een wijziging op het ene apparaat verschijnt niet op het andere</summary>
+        <ul>
+          <li>Controleer of <strong>Synchroniseer met iCloud</strong> op beide aan staat, ingelogd met hetzelfde Apple Account.</li>
+          <li>Kijk bij <strong>Wacht op verzenden</strong> op het apparaat waar je de wijziging hebt gemaakt, en open de app op beide met bereik. Het onderdeel Synchronisatie zegt wanneer dit apparaat en je andere overeenkomen.</li>
+          <li>Druk op <strong>Synchroniseer nu</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>‘Niet ingelogd bij iCloud’</summary>
+        <p>Log in bij iCloud in de Instellingen van het apparaat. Tot die tijd blijft je logboek veilig op dat apparaat, en het synchroniseert zodra je bent ingelogd.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>‘Je iCloud-opslag is vol’</summary>
+        <p>Je logboek is veilig op het apparaat en synchroniseert zodra er ruimte is. Maak wat iCloud-ruimte vrij, of zet <strong>Bespaar iCloud-opslag voor duikfoto's</strong> aan zodat foto's niet twee keer worden opgeslagen.</p>
+      </details>
+      <details id="newer-version">
+        <summary>‘Een ander apparaat gebruikt een nieuwere versie’</summary>
+        <p>Werk Thermocline op dit apparaat bij in TestFlight. Je wijzigingen zijn hier veilig en worden na de update verstuurd.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Imports</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Sommige duiken of gegevens zijn niet binnengekomen</summary>
+        <p>Het importrapport somt alles op onder <strong>Niet geïmporteerd</strong> en <strong>Controleer dit</strong>, met de reden. Elk logboek schrijft UDDF net iets anders, dus ontbrekende waarden zijn normaal en blijven leeg. Ontbreekt iets wat je verwachtte, stuur dan het rapport op en, als het kan, het bestand.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>Mijn uitrusting, foto's of duiksoorten uit MacDive ontbreken</summary>
+        <p>De UDDF-export van MacDive laat die weg. Importeer de XML ervan eroverheen voor uitrusting, tags en duiksoorten, en importeer op de Mac de map van MacDive voor foto's. Duiken die al in je logboek staan, worden niet twee keer toegevoegd. Zie <a href="guide.html#macdive-files">Welk MacDive-bestand je moet gebruiken</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>NDL, ppO₂ of CNS ontbreekt bij duiken uit MacDive</summary>
+        <p>De duikpagina toont NDL als ‘—’ en Deco als ‘Niet geregistreerd’, of bij ppO₂ staat ‘Berekend uit gas en diepte’. De UDDF-export van MacDive bevat de NDL, ppO₂ en CNS van de computer niet. De map ervan heeft geen profiel voor duiken die MacDive op een iPhone of iPad heeft gedownload, omdat het die versleuteld opslaat.</p>
+        <p>Importeer ook de XML van MacDive: die vult aan wat ontbreekt zonder duiken opnieuw toe te voegen. Zie <a href="guide.html#macdive-files">Welk MacDive-bestand je moet gebruiken</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Raak ik iets kwijt als ik tussen bestanden of apps wissel?</summary>
+        <ul>
+          <li><strong>Je oorspronkelijke bestanden worden nooit gewijzigd.</strong> Bewaar je exports uit MacDive, en houd MacDive zelf tot je een paar duiken hebt vergeleken.</li>
+          <li><strong>Een tweede import voegt toe, hij vervangt niet.</strong> Duiken die al in je logboek staan, worden herkend en krijgen alleen wat ze missen, dus je kunt de XML na de UDDF importeren, of de map na een van beide.</li>
+          <li><strong>Je kunt terug.</strong> Een herstelpunt met de naam <strong>Vóór een import</strong> wordt bewaard vóór elke import van meer dan één duik (<span class="path">Profiel → Je gegevens → Herstelpunten</span> op de iPhone, <span class="path">Instellingen → Herstelpunten</span> op de Mac). Op de Mac draait <strong>Maak import ongedaan…</strong> in het rapport de import ook terug.</li>
+          <li><strong>Thermocline verlaten:</strong> de UDDF-export ervan is de volledige. Die bevat de NDL, ppO₂ en CNS van de computer tijdens elke duik, uitrusting, tags, duiksoorten en videolinks. Foto's zitten in geen enkel exportbestand.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>Geïmporteerde duiken hebben geen gas</summary>
+        <p>Het bestand vermeldde niet welk gas is gebruikt. Die duiken wachten in <strong>Te bevestigen</strong> zodat je het kunt instellen.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Ik heb het verkeerde bestand geïmporteerd</summary>
+        <p>Gebruik op de Mac <strong>Maak import ongedaan…</strong> in het importrapport. Op beide apparaten wordt vóór elke import van meer dan één duik een herstelpunt met de naam <strong>Vóór een import</strong> bewaard.</p>
+      </details>
+      <details id="garmin">
+        <summary>Een Garmin-bestand wil niet importeren</summary>
+        <ul>
+          <li><strong>‘Dat is een zipbestand’</strong>: <strong>Exporteer origineel</strong> in Garmin Connect levert een .zip op. Pak die uit en kies dan het .fit-bestand erin.</li>
+          <li><strong>‘Dit is geen Garmin FIT-bestand’</strong>: het bestand komt niet van een Garmin-horloge, of alleen de naam eindigt op .fit. Gebruik het bestand uit de map <span class="path">GARMIN → Activity</span> van het horloge, of <strong>Exporteer origineel</strong>.</li>
+          <li><strong>‘Garmin-bestanden bevatten geen duik’</strong>: hardloopsessies, wandelingen, instellingen en gezondheidsbestanden worden overgeslagen. Alleen duiken komen binnen.</li>
+          <li><strong>‘Lijken afgebroken of beschadigd’</strong>: het bestand hield halverwege op, vaak door een kopie of download die niet afkwam. Wat gelezen kon worden, wordt getoond; kopieer het bestand opnieuw van het horloge en importeer het opnieuw om de rest te krijgen. Duiken die al in je logboek staan, worden overgeslagen.</li>
+          <li><strong>Een Garmin-bestand samen met een ander logboekbestand kiezen</strong> kan niet in één keer: importeer het logboekbestand, en daarna de Garmin-bestanden.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Een Garmin-duik vraagt me de flessen te controleren</summary>
+        <p>Met meer dan één fleszender vermeldt het bestand van Garmin niet op welk gas elke zender zat, dus zijn ze op volgorde aan de flessen van de duik gekoppeld. Open het gasgedeelte van de duik en controleer of elke druk bij de juiste fles staat.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>De tijd van een Garmin-duik zit er een uur naast</summary>
+        <p>De tijd komt van de klok van het horloge. Stond die niet op de lokale tijd van waar je dook, dan wordt de duik getoond op de tijd van het horloge. Wijzig de tijd van de duik, of stel vóór de volgende reis de tijdzone van het horloge in.</p>
+      </details>
+      <details id="drift-site">
+        <summary>Een driftduik heeft de verkeerde duikstek</summary>
+        <p>Een duik wordt gekoppeld aan de dichtstbijzijnde van de plek waar je te water ging en de plek waar je bovenkwam, wat bij een driftduik meestal de plek is waar je te water ging. Is hij aan de verkeerde of aan geen duikstek gekoppeld, kies dan de duikstek bij de duik, en zet andere wrakken waar je langs kwam in de notities.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Gasverbruik en SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>Een SAC-waarde lijkt niet te kloppen</summary>
+        <p>Tik of klik op <strong>Hoe?</strong> ernaast. Dat toont elke invoer: de fles en de waterinhoud, drukken, temperatuur, de reëel-gascorrectie, tijd en diepte. De gebruikelijke oorzaak is een verkeerde flesinhoud; corrigeer die in Uitrusting. Stuur een schermafbeelding van het scherm Hoe? als het er dan nog niet goed uitziet.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/nl/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Het paneel Hoe? voor gasverbruik op de iPhone, met de fles, drukken, temperatuur en de berekening."><figcaption>Het paneel Hoe? (voorbeeldduik).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>Er is geen SAC, alleen een melding</summary>
+        <ul>
+          <li><strong>Voeg de flesinhoud toe om SAC te zien</strong>: kies het model van de fles of voer de inhoud in.</li>
+          <li><strong>Voeg begin- en einddruk toe om SAC te zien</strong>: er is geen zender, dus voer ze in bij de fles.</li>
+          <li><strong>SAC heeft een diepteprofiel nodig</strong>: met de hand gelogde duiken zonder profiel hebben geen SAC.</li>
+          <li>Rebreatherduiken krijgen geen SAC-waarde.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC telt maar één fles mee</summary>
+        <p>Bij een duik met meerdere gassen heeft alleen de fles met de zender drukken. Voer begin- en einddruk in bij de andere fles en SAC omvat al het gas.</p>
+      </details>
+      <details id="breathing">
+        <summary>Gasverbruik in Overzicht zegt dat geen enkele duik een flesinhoud heeft</summary>
+        <p>Gasverbruik middelt alleen duiken met een flesinhoud en begin- en einddruk. Duiken uit de UDDF van MacDive hebben geen flesinhoud, omdat de inhouden daarin geen waterinhouden zijn; de XML eroverheen importeren vult ze aan (zie <a href="guide.html#macdive-files">Welk MacDive-bestand je moet gebruiken</a>). Stel anders de fles in bij je duiken (kies het model, of een uitrustingsset) en voeg drukken toe waar je die hebt. Onder het getal zegt Gasverbruik hoeveel duiken niet zijn meegeteld.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/nl/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Gasverbruik op het tabblad Overzicht: SAC en RMV over 14 duiken, en één duik niet meegeteld omdat die geen flesinhoud of drukken heeft."><figcaption>Het aantal weggelaten duiken staat onder het getal (voorbeeldlogboek).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Foto's</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Een foto verschijnt niet op mijn andere apparaat</summary>
+        <p>Met <strong>Bespaar iCloud-opslag voor duikfoto's</strong> aan houdt een foto zijn kopie tot je andere apparaat hem in iCloud-foto's vindt. Zet de instelling op beide apparaten aan, controleer of iCloud-foto's op beide aan staat, en geef het de tijd om te uploaden.</p>
+      </details>
+      <details id="videos">
+        <summary>Video's zijn niet toegevoegd</summary>
+        <p>Video's uit je bibliotheek kunnen alleen worden gekoppeld, niet gekopieerd. Zet <span class="path">Synchronisatie → Bespaar iCloud-opslag voor duikfoto's</span> aan, en zorg dat de video in iCloud-foto's staat. Of plak een YouTube- of Vimeo-link onder de foto's van de duik.</p>
+      </details>
+      <details id="photos-access">
+        <summary>‘Thermocline kan je foto's niet lezen’</summary>
+        <p>Toegang tot Foto's is geweigerd, dus foto's worden gekopieerd in plaats van gekoppeld. Om ze te koppelen, sta je toegang toe in Instellingen → Privacy en beveiliging → Foto's → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Duikstekken en de Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>De voorgestelde duikstek klopt niet, of er is er geen</summary>
+        <p>Kies een andere duikstek, zoek in de ingebouwde lijsten op naam, of markeer of typ de positie zelf. Groeves en meren in het binnenland ontbreken vaak in openbare lijsten, dus je eigen duikstekken komen vanaf dan eerst in de suggesties.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Thermocline staat niet op mijn Apple Watch</summary>
+        <p>De Watch-app komt mee met de iPhone-app uit TestFlight. Open op je iPhone de Watch-app, zoek Thermocline onder <strong>Beschikbare apps</strong> en tik op <strong>Installeer</strong>. Hij heeft watchOS&nbsp;11 of nieuwer nodig. Ben je overgestapt van de oude iPhone-app, installeer hem dan opnieuw: de oude Watch-app hoort bij de oude iPhone-app.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>Het horloge zegt ‘Wachten op een goede fix’ en Markeer plek blijft grijs</summary>
+        <p>Een plek wordt alleen bewaard uit een fix binnen &plusmn;30&nbsp;m die minder dan 30&nbsp;seconden oud is, zodat een verkeerde positie nooit in je logboek komt. Blijf aan de oppervlakte met het horloge boven water en vrij zicht op de lucht, en geef het een minuut. <strong>Een oude positie uit de cache wordt genegeerd</strong> betekent dat het op een nieuwe wacht. Gps werkt niet onder water: markeer de plek voordat je afdaalt of als je bovenkomt.</p>
+      </details>
+      <details id="watch-location">
+        <summary>‘Locatietoegang staat uit voor Thermocline’ op het horloge</summary>
+        <p>Open op het horloge <span class="path">Instellingen → Privacy en beveiliging → Locatievoorzieningen</span>, zet Locatievoorzieningen aan en sta Thermocline toe bij gebruik van de app.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Een plek die op de Watch is gemarkeerd, verscheen niet op de iPhone</summary>
+        <p>Open op het horloge <strong>Markeringen</strong>. <strong>Wacht op versturen naar iPhone</strong> betekent dat de iPhone hem nog niet heeft: houd het horloge bij je iPhone en open Thermocline op de iPhone. <strong>Naar iPhone gestuurd</strong> betekent dat hij er is: kijk in <span class="path">Logboek → Te bevestigen</span>. De iPhone zoekt de plek op als hij online is, dus zonder bereik wacht hij met <strong>wacht op signaal om op te zoeken</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>Het horloge toonde geen naam van een duikstek nadat ik een plek markeerde</summary>
+        <p>De naam komt van je iPhone: als die in de buurt is en Thermocline kan antwoorden, toont het horloge onder de plek de duikstek die hij zou voorstellen, een van jou of een uit de duikstekkenlijsten, met hoe ver die weg is. Is de iPhone buiten bereik, dan noemt het horloge je eigen duikstekken uit de kopie die je iPhone erop heeft achtergelaten, maar niet de duikstekkenlijsten. Is er binnen ongeveer 1,5&nbsp;km geen duikstek, dan wordt de plek zonder naam gemarkeerd. Hoe dan ook kies je de duikstek op de iPhone, in <span class="path">Logboek → Te bevestigen</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>De naam die ik op het horloge insprak, is niet bewaard</summary>
+        <p>De naam wordt bewaard als het dicteren of het toetsenbord sluit, of als je teruggaat. Open <strong>Markeringen</strong>, tik op de plek en controleer de naam; tik op <strong>Wijzig de naam</strong> om het opnieuw te proberen. Was de plek al verstuurd, dan volgt de naam hem naar de iPhone.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Registreert het horloge mijn duiken?</summary>
+        <p>Nee. De Watch-app van Thermocline markeert alleen plekken aan de oppervlakte. Je duiken komen van je duikcomputer. Voor Garmin Descent-horloges importeer je hun .fit-bestanden: zie <a href="guide.html#garmin">Garmin Descent</a> in de handleiding.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Een plek is van het horloge verdwenen</summary>
+        <p>Dat is de bedoeling. Een plek verdwijnt van het horloge zodra hij op de iPhone is bevestigd of verworpen. Een bevestigde plek is een duikstek in je logboek en wordt naar je andere apparaten gesynchroniseerd.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Een melding of downloadlog sturen</h2>
+    <ul>
+      <li><strong>Vanuit de app:</strong> maak een schermafbeelding en gebruik dan <strong>Deel bètafeedback</strong> in TestFlight. Hij komt aan met de build en het apparaat erbij.</li>
+      <li><strong>Downloadlog, iPhone:</strong> tik op het downloadscherm op <strong>Downloadlog</strong> en deel het dan. Het bevat alleen Bluetooth- en computermeldingen, geen duikgegevens.</li>
+      <li><strong>Downloadlog, Mac:</strong> kies in het downloadvenster <strong>Downloadlog…</strong>, dan <strong>Bewaar log…</strong>, en voeg het bestand toe.</li>
+      <li><strong>E-mail:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, met je apparaat, het buildnummer (te zien in TestFlight) en wat je verwachtte dat er zou gebeuren.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, een duiklogboek. Niet voor duikplanning of navigatie.</p>
+      <p>Duikstekkenlijsten © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-bijdragers</a>, beschikbaar onder de Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Voettekst">
+      <a href="./">Home</a>
+      <a href="guide.html">Handleiding</a>
+      <a href="troubleshooting.html">Problemen oplossen</a>
+      <a href="support.html">Ondersteuning</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Talen">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="troubleshooting.html" hreflang="nl" lang="nl" aria-current="page">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

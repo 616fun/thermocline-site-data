@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermocline – potápěčský logbook pro iPhone, iPad a Mac</title>
+  <meta name="description" content="Thermocline je potápěčský logbook pro zařízení Apple: iPhone, iPad, Mac a Apple Watch. Stahujte ponory přes Bluetooth nebo kabel, importujte svůj logbook z MacDive nebo Shearwater Cloud a podívejte se, co zaznamenal váš počítač. Veřejná beta v TestFlightu.">
+  <meta name="theme-color" content="#031628">
+  <link rel="canonical" href="https://thermoclineapp.com/cs/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Thermocline – potápěčský logbook pro iPhone, iPad a Mac">
+  <meta property="og:description" content="Pro zařízení Apple. Stahujte ponory přes Bluetooth nebo kabel, importujte svůj dosavadní logbook a podívejte se, co zaznamenal váš počítač. Zapojte se do bety.">
+  <meta property="og:url" content="https://thermoclineapp.com/cs/">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/cs.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ikona a název aplikace Thermocline přes fotku přídě lodi při ponoru na vrak, s potápěči a rybami. Potápěčský logbook pro iPhone, iPad a Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thermocline – potápěčský logbook pro iPhone, iPad a Mac">
+  <meta name="twitter:description" content="Pro zařízení Apple. Stahujte ponory přes Bluetooth nebo kabel, importujte svůj dosavadní logbook a podívejte se, co zaznamenal váš počítač. Zapojte se do bety.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/cs.jpg">
+  <meta name="twitter:image:alt" content="Ikona a název aplikace Thermocline přes fotku přídě lodi při ponoru na vrak, s potápěči a rybami. Potápěčský logbook pro iPhone, iPad a Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preload" as="image" href="../images/wreck-hatch.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thermoclineapp.com/cs/#website",
+      "url": "https://thermoclineapp.com/cs/",
+      "name": "Thermocline",
+      "description": "Thermocline je potápěčský logbook pro zařízení Apple: iPhone, iPad, Mac a Apple Watch. Stahujte ponory přes Bluetooth nebo kabel, importujte svůj logbook z MacDive nebo Shearwater Cloud a podívejte se, co zaznamenal váš počítač. Veřejná beta v TestFlightu.",
+      "inLanguage": "cs"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://thermoclineapp.com/cs/#iphone-app",
+      "name": "Thermocline",
+      "operatingSystem": "iOS 18 or later, iPadOS 18 or later, macOS 15 or later, watchOS",
+      "description": "Potápěčský logbook pro iPhone, iPad, Mac a Apple Watch: jedna aplikace, jeden odkaz na betu. Stahujte ponory přes Bluetooth, importujte logbook z MacDive nebo Shearwater Cloud a čtěte plyn, hloubku a ppO2 na první pohled.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": [
+        "https://thermoclineapp.com/images/guide/cs/ios-logbook.jpg",
+        "https://thermoclineapp.com/images/guide/cs/ios-dive.jpg",
+        "https://thermoclineapp.com/images/guide/cs/ios-sac-how.jpg",
+        "https://thermoclineapp.com/images/guide/cs/ios-sites-map.jpg"
+      ],
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Potápěčský logbook",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/cs/",
+      "inLanguage": "cs"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://thermoclineapp.com/cs/#mac-app",
+      "name": "Thermocline pro Mac",
+      "operatingSystem": "macOS 15 or later",
+      "description": "Potápěčský logbook pro Mac. Stahujte ponory přes Bluetooth nebo kabel, importujte logbook z MacDive nebo Shearwater Cloud a čtěte každý ponor celý.",
+      "installUrl": "https://testflight.apple.com/join/ygF4ngNd",
+      "screenshot": "https://thermoclineapp.com/images/guide/cs/mac-dive.jpg",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Potápěčský logbook",
+      "image": "https://thermoclineapp.com/images/icon-512.png",
+      "url": "https://thermoclineapp.com/cs/",
+      "inLanguage": "cs"
+    }
+  ]
+}
+  </script>
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#main">Přeskočit na obsah</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Hlavní">
+      <a href="#app">Ukázka aplikace</a>
+      <a href="#features">Funkce</a>
+      <a class="keep" href="guide.html">Průvodce</a>
+      <a href="troubleshooting.html">Řešení potíží</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Sdílet tuto stránku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Sdílet</span></button>
+      <a class="btn" href="#testers">Zapojte se do bety</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="rays" aria-hidden="true"></div>
+  <div class="bubbles" aria-hidden="true">
+    <span style="--x:8%;--s:6px;--d:13s;--t:0s"></span>
+    <span style="--x:18%;--s:10px;--d:17s;--t:3s"></span>
+    <span style="--x:27%;--s:5px;--d:11s;--t:6s"></span>
+    <span style="--x:41%;--s:8px;--d:15s;--t:1.5s"></span>
+    <span style="--x:55%;--s:12px;--d:19s;--t:5s"></span>
+    <span style="--x:63%;--s:6px;--d:12s;--t:8s"></span>
+    <span style="--x:72%;--s:9px;--d:16s;--t:2s"></span>
+    <span style="--x:81%;--s:5px;--d:10s;--t:4s"></span>
+    <span style="--x:88%;--s:11px;--d:18s;--t:7s"></span>
+    <span style="--x:94%;--s:7px;--d:14s;--t:9s"></span>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Veřejná beta v TestFlightu</span>
+      <h1 id="hero-title"><span class="grad lines">Potápěčský logbook, který ukazuje, co zaznamenal váš počítač.</span></h1>
+      <p class="lede">Stahujte ponory přes Bluetooth nebo kabel, přeneste celou historii svého logbooku a čtěte plyn, hloubku a ppO₂ na první pohled.</p>
+      <div class="cta-row">
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          Zapojte se do bety
+        </a>
+      </div>
+      <div class="apple-only" role="note">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 25h8M12 21v4"/><rect x="20" y="11" width="10" height="17" rx="2.5" fill="rgba(3,22,40,.6)"/><path d="M24 25h2"/></svg>
+        <div><b>Pro zařízení Apple.</b> <span>iPhone, iPad, Mac a Apple Watch.</span></div>
+      </div>
+      <p class="hero-links"><a href="#app">Ukázka aplikace</a> · <a href="guide.html">Přečtěte si průvodce</a> · <a href="troubleshooting.html">Řešení potíží</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="showcase" id="chart">
+  <div class="wrap">
+    <figure class="chart-card reveal">
+      <div class="inner">
+        <div class="demo" id="demo">
+          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Profil ponoru v Thermocline: hloubka během 43 minut, přes ni tlak v láhvi, SAC, teplota a ppO2, a přepnutí plynu z EAN30 na Air a zpět.">
+        </div>
+      </div>
+      <figcaption>Vyzkoušejte si to: tři skutečné ponory, vykreslené tak, jak je kreslí aplikace. Klepejte na štítky, přepínejte Pod sebou a Překryv a táhněte po ponoru.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="app-tour" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Ukázka aplikace</p>
+      <h2 id="app-title">Vaše ponory tak, jak je čtete</h2>
+      <p>Bezpečnostní hodnoty na stejném místě u každého ponoru, profil, který přečtete okamžik po okamžiku, a postup výpočtu za každou hodnotou plynu. Zobrazeno na ukázkovém logbooku aplikace.</p>
+    </div>
+    <figure class="tour-video reveal">
+      <video class="tv-wide" controls preload="none" playsinline width="1920" height="1080" poster="../video/beta-wide.jpg" aria-label="22sekundová prohlídka Thermocline: profil ponoru, stahování ponorů, bezpečnostní hodnoty a výpočet za SAC."><source src="../video/beta-wide.mp4" type="video/mp4"></video>
+      <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="22sekundová prohlídka Thermocline: profil ponoru, stahování ponorů, bezpečnostní hodnoty a výpočet za SAC."><source src="../video/beta-tall.mp4" type="video/mp4"></video>
+    </figure>
+    <div class="phones" role="list">
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/cs/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="Logbook na iPhonu: jeden ponor čeká v části K potvrzení, pod ním seznam ponorů s lokalitou, datem, hloubkou a časem."><figcaption><b>Logbook</b>Ponory, kterým chybí lokalita nebo plyn, čekají nahoře.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/cs/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Ponor na iPhonu: bezpečnostní pruh s hloubkou, časem, plyny, deko, ppO2 a CNS nad profilem."><figcaption><b>Každý ponor</b>Nejdřív hloubka, plyny, deko, ppO₂ a CNS.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/cs/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panel Jak? pro spotřebu plynu na iPhonu se seznamem láhve, tlaků, teploty a výpočtu."><figcaption><b>Spotřeba plynu</b>Klepněte na Jak? a uvidíte každý vstup za SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><img src="../images/guide/cs/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="Mapa lokalit na iPhonu s vyznačenými vašimi lokalitami a vestavěnými seznamy potápěčských lokalit."><figcaption><b>Lokality</b>Vaše lokality a dalších 76&nbsp;000+ offline.</figcaption></figure>
+    </div>
+    <figure class="mac-shot reveal"><img src="../images/guide/cs/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Aplikace pro Mac: seznam ponorů vedle ponoru s bezpečnostními hodnotami, lokalitou, parťáky, výstrojí a profilem hloubky, s údaji v nejhlubším bodě."><figcaption><b>Na Macu</b>Celý logbook vedle ponoru. Najeďte ukazatelem na profil a přečtete kterýkoli okamžik.</figcaption></figure>
+    <div class="help-cards">
+      <a class="help-card reveal" href="guide.html">
+        <span class="tag">Průvodce</span>
+        <h3>Jak používat Thermocline</h3>
+        <p>Importujte logbook, stáhněte data z počítače, potvrďte lokality a plyny, synchronizujte a exportujte. Krok za krokem, pro iPhone i Mac.</p>
+        <span class="go">Přečtěte si průvodce →</span>
+      </a>
+      <a class="help-card reveal" href="troubleshooting.html">
+        <span class="tag">Řešení potíží</span>
+        <h3>Něco nefunguje?</h3>
+        <p>Počítač nenalezen, žádné nové ponory, rozdíly při synchronizaci, mezery po importu a podivné hodnoty SAC, u každého s tím, co zkontrolovat nejdřív.</p>
+        <span class="go">Najděte řešení →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><strong>76&nbsp;000+</strong><span>potápěčských lokalit a vraků po celém světě, offline</span></div>
+    <div class="stat reveal"><strong>4</strong><span>zařízení Apple, jeden logbook</span></div>
+    <div class="stat reveal"><strong>17</strong><span>jazyků</span></div>
+    <div class="stat reveal"><strong>0</strong><span>účtů, reklam a sledovačů</span></div>
+  </div>
+</div>
+
+<section class="testers" id="testers" aria-labelledby="testers-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Hledáme testery</p>
+      <h2 id="testers-title">Zapojte se do bety</h2>
+      <p>Pomůže každý potápěč: importujte svůj logbook, zapište pár ponorů a řekněte nám, co je matoucí, co chybí nebo co je špatně. Jeden odkaz platí pro všechna zařízení.</p>
+    </div>
+
+    <div class="join-cards one" id="join">
+      <div class="join reveal">
+        <div>
+          <h3>iPhone, iPad, Mac a Apple Watch</h3>
+          <p>Jedna aplikace, jeden odkaz na betu · iOS 18 nebo novější, macOS 15 nebo novější</p>
+        </div>
+        <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Zapojte se do bety</a>
+      </div>
+    </div>
+    <ol class="steps-line">
+      <li><b>1</b>Nainstalujte si aplikaci TestFlight od Applu</li>
+      <li><b>2</b>Otevřete odkaz na iPhonu, iPadu nebo Macu a klepněte na Přijmout</li>
+      <li><b>3</b>Zpětnou vazbu posílejte přes Sdílet odezvu na betaverzi v TestFlightu</li>
+    </ol>
+
+    <div class="subhead reveal">
+      <h3>Máte potápěčský počítač? Pomozte nám ho otestovat.</h3>
+      <p>Stahování přes Bluetooth je vyzkoušené na počítačích Shearwater. Stahování kabelem a sériovým portem na Macu je připravené pro mnoho dalších počítačů, ale se skutečným hardwarem se zatím nesetkalo. Pokud nějaký vlastníte, pomůže jediný pokus o stažení, ať funguje, nebo ne.</p>
+    </div>
+    <div class="tracks">
+      <article class="track hot reveal">
+        <div>
+          <span class="tag">Nejžádanější · Mac</span>
+          <h3>USB a sériový kabel</h3>
+          <p>Pro počítače, které se stahují kabelem, přes adaptér USB‑sériový port nebo připojené přímo do USB.</p>
+          <p class="ask"><strong>Jak:</strong> Soubor → Stáhnout z potápěčského počítače → USB kabel. Zvolte model a port. Pokud to selže, použijte Log stahování… a pak Uložit log… a pošlete ho.</p>
+        </div>
+        <ul class="models" aria-label="Počítače k otestování">
+          <li>Řada Suunto Vyper a EON Steel</li>
+          <li>Starší Oceanic, Aeris a Sherwood</li>
+          <li>Uwatec Aladin, Scubapro Aladin Square, G2 a G3</li>
+          <li>Cressi a Mares</li>
+          <li>OSTC a Atomic Cobalt</li>
+          <li>…a další</li>
+        </ul>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Hledáme · Mac</span>
+        <h3>Shearwater Predator a Petrel 1</h3>
+        <p>Používají starší Bluetooth, které telefony používat neumí. Mac se k nim po spárování dostane jako k sériovému portu.</p>
+        <p class="ask"><strong>Jak:</strong> Spárujte počítač v Nastavení systému → Bluetooth, pak v okně stahování zvolte jeho port, s počítačem v režimu přenosu. Log stahování pošlete v každém případě.</p>
+      </article>
+      <article class="track reveal">
+        <span class="tag">Vyzkoušeno · iPhone, iPad a Mac</span>
+        <h3>Bluetooth</h3>
+        <p>Vyzkoušeno se Shearwater Perdix a Perdix 2. Ostatní počítače s Bluetooth by měly fungovat také a zprávy o nich uvítáme.</p>
+        <p class="ask"><strong>Jak:</strong> Logbook → Stáhnout ponory na iPhonu, nebo Soubor → Stáhnout z potápěčského počítače na Macu.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Funkce</p>
+      <h2 id="features-title">Všechno, co vaše ponory zaznamenaly, v jednom logbooku</h2>
+      <p>Vytvořeno nadšeným potápěčem pro rekreační, technické a jeskynní potápěče, kteří chtějí mít svá čísla v pořádku.</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+        <h3>Stahování přes Bluetooth nebo kabel</h3>
+        <p>Přímo z potápěčského počítače do iPhonu nebo Macu, a s každým přicházejícím ponorem přidáte lokalitu, parťáky, výstroj a podmínky. Mac stahuje i přes USB a sériový kabel.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+        <h3>Přeneste celou svou historii</h3>
+        <p>Importujte z MacDive, databáze Shearwater Cloud, souborů Garmin .fit, UDDF nebo CSV a vyberte, které ponory přidat. Vše, co nedokáže přečíst, se vám vypíše, nikdy to tiše nezahodí.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+        <h3>Bezpečnostní hodnoty na prvním místě</h3>
+        <p>Šest klíčových hodnot je v pevném pruhu nahoře u každého ponoru. Láhev, ppO₂, NDL, SAC, teplotu, CNS a rychlost výstupu zobrazíte jako pruhy pod sebou nebo jako jeden překryv.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="4"/><path d="M8 8h8"/></svg></div>
+        <h3>SAC, který ukáže svůj výpočet</h3>
+        <p>Počítá se z vodního objemu vaší láhve s výpočtem pro reálný plyn, takže sedí při jakémkoli plnění. Klepněte na Jak? a uvidíte každý vstup. Sidemount, dvojče i ponory s více plyny se počítají správně.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h3>76&nbsp;000+ lokalit a vraků po celém světě</h3>
+        <p>Najděte a pojmenujte potápěčskou lokalitu kdekoli na světě, i bez signálu, z otevřených seznamů lokalit vestavěných v aplikaci. Vaše vlastní lokality jsou vždy na prvním místě.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 1"/><path d="M9 2h6M9 22h6"/></svg></div>
+        <h3>Apple Watch na hladině</h3>
+        <p>Po vynoření označte lokalitu ze zápěstí. Poloha počká ve vašem logbooku, až ji později pojmenujete.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h11l-3-3M16 17H5l3 3"/></svg></div>
+        <h3>Dva počítače, jeden ponor</h3>
+        <p>Potápíte se se záložním počítačem? Thermocline nabídne sloučení obou záznamů, nebo spojení ponoru, který se rozdělil na dva. Ani jedno nikdy neudělá, aniž by se zeptal.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></div>
+        <h3>Synchronizace přes váš iCloud</h3>
+        <p>Váš logbook, výstroj, parťáci a fotky vás provázejí mezi iPhonem, iPadem a Macem. Body obnovení vás umí vrátit do stavu před importem nebo sloučením.</p>
+      </article>
+      <article class="feature reveal">
+        <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <h3>Vždy cesta ven</h3>
+        <p>Exportujte vše, kdykoli, jako UDDF, CSV nebo MacDive XML. Váš logbook nikdy není uzamčený.</p>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>V aplikaci dále najdete</h3>
+      <div class="formats">
+        <span class="chip">Výstroj a láhve, včetně značky +</span>
+        <span class="chip">Parťáci propojení s Kontakty</span>
+        <span class="chip">Kvalifikační kartičky</span>
+        <span class="chip">Fotky z ponorů a odkazy na videa</span>
+        <span class="chip">Hledání podle lokality, parťáka, plynu, poznámek, data nebo #čísla</span>
+        <span class="chip">Přehled hloubek, plynů a rekordů</span>
+        <span class="chip">Metrické nebo imperiální jednotky</span>
+        <span class="chip">17 jazyků</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles" id="principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Jak je postavený</p>
+      <h2 id="principles-title">Logbook, kterému můžete svěřit svá čísla</h2>
+      <p>Každou obrazovku určují tři pravidla.</p>
+    </div>
+    <div class="pgrid">
+      <div class="reveal">
+        <div class="pnum">01</div>
+        <h3>Logbook, ne plánovač</h3>
+        <p>Thermocline ukazuje, co zaznamenal váš potápěčský počítač. Nikdy nepočítá dekompresi a nikdy nenahrazuje čísla vašeho počítače vlastním odhadem.</p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">02</div>
+        <h3>Vaše data zůstávají vaše</h3>
+        <p>Žádný účet, žádné reklamy, žádná analytika a žádné servery vývojáře. Váš logbook žije ve vašich zařízeních a ve vašem vlastním iCloudu a kdykoli ho celý vyexportujete. <a href="privacy.html" style="color:#fff">Zásady ochrany soukromí</a></p>
+      </div>
+      <div class="reveal">
+        <div class="pnum">03</div>
+        <h3>Varovat, nikdy neblokovat</h3>
+        <p>Pokud stahování nebo synchronizace proběhne jen zčásti, dozvíte se, co se stalo, a nic se nezahodí. Úpravy ponechávají původní hodnotu z počítače vedle vaší opravy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="section-head reveal">
+      <p class="kicker">Otázky</p>
+      <h2 id="faq-title">Než se zapojíte</h2>
+      <p>Už testujete? Stránky <a href="guide.html">Průvodce</a> a <a href="troubleshooting.html">Řešení potíží</a> popisují aplikaci krok za krokem.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Funguje na Androidu, Windows nebo na webu?</summary>
+        <p>Ne. Thermocline je určen pouze pro zařízení Apple: iPhone, iPad, Mac a Apple Watch. Je postavený na vlastních nástrojích Applu, aby mohl úzce spolupracovat s iCloudem, Bluetooth, Fotkami a Mapami.</p>
+      </details>
+      <details>
+        <summary>S jakými potápěčskými počítači funguje?</summary>
+        <p>Stahování přes Bluetooth je vyzkoušené se Shearwater Perdix a Perdix 2, na iPhonu, iPadu i Macu. Mac navíc stahuje přes USB a sériový kabel z mnoha dalších počítačů, mimo jiné Suunto, starších Oceanic, Aeris a Sherwood, Uwatec a Scubapro, Cressi, Mares, OSTC a Atomic. Tato stahování kabelem zatím nebyla vyzkoušena na skutečném hardwaru, takže pokud takový počítač vlastníte, otestujte ho prosím. Ponory z Garmin Descent se načítají z jejich souborů .fit, na iPhonu, iPadu i Macu. Ponory z jakéhokoli počítače lze také přenést přes soubor logbooku.</p>
+      </details>
+      <details>
+        <summary>Používám MacDive. Přenese se můj logbook?</summary>
+        <p>Ano. Exportujte z MacDive jako XML a soubor importujte. XML je úplnější ze dvou exportů MacDive: jeho UDDF vynechává NDL, ppO₂ a CNS z počítače, výstroj a typy ponoru. Pokud jste už importovali UDDF, importujte navrch XML a mezery se doplní bez duplicit. Sami vyberete, které ponory přidat, láhve se přenesou jako skutečné láhve (velikost, tlak, dvojče a +) a ID ponorů z MacDive se zachovají, takže export zpět do MacDive nevytvoří duplicity.</p>
+      </details>
+      <details>
+        <summary>Je aplikace pro Mac stejná aplikace?</summary>
+        <p>Ano. iPhone, iPad, Mac a Apple Watch jsou jedna aplikace s jedním odkazem na betu. Zapojte se jednou a pak ji nainstalujte z TestFlightu na každé zařízení. Všechna používají stejný logbook na iCloudu, takže ponor stažený na Macu se objeví i ve vašem telefonu. Mějte na všech zařízeních nejnovější build.</p>
+      </details>
+      <details>
+        <summary>Do bety pro iPhone jsem se zapojil před 18. listopadem 2026. Co mám dělat?</summary>
+        <p>Ta aplikace se přesunula. Otevřete ji a zapněte Synchronizovat s iCloudem (nebo exportujte soubor UDDF), pak se zapojte do bety přes odkaz na této stránce a nainstalujte novou aplikaci vedle ní. V nové aplikaci zapněte synchronizaci a váš logbook se vrátí. Až bude vše v pořádku, starou aplikaci smažte. <a href="troubleshooting.html#moved">Krok za krokem</a>.</p>
+      </details>
+      <details>
+        <summary>Co potřebuji?</summary>
+        <p>iPhone nebo iPad se systémem iOS nebo iPadOS 18 či novějším, nebo Mac se systémem macOS 15 či novějším. Aplikace pro Apple Watch vyžaduje watchOS 11. Pro synchronizaci mezi zařízeními se na každém z nich přihlaste ke stejnému účtu iCloud.</p>
+      </details>
+      <details>
+        <summary>Může mi betaverze ztratit ponory?</summary>
+        <p>Je postavená tak, aby se to nestalo. Importy nikdy nemění soubor, ze kterého importujete, a body obnovení umí vrátit váš logbook do stavu před importem nebo sloučením. Původní exporty si ponechte, a pokud ponory zmizí nebo se zdvojí, pošlete snímek obrazovky Profil → Synchronizace dřív, než cokoli změníte.</p>
+      </details>
+      <details>
+        <summary>Mohu polohy lokalit použít k navigaci?</summary>
+        <p>Ne. Polohy lokalit slouží k zápisu do logbooku, ne k navigaci.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap reveal">
+    <h2 id="closing-title">Vezměte svůj logbook s sebou.</h2>
+    <p>Zapojte se do bety na iPhonu, iPadu nebo Macu, importujte své ponory a řekněte nám, co je matoucí, co chybí nebo co je špatně, i kdyby to byla maličkost.</p>
+    <div class="cta-row">
+      <a class="btn cold" href="https://testflight.apple.com/join/ygF4ngNd">Zapojte se do bety</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, potápěčský logbook pro iPhone, iPad, Mac a Apple Watch. Není určen k plánování ponorů ani k navigaci.</p>
+      <p>Seznamy potápěčských lokalit © <a href="https://www.openstreetmap.org/copyright">přispěvatelé OpenStreetMap</a>, dostupné pod licencí Open Database License. <a href="https://github.com/616fun/thermocline-site-data">Stáhnout seznamy lokalit</a>.</p>
+      <p>Apple, iPhone, iPad, Mac, Apple Watch, iCloud a TestFlight jsou ochranné známky společnosti Apple Inc.</p>
+    </div>
+    <nav class="foot-links" aria-label="Zápatí">
+      <a href="guide.html">Průvodce</a>
+      <a href="troubleshooting.html">Řešení potíží</a>
+      <a href="support.html">Podpora</a>
+      <a href="privacy.html">Soukromí</a>
+      <a href="#testers">Zapojte se do bety</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Jazyky">
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="index.html" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+
+<script src="../dive-data.js"></script>
+<script src="../profile-demo.js?v=4"></script>
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+</body>
+</html>

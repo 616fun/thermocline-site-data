@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>トラブルシューティング – Thermocline</title>
+  <meta name="description" content="Thermocline でよくある問題の解決方法: ダイブコンピューターに接続できない、新しいダイブがない、同期の食い違い、読み込みの抜け、写真、SAC。">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/ja/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="トラブルシューティング – Thermocline">
+  <meta property="og:description" content="Thermocline でよくある問題の解決方法: ダイブコンピューターに接続できない、新しいダイブがない、同期の食い違い、読み込みの抜け、写真、SAC。">
+  <meta property="og:url" content="https://thermoclineapp.com/ja/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/ja.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ダイバーと魚が写る沈船ダイブの船首の写真に、Thermocline のアプリアイコンと名前を重ねた画像。iPhone、iPad、Mac のためのダイブログブック。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="トラブルシューティング – Thermocline">
+  <meta name="twitter:description" content="Thermocline でよくある問題の解決方法: ダイブコンピューターに接続できない、新しいダイブがない、同期の食い違い、読み込みの抜け、写真、SAC。">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/ja.jpg">
+  <meta name="twitter:image:alt" content="ダイバーと魚が写る沈船ダイブの船首の写真に、Thermocline のアプリアイコンと名前を重ねた画像。iPhone、iPad、Mac のためのダイブログブック。">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">トラブルシューティングへスキップ</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="メイン">
+      <a href="guide.html">ガイド</a>
+      <a href="troubleshooting.html" aria-current="page">トラブルシューティング</a>
+      <a href="support.html">サポート</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="このページを共有"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">共有</span></button>
+      <a class="btn" href="./#testers">ベータに参加</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>トラブルシューティング</h1>
+    <p>以下から該当する問題を探してください。それぞれ、まず確認すべきことから始めています。2026年11月18日更新。</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="このページの内容">
+    <details open>
+      <summary>このページの内容</summary>
+    <ol>
+      <li><a href="#first">まずアップデート</a></li>
+      <li><a href="#downloads">ダウンロード</a></li>
+      <li><a href="#sync">同期</a></li>
+      <li><a href="#imports">読み込み</a></li>
+      <li><a href="#numbers">ガスと SAC</a></li>
+      <li><a href="#photos">写真</a></li>
+      <li><a href="#sites">ポイントと Watch</a></li>
+      <li><a href="#send-log">レポートを送る</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">問題を検索</label>
+      <input id="faq-q" type="search" placeholder="例: NDL、Garmin、PIN、同期" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">まず、すべてのデバイスをアップデート</h2>
+    <p>多くの問題は、すべてのデバイスで最新のビルドを使うと解消します。使っている iPhone、iPad、Mac のそれぞれで TestFlight を開き、アップデートがあればインストールしてください。古いビルドはアップデートされるまで変更の送信を停止し、<strong>同期を続けるには Thermocline をアップデートしてください</strong>と表示します。変更は保持され、アップデート後に送信されます。</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">ダイブコンピューターからのダウンロード</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>コンピューターが見つからない</summary>
+        <ul>
+          <li>コンピューターを起動して、Bluetooth モードにしてください（Shearwater: <span class="path">Menu → Bluetooth</span>）。このモードは約 2 分間しか続きません。</li>
+          <li>コンピューターを iPhone、iPad、Mac に近づけてください。</li>
+          <li><strong>Shearwater のコンピューターは、最後に使ったデバイスに接続しに戻ります。</strong> 電話や別の Mac が近くにある場合は、そのデバイスの Bluetooth をオフにしてから、もう一度試してください。</li>
+          <li>Bluetooth がオンになっていて、Thermocline に使用が許可されていることを確認してください（iPhone: 設定 → Thermocline、Mac: システム設定 → プライバシーとセキュリティ → Bluetooth）。</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Predator または Petrel 1 で、iPhone に表示されない</summary>
+        <p>これらは、iPhone や iPad では使えない古い Bluetooth（Bluetooth Classic）を使っています。Mac でダウンロードするか（<a href="guide.html#download">ガイド</a>を参照）、Shearwater Cloud または UDDF ファイルからダイブを読み込んでください。</p>
+      </details>
+      <details id="pin">
+        <summary>接続はできるが PIN を求められる</summary>
+        <p>コンピューターの画面に表示されるコードを入力してください。必要なのは初回だけです。</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>「新しいダイブはありません」</summary>
+        <p>前回のダウンロード以降の新しいダイブだけを取得します。削除したダイブを戻したい場合は、<strong>コンピューター内のすべてのダイブをダウンロード</strong>をオンにして、もう一度ダウンロードしてください。すでにログブックにあるダイブはスキップされます。</p>
+      </details>
+      <details id="download-stopped">
+        <summary>ダウンロードが途中で止まった</summary>
+        <p><strong>残す</strong>を選んで届いたダイブを保存してから、残りをもう一度ダウンロードしてください。何度も止まる場合は、コンピューターの近くで<strong>再試行</strong>を選び、<a href="#send-log">ダウンロードログを送って</a>ください。</p>
+      </details>
+      <details id="cable">
+        <summary>Mac でケーブルでのダウンロードが失敗する</summary>
+        <ul>
+          <li>ポートがケーブルと合っているか確認してください。一覧には各ポートの種類が表示され、選んだモデル用でない場合は警告が出ます。</li>
+          <li>ケーブルを抜いて差し直し、更新ボタンでもう一度ケーブルを探してください。</li>
+          <li>お使いのモデルの<strong>始める前に</strong>の手順に従ってください。</li>
+          <li>ケーブルでのダウンロードは新しい機能です。うまくいってもいかなくても、<a href="#send-log">ダウンロードログを送って</a>ください。</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">デバイス間の同期</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>iPhone アプリに「Thermocline はひとつのアプリになりました」と表示される、または Thermocline のアプリが 2 つある</summary>
+        <p>2026年11月18日、iPhone、iPad、Mac、Apple Watch のアプリはひとつのアプリになり、ベータリンクもひとつになりました。以前の iPhone アプリは、今は移行を手助けするだけです。</p>
+        <ol>
+          <li>古いアプリを開きます。同期がオフと表示された場合は、<strong>「iCloud と同期」をオンにする</strong>をタップして 1 分ほど開いたままにするか、<strong>ログブックを UDDF で書き出す</strong>をタップしてファイルを保存します。</li>
+          <li><strong>新しいベータに参加</strong>をタップするか、iPhone で<a href="https://testflight.apple.com/join/ygF4ngNd">ベータリンク</a>を開いて、新しいアプリをインストールします。新しいアプリは古いアプリと並んで表示されます。</li>
+          <li>新しいアプリで <span class="path">プロフィール → iCloud と同期</span> をオンにします。ダイブ、ポイント、器材、設定が戻ってきます。書き出した場合は、代わりに <span class="path">プロフィール → ログブックファイルを読み込む</span> を使います。</li>
+          <li>ダイブコンピューターをもう一度ペアリングし、iPhone の Watch アプリから Watch アプリをもう一度インストールする必要があるかもしれません。</li>
+          <li>新しいアプリに同じダイブが表示されたら、古いアプリを削除します。</li>
+        </ol>
+        <p>Mac では何も変わりません。これまでどおり Mac アプリをアップデートしてください。</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>同期のあとでダイブが消えた、または重複した</summary>
+        <ol>
+          <li>まだ何も変更しないでください。各デバイスで「同期」セクション（iPhone: <span class="path">プロフィール → 同期</span>、Mac: <span class="path">Thermocline → 設定 → 同期</span>）のスクリーンショットを撮って送ってください。</li>
+          <li>すべてのデバイスが最新のビルドか確認してください。</li>
+          <li><span class="path">プロフィール → データ → 復元ポイント</span> で、ログブックを読み込み、統合、削除の前の状態に戻せます。復元すると先に現在のログブックが保存されるので、復元を取り消せます。</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>あるデバイスでの変更が、もう一方に表示されない</summary>
+        <ul>
+          <li>両方で <strong>iCloud と同期</strong>がオンになっていて、同じ Apple Account にサインインしていることを確認してください。</li>
+          <li>変更を行ったデバイスで<strong>送信待ち</strong>を確認し、電波のある場所で両方のアプリを開いてください。「同期」セクションに、このデバイスとほかのデバイスが一致したかどうかが表示されます。</li>
+          <li><strong>今すぐ同期</strong>を押してください。</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>「iCloud にサインインしていません」</summary>
+        <p>デバイスの「設定」で iCloud にサインインしてください。それまでログブックはそのデバイスに安全に残り、サインインすると同期されます。</p>
+      </details>
+      <details id="icloud-full">
+        <summary>「iCloud ストレージがいっぱいです」</summary>
+        <p>ログブックはデバイスに安全に保存されていて、空きができると同期されます。iCloud の空き容量を増やすか、写真が二重に保存されないように<strong>ダイブの写真で iCloud ストレージを節約</strong>をオンにしてください。</p>
+      </details>
+      <details id="newer-version">
+        <summary>「別のデバイスで新しいバージョンが使われています」</summary>
+        <p>このデバイスの Thermocline を TestFlight でアップデートしてください。変更はここに安全に保存されており、アップデート後に送信されます。</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">読み込み</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>一部のダイブや詳細が取り込まれなかった</summary>
+        <p>読み込みレポートには、<strong>読み込まれなかった項目</strong>と<strong>確認してください</strong>の下に、すべての項目が理由とともに一覧表示されます。UDDF の書き方はログブックごとに少しずつ異なるため、値が欠けるのは普通のことで、その値は空欄のままになります。あるはずのものがない場合は、レポートと、可能であればファイルを送ってください。</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>MacDive の器材、写真、ダイブの種類がない</summary>
+        <p>MacDive の UDDF 書き出しには、これらが含まれません。器材、タグ、ダイブの種類はその上に XML を読み込み、写真は Mac で MacDive のフォルダを読み込んでください。すでにログブックにあるダイブが二重に追加されることはありません。<a href="guide.html#macdive-files">どの MacDive ファイルを使うか</a>を参照してください。</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>MacDive から取り込んだダイブに NDL、ppO₂、CNS がない</summary>
+        <p>ダイブのページで NDL が「—」、減圧が「未記録」と表示されるか、ppO₂ に「ガスと水深から計算」と表示されます。MacDive の UDDF 書き出しには、コンピューターの NDL、ppO₂、CNS が含まれません。MacDive のフォルダには、MacDive が iPhone または iPad でダウンロードしたダイブのプロファイルがありません。MacDive がそれらを暗号化して保存しているためです。</p>
+        <p>MacDive の XML も読み込んでください。ダイブを再び追加することなく、足りない内容が補われます。<a href="guide.html#macdive-files">どの MacDive ファイルを使うか</a>を参照してください。</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>ファイルやアプリを移行すると、何か失われますか？</summary>
+        <ul>
+          <li><strong>元のファイルが変更されることは決してありません。</strong> MacDive の書き出しファイルは保管し、何本かダイブを比べ終えるまでは MacDive 自体も残しておいてください。</li>
+          <li><strong>2 回目の読み込みは追加であり、置き換えではありません。</strong> すでにログブックにあるダイブは照合され、足りない内容だけが補われるので、UDDF のあとに XML を、またはどちらかのあとにフォルダを読み込めます。</li>
+          <li><strong>元に戻せます。</strong> 2 本以上のダイブを読み込むときは、その前に<strong>読み込みの前</strong>という名前の復元ポイントが保存されます（iPhone では <span class="path">プロフィール → データ → 復元ポイント</span>、Mac では <span class="path">設定 → 復元ポイント</span>）。Mac では、レポートの<strong>読み込みを取り消す…</strong>でも元に戻せます。</li>
+          <li><strong>Thermocline から移るとき:</strong> Thermocline の UDDF 書き出しは完全なものです。各ダイブを通じたコンピューターの NDL、ppO₂、CNS、器材、タグ、ダイブの種類、ビデオリンクが含まれます。写真はどの書き出しファイルにも含まれません。</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>読み込んだダイブにガスがない</summary>
+        <p>ファイルに、どのガスを使ったかが書かれていませんでした。これらのダイブは、ガスを設定できるよう<strong>要確認</strong>で待機します。</p>
+      </details>
+      <details id="wrong-file">
+        <summary>間違ったファイルを読み込んだ</summary>
+        <p>Mac では、読み込みレポートの<strong>読み込みを取り消す…</strong>を使ってください。どちらのデバイスでも、2 本以上のダイブを読み込むときは、その前に<strong>読み込みの前</strong>という名前の復元ポイントが保存されます。</p>
+      </details>
+      <details id="garmin">
+        <summary>Garmin のファイルが読み込めない</summary>
+        <ul>
+          <li><strong>「これは zip ファイルです」</strong>: Garmin Connect の <strong>オリジナルをエクスポート</strong> では .zip ファイルが得られます。解凍してから、中の .fit ファイルを選んでください。</li>
+          <li><strong>「これは Garmin の FIT ファイルではありません」</strong>: ファイルが Garmin のウォッチのものではないか、名前の末尾が .fit なだけです。ウォッチの <span class="path">GARMIN → Activity</span> フォルダにあるファイルか、<strong>オリジナルをエクスポート</strong> を使ってください。</li>
+          <li><strong>「ダイブが含まれていません」</strong>: ランニング、ウォーキング、設定、健康データのファイルはスキップされます。取り込まれるのはダイブだけです。</li>
+          <li><strong>「途中で切れているか破損しているようです」</strong>: ファイルが途中で終わっています。多くの場合、コピーやダウンロードが完了しなかったことが原因です。読み取れた分は表示されます。残りを取り込むには、ウォッチからファイルをもう一度コピーして読み込み直してください。すでにログブックにあるダイブはスキップされます。</li>
+          <li><strong>Garmin のファイルとほかのログブックファイルを一緒に選ぶ</strong>ことはできません。ログブックファイルを読み込んでから、Garmin のファイルを読み込んでください。</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Garmin のダイブでタンクの確認を求められる</summary>
+        <p>タンクトランスミッターが複数ある場合、Garmin のファイルには各トランスミッターがどのガスのものかが記録されていないため、順番にダイブのタンクへ割り当てています。ダイブのガスのセクションを開き、各圧力が正しいタンクに割り当てられているか確認してください。</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Garmin のダイブの時刻が 1 時間ずれている</summary>
+        <p>時刻はウォッチの時計から取得されます。潜った場所の現地時刻に合わせていなかった場合、ダイブはウォッチの時刻で表示されます。ダイブの時刻を編集するか、次の旅行の前にウォッチのタイムゾーンを設定してください。</p>
+      </details>
+      <details id="drift-site">
+        <summary>ドリフトダイブのポイントが間違っている</summary>
+        <p>ダイブは、エントリーした場所と浮上した場所のうち近いほうに照合されます。ドリフトダイブでは、通常はエントリーした場所です。間違ったポイントに照合された場合や照合されなかった場合は、ダイブでポイントを選び、通過したほかの沈船はメモに追加してください。</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">ガス消費と SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>SAC の数値がおかしい</summary>
+        <p>数値の横にある<strong>計算方法</strong>をタップまたはクリックしてください。タンクとその内容積、圧力、水温、実在気体補正、時間、水深など、すべての入力値が表示されます。よくある原因はタンクの容量の誤りで、器材で修正できます。それでもおかしい場合は、「計算方法」画面のスクリーンショットを送ってください。</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/ja/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="iPhone のガス消費の「計算方法」パネル: タンク、圧力、水温、計算式を表示しています。"><figcaption>「計算方法」パネル（サンプルのダイブ）。</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>SAC が表示されず、メッセージだけが出る</summary>
+        <ul>
+          <li><strong>SAC を表示するにはタンクの容量を追加してください</strong>: タンクのモデルを選ぶか、容量を入力してください。</li>
+          <li><strong>SAC を表示するには開始圧と終了圧を追加してください</strong>: トランスミッターがないので、タンクに圧力を入力してください。</li>
+          <li><strong>SAC にはダイブプロファイルが必要です</strong>: プロファイルなしで手入力したダイブには SAC がありません。</li>
+          <li>リブリーザーのダイブには SAC の数値は表示されません。</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC が 1 本のタンクしか計算に入れていない</summary>
+        <p>複数のガスを使ったダイブでは、圧力があるのはトランスミッター付きのタンクだけです。もう一方のタンクに開始圧と終了圧を入力すると、SAC にすべてのガスが含まれます。</p>
+      </details>
+      <details id="breathing">
+        <summary>サマリーの「ガス消費」に、タンクの容量があるダイブがないと表示される</summary>
+        <p>「ガス消費」で平均されるのは、タンクの容量と開始圧・終了圧があるダイブだけです。MacDive の UDDF から取り込んだダイブには、容量が内容積ではないためタンクの容量がありません。その上に XML を読み込むと補われます（<a href="guide.html#macdive-files">どの MacDive ファイルを使うか</a>を参照）。それ以外の場合は、ダイブにタンクを設定し（モデルまたは器材セットを選択）、わかる範囲で圧力を追加してください。数値の下に、計算に含まれなかったダイブの本数が表示されます。</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/ja/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="サマリータブのガス消費: 14 本のダイブでの SAC と RMV と、タンクの容量または圧力がないため計算に含まれなかった 1 本のダイブ。"><figcaption>除外されたダイブの本数は、数値の下に表示されます（サンプルログブック）。</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">写真</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>写真がもう一方のデバイスに表示されない</summary>
+        <p><strong>ダイブの写真で iCloud ストレージを節約</strong>がオンの場合、もう一方のデバイスが iCloud写真で写真を見つけるまで、写真はコピーを保持します。両方のデバイスでこの設定をオンにし、両方で iCloud写真がオンになっているか確認して、アップロードされるまで時間をおいてください。</p>
+      </details>
+      <details id="videos">
+        <summary>ビデオが追加されなかった</summary>
+        <p>ライブラリのビデオは、コピーはできず、リンクだけが可能です。<span class="path">同期 → ダイブの写真で iCloud ストレージを節約</span> をオンにし、ビデオが iCloud写真にあることを確認してください。または、ダイブの写真の下に YouTube や Vimeo のリンクを貼り付けてください。</p>
+      </details>
+      <details id="photos-access">
+        <summary>「Thermocline は写真を読み取れません」</summary>
+        <p>写真へのアクセスが拒否されたため、写真はリンクではなくコピーされます。リンクするには、設定 → プライバシーとセキュリティ → 写真 → Thermocline でアクセスを許可してください。</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">ポイントと Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>提案されたポイントが間違っている、または提案がない</summary>
+        <p>別のポイントを選ぶか、内蔵リストを名前で検索するか、自分で位置をマークまたは入力してください。内陸の採石場や湖は公開リストにないことが多いため、それ以降の提案では自分のポイントが最初に表示されます。</p>
+      </details>
+      <details id="watch-install">
+        <summary>Apple Watch に Thermocline がない</summary>
+        <p>Watch アプリは、TestFlight の iPhone アプリと一緒に入ります。iPhone で Watch アプリを開き、<strong>利用可能なアプリ</strong>で Thermocline を見つけて<strong>インストール</strong>をタップしてください。watchOS&nbsp;11 以降が必要です。古い iPhone アプリから移行した場合は、もう一度インストールしてください。古い Watch アプリは古い iPhone アプリに属しています。</p>
+      </details>
+      <details id="watch-fix">
+        <summary>ウォッチに「良好な測位を待っています」と表示され、「地点をマーク」がグレーのまま</summary>
+        <p>地点が保存されるのは、誤差 &plusmn;30&nbsp;m 以内で、取得から 30&nbsp;秒未満の測位だけです。そのため、間違った位置がログブックに入ることは決してありません。ウォッチを水から出し、空がよく見える状態で水面にとどまり、1 分ほど待ってください。<strong>古いキャッシュの位置を無視しています</strong>は、新しい位置を待っているという意味です。GPS は水中では使えません。潜降する前か、浮上したときに地点をマークしてください。</p>
+      </details>
+      <details id="watch-location">
+        <summary>ウォッチに「Thermocline の位置情報へのアクセスがオフです」と表示される</summary>
+        <p>ウォッチで <span class="path">設定 → プライバシーとセキュリティ → 位置情報サービス</span> を開き、位置情報サービスをオンにして、アプリの使用中に Thermocline を許可してください。</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Watch でマークした地点が iPhone に表示されない</summary>
+        <p>ウォッチで<strong>マークした地点</strong>を開いてください。<strong>iPhone への送信待ち</strong>は、iPhone がまだ受け取っていないという意味です。ウォッチを iPhone の近くに置き、iPhone で Thermocline を開いてください。<strong>iPhone に送信済み</strong>は、iPhone に届いているという意味です。<span class="path">ログブック → 要確認</span> を見てください。iPhone はオンラインのときに地点を検索するため、電波がない場合は<strong>検索のため電波を待っています</strong>と表示して待機します。</p>
+      </details>
+      <details id="watch-hint">
+        <summary>地点をマークしたあと、ウォッチにポイント名が表示されなかった</summary>
+        <p>名前は iPhone から届きます。iPhone が近くにあり Thermocline が応答できるときは、ウォッチが地点の下に、iPhone が提案するポイント（自分のポイント、またはダイビングポイントリストのポイント）を距離とともに表示します。iPhone が近くにない場合、ウォッチは iPhone が残したコピーから自分のポイントの名前を表示しますが、ダイビングポイントリストは使いません。約 1.5&nbsp;km 以内にポイントがない場合、地点は名前なしでマークされます。いずれの場合も、ポイントは iPhone の <span class="path">ログブック → 要確認</span> で選びます。</p>
+      </details>
+      <details id="watch-name">
+        <summary>ウォッチで話した名前が保存されなかった</summary>
+        <p>名前は、音声入力やキーボードを閉じたとき、または前の画面に戻ったときに保存されます。<strong>マークした地点</strong>を開き、地点をタップして名前を確認してください。もう一度試すには<strong>名前を変更</strong>をタップします。地点がすでに送信済みの場合は、名前もあとから iPhone に届きます。</p>
+      </details>
+      <details id="watch-dives">
+        <summary>ウォッチはダイブを記録しますか？</summary>
+        <p>いいえ。Thermocline の Watch アプリは、水面で地点をマークするだけです。ダイブはダイブコンピューターから取り込みます。Garmin Descent ウォッチの場合は、その .fit ファイルを読み込んでください。ガイドの <a href="guide.html#garmin">Garmin Descent</a> を参照してください。</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>ウォッチから地点が消えた</summary>
+        <p>これは想定どおりの動作です。iPhone で確定または破棄した地点は、ウォッチから消えます。確定した地点はログブックのポイントになり、ほかのデバイスへ同期されます。</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">レポートやダウンロードログを送る</h2>
+    <ul>
+      <li><strong>アプリから:</strong> スクリーンショットを撮り、TestFlight の<strong>ベータフィードバックを共有</strong>を使ってください。ビルドとデバイスの情報が添付されて届きます。</li>
+      <li><strong>ダウンロードログ（iPhone）:</strong> ダウンロード画面で<strong>ダウンロードログ</strong>をタップし、共有してください。記録されるのは Bluetooth とコンピューターのメッセージだけで、ダイブのデータは含まれません。</li>
+      <li><strong>ダウンロードログ（Mac）:</strong> ダウンロードウインドウで<strong>ダウンロードログ…</strong>、次に<strong>ログを保存…</strong>を選び、ファイルを添付してください。</li>
+      <li><strong>メール:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a> まで。お使いのデバイス、ビルド番号（TestFlight に表示されます）、どうなるはずだったかを書いてください。</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>、ダイブログブック。ダイブの計画やナビゲーション用ではありません。</p>
+      <p>ダイビングポイントリスト © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap 貢献者</a>、Open Database License の下で利用できます。</p>
+    </div>
+    <nav class="foot-links" aria-label="フッター">
+      <a href="./">ホーム</a>
+      <a href="guide.html">ガイド</a>
+      <a href="troubleshooting.html">トラブルシューティング</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシー</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="言語">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="troubleshooting.html" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

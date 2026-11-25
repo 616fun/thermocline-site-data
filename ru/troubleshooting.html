@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Решение проблем – Thermocline</title>
+  <meta name="description" content="Решения частых проблем Thermocline: дайв-компьютер не подключается, нет новых погружений, расхождения при синхронизации, пробелы после импорта, фото и SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/ru/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Решение проблем – Thermocline">
+  <meta property="og:description" content="Решения частых проблем Thermocline: дайв-компьютер не подключается, нет новых погружений, расхождения при синхронизации, пробелы после импорта, фото и SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/ru/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/ru.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Значок и название приложения Thermocline на фото носа судна во время погружения на затонувшее судно, с дайверами и рыбами. Логбук для iPhone, iPad и Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Решение проблем – Thermocline">
+  <meta name="twitter:description" content="Решения частых проблем Thermocline: дайв-компьютер не подключается, нет новых погружений, расхождения при синхронизации, пробелы после импорта, фото и SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/ru.jpg">
+  <meta name="twitter:image:alt" content="Значок и название приложения Thermocline на фото носа судна во время погружения на затонувшее судно, с дайверами и рыбами. Логбук для iPhone, iPad и Mac.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Перейти к решению проблем</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="guide.html">Руководство</a>
+      <a href="troubleshooting.html" aria-current="page">Решение проблем</a>
+      <a href="support.html">Поддержка</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Поделиться этой страницей"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Поделиться</span></button>
+      <a class="btn" href="./#testers">Присоединиться к бете</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Решение проблем</h1>
+    <p>Найдите свою проблему ниже. Для каждой сначала указано то, что проверить в первую очередь. Обновлено 18 ноября 2026 г.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="На этой странице">
+    <details open>
+      <summary>На этой странице</summary>
+    <ol>
+      <li><a href="#first">Сначала обновите</a></li>
+      <li><a href="#downloads">Загрузка</a></li>
+      <li><a href="#sync">Синхронизация</a></li>
+      <li><a href="#imports">Импорт</a></li>
+      <li><a href="#numbers">Газ и SAC</a></li>
+      <li><a href="#photos">Фото</a></li>
+      <li><a href="#sites">Дайв-сайты и часы</a></li>
+      <li><a href="#send-log">Отправить отчёт</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Найдите свою проблему</label>
+      <input id="faq-q" type="search" placeholder="Например: NDL, Garmin, PIN, синхронизация" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Сначала обновите все устройства</h2>
+    <p>Многие проблемы исчезают, когда на всех устройствах установлена последняя сборка. Откройте TestFlight на каждом iPhone, iPad и Mac, которыми пользуетесь, и установите все обновления. Старая сборка перестаёт отправлять изменения, пока её не обновят, и сообщает: <strong>Обновите Thermocline, чтобы продолжить синхронизацию</strong>. Ваши изменения сохраняются и отправляются после обновления.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Загрузка с дайв-компьютера</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>Компьютер не найден</summary>
+        <ul>
+          <li>Разбудите компьютер и переведите его в режим Bluetooth (Shearwater: <span class="path">Menu → Bluetooth</span>). Он остаётся в этом режиме всего около двух минут.</li>
+          <li>Держите его рядом с iPhone, iPad или Mac.</li>
+          <li><strong>Компьютеры Shearwater возвращаются к последнему устройству, с которым работали.</strong> Если рядом ваш телефон или другой Mac, выключите на том устройстве Bluetooth и попробуйте снова.</li>
+          <li>Убедитесь, что Bluetooth включён и что Thermocline разрешено его использовать (iPhone: Настройки → Thermocline; Mac: Системные настройки → Конфиденциальность и безопасность → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Это Predator или Petrel 1, и iPhone его не видит</summary>
+        <p>Они используют старый Bluetooth (Bluetooth Classic), с которым iPhone и iPad работать не могут. Загрузите их на Mac (см. <a href="guide.html#download">руководство</a>) или импортируйте их погружения из Shearwater Cloud или файла UDDF.</p>
+      </details>
+      <details id="pin">
+        <summary>Он подключается, но просит PIN-код</summary>
+        <p>Введите код, показанный на экране компьютера. Он нужен только в первый раз.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>«Новых погружений нет»</summary>
+        <p>Загружаются только погружения новее вашей последней загрузки. Если вы удалили погружение и хотите его вернуть, включите <strong>Загрузить все погружения с компьютера</strong> и загрузите снова. Погружения, которые уже есть в логбуке, пропускаются.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>Загрузка остановилась на полпути</summary>
+        <p>Нажмите <strong>Сохранить</strong>, чтобы сохранить пришедшие погружения, затем загрузите снова остальные. Если загрузка продолжает останавливаться, поднесите устройство ближе к компьютеру, нажмите <strong>Повторить</strong> и <a href="#send-log">отправьте лог загрузки</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>Загрузка по кабелю на Mac не удаётся</summary>
+        <ul>
+          <li>Проверьте, что порт соответствует кабелю: в списке указан тип каждого порта и есть предупреждение, если он не подходит для выбранной модели.</li>
+          <li>Отключите и снова подключите кабель, затем нажмите кнопку обновления, чтобы снова поискать кабели.</li>
+          <li>Выполните шаги <strong>Перед началом</strong> для своей модели.</li>
+          <li>Загрузка по кабелю — новая функция. Пожалуйста, <a href="#send-log">отправьте лог загрузки</a> в любом случае.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Синхронизация между устройствами</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>Приложение на iPhone сообщает, что Thermocline теперь одно приложение, или я вижу два приложения Thermocline</summary>
+        <p>18&nbsp;ноября&nbsp;2026&nbsp;г. приложения для iPhone, iPad, Mac и Apple Watch стали одним приложением с одной ссылкой на бету. Прежнее приложение для iPhone теперь только помогает вам перейти.</p>
+        <ol>
+          <li>Откройте старое приложение. Если оно сообщает, что синхронизация выключена, коснитесь <strong>Включить «Синхронизация с iCloud»</strong> и оставьте его открытым на минуту или коснитесь <strong>Экспортировать логбук в UDDF</strong> и сохраните файл.</li>
+          <li>Коснитесь <strong>Присоединиться к новой бете</strong> или откройте <a href="https://testflight.apple.com/join/ygF4ngNd">ссылку на бету</a> на iPhone и установите новое приложение. Оно встанет рядом со старым.</li>
+          <li>В новом приложении включите <span class="path">Профиль → Синхронизация с iCloud</span>. Ваши погружения, дайв-сайты, снаряжение и настройки вернутся. Если вы вместо этого сделали экспорт, используйте <span class="path">Профиль → Импортировать файл логбука</span>.</li>
+          <li>Возможно, придётся заново создать пару с дайв-компьютером и снова установить приложение для часов из приложения Watch на iPhone.</li>
+          <li>Когда новое приложение покажет те же погружения, удалите старое.</li>
+        </ol>
+        <p>На Mac ничего не меняется: продолжайте обновлять приложение для Mac как обычно.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>После синхронизации погружения пропали или задвоились</summary>
+        <ol>
+          <li>Пока ничего не меняйте. Сделайте снимок экрана раздела «Синхронизация» (iPhone: <span class="path">Профиль → Синхронизация</span>; Mac: <span class="path">Thermocline → Настройки → Синхронизация</span>) на каждом устройстве и отправьте его.</li>
+          <li>Проверьте, что на всех устройствах последняя сборка.</li>
+          <li><span class="path">Профиль → Ваши данные → Точки восстановления</span> позволяют вернуть логбук к состоянию до импорта, объединения или удаления. Восстановление сначала сохраняет текущий логбук, поэтому его можно отменить.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>Изменение на одном устройстве не видно на другом</summary>
+        <ul>
+          <li>Убедитесь, что <strong>Синхронизация с iCloud</strong> включена на обоих и на обоих выполнен вход в один и тот же Аккаунт Apple.</li>
+          <li>Посмотрите <strong>Ожидает отправки</strong> на устройстве, где вы сделали изменение, и откройте приложение на обоих устройствах при наличии сигнала. Раздел «Синхронизация» сообщает, когда это устройство и ваши другие совпадают.</li>
+          <li>Нажмите <strong>Синхронизировать сейчас</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>«Вход в iCloud не выполнен»</summary>
+        <p>Войдите в iCloud в Настройках устройства. До тех пор ваш логбук остаётся на этом устройстве в сохранности и синхронизируется, как только вы войдёте.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>«Хранилище iCloud заполнено»</summary>
+        <p>Ваш логбук в сохранности на устройстве и синхронизируется, когда появится место. Освободите место в iCloud или включите <strong>Экономить место в iCloud на фото погружений</strong>, чтобы фото не хранились дважды.</p>
+      </details>
+      <details id="newer-version">
+        <summary>«На другом устройстве более новая версия»</summary>
+        <p>Обновите Thermocline на этом устройстве в TestFlight. Ваши изменения здесь в сохранности и отправятся после обновления.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Импорт</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Некоторые погружения или данные не перенеслись</summary>
+        <p>Отчёт об импорте перечисляет всё в разделах <strong>Не импортировано</strong> и <strong>Проверьте</strong>, с причиной. Каждый логбук записывает UDDF немного по-своему, поэтому отсутствующие значения — это нормально, и они остаются пустыми. Если не хватает того, что вы ожидали, отправьте отчёт и, если можете, файл.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>Пропали снаряжение, фото или типы погружений из MacDive</summary>
+        <p>Экспорт MacDive в UDDF их не включает. Импортируйте поверх его XML для снаряжения, тегов и типов погружений, а на Mac импортируйте папку MacDive для фото. Погружения, которые уже есть в логбуке, не добавляются дважды. См. <a href="guide.html#macdive-files">Какой файл MacDive использовать</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>У погружений из MacDive нет NDL, ppO₂ или CNS</summary>
+        <p>Страница погружения показывает NDL как «—» и Деко как «Не записано», или для ppO₂ написано «Рассчитано по газу и глубине». Экспорт MacDive в UDDF не включает NDL, ppO₂ и CNS компьютера. В его папке нет профиля для погружений, которые MacDive загрузил на iPhone или iPad, потому что их он хранит в зашифрованном виде.</p>
+        <p>Импортируйте также XML из MacDive: он заполнит недостающее, не добавляя погружения заново. См. <a href="guide.html#macdive-files">Какой файл MacDive использовать</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Не потеряется ли что-нибудь при переходе между файлами или приложениями?</summary>
+        <ul>
+          <li><strong>Ваши исходные файлы никогда не изменяются.</strong> Храните экспорты MacDive и сам MacDive, пока не сравните несколько погружений.</li>
+          <li><strong>Повторный импорт добавляет, а не заменяет.</strong> Погружения, которые уже есть в логбуке, сопоставляются и получают только то, чего им не хватает, поэтому можно импортировать XML после UDDF или папку после любого из них.</li>
+          <li><strong>Можно вернуться.</strong> Точка восстановления с названием <strong>Перед импортом</strong> сохраняется перед любым импортом более одного погружения (<span class="path">Профиль → Ваши данные → Точки восстановления</span> на iPhone, <span class="path">Настройки → Точки восстановления</span> на Mac). На Mac вернуть всё назад также можно с помощью <strong>Отменить импорт…</strong> в отчёте.</li>
+          <li><strong>Уход из Thermocline:</strong> его экспорт в UDDF — полный. Он включает NDL, ppO₂ и CNS компьютера по ходу каждого погружения, снаряжение, теги, типы погружений и ссылки на видео. Фото не входят ни в один файл экспорта.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>У импортированных погружений нет газа</summary>
+        <p>В файле не было указано, какой газ использовался. Такие погружения ждут в разделе <strong>Проверить</strong>, чтобы вы могли его указать.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Я импортировал не тот файл</summary>
+        <p>На Mac используйте <strong>Отменить импорт…</strong> в отчёте об импорте. На любом устройстве точка восстановления с названием <strong>Перед импортом</strong> сохраняется перед любым импортом более одного погружения.</p>
+      </details>
+      <details id="garmin">
+        <summary>Файл Garmin не импортируется</summary>
+        <ul>
+          <li><strong>«Это zip-файл»</strong>: <strong>Экспорт оригинала</strong> в Garmin Connect даёт файл .zip. Распакуйте его, затем выберите файл .fit внутри.</li>
+          <li><strong>«Это не файл Garmin FIT»</strong>: файл не с часов Garmin, или только его имя заканчивается на .fit. Используйте файл из папки <span class="path">GARMIN → Activity</span> на часах или <strong>Экспорт оригинала</strong>.</li>
+          <li><strong>«Файлы Garmin не содержат погружений»</strong>: пробежки, прогулки, настройки и файлы о здоровье пропускаются. Переносятся только погружения.</li>
+          <li><strong>«Похоже, обрезаны или повреждены»</strong>: файл оборвался на полпути, часто из-за незавершённого копирования или загрузки. Показано то, что удалось прочитать; скопируйте файл с часов снова и импортируйте повторно, чтобы получить остальное. Погружения, которые уже есть в логбуке, пропускаются.</li>
+          <li><strong>Выбрать файл Garmin вместе с другим файлом логбука</strong> за один раз нельзя: импортируйте файл логбука, затем файлы Garmin.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Погружение Garmin просит проверить баллоны</summary>
+        <p>Если трансмиттеров больше одного, файл Garmin не говорит, на каком газе был каждый из них, поэтому они сопоставлены с баллонами погружения по порядку. Откройте раздел газов погружения и убедитесь, что каждое давление относится к правильному баллону.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Время погружения Garmin сдвинуто на час</summary>
+        <p>Время берётся из часов Garmin. Если на них не было установлено местное время места погружения, погружение показывается по времени часов. Измените время погружения или установите часовой пояс часов перед следующей поездкой.</p>
+      </details>
+      <details id="drift-site">
+        <summary>У дрейфового погружения неверный дайв-сайт</summary>
+        <p>Погружение сопоставляется с ближайшим из двух мест — где вы вошли в воду и где всплыли, — а в дрейфе это обычно место входа. Если сопоставлен неверный дайв-сайт или никакой, выберите дайв-сайт в погружении, а другие затонувшие суда, мимо которых вы проплыли, добавьте в заметки.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Расход газа и SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>Значение SAC выглядит неверным</summary>
+        <p>Коснитесь или нажмите <strong>Как?</strong> рядом с ним. Там показаны все исходные данные: баллон и его объём по воде, давления, температура, поправка на реальный газ, время и глубина. Обычно виноват неверный объём баллона; исправьте его в снаряжении. Если значение всё ещё выглядит странно, отправьте снимок экрана «Как?».</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/ru/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Панель «Как?» для расхода газа на iPhone с баллоном, давлениями, температурой и расчётом."><figcaption>Панель «Как?» (пример погружения).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>SAC нет, только сообщение</summary>
+        <ul>
+          <li><strong>Добавьте объём баллона, чтобы увидеть SAC</strong>: выберите модель баллона или введите его объём.</li>
+          <li><strong>Добавьте начальное и конечное давление, чтобы увидеть SAC</strong>: трансмиттера нет, поэтому введите их у баллона.</li>
+          <li><strong>Для SAC нужен профиль глубины</strong>: у погружений, записанных вручную без профиля, SAC нет.</li>
+          <li>Для погружений на ребризере значение SAC не рассчитывается.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC учитывает только один баллон</summary>
+        <p>В погружении на нескольких газах давления есть только у баллона с трансмиттером. Введите начальное и конечное давление у другого баллона, и SAC охватит весь газ.</p>
+      </details>
+      <details id="breathing">
+        <summary>«Дыхание» в сводке сообщает, что ни у одного погружения нет объёма баллона</summary>
+        <p>«Дыхание» усредняет только погружения с объёмом баллона, начальным и конечным давлением. У погружений из UDDF MacDive нет объёма баллона, потому что его объёмы — не объёмы по воде; импорт XML поверх заполняет их (см. <a href="guide.html#macdive-files">Какой файл MacDive использовать</a>). Иначе укажите баллон в своих погружениях (выберите его модель или комплект снаряжения) и добавьте давления, где они у вас есть. Под значением «Дыхание» сообщает, сколько погружений не учтено.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/ru/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="«Дыхание» на вкладке «Сводка»: SAC и RMV по 14 погружениям и одно неучтённое погружение, потому что у него нет объёма баллона или давлений."><figcaption>Число неучтённых погружений указано под значением (пример логбука).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Фото</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Фото не отображается на другом моём устройстве</summary>
+        <p>Когда включено <strong>Экономить место в iCloud на фото погружений</strong>, фото сохраняет свою копию, пока другое ваше устройство не найдёт его в Фото iCloud. Включите настройку на обоих устройствах, проверьте, что Фото iCloud включены на обоих, и дайте время на выгрузку.</p>
+      </details>
+      <details id="videos">
+        <summary>Видео не добавились</summary>
+        <p>Видео из медиатеки можно только связать, а не скопировать. Включите <span class="path">Синхронизация → Экономить место в iCloud на фото погружений</span> и убедитесь, что видео находится в Фото iCloud. Или вставьте ссылку YouTube или Vimeo под фото погружения.</p>
+      </details>
+      <details id="photos-access">
+        <summary>«Thermocline не может читать ваши фото»</summary>
+        <p>В доступе к Фото было отказано, поэтому фото копируются, а не связываются. Чтобы связывать их, разрешите доступ в Настройках → Конфиденциальность и безопасность → Фото → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Дайв-сайты и Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>Предложенный дайв-сайт неверный, или его нет</summary>
+        <p>Выберите другой дайв-сайт, найдите его во встроенных списках по названию или отметьте либо введите координаты сами. Карьеров и озёр внутри материка часто нет в общедоступных списках, поэтому с этого момента ваши собственные дайв-сайты идут первыми в предложениях.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Thermocline нет на моих Apple Watch</summary>
+        <p>Приложение для часов устанавливается вместе с приложением для iPhone из TestFlight. На iPhone откройте приложение Watch, найдите Thermocline в разделе <strong>Доступные приложения</strong> и коснитесь <strong>Установить</strong>. Ему нужна watchOS&nbsp;11 или новее. Если вы перешли со старого приложения для iPhone, установите его снова: старое приложение для часов относится к старому приложению для iPhone.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>Часы пишут «Ожидание хорошего фикса», и «Отметить точку» остаётся серой</summary>
+        <p>Точка сохраняется, только если фикс точнее &plusmn;30&nbsp;m и не старше 30&nbsp;секунд, поэтому неверные координаты никогда не попадают в ваш логбук. Оставайтесь на поверхности, держа часы над водой с открытым видом на небо, и подождите минуту. <strong>Старые координаты из кэша не используются</strong> означает, что часы ждут свежих. GPS не работает под водой: отметьте точку до погружения или когда всплывёте.</p>
+      </details>
+      <details id="watch-location">
+        <summary>«Доступ к геопозиции для Thermocline выключен» на часах</summary>
+        <p>На часах откройте <span class="path">Настройки → Конфиденциальность и безопасность → Службы геолокации</span>, включите Службы геолокации и разрешите Thermocline доступ при использовании приложения.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Точка, отмеченная на часах, не появилась на iPhone</summary>
+        <p>На часах откройте <strong>Отметки</strong>. <strong>Ждёт отправки на iPhone</strong> означает, что iPhone её ещё не получил: держите часы рядом с iPhone и откройте Thermocline на iPhone. <strong>Отправлено на iPhone</strong> означает, что она там: посмотрите в <span class="path">Логбук → Проверить</span>. iPhone ищет точку, когда он в сети, поэтому без сигнала она ждёт с пометкой <strong>ожидание сигнала для поиска</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>Часы не показали название дайв-сайта после отметки точки</summary>
+        <p>Название приходит с iPhone: когда он рядом и Thermocline может ответить, часы показывают под точкой дайв-сайт, который он бы предложил, — ваш или из списков дайв-сайтов — и расстояние до него. Если iPhone вне досягаемости, часы называют ваши собственные дайв-сайты по копии, которую оставил на них iPhone, но не дайв-сайты из списков. Если в пределах примерно 1,5&nbsp;km нет ни одного дайв-сайта, точка отмечается без названия. В любом случае дайв-сайт вы выбираете на iPhone, в <span class="path">Логбук → Проверить</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>Название, которое я продиктовал на часах, не сохранилось</summary>
+        <p>Название сохраняется, когда закрывается диктовка или клавиатура или когда вы возвращаетесь назад. Откройте <strong>Отметки</strong>, коснитесь точки и проверьте её название; коснитесь <strong>Изменить название</strong>, чтобы попробовать снова. Если точка уже отправлена, название последует за ней на iPhone.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Записывают ли часы мои погружения?</summary>
+        <p>Нет. Приложение Thermocline для часов только отмечает точки на поверхности. Ваши погружения поступают с дайв-компьютера. Для часов Garmin Descent импортируйте их файлы .fit: см. <a href="guide.html#garmin">Garmin Descent</a> в руководстве.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Точка исчезла с часов</summary>
+        <p>Так и должно быть. Точка удаляется с часов, когда её подтвердят или отклонят на iPhone. Подтверждённая точка — это дайв-сайт в вашем логбуке, и она синхронизируется с другими вашими устройствами.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Отправить отчёт или лог загрузки</h2>
+    <ul>
+      <li><strong>Из приложения:</strong> сделайте снимок экрана, затем используйте <strong>Поделиться отзывом о бете</strong> в TestFlight. Он приходит с приложенными данными о сборке и устройстве.</li>
+      <li><strong>Лог загрузки, iPhone:</strong> на экране загрузки коснитесь <strong>Лог загрузки</strong>, затем поделитесь им. В нём только сообщения Bluetooth и компьютера, без данных погружений.</li>
+      <li><strong>Лог загрузки, Mac:</strong> в окне загрузки выберите <strong>Лог загрузки…</strong>, затем <strong>Сохранить лог…</strong> и приложите файл.</li>
+      <li><strong>Эл. почта:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, укажите своё устройство, номер сборки (показан в TestFlight) и что вы ожидали.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong> — логбук. Не для планирования погружений и не для навигации.</p>
+      <p>Списки дайв-сайтов © <a href="https://www.openstreetmap.org/copyright">участники OpenStreetMap</a>, доступны по лицензии Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Нижняя навигация">
+      <a href="./">Главная</a>
+      <a href="guide.html">Руководство</a>
+      <a href="troubleshooting.html">Решение проблем</a>
+      <a href="support.html">Поддержка</a>
+      <a href="privacy.html">Конфиденциальность</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Языки">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="troubleshooting.html" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

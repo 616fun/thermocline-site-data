@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vianmääritys – Thermocline</title>
+  <meta name="description" content="Ratkaisuja Thermoclinen yleisiin ongelmiin: sukellustietokone ei muodosta yhteyttä, ei uusia sukelluksia, eroja synkronoinnissa, aukkoja tuonnissa, kuvat ja SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/fi/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:title" content="Vianmääritys – Thermocline">
+  <meta property="og:description" content="Ratkaisuja Thermoclinen yleisiin ongelmiin: sukellustietokone ei muodosta yhteyttä, ei uusia sukelluksia, eroja synkronoinnissa, aukkoja tuonnissa, kuvat ja SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/fi/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/fi.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Thermocline-sovelluksen kuvake ja nimi hylkysukelluksella kuvatun laivan keulan päällä, taustalla sukeltajia ja kaloja. Sukelluslokikirja iPhonelle, iPadille ja Macille.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vianmääritys – Thermocline">
+  <meta name="twitter:description" content="Ratkaisuja Thermoclinen yleisiin ongelmiin: sukellustietokone ei muodosta yhteyttä, ei uusia sukelluksia, eroja synkronoinnissa, aukkoja tuonnissa, kuvat ja SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/fi.jpg">
+  <meta name="twitter:image:alt" content="Thermocline-sovelluksen kuvake ja nimi hylkysukelluksella kuvatun laivan keulan päällä, taustalla sukeltajia ja kaloja. Sukelluslokikirja iPhonelle, iPadille ja Macille.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Siirry vianmääritykseen</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Päävalikko">
+      <a href="guide.html">Opas</a>
+      <a href="troubleshooting.html" aria-current="page">Vianmääritys</a>
+      <a href="support.html">Tuki</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Jaa tämä sivu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Jaa</span></button>
+      <a class="btn" href="./#testers">Liity betaan</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Vianmääritys</h1>
+    <p>Etsi ongelmasi alta. Jokainen alkaa nopeimmasta tarkistettavasta asiasta. Päivitetty 18. marraskuuta 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="Tällä sivulla">
+    <details open>
+      <summary>Tällä sivulla</summary>
+    <ol>
+      <li><a href="#first">Päivitä ensin</a></li>
+      <li><a href="#downloads">Lataukset</a></li>
+      <li><a href="#sync">Synkronointi</a></li>
+      <li><a href="#imports">Tuonnit</a></li>
+      <li><a href="#numbers">Kaasu ja SAC</a></li>
+      <li><a href="#photos">Kuvat</a></li>
+      <li><a href="#sites">Kohteet ja kello</a></li>
+      <li><a href="#send-log">Lähetä raportti</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Hae ongelmaasi</label>
+      <input id="faq-q" type="search" placeholder="Esimerkiksi: NDL, Garmin, PIN, synkronointi" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Päivitä ensin jokainen laite</h2>
+    <p>Moni ongelma katoaa, kun jokaisessa laitteessa on uusin build. Avaa TestFlight jokaisella käyttämälläsi iPhonella, iPadilla ja Macilla ja asenna mahdolliset päivitykset. Vanhempi build lakkaa lähettämästä muutoksia, kunnes se päivitetään, ja näyttää ilmoituksen <strong>Päivitä Thermocline, jotta synkronointi jatkuu</strong>. Muutoksesi säilyvät ja lähtevät päivityksen jälkeen.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Lataukset sukellustietokoneelta</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>Tietokonetta ei löydy</summary>
+        <ul>
+          <li>Herätä tietokone ja laita se Bluetooth-tilaan (Shearwater: <span class="path">Menu → Bluetooth</span>). Se pysyy tilassa vain noin kaksi minuuttia.</li>
+          <li>Pidä se lähellä iPhonea, iPadia tai Macia.</li>
+          <li><strong>Shearwater-tietokoneet palaavat viimeksi käyttämäänsä laitteeseen.</strong> Jos puhelimesi tai toinen Mac on lähellä, laita Bluetooth pois päältä siinä laitteessa ja yritä uudelleen.</li>
+          <li>Tarkista, että Bluetooth on päällä ja että Thermocline saa käyttää sitä (iPhone: Asetukset → Thermocline; Mac: Järjestelmäasetukset → Tietosuoja ja suojaus → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>Se on Predator tai Petrel 1, eikä iPhone näe sitä</summary>
+        <p>Nämä käyttävät vanhempaa Bluetoothia (Bluetooth Classic), jota iPhone ja iPad eivät pysty käyttämään. Lataa ne Macilla (katso <a href="guide.html#download">opas</a>) tai tuo niiden sukellukset Shearwater Cloudista tai UDDF-tiedostosta.</p>
+      </details>
+      <details id="pin">
+        <summary>Yhteys muodostuu, mutta se pyytää PIN-koodia</summary>
+        <p>Kirjoita tietokoneen näytöllä näkyvä koodi. Sitä tarvitaan vain ensimmäisellä kerralla.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>”Ei uusia sukelluksia”</summary>
+        <p>Vain edellistä latausta uudemmat sukellukset haetaan. Jos poistit sukelluksen ja haluat sen takaisin, laita päälle <strong>Lataa kaikki tietokoneen sukellukset</strong> ja lataa uudelleen. Lokikirjassasi jo olevat sukellukset ohitetaan.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>Lataus pysähtyi kesken</summary>
+        <p>Valitse <strong>Pidä</strong> tallentaaksesi saapuneet sukellukset ja lataa sitten uudelleen loput. Jos lataus pysähtyy toistuvasti, valitse <strong>Yritä uudelleen</strong> lähellä tietokonetta ja <a href="#send-log">lähetä latausloki</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>Kaapelilataus epäonnistuu Macilla</summary>
+        <ul>
+          <li>Tarkista, että portti sopii kaapeliin: luettelo kertoo, minkä tyyppinen kukin portti on, ja varoittaa, kun se ei sovi valitsemallesi mallille.</li>
+          <li>Irrota kaapeli ja kytke se uudelleen ja etsi sitten kaapeleita uudelleen päivityspainikkeella.</li>
+          <li>Seuraa mallisi ohjeita kohdassa <strong>Ennen kuin aloitat</strong>.</li>
+          <li>Kaapelilataukset ovat uusia. <a href="#send-log">Lähetä latausloki</a> joka tapauksessa.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Synkronointi laitteiden välillä</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>iPhone-sovellukseni sanoo, että Thermocline on nyt yksi sovellus, tai näen kaksi Thermocline-sovellusta</summary>
+        <p>18.&nbsp;marraskuuta&nbsp;2026 iPhone-, iPad-, Mac- ja Apple Watch -sovelluksista tuli yksi sovellus, jolla on yksi betalinkki. Aiempi iPhone-sovelluksesi auttaa nyt vain siirtymisessä.</p>
+        <ol>
+          <li>Avaa vanha sovellus. Jos se kertoo synkronoinnin olevan pois päältä, napauta <strong>Laita ”Synkronoi iCloudin kanssa” päälle</strong> ja jätä sovellus auki minuutiksi, tai napauta <strong>Vie lokikirjani UDDF-muodossa</strong> ja tallenna tiedosto.</li>
+          <li>Napauta <strong>Liity uuteen betaan</strong> tai avaa <a href="https://testflight.apple.com/join/ygF4ngNd">betalinkki</a> iPhonellasi ja asenna uusi sovellus. Se asettuu vanhan rinnalle.</li>
+          <li>Laita uudessa sovelluksessa päälle <span class="path">Profiili → Synkronoi iCloudin kanssa</span>. Sukelluksesi, kohteesi, varusteesi ja asetuksesi palaavat. Jos veit tiedoston, käytä sen sijaan <span class="path">Profiili → Tuo lokikirjatiedosto</span>.</li>
+          <li>Voit joutua muodostamaan sukellustietokoneellesi parin uudelleen ja asentamaan Watch-sovelluksen uudelleen iPhonesi Watch-apista.</li>
+          <li>Kun uusi sovellus näyttää samat sukellukset, poista vanha.</li>
+        </ol>
+        <p>Macilla mikään ei muutu: päivitä Mac-sovellusta tavalliseen tapaan.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>Sukelluksia puuttuu tai ne ovat kahteen kertaan synkronoinnin jälkeen</summary>
+        <ol>
+          <li>Älä muuta vielä mitään. Ota kuvakaappaus Synkronointi-osiosta (iPhone: <span class="path">Profiili → Synkronointi</span>; Mac: <span class="path">Thermocline → Asetukset → Synkronointi</span>) jokaisessa laitteessa ja lähetä se.</li>
+          <li>Tarkista, että jokaisessa laitteessa on uusin build.</li>
+          <li><span class="path">Profiili → Tietosi → Palautuspisteet</span> voi palauttaa lokikirjasi tilaan ennen tuontia, yhdistämistä tai poistoa. Palauttaminen tallentaa ensin nykyisen lokikirjasi, joten sen voi kumota.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>Yhdellä laitteella tehty muutos ei näy toisella</summary>
+        <ul>
+          <li>Tarkista, että <strong>Synkronoi iCloudin kanssa</strong> on päällä molemmissa ja että niissä on kirjauduttu samalle Apple-tilille.</li>
+          <li>Katso kohtaa <strong>Odottaa lähetystä</strong> laitteessa, jossa teit muutoksen, ja avaa sovellus molemmissa, kun yhteys on käytettävissä. Synkronointi-osio kertoo, kun tämä laite ja muut laitteesi täsmäävät.</li>
+          <li>Paina <strong>Synkronoi nyt</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>”Et ole kirjautunut iCloudiin”</summary>
+        <p>Kirjaudu iCloudiin laitteen Asetuksissa. Siihen asti lokikirjasi pysyy tallessa kyseisellä laitteella ja synkronoituu, kun olet kirjautunut.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>”iCloud-tallennustilasi on täynnä”</summary>
+        <p>Lokikirjasi on laitteella tallessa ja synkronoituu, kun tilaa on. Vapauta iCloud-tilaa tai laita päälle <strong>Säästä iCloud-tallennustilaa sukelluskuvissa</strong>, jotta kuvia ei tallenneta kahteen kertaan.</p>
+      </details>
+      <details id="newer-version">
+        <summary>”Toinen laite käyttää uudempaa versiota”</summary>
+        <p>Päivitä Thermocline tällä laitteella TestFlightissa. Muutoksesi ovat täällä tallessa ja lähtevät päivityksen jälkeen.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Tuonnit</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Osa sukelluksista tai tiedoista ei tullut mukaan</summary>
+        <p>Tuontiraportti luettelee kaiken kohdissa <strong>Ei tuotu</strong> ja <strong>Tarkista</strong> syineen. Jokainen lokikirja kirjoittaa UDDF:n hieman eri tavalla, joten puuttuvat arvot ovat normaaleja ja jäävät tyhjiksi. Jos jotain odottamaasi puuttuu, lähetä raportti ja mahdollisuuksien mukaan tiedosto.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>MacDiven varusteeni, kuvani tai sukellustyyppini puuttuvat</summary>
+        <p>MacDiven UDDF-vienti jättää ne pois. Tuo sen XML päälle varusteita, tunnisteita ja sukellustyyppejä varten, ja tuo Macilla MacDiven kansio kuvia varten. Lokikirjassasi jo olevia sukelluksia ei lisätä kahdesti. Katso <a href="guide.html#macdive-files">Mitä MacDive-tiedostoa käyttää</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>NDL, ppO₂ tai CNS puuttuu MacDiven sukelluksista</summary>
+        <p>Sukellussivu näyttää NDL:n muodossa ”—” ja Deko-arvon muodossa ”Ei tallennettu”, tai ppO₂-kohdassa lukee ”Laskettu kaasusta ja syvyydestä”. MacDiven UDDF-vienti ei sisällä tietokoneen NDL:ää, ppO₂:ta eikä CNS:ää. Sen kansiossa ei ole profiilia sukelluksille, jotka MacDive latasi iPhonella tai iPadilla, koska se tallentaa ne salattuina.</p>
+        <p>Tuo myös MacDiven XML: se täydentää puuttuvat tiedot lisäämättä sukelluksia uudelleen. Katso <a href="guide.html#macdive-files">Mitä MacDive-tiedostoa käyttää</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Katoaako jotain, kun siirryn tiedostojen tai sovellusten välillä?</summary>
+        <ul>
+          <li><strong>Alkuperäisiä tiedostojasi ei koskaan muuteta.</strong> Säilytä MacDive-vientisi ja pidä itse MacDive, kunnes olet verrannut muutamaa sukellusta.</li>
+          <li><strong>Uusi tuonti lisää, se ei korvaa.</strong> Lokikirjassasi jo olevat sukellukset tunnistetaan ja saavat vain puuttuvat tiedot, joten voit tuoda XML:n UDDF:n jälkeen tai kansion kumman tahansa jälkeen.</li>
+          <li><strong>Voit palata takaisin.</strong> Palautuspiste nimeltä <strong>Ennen tuontia</strong> tallennetaan ennen jokaista useamman kuin yhden sukelluksen tuontia (<span class="path">Profiili → Tietosi → Palautuspisteet</span> iPhonella, <span class="path">Asetukset → Palautuspisteet</span> Macilla). Macilla myös raportin <strong>Kumoa tuonti…</strong> peruu sen.</li>
+          <li><strong>Thermoclinesta lähteminen:</strong> sen UDDF-vienti on täydellinen. Se sisältää tietokoneen NDL:n, ppO₂:n ja CNS:n kunkin sukelluksen ajalta, varusteet, tunnisteet, sukellustyypit ja videolinkit. Kuvat eivät ole minkään vientitiedoston sisällä.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>Tuoduilla sukelluksilla ei ole kaasua</summary>
+        <p>Tiedostossa ei kerrottu, mitä kaasua käytettiin. Nämä sukellukset odottavat kohdassa <strong>Tarkistettavat</strong>, jotta voit asettaa sen.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Toin väärän tiedoston</summary>
+        <p>Käytä Macilla tuontiraportin toimintoa <strong>Kumoa tuonti…</strong>. Kummallakin laitteella palautuspiste nimeltä <strong>Ennen tuontia</strong> tallennetaan ennen jokaista useamman kuin yhden sukelluksen tuontia.</p>
+      </details>
+      <details id="garmin">
+        <summary>Garmin-tiedoston tuonti ei onnistu</summary>
+        <ul>
+          <li><strong>”Tämä on zip-tiedosto”</strong>: Garmin Connectin <strong>Vie alkuperäinen</strong> antaa .zip-tiedoston. Pura se ja valitse sitten sen sisällä oleva .fit-tiedosto.</li>
+          <li><strong>”Tämä ei ole Garmin FIT -tiedosto”</strong>: tiedosto ei ole Garmin-kellosta, tai vain sen nimi päättyy .fit. Käytä kellon kansiossa <span class="path">GARMIN → Activity</span> olevaa tiedostoa tai <strong>Vie alkuperäinen</strong>ia.</li>
+          <li><strong>”Garmin-tiedosto ei sisällä sukellusta”</strong>: juoksut, kävelyt, asetukset ja terveystiedostot ohitetaan. Vain sukellukset tuodaan.</li>
+          <li><strong>”Näyttää katkenneelta tai vioittuneelta”</strong>: tiedosto loppui kesken, usein keskeytyneen kopioinnin tai latauksen vuoksi. Luettavissa oleva osa näytetään; kopioi tiedosto uudelleen kellosta ja tuo se uudelleen saadaksesi loput. Lokikirjassasi jo olevat sukellukset ohitetaan.</li>
+          <li><strong>Garmin-tiedoston valitseminen yhdessä toisen lokikirjatiedoston kanssa</strong> ei onnistu kerralla: tuo ensin lokikirjatiedosto ja sitten Garmin-tiedostot.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Garmin-sukellus pyytää tarkistamaan pullot</summary>
+        <p>Kun pullolähettimiä on useampi kuin yksi, Garminin tiedosto ei kerro, missä kaasussa kukin oli, joten ne yhdistettiin sukelluksen pulloihin järjestyksessä. Avaa sukelluksen kaasuosio ja varmista, että kukin paine on oikean pullon kohdalla.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Garmin-sukelluksen aika on tunnin pielessä</summary>
+        <p>Aika tulee kellon kellonajasta. Jos sitä ei ollut asetettu sukelluspaikan paikalliseen aikaan, sukellus näkyy kellon ajassa. Muokkaa sukelluksen aikaa tai aseta kellon aikavyöhyke ennen seuraavaa matkaa.</p>
+      </details>
+      <details id="drift-site">
+        <summary>Virtasukelluksella on väärä kohde</summary>
+        <p>Sukellus yhdistetään lähempään kahdesta paikasta: siihen, josta menit veteen, tai siihen, jossa nousit pintaan, mikä virtasukelluksella on yleensä veteenmenopaikka. Jos se yhdistettiin väärään kohteeseen tai ei mihinkään, valitse kohde sukelluksessa ja lisää muut ohittamasi hylyt muistiinpanoihin.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Kaasunkulutus ja SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>SAC-arvo näyttää väärältä</summary>
+        <p>Napauta tai napsauta sen vieressä <strong>Miten?</strong>. Se näyttää kaikki lähtötiedot: pullon ja sen vesitilavuuden, paineet, lämpötilan, reaalikaasukorjauksen, ajan ja syvyyden. Tavallinen syy on väärä pullon koko; korjaa se Varusteissa. Lähetä kuvakaappaus Miten?-näkymästä, jos arvo näyttää yhä oudolta.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/fi/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Kaasunkulutuksen Miten?-paneeli iPhonella: pullo, paineet, lämpötila ja laskelma."><figcaption>Miten?-paneeli (esimerkkisukellus).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>SAC-arvoa ei ole, vain viesti</summary>
+        <ul>
+          <li><strong>Lisää pullon koko nähdäksesi SAC-arvon</strong>: valitse pullon malli tai syötä sen koko.</li>
+          <li><strong>Lisää alku- ja loppupaine nähdäksesi SAC-arvon</strong>: lähetintä ei ole, joten syötä ne pulloon.</li>
+          <li><strong>SAC tarvitsee sukellusprofiilin</strong>: käsin ilman profiilia kirjatuilla sukelluksilla ei ole SAC-arvoa.</li>
+          <li>Suljetun kierron sukelluksille ei lasketa SAC-arvoa.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC laskee vain yhden pullon</summary>
+        <p>Usean kaasun sukelluksella vain lähettimellä varustetulla pullolla on paineet. Syötä toiselle pullolle alku- ja loppupaine, niin SAC kattaa kaiken kaasun.</p>
+      </details>
+      <details id="breathing">
+        <summary>Yhteenvedon Hengitys kertoo, ettei millään sukelluksella ole pullon kokoa</summary>
+        <p>Hengitys laskee keskiarvon vain sukelluksista, joilla on pullon koko sekä alku- ja loppupaine. MacDiven UDDF:stä tulleilla sukelluksilla ei ole pullon kokoa, koska sen koot eivät ole vesitilavuuksia; XML:n tuominen päälle täydentää ne (katso <a href="guide.html#macdive-files">Mitä MacDive-tiedostoa käyttää</a>). Muuten aseta pullo sukelluksillesi (valitse sen malli tai varustesetti) ja lisää paineet, jos ne ovat tiedossa. Luvun alla Hengitys kertoo, montako sukellusta jäi laskematta.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/fi/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Hengitys Yhteenveto-välilehdellä: SAC ja RMV 14 sukelluksen ajalta sekä yksi sukellus laskematta, koska siltä puuttuu pullon koko tai paineet."><figcaption>Pois jätettyjen sukellusten määrä on luvun alla (esimerkkilokikirja).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Kuvat</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Kuva ei näy toisella laitteellani</summary>
+        <p>Kun <strong>Säästä iCloud-tallennustilaa sukelluskuvissa</strong> on päällä, kuva säilyttää kopionsa, kunnes toinen laitteesi löytää sen iCloud-kuvista. Laita asetus päälle molemmissa laitteissa, tarkista, että iCloud-kuvat on päällä molemmissa, ja anna latautumiselle aikaa.</p>
+      </details>
+      <details id="videos">
+        <summary>Videoita ei lisätty</summary>
+        <p>Kirjastosi videoita voi vain linkittää, ei kopioida. Laita päälle <span class="path">Synkronointi → Säästä iCloud-tallennustilaa sukelluskuvissa</span> ja varmista, että video on iCloud-kuvissa. Tai liitä YouTube- tai Vimeo-linkki sukelluksen kuvien alle.</p>
+      </details>
+      <details id="photos-access">
+        <summary>”Thermocline ei voi lukea kuviasi”</summary>
+        <p>Kuvat-käyttöoikeus evättiin, joten kuvat kopioidaan linkittämisen sijaan. Linkittääksesi ne salli käyttö kohdassa Asetukset → Tietosuoja ja suojaus → Kuvat → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Kohteet ja Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>Ehdotettu kohde on väärä, tai ehdotusta ei ole</summary>
+        <p>Valitse toinen kohde, hae sisäänrakennetuista listoista nimellä tai merkitse tai kirjoita sijainti itse. Sisämaan louhokset ja järvet puuttuvat usein julkisista listoista, joten omat kohteesi tulevat siitä lähtien ehdotuksissa ensin.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Thermocline ei ole Apple Watchissani</summary>
+        <p>Watch-sovellus tulee TestFlightin iPhone-sovelluksen mukana. Avaa iPhonessasi Watch-appi, etsi Thermocline kohdasta <strong>Käytettävissä olevat apit</strong> ja napauta <strong>Asenna</strong>. Se vaatii watchOS&nbsp;11:n tai uudemman. Jos siirryit vanhasta iPhone-sovelluksesta, asenna se uudelleen: vanha Watch-sovellus kuuluu vanhaan iPhone-sovellukseen.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>Kello näyttää ”Odotetaan hyvää sijaintia”, ja Merkitse paikka pysyy harmaana</summary>
+        <p>Paikka tallennetaan vain sijainnista, jonka tarkkuus on &plusmn;30&nbsp;m ja joka on alle 30&nbsp;sekuntia vanha, joten väärä sijainti ei koskaan päädy lokikirjaasi. Pysy pinnalla kello vedestä nostettuna ja taivas näkyvissä ja anna sille minuutti. <strong>Vanha välimuistissa oleva sijainti ohitetaan</strong> tarkoittaa, että se odottaa tuoretta sijaintia. GPS ei toimi veden alla: merkitse paikka ennen laskeutumista tai kun nouset pintaan.</p>
+      </details>
+      <details id="watch-location">
+        <summary>”Sijaintipalvelut ovat pois päältä Thermoclinelta” kellossa</summary>
+        <p>Avaa kellossa <span class="path">Asetukset → Tietosuoja ja suojaus → Sijaintipalvelut</span>, laita Sijaintipalvelut päälle ja salli Thermocline apin käytön aikana.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Kellossa merkitty paikka ei ilmestynyt iPhoneen</summary>
+        <p>Avaa kellossa <strong>Merkityt paikat</strong>. <strong>Odottaa lähetystä iPhoneen</strong> tarkoittaa, ettei iPhone ole vielä saanut sitä: pidä kello lähellä iPhoneasi ja avaa Thermocline iPhonessa. <strong>Lähetetty iPhoneen</strong> tarkoittaa, että se on siellä: katso kohdasta <span class="path">Lokikirja → Tarkistettavat</span>. iPhone hakee paikan tiedot, kun se on verkossa, joten ilman yhteyttä paikka odottaa tilassa <strong>odottaa yhteyttä hakua varten</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>Kello ei näyttänyt kohteen nimeä, kun merkitsin paikan</summary>
+        <p>Nimi tulee iPhonestasi: kun se on lähellä ja Thermocline pystyy vastaamaan, kello näyttää paikan alla kohteen, jota se ehdottaisi, omasi tai sukelluskohdelistoista, sekä sen etäisyyden. Kun iPhone on kantaman ulkopuolella, kello nimeää omat kohteesi iPhonesi siihen jättämästä kopiosta, mutta ei sukelluskohdelistojen kohteita. Jos noin 1,5&nbsp;km:n säteellä ei ole kohdetta, paikka merkitään ilman nimeä. Kummassakin tapauksessa valitset kohteen iPhonessa kohdassa <span class="path">Lokikirja → Tarkistettavat</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>Kelloon sanomani nimi ei tallentunut</summary>
+        <p>Nimi tallentuu, kun sanelu tai näppäimistö sulkeutuu tai kun palaat takaisin. Avaa <strong>Merkityt paikat</strong>, napauta paikkaa ja tarkista sen nimi; napauta <strong>Vaihda nimi</strong> yrittääksesi uudelleen. Jos paikka oli jo lähetetty, nimi seuraa sitä iPhoneen.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Tallentaako kello sukellukseni?</summary>
+        <p>Ei. Thermoclinen Watch-sovellus vain merkitsee paikkoja pinnalla. Sukelluksesi tulevat sukellustietokoneeltasi. Garmin Descent -kelloista tuo niiden .fit-tiedostot: katso oppaan kohta <a href="guide.html#garmin">Garmin Descent</a>.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Paikka katosi kellosta</summary>
+        <p>Näin on tarkoitus. Paikka poistuu kellosta, kun se on vahvistettu tai hylätty iPhonessa. Vahvistettu paikka on kohde lokikirjassasi ja synkronoituu muihin laitteisiisi.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Lähetä raportti tai latausloki</h2>
+    <ul>
+      <li><strong>Sovelluksesta:</strong> ota kuvakaappaus ja käytä sitten TestFlightin toimintoa <strong>Jaa palautetta betasta</strong>. Se saapuu niin, että build ja laite ovat mukana.</li>
+      <li><strong>Latausloki, iPhone:</strong> napauta latausnäkymässä <strong>Latausloki</strong> ja jaa se. Se sisältää vain Bluetooth- ja tietokoneviestit, ei sukellustietoja.</li>
+      <li><strong>Latausloki, Mac:</strong> valitse latausikkunassa <strong>Latausloki…</strong>, sitten <strong>Tallenna loki…</strong> ja liitä tiedosto.</li>
+      <li><strong>Sähköposti:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, ja kerro laitteesi, buildin numero (näkyy TestFlightissa) ja mitä odotit tapahtuvan.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, sukelluslokikirja. Ei sukellusten suunnitteluun eikä navigointiin.</p>
+      <p>Sukelluskohdelistat © <a href="https://www.openstreetmap.org/copyright">OpenStreetMapin tekijät</a>, saatavilla Open Database License -lisenssillä.</p>
+    </div>
+    <nav class="foot-links" aria-label="Alatunniste">
+      <a href="./">Etusivu</a>
+      <a href="guide.html">Opas</a>
+      <a href="troubleshooting.html">Vianmääritys</a>
+      <a href="support.html">Tuki</a>
+      <a href="privacy.html">Tietosuoja</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Kielet">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="troubleshooting.html" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+      <a href="../pl/troubleshooting.html" hreflang="pl" lang="pl">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>

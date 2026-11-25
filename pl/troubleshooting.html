@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rozwiązywanie problemów – Thermocline</title>
+  <meta name="description" content="Rozwiązania typowych problemów z Thermocline: komputer nurkowy nie łączy się, brak nowych nurkowań, różnice po synchronizacji, braki po imporcie, zdjęcia i SAC.">
+  <meta name="theme-color" content="#04223f">
+  <link rel="canonical" href="https://thermoclineapp.com/pl/troubleshooting.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thermocline">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Rozwiązywanie problemów – Thermocline">
+  <meta property="og:description" content="Rozwiązania typowych problemów z Thermocline: komputer nurkowy nie łączy się, brak nowych nurkowań, różnice po synchronizacji, braki po imporcie, zdjęcia i SAC.">
+  <meta property="og:url" content="https://thermoclineapp.com/pl/troubleshooting.html">
+  <meta property="og:image" content="https://thermoclineapp.com/images/share/pl.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ikona i nazwa aplikacji Thermocline na zdjęciu dziobu statku podczas nurkowania na wraku, z nurkami i rybami. Logbook nurkowy na iPhone’a, iPada i Maca.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rozwiązywanie problemów – Thermocline">
+  <meta name="twitter:description" content="Rozwiązania typowych problemów z Thermocline: komputer nurkowy nie łączy się, brak nowych nurkowań, różnice po synchronizacji, braki po imporcie, zdjęcia i SAC.">
+  <meta name="twitter:image" content="https://thermoclineapp.com/images/share/pl.jpg">
+  <meta name="twitter:image:alt" content="Ikona i nazwa aplikacji Thermocline na zdjęciu dziobu statku podczas nurkowania na wraku, z nurkami i rybami. Logbook nurkowy na iPhone’a, iPada i Maca.">
+  <link rel="icon" href="../images/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=19">
+<!-- langs -->
+    <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/troubleshooting.html">
+    <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/troubleshooting.html">
+    <link rel="alternate" hreflang="es" href="https://thermoclineapp.com/es/troubleshooting.html">
+    <link rel="alternate" hreflang="fr" href="https://thermoclineapp.com/fr/troubleshooting.html">
+    <link rel="alternate" hreflang="it" href="https://thermoclineapp.com/it/troubleshooting.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://thermoclineapp.com/pt-br/troubleshooting.html">
+    <link rel="alternate" hreflang="nl" href="https://thermoclineapp.com/nl/troubleshooting.html">
+    <link rel="alternate" hreflang="sv" href="https://thermoclineapp.com/sv/troubleshooting.html">
+    <link rel="alternate" hreflang="nb" href="https://thermoclineapp.com/nb/troubleshooting.html">
+    <link rel="alternate" hreflang="da" href="https://thermoclineapp.com/da/troubleshooting.html">
+    <link rel="alternate" hreflang="fi" href="https://thermoclineapp.com/fi/troubleshooting.html">
+    <link rel="alternate" hreflang="pl" href="https://thermoclineapp.com/pl/troubleshooting.html">
+    <link rel="alternate" hreflang="cs" href="https://thermoclineapp.com/cs/troubleshooting.html">
+    <link rel="alternate" hreflang="ru" href="https://thermoclineapp.com/ru/troubleshooting.html">
+    <link rel="alternate" hreflang="ja" href="https://thermoclineapp.com/ja/troubleshooting.html">
+    <link rel="alternate" hreflang="ko" href="https://thermoclineapp.com/ko/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://thermoclineapp.com/zh-hans/troubleshooting.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://thermoclineapp.com/zh-hant/troubleshooting.html">
+    <link rel="alternate" hreflang="x-default" href="https://thermoclineapp.com/troubleshooting.html">
+    <script src="../lang.js?v=1" defer></script>
+    <script src="../site-strings.js?v=1"></script>
+    <!-- /langs -->
+</head>
+<body>
+<a class="skip" href="#content">Przejdź do rozwiązywania problemów</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="30" height="30"><span class="wordmark">Thermocline</span></a>
+    <nav class="nav" aria-label="Główna">
+      <a href="guide.html">Przewodnik</a>
+      <a href="troubleshooting.html" aria-current="page">Rozwiązywanie problemów</a>
+      <a href="support.html">Wsparcie</a>
+      <button class="share-btn" id="share-btn" type="button" aria-label="Udostępnij tę stronę"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">Udostępnij</span></button>
+      <a class="btn" href="./#testers">Dołącz do bety</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-hero" style="--photo:url('../images/wreck-hatch.jpg')">
+  <div class="wrap">
+    <h1>Rozwiązywanie problemów</h1>
+    <p>Znajdź swój problem poniżej. Przy każdym najpierw podano to, co najszybciej sprawdzić. Zaktualizowano 18 listopada 2026.</p>
+  </div>
+</div>
+
+<div class="doc-layout">
+  <nav class="toc" aria-label="Na tej stronie">
+    <details open>
+      <summary>Na tej stronie</summary>
+    <ol>
+      <li><a href="#first">Najpierw aktualizacja</a></li>
+      <li><a href="#downloads">Pobieranie</a></li>
+      <li><a href="#sync">Synchronizacja</a></li>
+      <li><a href="#imports">Import</a></li>
+      <li><a href="#numbers">Gaz i SAC</a></li>
+      <li><a href="#photos">Zdjęcia</a></li>
+      <li><a href="#sites">Miejsca i zegarek</a></li>
+      <li><a href="#send-log">Wyślij zgłoszenie</a></li>
+    </ol>
+    </details>
+  </nav>
+
+  <main class="doc" id="content">
+
+    <div class="faq-search" role="search" hidden>
+      <label for="faq-q">Wyszukaj swój problem</label>
+      <input id="faq-q" type="search" placeholder="Na przykład: NDL, Garmin, PIN, synchronizacja" autocomplete="off">
+      <p role="status" aria-live="polite"></p>
+    </div>
+
+    <h2 id="first">Najpierw zaktualizuj wszystkie urządzenia</h2>
+    <p>Wiele problemów znika, gdy na każdym urządzeniu działa najnowsza kompilacja. Otwórz TestFlight na każdym używanym iPhonie, iPadzie i Macu i zainstaluj dostępne aktualizacje. Starsza kompilacja przestaje wysyłać zmiany, dopóki nie zostanie zaktualizowana, i wyświetla <strong>Zaktualizuj Thermocline, aby dalej synchronizować</strong>. Twoje zmiany są zachowywane i zostaną wysłane po aktualizacji.</p>
+
+    <section class="faq-group">
+    <h2 id="downloads">Pobieranie z komputera nurkowego</h2>
+    <div class="faq">
+      <details id="not-found">
+        <summary>Komputer nie zostaje znaleziony</summary>
+        <ul>
+          <li>Wybudź komputer i przełącz go w tryb Bluetooth (Shearwater: <span class="path">Menu → Bluetooth</span>). Pozostaje w nim tylko około dwóch minut.</li>
+          <li>Trzymaj go blisko iPhone’a, iPada lub Maca.</li>
+          <li><strong>Komputery Shearwater wracają do ostatniego urządzenia, z którym się łączyły.</strong> Jeśli w pobliżu jest Twój telefon lub inny Mac, wyłącz Bluetooth na tym urządzeniu i spróbuj ponownie.</li>
+          <li>Sprawdź, czy Bluetooth jest włączony i czy Thermocline może z niego korzystać (iPhone: Ustawienia → Thermocline; Mac: Ustawienia systemowe → Prywatność i ochrona → Bluetooth).</li>
+        </ul>
+      </details>
+      <details id="predator">
+        <summary>To Predator lub Petrel 1 i iPhone go nie widzi</summary>
+        <p>Używają starszego Bluetooth (Bluetooth Classic), z którego iPhone’y i iPady nie mogą korzystać. Pobierz z nich dane na Macu (zobacz <a href="guide.html#download">przewodnik</a>) albo zaimportuj ich nurkowania z Shearwater Cloud lub z pliku UDDF.</p>
+      </details>
+      <details id="pin">
+        <summary>Łączy się, ale prosi o PIN</summary>
+        <p>Wpisz kod pokazany na ekranie komputera. Jest potrzebny tylko za pierwszym razem.</p>
+      </details>
+      <details id="no-new-dives">
+        <summary>„Brak nowych nurkowań”</summary>
+        <p>Pobierane są tylko nurkowania nowsze niż ostatnie pobranie. Jeśli usunięto nurkowanie i chcesz je odzyskać, włącz <strong>Pobierz wszystkie nurkowania z komputera</strong> i pobierz ponownie. Nurkowania, które już są w logbooku, są pomijane.</p>
+      </details>
+      <details id="download-stopped">
+        <summary>Pobieranie zatrzymało się w połowie</summary>
+        <p>Wybierz <strong>Zachowaj</strong>, aby zapisać nurkowania, które dotarły, a potem pobierz ponownie resztę. Jeśli wciąż się zatrzymuje, wybierz <strong>Spróbuj ponownie</strong> blisko komputera i <a href="#send-log">wyślij log pobierania</a>.</p>
+      </details>
+      <details id="cable">
+        <summary>Pobieranie przez kabel na Macu się nie udaje</summary>
+        <ul>
+          <li>Sprawdź, czy port pasuje do kabla: lista pokazuje rodzaj każdego portu i ostrzega, gdy nie pasuje do wybranego modelu.</li>
+          <li>Odłącz i ponownie podłącz kabel, a potem użyj przycisku odświeżania, aby ponownie poszukać kabli.</li>
+          <li>Wykonaj kroki z sekcji <strong>Zanim zaczniesz</strong> dla swojego modelu.</li>
+          <li>Pobieranie przez kabel jest nowe. <a href="#send-log">Wyślij log pobierania</a> w każdym przypadku.</li>
+        </ul>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sync">Synchronizacja między urządzeniami</h2>
+    <div class="faq">
+      <details id="moved">
+        <summary>Aplikacja na iPhonie informuje, że Thermocline jest teraz jedną aplikacją, albo widzę dwie aplikacje Thermocline</summary>
+        <p>18&nbsp;listopada&nbsp;2026 aplikacje na iPhone’a, iPada, Maca i Apple Watch stały się jedną aplikacją z jednym linkiem do bety. Aplikacja na iPhone’a, którą miałeś wcześniej, teraz pomaga już tylko w przeniesieniu się.</p>
+        <ol>
+          <li>Otwórz starą aplikację. Jeśli informuje, że synchronizacja jest wyłączona, stuknij <strong>Włącz „Synchronizuj z iCloud”</strong> i zostaw ją otwartą na minutę albo stuknij <strong>Eksportuj mój logbook jako UDDF</strong> i zapisz plik.</li>
+          <li>Stuknij <strong>Dołącz do nowej bety</strong> albo otwórz <a href="https://testflight.apple.com/join/ygF4ngNd">link do bety</a> na iPhonie i zainstaluj nową aplikację. Pojawi się obok starej.</li>
+          <li>W nowej aplikacji włącz <span class="path">Profil → Synchronizuj z iCloud</span>. Twoje nurkowania, miejsca, sprzęt i ustawienia wrócą. Jeśli zamiast tego wyeksportowano plik, użyj <span class="path">Profil → Importuj plik logbooka</span>.</li>
+          <li>Może być konieczne ponowne sparowanie komputera nurkowego i ponowne zainstalowanie aplikacji na zegarek z aplikacji Watch na iPhonie.</li>
+          <li>Gdy nowa aplikacja pokaże te same nurkowania, usuń starą.</li>
+        </ol>
+        <p>Na Macu nic się nie zmienia: aktualizuj aplikację na Maca jak zwykle.</p>
+      </details>
+      <details id="missing-or-doubled">
+        <summary>Po synchronizacji brakuje nurkowań lub są podwojone</summary>
+        <ol>
+          <li>Na razie niczego nie zmieniaj. Zrób zrzut ekranu sekcji Synchronizacja (iPhone: <span class="path">Profil → Synchronizacja</span>; Mac: <span class="path">Thermocline → Ustawienia → Synchronizacja</span>) na każdym urządzeniu i wyślij go.</li>
+          <li>Sprawdź, czy na każdym urządzeniu jest najnowsza kompilacja.</li>
+          <li><span class="path">Profil → Twoje dane → Punkty przywracania</span> mogą przywrócić logbook do stanu sprzed importu, scalenia lub usunięcia. Przywracanie najpierw zapisuje Twój bieżący logbook, więc można je cofnąć.</li>
+        </ol>
+      </details>
+      <details id="change-not-showing">
+        <summary>Zmiana na jednym urządzeniu nie pojawia się na drugim</summary>
+        <ul>
+          <li>Sprawdź, czy <strong>Synchronizuj z iCloud</strong> jest włączone na obu urządzeniach i czy są zalogowane na to samo Konto Apple.</li>
+          <li>Sprawdź <strong>Oczekuje na wysłanie</strong> na urządzeniu, na którym wprowadzono zmianę, i otwórz aplikację na obu urządzeniach przy dostępnym zasięgu. Sekcja Synchronizacja pokazuje, kiedy to urządzenie i Twoje pozostałe są zgodne.</li>
+          <li>Naciśnij <strong>Synchronizuj teraz</strong>.</li>
+        </ul>
+      </details>
+      <details id="not-signed-in">
+        <summary>„Nie zalogowano do iCloud”</summary>
+        <p>Zaloguj się do iCloud w Ustawieniach urządzenia. Do tego czasu Twój logbook pozostaje bezpiecznie na tym urządzeniu i zsynchronizuje się, gdy się zalogujesz.</p>
+      </details>
+      <details id="icloud-full">
+        <summary>„Twój magazyn iCloud jest pełny”</summary>
+        <p>Twój logbook jest bezpieczny na urządzeniu i zsynchronizuje się, gdy będzie miejsce. Zwolnij trochę miejsca w iCloud albo włącz <strong>Oszczędzaj miejsce w iCloud przy zdjęciach z nurkowań</strong>, aby zdjęcia nie były przechowywane dwa razy.</p>
+      </details>
+      <details id="newer-version">
+        <summary>„Inne urządzenie używa nowszej wersji”</summary>
+        <p>Zaktualizuj Thermocline na tym urządzeniu w TestFlight. Twoje zmiany są tu bezpieczne i zostaną wysłane po aktualizacji.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="imports">Import</h2>
+    <div class="faq">
+      <details id="not-imported">
+        <summary>Niektóre nurkowania lub szczegóły nie zostały zaimportowane</summary>
+        <p>Raport z importu wypisuje wszystko w sekcjach <strong>Nie zaimportowano</strong> i <strong>Sprawdź</strong>, razem z przyczyną. Każdy logbook zapisuje UDDF trochę inaczej, więc brakujące wartości są normalne i pozostają puste. Jeśli brakuje czegoś, czego się spodziewasz, wyślij raport oraz, jeśli możesz, plik.</p>
+      </details>
+      <details id="macdive-gear">
+        <summary>Brakuje mojego sprzętu, zdjęć lub typów nurkowań z MacDive</summary>
+        <p>Eksport UDDF z MacDive je pomija. Zaimportuj na wierzch jego XML, aby dodać sprzęt, tagi i typy nurkowań, a na Macu zaimportuj folder MacDive, aby dodać zdjęcia. Nurkowania, które już są w logbooku, nie są dodawane dwa razy. Zobacz <a href="guide.html#macdive-files">Którego pliku MacDive użyć</a>.</p>
+      </details>
+      <details id="macdive-ndl">
+        <summary>W nurkowaniach z MacDive brakuje NDL, ppO₂ lub CNS</summary>
+        <p>Strona nurkowania pokazuje NDL jako „—” i Deko jako „Nie zapisano” albo przy ppO₂ widnieje „Obliczone z gazu i głębokości”. Eksport UDDF z MacDive nie zawiera NDL, ppO₂ ani CNS z komputera. Jego folder nie ma profilu dla nurkowań, które MacDive pobrał na iPhonie lub iPadzie, ponieważ przechowuje je w postaci zaszyfrowanej.</p>
+        <p>Zaimportuj też XML z MacDive: uzupełnia brakujące dane bez ponownego dodawania nurkowań. Zobacz <a href="guide.html#macdive-files">Którego pliku MacDive użyć</a>.</p>
+      </details>
+      <details id="no-data-lost">
+        <summary>Czy przenoszenie między plikami lub aplikacjami może coś utracić?</summary>
+        <ul>
+          <li><strong>Twoje oryginalne pliki nigdy nie są zmieniane.</strong> Zachowaj swoje eksporty z MacDive i zachowaj sam MacDive, dopóki nie porównasz kilku nurkowań.</li>
+          <li><strong>Drugi import dodaje, a nie zastępuje.</strong> Nurkowania, które już są w logbooku, zostają dopasowane i zyskują tylko to, czego im brakuje, więc możesz zaimportować XML po UDDF albo folder po którymkolwiek z nich.</li>
+          <li><strong>Możesz wrócić.</strong> Punkt przywracania o nazwie <strong>Przed importem</strong> jest zapisywany przed każdym importem więcej niż jednego nurkowania (<span class="path">Profil → Twoje dane → Punkty przywracania</span> na iPhonie, <span class="path">Ustawienia → Punkty przywracania</span> na Macu). Na Macu cofa go też <strong>Cofnij import…</strong> w raporcie.</li>
+          <li><strong>Odchodzisz z Thermocline:</strong> jego eksport UDDF jest pełny. Zawiera NDL, ppO₂ i CNS z komputera w trakcie każdego nurkowania, sprzęt, tagi, typy nurkowań i linki do filmów. Zdjęć nie ma w żadnym pliku eksportu.</li>
+        </ul>
+      </details>
+      <details id="no-gas">
+        <summary>Zaimportowane nurkowania nie mają gazu</summary>
+        <p>Plik nie podawał, jakiego gazu użyto. Te nurkowania czekają w sekcji <strong>Do potwierdzenia</strong>, aby można było go ustawić.</p>
+      </details>
+      <details id="wrong-file">
+        <summary>Zaimportowano niewłaściwy plik</summary>
+        <p>Na Macu użyj <strong>Cofnij import…</strong> w raporcie z importu. Na obu urządzeniach przed każdym importem więcej niż jednego nurkowania zapisywany jest punkt przywracania o nazwie <strong>Przed importem</strong>.</p>
+      </details>
+      <details id="garmin">
+        <summary>Plik Garmina nie chce się zaimportować</summary>
+        <ul>
+          <li><strong>„To plik zip”</strong>: <strong>Eksportuj oryginał</strong> w Garmin Connect daje plik .zip. Rozpakuj go, a potem wybierz plik .fit, który jest w środku.</li>
+          <li><strong>„To nie jest plik FIT Garmina”</strong>: plik nie pochodzi z zegarka Garmin albo tylko jego nazwa kończy się na .fit. Użyj pliku z folderu <span class="path">GARMIN → Activity</span> na zegarku albo z <strong>Eksportuj oryginał</strong>.</li>
+          <li><strong>„Pliki Garmina nie zawierają nurkowań”</strong>: biegi, spacery, ustawienia i pliki zdrowotne są pomijane. Importowane są tylko nurkowania.</li>
+          <li><strong>„Wyglądają na ucięte lub uszkodzone”</strong>: plik urywa się w połowie, często po niedokończonym kopiowaniu lub pobieraniu. Pokazano to, co udało się odczytać; skopiuj plik ponownie z zegarka i zaimportuj go jeszcze raz, aby uzyskać resztę. Nurkowania, które już są w logbooku, są pomijane.</li>
+          <li><strong>Wybranie pliku Garmina razem z innym plikiem logbooka</strong> nie jest możliwe za jednym razem: zaimportuj plik logbooka, a potem pliki Garmina.</li>
+        </ul>
+      </details>
+      <details id="garmin-tanks">
+        <summary>Nurkowanie z Garmina prosi o sprawdzenie butli</summary>
+        <p>Przy więcej niż jednym transmiterze butli plik Garmina nie podaje, na jakim gazie był każdy z nich, więc zostały one dopasowane do butli nurkowania po kolei. Otwórz sekcję gazów nurkowania i upewnij się, że każde ciśnienie jest przy właściwej butli.</p>
+      </details>
+      <details id="garmin-time">
+        <summary>Czas nurkowania z Garmina różni się o godzinę</summary>
+        <p>Czas pochodzi z zegara zegarka. Jeśli nie był ustawiony na czas lokalny w miejscu nurkowania, nurkowanie jest pokazywane w czasie zegarka. Popraw czas nurkowania albo ustaw strefę czasową zegarka przed następnym wyjazdem.</p>
+      </details>
+      <details id="drift-site">
+        <summary>Nurkowanie w dryfie ma niewłaściwe miejsce</summary>
+        <p>Nurkowanie jest dopasowywane do bliższego z dwóch punktów: wejścia do wody i wynurzenia, co w dryfie jest zwykle punktem wejścia. Jeśli dopasowano niewłaściwe miejsce lub żadne, wybierz miejsce w nurkowaniu, a inne mijane wraki dopisz do notatek.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="numbers">Zużycie gazu i SAC</h2>
+    <div class="faq">
+      <details id="sac-wrong">
+        <summary>Wartość SAC wygląda na błędną</summary>
+        <p>Stuknij lub kliknij <strong>Jak?</strong> obok niej. Pokazuje wszystkie dane: butlę i jej pojemność wodną, ciśnienia, temperaturę, poprawkę na gaz rzeczywisty, czas i głębokość. Najczęstszą przyczyną jest błędny rozmiar butli; popraw go w Sprzęcie. Jeśli nadal coś się nie zgadza, wyślij zrzut ekranu Jak?.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/pl/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panel Jak? dla zużycia gazu na iPhonie, z butlą, ciśnieniami, temperaturą i obliczeniem."><figcaption>Panel Jak? (przykładowe nurkowanie).</figcaption></figure>
+        </div>
+      </details>
+      <details id="no-sac">
+        <summary>Nie ma SAC, jest tylko komunikat</summary>
+        <ul>
+          <li><strong>Dodaj rozmiar butli, aby zobaczyć SAC</strong>: wybierz model butli lub wpisz jej rozmiar.</li>
+          <li><strong>Dodaj ciśnienie początkowe i końcowe, aby zobaczyć SAC</strong>: nie ma transmitera, więc wpisz je przy butli.</li>
+          <li><strong>SAC wymaga profilu głębokości</strong>: nurkowania zapisane ręcznie bez profilu nie mają SAC.</li>
+          <li>Nurkowania na rebreatherze nie mają wartości SAC.</li>
+        </ul>
+      </details>
+      <details id="sac-one-tank">
+        <summary>SAC uwzględnia tylko jedną butlę</summary>
+        <p>W nurkowaniu z kilkoma gazami ciśnienia ma tylko butla z transmiterem. Wpisz ciśnienie początkowe i końcowe przy drugiej butli, a SAC obejmie cały gaz.</p>
+      </details>
+      <details id="breathing">
+        <summary>Oddychanie w Podsumowaniu informuje, że żadne nurkowanie nie ma rozmiaru butli</summary>
+        <p>Oddychanie uśrednia tylko nurkowania z rozmiarem butli oraz ciśnieniem początkowym i końcowym. Nurkowania z UDDF z MacDive nie mają rozmiaru butli, ponieważ jego rozmiary nie są pojemnościami wodnymi; zaimportowanie na wierzch XML je uzupełnia (zobacz <a href="guide.html#macdive-files">Którego pliku MacDive użyć</a>). W przeciwnym razie ustaw butlę w swoich nurkowaniach (wybierz jej model lub zestaw sprzętu) i dodaj ciśnienia tam, gdzie je masz. Pod wartością Oddychanie podaje, ile nurkowań nie zostało uwzględnionych.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../images/guide/pl/ios-summary-breathing.jpg" width="600" height="1304" loading="lazy" alt="Oddychanie na karcie Podsumowanie: SAC i RMV z 14 nurkowań oraz jedno nurkowanie nieuwzględnione, bo nie ma rozmiaru butli ani ciśnień."><figcaption>Liczba pominiętych nurkowań jest pod wartością (przykładowy logbook).</figcaption></figure>
+        </div>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="photos">Zdjęcia</h2>
+    <div class="faq">
+      <details id="photo-missing">
+        <summary>Zdjęcie nie pojawia się na moim drugim urządzeniu</summary>
+        <p>Gdy opcja <strong>Oszczędzaj miejsce w iCloud przy zdjęciach z nurkowań</strong> jest włączona, zdjęcie zachowuje swoją kopię, dopóki drugie urządzenie nie znajdzie go w Zdjęciach w iCloud. Włącz to ustawienie na obu urządzeniach, sprawdź, czy Zdjęcia w iCloud są włączone na obu, i daj czas na wysłanie.</p>
+      </details>
+      <details id="videos">
+        <summary>Filmy nie zostały dodane</summary>
+        <p>Filmy z biblioteki można tylko powiązać, a nie skopiować. Włącz <span class="path">Synchronizacja → Oszczędzaj miejsce w iCloud przy zdjęciach z nurkowań</span> i upewnij się, że film jest w Zdjęciach w iCloud. Możesz też wkleić link do YouTube lub Vimeo pod zdjęciami nurkowania.</p>
+      </details>
+      <details id="photos-access">
+        <summary>„Thermocline nie może odczytać Twoich zdjęć”</summary>
+        <p>Odmówiono dostępu do Zdjęć, więc zdjęcia są kopiowane zamiast powiązywane. Aby je powiązać, zezwól na dostęp w Ustawienia → Prywatność i ochrona → Zdjęcia → Thermocline.</p>
+      </details>
+    </div>
+    </section>
+
+    <section class="faq-group">
+    <h2 id="sites">Miejsca i Apple Watch</h2>
+    <div class="faq">
+      <details id="wrong-site">
+        <summary>Podpowiedziane miejsce jest niewłaściwe albo nie ma żadnego</summary>
+        <p>Wybierz inne miejsce, przeszukaj wbudowane listy według nazwy albo sam zaznacz lub wpisz pozycję. Śródlądowych kamieniołomów i jezior często brakuje na publicznych listach, dlatego od tej pory Twoje własne miejsca są pierwsze w podpowiedziach.</p>
+      </details>
+      <details id="watch-install">
+        <summary>Na moim Apple Watch nie ma Thermocline</summary>
+        <p>Aplikacja na zegarek jest dołączona do aplikacji na iPhone’a z TestFlight. Na iPhonie otwórz aplikację Watch, znajdź Thermocline w sekcji <strong>Dostępne aplikacje</strong> i stuknij <strong>Instaluj</strong>. Wymaga watchOS&nbsp;11 lub nowszego. Jeśli przeniesiono się ze starej aplikacji na iPhone’a, zainstaluj ją ponownie: stara aplikacja na zegarek należy do starej aplikacji na iPhone’a.</p>
+      </details>
+      <details id="watch-fix">
+        <summary>Zegarek pokazuje „Oczekiwanie na dobry fix”, a przycisk Zaznacz punkt pozostaje szary</summary>
+        <p>Punkt jest zapisywany tylko z fixu o dokładności do &plusmn;30&nbsp;m, nie starszego niż 30&nbsp;sekund, więc błędna pozycja nigdy nie trafia do logbooka. Pozostań na powierzchni z zegarkiem nad wodą i z czystym widokiem na niebo i odczekaj minutę. <strong>Pomijanie starej pozycji z pamięci podręcznej</strong> oznacza, że zegarek czeka na świeżą. GPS nie działa pod wodą: zaznacz punkt przed zanurzeniem lub po wynurzeniu.</p>
+      </details>
+      <details id="watch-location">
+        <summary>„Dostęp do lokalizacji dla Thermocline jest wyłączony” na zegarku</summary>
+        <p>Na zegarku otwórz <span class="path">Ustawienia → Prywatność i ochrona → Usługi lokalizacji</span>, włącz Usługi lokalizacji i zezwól Thermocline na dostęp podczas używania aplikacji.</p>
+      </details>
+      <details id="watch-spot">
+        <summary>Punkt zaznaczony na zegarku nie pojawił się na iPhonie</summary>
+        <p>Na zegarku otwórz <strong>Zaznaczone</strong>. <strong>Czeka na wysłanie do iPhone’a</strong> oznacza, że iPhone jeszcze go nie dostał: trzymaj zegarek blisko iPhone’a i otwórz Thermocline na iPhonie. <strong>Wysłano do iPhone’a</strong> oznacza, że punkt tam jest: zajrzyj do <span class="path">Logbook → Do potwierdzenia</span>. iPhone wyszukuje punkt, gdy jest online, więc bez zasięgu punkt czeka ze stanem <strong>czeka na sygnał, aby wyszukać</strong>.</p>
+      </details>
+      <details id="watch-hint">
+        <summary>Po zaznaczeniu punktu zegarek nie pokazał nazwy miejsca</summary>
+        <p>Nazwa pochodzi z iPhone’a: gdy jest w pobliżu, a Thermocline może odpowiedzieć, zegarek pokazuje pod punktem miejsce, które by podpowiedział – Twoje lub z list miejsc nurkowych – wraz z odległością. Gdy iPhone jest poza zasięgiem, zegarek nazywa Twoje własne miejsca na podstawie kopii, którą zostawił na nim iPhone, ale nie miejsca z list miejsc nurkowych. Jeśli w promieniu około 1,5&nbsp;km nie ma żadnego miejsca, punkt jest zaznaczany bez nazwy. W każdym przypadku miejsce wybierasz na iPhonie, w <span class="path">Logbook → Do potwierdzenia</span>.</p>
+      </details>
+      <details id="watch-name">
+        <summary>Nazwa, którą powiedziałem(-am) na zegarku, nie została zapisana</summary>
+        <p>Nazwa zapisuje się, gdy dyktowanie lub klawiatura się zamknie albo gdy wrócisz. Otwórz <strong>Zaznaczone</strong>, stuknij punkt i sprawdź jego nazwę; stuknij <strong>Zmień nazwę</strong>, aby spróbować ponownie. Jeśli punkt został już wysłany, nazwa trafi za nim do iPhone’a.</p>
+      </details>
+      <details id="watch-dives">
+        <summary>Czy zegarek zapisuje moje nurkowania?</summary>
+        <p>Nie. Aplikacja Thermocline na zegarek tylko zaznacza punkty na powierzchni. Twoje nurkowania pochodzą z komputera nurkowego. W przypadku zegarków Garmin Descent zaimportuj ich pliki .fit: zobacz <a href="guide.html#garmin">Garmin Descent</a> w przewodniku.</p>
+      </details>
+      <details id="watch-spot-gone">
+        <summary>Punkt zniknął z zegarka</summary>
+        <p>Tak ma być. Punkt znika z zegarka, gdy zostanie potwierdzony lub odrzucony na iPhonie. Potwierdzony punkt jest miejscem w Twoim logbooku i synchronizuje się z innymi urządzeniami.</p>
+      </details>
+    </div>
+    </section>
+
+    <h2 id="send-log">Wyślij zgłoszenie lub log pobierania</h2>
+    <ul>
+      <li><strong>Z aplikacji:</strong> zrób zrzut ekranu, a potem użyj <strong>Udostępnij opinię o wersji beta</strong> w TestFlight. Zgłoszenie dociera z dołączonymi informacjami o kompilacji i urządzeniu.</li>
+      <li><strong>Log pobierania, iPhone:</strong> na ekranie pobierania stuknij <strong>Log pobierania</strong>, a potem go udostępnij. Zawiera tylko komunikaty Bluetooth i komputera, bez danych nurkowań.</li>
+      <li><strong>Log pobierania, Mac:</strong> w oknie pobierania wybierz <strong>Log pobierania…</strong>, a potem <strong>Zapisz log…</strong> i dołącz plik.</li>
+      <li><strong>E-mail:</strong> <a href="mailto:brian@616labs.net">brian@616labs.net</a>, z informacją o urządzeniu, numerem kompilacji (widocznym w TestFlight) i opisem tego, czego się spodziewałeś.</li>
+    </ul>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong class="wordmark">Thermocline</strong>, logbook nurkowy. Nie służy do planowania nurkowań ani do nawigacji.</p>
+      <p>Listy miejsc nurkowych © <a href="https://www.openstreetmap.org/copyright">współtwórcy OpenStreetMap</a>, dostępne na licencji Open Database License.</p>
+    </div>
+    <nav class="foot-links" aria-label="Stopka">
+      <a href="./">Strona główna</a>
+      <a href="guide.html">Przewodnik</a>
+      <a href="troubleshooting.html">Rozwiązywanie problemów</a>
+      <a href="support.html">Wsparcie</a>
+      <a href="privacy.html">Prywatność</a>
+    </nav>
+    <!-- langs -->
+    <nav class="lang-list" aria-label="Języki">
+      <a href="../troubleshooting.html" hreflang="en" lang="en">English</a>
+      <a href="../de/troubleshooting.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="../es/troubleshooting.html" hreflang="es" lang="es">Español</a>
+      <a href="../fr/troubleshooting.html" hreflang="fr" lang="fr">Français</a>
+      <a href="../it/troubleshooting.html" hreflang="it" lang="it">Italiano</a>
+      <a href="../pt-br/troubleshooting.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../nl/troubleshooting.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="../sv/troubleshooting.html" hreflang="sv" lang="sv">Svenska</a>
+      <a href="../nb/troubleshooting.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+      <a href="../da/troubleshooting.html" hreflang="da" lang="da">Dansk</a>
+      <a href="../fi/troubleshooting.html" hreflang="fi" lang="fi">Suomi</a>
+      <a href="troubleshooting.html" hreflang="pl" lang="pl" aria-current="page">Polski</a>
+      <a href="../cs/troubleshooting.html" hreflang="cs" lang="cs">Čeština</a>
+      <a href="../ru/troubleshooting.html" hreflang="ru" lang="ru">Русский</a>
+      <a href="../ja/troubleshooting.html" hreflang="ja" lang="ja">日本語</a>
+      <a href="../ko/troubleshooting.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../zh-hans/troubleshooting.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="../zh-hant/troubleshooting.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    </nav>
+    <!-- /langs -->
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics: counts visits, no cookies (see privacy.html) --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "116b1a0b7bc14bd19085a2ca43d351c1"}'></script>
+<script src="../share.js?v=1" defer></script>
+<script src="../doc.js?v=1" defer></script>
+</body>
+</html>
