@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=26">
+  <link rel="stylesheet" href="../styles.css?v=27">
   <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
 {
@@ -108,7 +108,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <a class="brand" href="./"><img src="../images/brand-64.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
     <nav class="nav" aria-label="主导航">
       <a href="#app">查看 App</a> <a href="#features">功能</a> <a class="keep" href="guide.html">指南</a> <a href="troubleshooting.html">问题排查</a>
       <button class="share-btn" id="share-btn" type="button" aria-label="分享此页面"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span class="share-label">分享</span></button>
@@ -161,8 +161,8 @@
     <figure class="chart-card reveal">
       <div class="inner">
         <div class="demo" id="demo">
-          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
-               alt="Thermocline 中的一条潜水曲线：43 分钟内的深度，叠加显示气瓶压力、SAC、水温和 ppO2，以及一次从 EAN30 切换到 Air 再切换回来的气体切换。">
+          <picture><source srcset="../images/profile-overlay.avif" type="image/avif"><img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="Thermocline 中的一条潜水曲线：43 分钟内的深度，叠加显示气瓶压力、SAC、水温和 ppO2，以及一次从 EAN30 切换到 Air 再切换回来的气体切换。"></picture>
         </div>
       </div>
       <figcaption>试一试：三次真实的潜水，按 App 的方式绘制。轻点标签，在“堆叠”和“叠加”之间切换，并在潜水曲线上拖动。</figcaption>
@@ -182,12 +182,12 @@
       <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="22 秒的 Thermocline 导览：潜水曲线、下载潜水、安全数值，以及 SAC 背后的计算过程。"><source src="../video/beta-tall.mp4" type="video/mp4"></video>
     </figure>
     <div class="phones" role="list">
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hans/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的潜水日志：一次潜水在“待确认”下等待，下面是列出潜点、日期、深度和时间的潜水列表。"><figcaption><b>潜水日志</b>需要潜点或气体的潜水在顶部等待。</figcaption></figure>
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hans/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的一次潜水：曲线上方的安全数值栏，显示深度、时间、气体、减压、ppO2 和 CNS。"><figcaption><b>每次潜水</b>深度、气体、减压、ppO₂ 和 CNS 排在最前。</figcaption></figure>
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hans/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上耗气的“如何计算？”面板，列出气瓶、压力、温度和计算过程。"><figcaption><b>耗气</b>轻点“如何计算？”查看 SAC 背后的每一项输入。</figcaption></figure>
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/zh-hans/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的潜点地图，标出了你的潜点和内置潜点列表中的潜点。"><figcaption><b>潜点</b>你的潜点，外加 76,000+ 个其他潜点，可离线使用。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/zh-hans/ios-logbook.avif" type="image/avif"><img src="../images/guide/zh-hans/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的潜水日志：一次潜水在“待确认”下等待，下面是列出潜点、日期、深度和时间的潜水列表。"></picture><figcaption><b>潜水日志</b>需要潜点或气体的潜水在顶部等待。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/zh-hans/ios-dive.avif" type="image/avif"><img src="../images/guide/zh-hans/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的一次潜水：曲线上方的安全数值栏，显示深度、时间、气体、减压、ppO2 和 CNS。"></picture><figcaption><b>每次潜水</b>深度、气体、减压、ppO₂ 和 CNS 排在最前。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/zh-hans/ios-sac-how.avif" type="image/avif"><img src="../images/guide/zh-hans/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上耗气的“如何计算？”面板，列出气瓶、压力、温度和计算过程。"></picture><figcaption><b>耗气</b>轻点“如何计算？”查看 SAC 背后的每一项输入。</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/zh-hans/ios-sites-map.avif" type="image/avif"><img src="../images/guide/zh-hans/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="iPhone 上的潜点地图，标出了你的潜点和内置潜点列表中的潜点。"></picture><figcaption><b>潜点</b>你的潜点，外加 76,000+ 个其他潜点，可离线使用。</figcaption></figure>
     </div>
-    <figure class="mac-shot reveal"><img src="../images/guide/zh-hans/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac App：潜水列表旁边是一次潜水，显示其安全数值、潜点、潜伴、装备和深度曲线，以及最深点的读数。"><figcaption><b>在 Mac 上</b>整本潜水日志就在潜水旁边。指向曲线即可读取任意时刻。</figcaption></figure>
+    <figure class="mac-shot reveal"><picture><source srcset="../images/guide/zh-hans/mac-dive.avif" type="image/avif"><img src="../images/guide/zh-hans/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac App：潜水列表旁边是一次潜水，显示其安全数值、潜点、潜伴、装备和深度曲线，以及最深点的读数。"></picture><figcaption><b>在 Mac 上</b>整本潜水日志就在潜水旁边。指向曲线即可读取任意时刻。</figcaption></figure>
     <div class="help-cards">
       <a class="help-card reveal" href="guide.html">
         <span class="tag">指南</span>

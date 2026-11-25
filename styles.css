@@ -54,6 +54,8 @@ body {
   overflow-x: hidden;
 }
 img { max-width: 100%; height: auto; display: block; }
+/* A picture only offers the AVIF; the img inside it keeps all the layout. */
+picture { display: contents; }
 a { color: var(--accent); text-underline-offset: 3px; }
 
 h1, h2, h3 {

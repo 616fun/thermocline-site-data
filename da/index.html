@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=26">
+  <link rel="stylesheet" href="../styles.css?v=27">
   <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
 {
@@ -108,7 +108,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./"><img src="../images/apple-touch-icon.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
+    <a class="brand" href="./"><img src="../images/brand-64.png" alt="" width="32" height="32"><span class="wordmark">Thermocline</span></a>
     <nav class="nav" aria-label="Hovedmenu">
       <a href="#app">Se appen</a>
       <a href="#features">Funktioner</a>
@@ -164,8 +164,8 @@
     <figure class="chart-card reveal">
       <div class="inner">
         <div class="demo" id="demo">
-          <img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
-               alt="En dykprofil i Thermocline: dybde over 43 minutter med flasketryk, SAC, temperatur og ppO2 tegnet oven på, og et gasskift fra EAN30 til Air og tilbage.">
+          <picture><source srcset="../images/profile-overlay.avif" type="image/avif"><img class="fallback" src="../images/profile-overlay.jpg" width="1800" height="736"
+               alt="En dykprofil i Thermocline: dybde over 43 minutter med flasketryk, SAC, temperatur og ppO2 tegnet oven på, og et gasskift fra EAN30 til Air og tilbage."></picture>
         </div>
       </div>
       <figcaption>Prøv det: tre rigtige dyk, tegnet sådan som appen tegner dem. Tryk på chipsene, skift mellem Stablet og Overlejret, og træk hen over dykket.</figcaption>
@@ -185,12 +185,12 @@
       <video class="tv-tall" controls preload="none" playsinline width="1080" height="1920" poster="../video/beta-tall.jpg" aria-label="En 22 sekunder lang rundvisning i Thermocline: en dykprofil, hentning af dyk, sikkerhedsværdierne og udregningen bag SAC."><source src="../video/beta-tall.mp4" type="video/mp4"></video>
     </figure>
     <div class="phones" role="list">
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/da/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="Logbogen på iPhone: ét dyk venter under Skal bekræftes, derefter dyklisten med dykkersted, dato, dybde og tid."><figcaption><b>Logbog</b>Dyk, der mangler et dykkersted eller en gas, venter øverst.</figcaption></figure>
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/da/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Et dyk på iPhone: sikkerhedsbjælken med dybde, tid, gasser, deko, ppO2 og CNS over profilen."><figcaption><b>Hvert dyk</b>Dybde, gasser, deko, ppO₂ og CNS først.</figcaption></figure>
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/da/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panelet Hvordan? for gasforbrug på iPhone med flasken, trykkene, temperaturen og udregningen."><figcaption><b>Gasforbrug</b>Tryk på Hvordan? for at se alle værdier bag SAC.</figcaption></figure>
-      <figure class="phone reveal" role="listitem"><img src="../images/guide/da/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="Kortet over dykkersteder på iPhone med dine dykkersteder og de indbyggede lister over dykkersteder markeret."><figcaption><b>Dykkersteder</b>Dine dykkersteder og over 76.000 flere, offline.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/da/ios-logbook.avif" type="image/avif"><img src="../images/guide/da/ios-logbook.jpg" width="600" height="1304" loading="lazy" alt="Logbogen på iPhone: ét dyk venter under Skal bekræftes, derefter dyklisten med dykkersted, dato, dybde og tid."></picture><figcaption><b>Logbog</b>Dyk, der mangler et dykkersted eller en gas, venter øverst.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/da/ios-dive.avif" type="image/avif"><img src="../images/guide/da/ios-dive.jpg" width="600" height="1304" loading="lazy" alt="Et dyk på iPhone: sikkerhedsbjælken med dybde, tid, gasser, deko, ppO2 og CNS over profilen."></picture><figcaption><b>Hvert dyk</b>Dybde, gasser, deko, ppO₂ og CNS først.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/da/ios-sac-how.avif" type="image/avif"><img src="../images/guide/da/ios-sac-how.jpg" width="600" height="1304" loading="lazy" alt="Panelet Hvordan? for gasforbrug på iPhone med flasken, trykkene, temperaturen og udregningen."></picture><figcaption><b>Gasforbrug</b>Tryk på Hvordan? for at se alle værdier bag SAC.</figcaption></figure>
+      <figure class="phone reveal" role="listitem"><picture><source srcset="../images/guide/da/ios-sites-map.avif" type="image/avif"><img src="../images/guide/da/ios-sites-map.jpg" width="600" height="1304" loading="lazy" alt="Kortet over dykkersteder på iPhone med dine dykkersteder og de indbyggede lister over dykkersteder markeret."></picture><figcaption><b>Dykkersteder</b>Dine dykkersteder og over 76.000 flere, offline.</figcaption></figure>
     </div>
-    <figure class="mac-shot reveal"><img src="../images/guide/da/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac-appen: dyklisten ved siden af et dyk med sikkerhedsværdier, dykkersted, makkere, udstyr og dybdeprofil samt en aflæsning af det dybeste punkt."><figcaption><b>På Mac</b>Hele logbogen ved siden af dykket. Peg på profilen for at aflæse ethvert øjeblik.</figcaption></figure>
+    <figure class="mac-shot reveal"><picture><source srcset="../images/guide/da/mac-dive.avif" type="image/avif"><img src="../images/guide/da/mac-dive.jpg" width="1600" height="1031" loading="lazy" alt="Mac-appen: dyklisten ved siden af et dyk med sikkerhedsværdier, dykkersted, makkere, udstyr og dybdeprofil samt en aflæsning af det dybeste punkt."></picture><figcaption><b>På Mac</b>Hele logbogen ved siden af dykket. Peg på profilen for at aflæse ethvert øjeblik.</figcaption></figure>
     <div class="help-cards">
       <a class="help-card reveal" href="guide.html">
         <span class="tag">Vejledning</span>
