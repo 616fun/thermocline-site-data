@@ -745,6 +745,16 @@ html[data-plat="ios"] .how col.ios, html[data-plat="mac"] .how col.mac { width: 
   .share-btn { width: 34px; height: 34px; }
 }
 @media (max-width: 369px) { .nav a.keep { display: none; } }
+/* Long "Join the beta" labels (de, ru, pl, cs, nl, nb, da) take two lines on a phone rather than push
+   the header past the screen edge. */
+@media (max-width: 760px) {
+  :is(:lang(de), :lang(ru), :lang(pl), :lang(cs), :lang(nl), :lang(nb), :lang(da)) .nav .btn { white-space: normal; max-width: 9.5em; text-align: center; line-height: 1.15; }
+}
+/* With those longer labels the header Guide link gives way on a phone, as it does on the
+   narrowest phones everywhere (the hero's guide link stays); Russian's is longest. */
+@media (max-width: 430px) { :is(:lang(de), :lang(pl), :lang(cs), :lang(nl), :lang(nb), :lang(da)) .nav a.keep { display: none; } }
+@media (max-width: 480px) { :lang(ru) .nav a.keep { display: none; } }
+.share-btn { flex: none; }
 .sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
 /* ---------- Guide: Apple Watch screenshots, in a row ---------- */
