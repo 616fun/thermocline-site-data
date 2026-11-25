@@ -73,6 +73,8 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 
 .skip { position: absolute; left: -999px; }
 .skip:focus { left: 16px; top: 16px; z-index: 20; background: var(--surface); padding: 8px 12px; border-radius: 8px; }
+/* The skip link's target clears the sticky header, as the guide's section headings do. */
+#main, #content { scroll-margin-top: 84px; }
 
 /* Header: clear over the hero photo, frosted once it sits over content */
 .site-header {
