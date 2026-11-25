@@ -634,7 +634,7 @@ html[data-plat="ios"] .how col.ios, html[data-plat="mac"] .how col.mac { width: 
 @media (max-width: 480px) { .shot { flex-basis: 78%; } .shot.part, .shot.wide { flex-basis: 100%; } }
 
 /* ---------- Home: see the app, guide links ---------- */
-@media (max-width: 760px) { .nav a.keep { display: inline; } .nav { gap: 16px; } }
+@media (max-width: 760px) { .nav a.keep { display: inline; white-space: nowrap; } .nav { gap: 16px; } }
 .hero-links { margin-top: 22px; font-size: .95rem; color: var(--on-deep-2); }
 .hero-links a { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,.4); }
 .hero-links a:hover { text-decoration-color: #fff; }
