@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Руководство</h1>
-    <p>Как пользоваться Thermocline на iPhone, iPad и Mac, задача за задачей. Написано для беты; меню ещё могут меняться между сборками. Обновлено 18 ноября 2026 г.</p>
+    <p>Как пользоваться Thermocline на iPhone, iPad и Mac, задача за задачей. Написано для беты; меню ещё могут меняться между сборками. Обновлено 25 ноября 2026 г.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Сводка и дыхание</a></li>
         <li><a href="#sync">Синхронизация с iCloud</a></li>
         <li><a href="#data">Экспорт и точки восстановления</a></li>
+        <li><a href="#accessibility">Универсальный доступ</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator и Petrel 1</h3>
-    <p>Они используют старый Bluetooth (Bluetooth Classic), с которым iPhone и iPad работать не могут. На Mac сначала создайте пару с компьютером в <span class="path">Системных настройках → Bluetooth</span>, затем выберите <strong>USB-кабель</strong> в окне загрузки: его порт может появиться в списке. Переведите компьютер в режим выгрузки по Bluetooth и выберите «Загрузить». Это ещё не проверялось на реальном Predator или Petrel 1, поэтому, пожалуйста, <a href="troubleshooting.html#send-log">отправьте лог загрузки</a>, получится или нет. На iPhone вместо этого импортируйте их погружения из Shearwater Cloud или файла UDDF.</p>
+    <p>Они используют старый Bluetooth (Bluetooth Classic), к которому iPhone, iPad и Mac подключиться не могут. Загрузите погружения через Shearwater Cloud на Windows или Android, а затем импортируйте его экспорт или файл UDDF в Thermocline.</p>
 
     <h2 id="computers">Поддерживаемые компьютеры</h2>
     <p>Thermocline загружает погружения с помощью libdivecomputer — библиотеки с открытым кодом, которую используют многие логбуки. Она знает несколько сотен моделей большинства производителей. Чтобы найти свою, откройте экран загрузки и выберите <strong>Поддерживаемые компьютеры</strong>; для каждой модели указано, работает ли она на iPhone и iPad или ей нужен Mac.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad и Mac</td><td>Shearwater Perdix и Perdix 2. Другие модели должны работать: сообщите нам.</td></tr>
         <tr><td>USB или последовательный кабель</td><td>Только Mac</td><td>Сделано, но ещё не проверено на реальном оборудовании.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 и другие старые модели)</td><td>Только Mac, в паре как последовательный порт (<a href="#predator">как</a>)</td><td>Ещё не проверялось.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 и другие старые модели)</td><td>Ни на iPhone, ни на iPad, ни на Mac: импортируйте погружения (<a href="#predator">как</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (файлы .fit)</td><td>Импорт на iPhone, iPad и Mac (<a href="#garmin">как</a>)</td><td>Погружения Descent, включая дрейфовые.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Прочитать любой момент</th><td class="ios" data-label="iPhone и iPad">Проведите пальцем по графику.</td><td class="mac" data-label="Mac">Наведите указатель на график.</td></tr>
         <tr><th scope="row">Записать погружение вручную</th><td class="ios" data-label="iPhone и iPad"><span class="path">Логбук → Записать вручную</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Удалить погружение</th><td class="ios" data-label="iPhone и iPad">Смахните его влево в <span class="path">Логбуке</span>. Чтобы удалить несколько, коснитесь <strong>Выбрать</strong>.</td><td class="mac" data-label="Mac">⌘⌫ или <span class="path">Погружение → Удалить погружение…</span>. ⌘-щелчок выбирает несколько.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Удаление:</strong> сначала сохраняется точка восстановления, так что удалённое погружение можно вернуть (см. <a href="#data">Экспорт, точки восстановления и стирание</a>).</li>
       <li><strong>Значения безопасности</strong> находятся в фиксированной полосе вверху каждого погружения, всегда на одном и том же месте.</li>
       <li><strong>Профиль:</strong> кнопки под графиком показывают или скрывают Баллон, ppO₂, NDL, SAC, Темп., CNS и Всплытие — <strong>Раздельно</strong> полосами или одним графиком <strong>Совмещённо</strong>. Кнопку получает только то, что записано в погружении. NDL — собственное значение компьютера, и во время деко оно прерывается, а красная полоса показывает остановки. На узком iPhone кнопки остаются в одной строке и прокручиваются вбок. <a href="./#chart">Попробуйте на главной странице.</a></li>
       <li><strong>Ребризеры:</strong> с любого компьютера или из любого файла, которые их записывают, полоса ppO₂ показывает сетпоинт вместе с итоговым (voted) ppO₂ (и каждый сенсор, если он записан), а показание даёт сетпоинт в этот момент. Переключение с дилюента на любой другой газ помечается как bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/ru/ios-yourdata.jpg"><picture><source srcset="../images/guide/ru/ios-yourdata.avif" type="image/avif"><img src="../images/guide/ru/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="«Ваши данные» на iPhone: «Импортировать файл логбука», «Экспортировать логбук (UDDF)», «Экспортировать в другом формате», «Точки восстановления» и «Стереть логбук»."></picture></a><figcaption>«Профиль → Ваши данные» на iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Универсальный доступ</h2>
+    <p>Thermocline следует настройкам универсального доступа вашего устройства.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> читает каждый столбец Сводки как один элемент, с числом. Откройте его, чтобы увидеть его погружения.</li>
+      <li><strong>Более крупный текст:</strong> Сводка переносится на новую строку, а не обрезается, вплоть до самых крупных размеров.</li>
+      <li><strong>Дифференцировать без цвета:</strong> затонувшие суда на карте — ромбы, а не только оранжевые.</li>
+      <li><strong>Уменьшение движения:</strong> карта переходит к месту сразу, без перелёта, а сообщения появляются плавно, а не выезжают.</li>
+    </ul>
 
     <h2 id="stuck">Всё ещё не получается?</h2>
     <p>См. <a href="troubleshooting.html">Решение проблем</a> или отправьте отзыв из TestFlight или на <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

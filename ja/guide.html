@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>ガイド</h1>
-    <p>iPhone、iPad、Mac での Thermocline の使い方を、作業ごとに説明します。ベータ版向けに書いているため、メニューはビルドによって変わることがあります。2026年11月18日更新。</p>
+    <p>iPhone、iPad、Mac での Thermocline の使い方を、作業ごとに説明します。ベータ版向けに書いているため、メニューはビルドによって変わることがあります。2026年11月25日更新。</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">サマリーとガス消費</a></li>
         <li><a href="#sync">iCloud と同期</a></li>
         <li><a href="#data">書き出しと復元ポイント</a></li>
+        <li><a href="#accessibility">アクセシビリティ</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator と Petrel 1</h3>
-    <p>これらは、iPhone や iPad では使えない古い Bluetooth（Bluetooth Classic）を使っています。Mac では、先に <span class="path">システム設定 → Bluetooth</span> でコンピューターをペアリングし、ダウンロードウインドウで <strong>USB ケーブル</strong>を選びます。そのポートが一覧に表示されることがあります。コンピューターを Bluetooth アップロードモードにして、「ダウンロード」を選んでください。実機の Predator や Petrel 1 ではまだ試していないため、うまくいってもいかなくても、<a href="troubleshooting.html#send-log">ダウンロードログを送って</a>ください。iPhone では、代わりに Shearwater Cloud または UDDF ファイルからダイブを読み込んでください。</p>
+    <p>これらは iPhone、iPad、Mac から接続できない古い Bluetooth（Bluetooth Classic）を使っています。Windows または Android の Shearwater Cloud でダウンロードし、そのエクスポートか UDDF ファイルを Thermocline に読み込んでください。</p>
 
     <h2 id="computers">対応コンピューター</h2>
     <p>Thermocline は、多くのログブックが共有しているオープンソースのライブラリ libdivecomputer を使ってダウンロードします。ほとんどのメーカーの数百機種に対応しています。お使いの機種を確認するには、ダウンロード画面を開いて<strong>対応コンピューター</strong>を選んでください。機種ごとに、iPhone と iPad で使えるか、Mac が必要かが表示されます。</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone、iPad、Mac</td><td>Shearwater Perdix と Perdix 2。ほかの機種でも動作するはずです。結果を教えてください。</td></tr>
         <tr><td>USB ケーブルまたはシリアルケーブル</td><td>Mac のみ</td><td>実装済み。まだ実機では試していません。</td></tr>
-        <tr><td>Bluetooth Classic（Predator、Petrel 1、その他の古い機種）</td><td>Mac のみ。シリアルポートとしてペアリング（<a href="#predator">方法</a>）</td><td>まだ試していません。</td></tr>
+        <tr><td>Bluetooth Classic（Predator、Petrel 1、その他の古い機種）</td><td>iPhone、iPad、Mac のどれも不可：ダイブを読み込む（<a href="#predator">方法</a>）</td><td>—</td></tr>
         <tr><td>Garmin Descent（.fit ファイル）</td><td>iPhone、iPad、Mac で読み込み（<a href="#garmin">方法</a>）</td><td>ドリフトダイブを含む Descent のダイブ。</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">どの時点も読み取る</th><td class="ios" data-label="iPhone と iPad">グラフの上をドラッグします。</td><td class="mac" data-label="Mac">グラフにポインタを合わせます。</td></tr>
         <tr><th scope="row">ダイブを手入力で記録する</th><td class="ios" data-label="iPhone と iPad"><span class="path">ログブック → 手入力で記録</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">ダイブを削除</th><td class="ios" data-label="iPhone と iPad"><span class="path">ログブック</span>でダイブを左にスワイプします。複数を削除するには<strong>選択</strong>をタップします。</td><td class="mac" data-label="Mac">⌘⌫、または<span class="path">ダイブ → ダイブを削除…</span>。⌘クリックで複数を選べます。</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>削除するとき：</strong>先に復元ポイントが保存されるので、削除したダイブを戻せます（<a href="#data">書き出し、復元ポイント、消去</a>を参照）。</li>
       <li><strong>安全に関わる値</strong>は、すべてのダイブの上部に固定された帯に、常に同じ位置で表示されます。</li>
       <li><strong>プロファイル:</strong> グラフの下のチップで、タンク、ppO₂、NDL、SAC、水温、CNS、浮上の表示と非表示を切り替えます。表示は、帯を<strong>並べる</strong>か、ひとつに<strong>重ねる</strong>かを選べます。チップが表示されるのは、ダイブで記録された項目だけです。NDL はコンピューター自身の値で、減圧中は止まり、その間は赤い帯で減圧停止が示されます。幅の狭い iPhone では、チップは 1 行のまま横にスクロールします。<a href="./#chart">ホームページで試してみてください。</a></li>
       <li><strong>リブリーザー:</strong> 記録しているコンピューターやファイルであれば、ppO₂ の帯にセットポイントと Voted の ppO₂（記録されていれば各セルも）が表示され、読み取り値にはその時点のセットポイントが示されます。希釈ガスからほかのガスへの切り替えは、ベイルアウトとして表示されます。</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/ja/ios-yourdata.jpg"><picture><source srcset="../images/guide/ja/ios-yourdata.avif" type="image/avif"><img src="../images/guide/ja/ios-yourdata.jpg" width="600" height="458" loading="lazy" alt="iPhone の「データ」: 「ログブックファイルを読み込む」、「ログブックを書き出す（UDDF）」、「別の形式で書き出す」、「復元ポイント」、「ログブックを消去」。"></picture></a><figcaption>iPhone の「プロフィール」→「データ」。</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">アクセシビリティ</h2>
+    <p>Thermocline はデバイスのアクセシビリティ設定に従います。</p>
+    <ul>
+      <li><strong>VoiceOver</strong>はサマリーの各バーを本数とともに1つの項目として読み上げます。開くとそのダイブが表示されます。</li>
+      <li><strong>文字を拡大：</strong>最大サイズまで、サマリーは切れずに折り返します。</li>
+      <li><strong>カラー以外で区別：</strong>マップ上の沈船はオレンジだけでなくひし形で表示されます。</li>
+      <li><strong>視差効果を減らす：</strong>マップは飛んで移動せずにサイトへ切り替わり、メッセージはスライドせずにフェードインします。</li>
+    </ul>
 
     <h2 id="stuck">それでも解決しないときは？</h2>
     <p><a href="troubleshooting.html">トラブルシューティング</a>を参照するか、TestFlight から、または <a href="mailto:brian@616labs.net">brian@616labs.net</a> にフィードバックを送ってください。</p>

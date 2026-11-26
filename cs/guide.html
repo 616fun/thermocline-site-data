@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Průvodce</h1>
-    <p>Jak používat Thermocline na iPhonu, iPadu a Macu, úkon po úkonu. Napsáno pro betu; nabídky se mezi buildy ještě mohou měnit. Aktualizováno 18. listopadu 2026.</p>
+    <p>Jak používat Thermocline na iPhonu, iPadu a Macu, úkon po úkonu. Napsáno pro betu; nabídky se mezi buildy ještě mohou měnit. Aktualizováno 25. listopadu 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Přehled a dýchání</a></li>
         <li><a href="#sync">Synchronizace s iCloudem</a></li>
         <li><a href="#data">Export a body obnovení</a></li>
+        <li><a href="#accessibility">Zpřístupnění</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator a Petrel 1</h3>
-    <p>Používají starší Bluetooth (Bluetooth Classic), které iPhony a iPady používat neumí. Na Macu nejprve spárujte počítač v <span class="path">Nastavení systému → Bluetooth</span> a pak v okně stahování zvolte <strong>USB kabel</strong>: jeho port se může objevit v seznamu. Přepněte počítač do režimu přenosu přes Bluetooth a zvolte Stáhnout. Na skutečném Predatoru ani Petrelu 1 to zatím vyzkoušené nebylo, takže prosím <a href="troubleshooting.html#send-log">pošlete log stahování</a>, ať to funguje, nebo ne. Na iPhonu jejich ponory místo toho importujte ze Shearwater Cloud nebo ze souboru UDDF.</p>
+    <p>Používají starší Bluetooth (Bluetooth Classic), ke kterému se iPhony, iPady ani Macy nepřipojí. Stáhněte je přes Shearwater Cloud ve Windows nebo Androidu a pak jeho export nebo soubor UDDF importujte do Thermocline.</p>
 
     <h2 id="computers">Podporované počítače</h2>
     <p>Thermocline stahuje pomocí libdivecomputer, open-source knihovny, kterou sdílí mnoho logbooků. Zná několik set modelů od většiny výrobců. Svůj najdete tak, že otevřete obrazovku stahování a zvolíte <strong>Podporované počítače</strong>; u každého je uvedeno, zda funguje na iPhonu a iPadu, nebo potřebuje Mac.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad a Mac</td><td>Shearwater Perdix a Perdix 2. Ostatní modely by měly fungovat: dejte nám vědět.</td></tr>
         <tr><td>USB nebo sériový kabel</td><td>Jen Mac</td><td>Připraveno, zatím nevyzkoušeno na skutečném hardwaru.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 a další starší modely)</td><td>Jen Mac, spárovaný jako sériový port (<a href="#predator">jak</a>)</td><td>Zatím nevyzkoušeno.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 a další starší modely)</td><td>Ani na iPhonu, iPadu, ani na Macu: importujte ponory (<a href="#predator">jak</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (soubory .fit)</td><td>Import na iPhonu, iPadu a Macu (<a href="#garmin">jak</a>)</td><td>Ponory z Descent, včetně ponorů v proudu.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Přečtení kteréhokoli okamžiku</th><td class="ios" data-label="iPhone a iPad">Táhněte po grafu.</td><td class="mac" data-label="Mac">Najeďte ukazatelem na graf.</td></tr>
         <tr><th scope="row">Ruční zápis ponoru</th><td class="ios" data-label="iPhone a iPad"><span class="path">Logbook → Zapsat ručně</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Smazání ponoru</th><td class="ios" data-label="iPhone a iPad">V <span class="path">Logbooku</span> po něm přejeďte doleva. Chcete-li smazat několik, klepněte na <strong>Vybrat</strong>.</td><td class="mac" data-label="Mac">⌘⌫, nebo <span class="path">Ponor → Smazat ponor…</span>. Několik vyberete ⌘-kliknutím.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Mazání:</strong> nejdřív se uloží bod obnovení, takže smazaný ponor se může vrátit (viz <a href="#data">Export, body obnovení a vymazání</a>).</li>
       <li><strong>Bezpečnostní hodnoty</strong> jsou v pevném pruhu nahoře u každého ponoru, vždy na stejném místě.</li>
       <li><strong>Profil:</strong> štítky pod grafem zobrazují nebo skrývají Láhev, ppO₂, NDL, SAC, Tepl., CNS a Výstup, jako pruhy <strong>Pod sebou</strong> nebo jeden <strong>Překryv</strong>. Štítek dostane jen to, co ponor zaznamenal. NDL je vlastní hodnota počítače a během deko se zastaví, kde červený pás ukazuje zastávky. Na úzkém iPhonu zůstávají štítky na jednom řádku a posouvají se do strany. <a href="./#chart">Vyzkoušejte si to na domovské stránce.</a></li>
       <li><strong>Rebreathery:</strong> z každého počítače nebo souboru, který je zaznamenává, ukazuje pruh ppO₂ setpoint s hlasovaným ppO₂ (a každý článek, pokud je zaznamenán) a odečet uvádí setpoint v daném okamžiku. Přepnutí z diluentu na jakýkoli jiný plyn je označeno jako bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/cs/ios-yourdata.jpg"><picture><source srcset="../images/guide/cs/ios-yourdata.avif" type="image/avif"><img src="../images/guide/cs/ios-yourdata.jpg" width="600" height="455" loading="lazy" alt="Vaše data na iPhonu: Importovat soubor logbooku, Exportovat logbook (UDDF), Exportovat v jiném formátu, Body obnovení a Vymazat logbook."></picture></a><figcaption>Profil → Vaše data na iPhonu.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Zpřístupnění</h2>
+    <p>Thermocline se řídí nastavením zpřístupnění vašeho zařízení.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> čte každý sloupec Přehledu jako jednu položku s jeho počtem. Otevřete ho a uvidíte jeho ponory.</li>
+      <li><strong>Větší text:</strong> Přehled se zalamuje místo oříznutí, až do největších velikostí.</li>
+      <li><strong>Odlišit bez barvy:</strong> vraky jsou na mapě kosočtverce, ne jen oranžové.</li>
+      <li><strong>Omezit pohyb:</strong> mapa na místo přeskočí místo přeletu a zprávy se objeví prolnutím místo vysunutí.</li>
+    </ul>
 
     <h2 id="stuck">Pořád si nevíte rady?</h2>
     <p>Viz <a href="troubleshooting.html">Řešení potíží</a>, nebo pošlete zpětnou vazbu z TestFlightu či na <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

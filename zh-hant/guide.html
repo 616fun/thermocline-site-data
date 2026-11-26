@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -69,7 +69,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>指南</h1>
-    <p>如何在 iPhone、iPad 和 Mac 上使用 Thermocline，依任務逐項說明。本指南為測試版編寫；選單在不同版本之間仍可能變化。更新於 2026年11月18日。</p>
+    <p>如何在 iPhone、iPad 和 Mac 上使用 Thermocline，依任務逐項說明。本指南為測試版編寫；選單在不同版本之間仍可能變化。更新於 2026年11月25日。</p>
   </div>
 </div>
 
@@ -105,6 +105,7 @@
         <li><a href="#summary">摘要和呼吸</a></li>
         <li><a href="#sync">與 iCloud 同步</a></li>
         <li><a href="#data">輸出和還原點</a></li>
+        <li><a href="#accessibility">輔助使用</a></li>
       </ol>
     </details>
   </nav>
@@ -238,7 +239,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator 和 Petrel 1</h3>
-    <p>它們使用 iPhone 和 iPad 無法使用的較早藍牙（經典藍牙）。在 Mac 上，先在<span class="path">系統設定 → 藍牙</span>中配對潛水電腦，然後在下載視窗中選擇<strong>USB 傳輸線</strong>：它的連接埠可能會出現在清單中。讓潛水電腦進入藍牙上傳模式，然後選擇「下載」。這還沒有在真實的 Predator 或 Petrel 1 上試過，所以無論成功與否，都請<a href="troubleshooting.html#send-log">傳送下載記錄</a>。在 iPhone 上，請改為從 Shearwater Cloud 或 UDDF 檔案輸入它們的潛水。</p>
+    <p>它們使用較舊的藍牙（經典藍牙），iPhone、iPad 和 Mac 無法連接。請在 Windows 或 Android 上用 Shearwater Cloud 下載，然後將其匯出檔或 UDDF 檔案輸入 Thermocline。</p>
 
     <h2 id="computers">支援的電腦</h2>
     <p>Thermocline 使用 libdivecomputer 下載，這是許多潛水日誌共用的開源程式庫。它支援大多數製造商的數百種型號。要查看你的型號，請打開下載畫面並選擇<strong>支援的電腦</strong>；每一款都會註明是可在 iPhone 和 iPad 上使用，還是需要 Mac。</p>
@@ -247,7 +248,7 @@
       <tbody>
         <tr><td>低功耗藍牙</td><td>iPhone、iPad 和 Mac</td><td>Shearwater Perdix 和 Perdix 2。其他型號應該也能使用：請告訴我們。</td></tr>
         <tr><td>USB 或序列埠傳輸線</td><td>僅限 Mac</td><td>已完成開發，尚未在真實硬體上試過。</td></tr>
-        <tr><td>經典藍牙（Predator、Petrel 1 和其他較早型號）</td><td>僅限 Mac，作為序列埠配對（<a href="#predator">方法</a>）</td><td>尚未試過。</td></tr>
+        <tr><td>經典藍牙（Predator、Petrel 1 和其他較早型號）</td><td>iPhone、iPad 和 Mac 皆不可：請輸入潛水（<a href="#predator">方法</a>）</td><td>—</td></tr>
         <tr><td>Garmin Descent（.fit 檔案）</td><td>在 iPhone、iPad 和 Mac 上輸入（<a href="#garmin">方法</a>）</td><td>Descent 的潛水，包括放流潛水。</td></tr>
       </tbody>
     </table>
@@ -279,9 +280,11 @@
       <tbody>
         <tr><th scope="row">讀取任意時刻</th><td class="ios" data-label="iPhone 和 iPad">在圖表上拖移。</td><td class="mac" data-label="Mac">指向圖表。</td></tr>
         <tr><th scope="row">手動記錄潛水</th><td class="ios" data-label="iPhone 和 iPad"><span class="path">潛水日誌 → 手動記錄</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">刪除潛水</th><td class="ios" data-label="iPhone 和 iPad">在<span class="path">潛水日誌</span>中向左滑動該潛水。若要刪除多次，請點一下<strong>選取</strong>。</td><td class="mac" data-label="Mac">⌘⌫，或<span class="path">潛水 → 刪除潛水⋯</span>。按住 ⌘ 點按可選取多次。</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>刪除時：</strong>會先儲存一個還原點，因此刪除的潛水可以找回（請參閱<a href="#data">輸出、還原點和清除</a>）。</li>
       <li><strong>安全數值</strong>固定在每次潛水頂部的一欄中，始終在同一位置。</li>
       <li><strong>潛水曲線：</strong>圖表下方的標籤可顯示或隱藏氣瓶、ppO₂、NDL、SAC、水溫、CNS 和上升，以<strong>堆疊</strong>分欄或單張<strong>疊加</strong>圖的方式。只有潛水記錄過的資料才會有標籤。NDL 是潛水電腦自己的數值，在減壓期間停止，此時紅色區段表示減壓停留。在較窄的 iPhone 上，標籤保持在一行，可左右捲動。<a href="/#chart">在首頁上試一試。</a></li>
       <li><strong>循環呼吸器：</strong>對於任何記錄了相關資料的潛水電腦或檔案，ppO₂ 分欄會顯示設定點以及表決後的 ppO₂（如有記錄，還有每個感測器的數值），讀數會給出該時刻的設定點。從稀釋氣切換到任何其他氣體都會標記為備援氣體（bailout）。</li>
@@ -432,6 +435,15 @@
       <figure class="shot part"><a href="../images/guide/zh-hant/ios-yourdata.jpg"><picture><source srcset="../images/guide/zh-hant/ios-yourdata.avif" type="image/avif"><img src="../images/guide/zh-hant/ios-yourdata.jpg" width="600" height="458" loading="lazy" alt="iPhone 上的「你的資料」：輸入潛水日誌檔案、輸出潛水日誌（UDDF）、以其他格式輸出、還原點和清除潛水日誌。"></picture></a><figcaption>iPhone 上的「個人檔案」→「你的資料」。</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">輔助使用</h2>
+    <p>Thermocline 會依照你裝置的輔助使用設定。</p>
+    <ul>
+      <li><strong>旁白</strong>會將摘要中的每個長條連同次數讀成一個項目。打開它即可查看其中的潛水。</li>
+      <li><strong>放大文字：</strong>直到最大字級，摘要都會換行而不會被截斷。</li>
+      <li><strong>不以顏色來區分：</strong>地圖上的沉船會顯示為菱形，而不只是橘色。</li>
+      <li><strong>減少動態效果：</strong>地圖會直接跳到潛點而不是飛過去，訊息會淡入而不是滑入。</li>
+    </ul>
 
     <h2 id="stuck">仍有問題？</h2>
     <p>請參閱<a href="troubleshooting.html">疑難排解</a>，或從 TestFlight 傳送意見回饋，或傳送至 <a href="mailto:brian@616labs.net">brian@616labs.net</a>。</p>

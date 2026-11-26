@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Handleiding</h1>
-    <p>Zo gebruik je Thermocline op iPhone, iPad en Mac, taak voor taak. Geschreven voor de bèta; menu's kunnen tussen builds nog veranderen. Bijgewerkt op 18 november 2026.</p>
+    <p>Zo gebruik je Thermocline op iPhone, iPad en Mac, taak voor taak. Geschreven voor de bèta; menu's kunnen tussen builds nog veranderen. Bijgewerkt op 25 november 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Overzicht en gasverbruik</a></li>
         <li><a href="#sync">Synchroniseer met iCloud</a></li>
         <li><a href="#data">Export en herstelpunten</a></li>
+        <li><a href="#accessibility">Toegankelijkheid</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator en Petrel 1</h3>
-    <p>Deze gebruiken ouder Bluetooth (Bluetooth Classic) dat iPhones en iPads niet kunnen gebruiken. Koppel de computer op de Mac eerst in <span class="path">Systeeminstellingen → Bluetooth</span> en kies dan <strong>USB-kabel</strong> in het downloadvenster: zijn poort kan in de lijst verschijnen. Zet de computer in zijn Bluetooth-uploadmodus en kies ‘Download’. Dit is nog niet geprobeerd met een echte Predator of Petrel 1, dus <a href="troubleshooting.html#send-log">stuur het downloadlog op</a>, of het nu werkt of niet. Op de iPhone importeer je hun duiken in plaats daarvan uit Shearwater Cloud of een UDDF-bestand.</p>
+    <p>Deze gebruiken een oudere Bluetooth (Bluetooth Classic) die iPhones, iPads en Macs niet kunnen bereiken. Download ze met Shearwater Cloud op Windows of Android en importeer daarna de export of een UDDF-bestand in Thermocline.</p>
 
     <h2 id="computers">Ondersteunde computers</h2>
     <p>Thermocline downloadt met libdivecomputer, de opensourcebibliotheek die veel logboeken delen. Die kent honderden modellen van de meeste merken. Om de jouwe te zien, open je het downloadscherm en kies je <strong>Ondersteunde computers</strong>; bij elke computer staat of hij werkt op iPhone en iPad of de Mac nodig heeft.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad en Mac</td><td>Shearwater Perdix en Perdix 2. Andere modellen zouden moeten werken: laat het ons weten.</td></tr>
         <tr><td>USB- of seriële kabel</td><td>Alleen Mac</td><td>Gebouwd, nog niet met echte hardware geprobeerd.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 en andere oudere modellen)</td><td>Alleen Mac, gekoppeld als seriële poort (<a href="#predator">hoe</a>)</td><td>Nog niet geprobeerd.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 en andere oudere modellen)</td><td>Niet op iPhone, iPad of Mac: importeer de duiken (<a href="#predator">hoe</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (.fit-bestanden)</td><td>Importeren op iPhone, iPad en Mac (<a href="#garmin">hoe</a>)</td><td>Descent-duiken, ook driftduiken.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Elk moment aflezen</th><td class="ios" data-label="iPhone en iPad">Sleep over de grafiek.</td><td class="mac" data-label="Mac">Wijs naar de grafiek.</td></tr>
         <tr><th scope="row">Een duik met de hand loggen</th><td class="ios" data-label="iPhone en iPad"><span class="path">Logboek → Log met de hand</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Een duik verwijderen</th><td class="ios" data-label="iPhone en iPad">Veeg er in het <span class="path">Logboek</span> naar links over. Om er meerdere te verwijderen, tik je op <strong>Selecteer</strong>.</td><td class="mac" data-label="Mac">⌘⌫, of <span class="path">Duik → Verwijder duik…</span>. ⌘-klik om er meerdere te kiezen.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Verwijderen:</strong> eerst wordt een herstelpunt bewaard, dus een verwijderde duik kan terugkomen (zie <a href="#data">Export, herstelpunten en wissen</a>).</li>
       <li><strong>Veiligheidswaarden</strong> staan in een vaste balk bovenaan elke duik, altijd op dezelfde plek.</li>
       <li><strong>Het profiel:</strong> chips onder de grafiek tonen of verbergen Fles, ppO₂, NDL, SAC, Temp, CNS en Opstijging, als balken (<strong>Gestapeld</strong>) of in één weergave (<strong>Over elkaar</strong>). Alleen wat de duik heeft geregistreerd, krijgt een chip. De NDL is die van de computer en stopt tijdens deco, waar de rode band de stops toont. Op een smalle iPhone blijven de chips op één regel en scrollen ze zijwaarts. <a href="./#chart">Probeer het op de startpagina.</a></li>
       <li><strong>Rebreathers:</strong> bij elke computer of elk bestand dat ze registreert, toont de ppO₂-balk de setpoint met de ppO₂ ‘Voted’, de waarde die de computer uit de cellen kiest (en elke cel, waar geregistreerd), en de uitlezing geeft de setpoint op dat moment. Een wissel van de diluent naar een ander gas wordt aangeduid als bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/nl/ios-yourdata.jpg"><picture><source srcset="../images/guide/nl/ios-yourdata.avif" type="image/avif"><img src="../images/guide/nl/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="Je gegevens op de iPhone: Importeer een logboekbestand, Exporteer logboek (UDDF), Exporteer in een ander formaat, Herstelpunten en Wis logboek."></picture></a><figcaption>Profiel → Je gegevens op de iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Toegankelijkheid</h2>
+    <p>Thermocline volgt de toegankelijkheidsinstellingen van je apparaat.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> leest elke balk in het Overzicht voor als één onderdeel, met het aantal. Open hem om de duiken te zien.</li>
+      <li><strong>Grotere tekst:</strong> het Overzicht loopt door op de volgende regel in plaats van af te breken, tot de grootste formaten.</li>
+      <li><strong>Differentieer zonder kleur:</strong> wrakken zijn ruiten op de kaart, niet alleen oranje.</li>
+      <li><strong>Verminder beweging:</strong> de kaart springt naar een duikplek in plaats van ernaartoe te vliegen, en meldingen faden in in plaats van in te schuiven.</li>
+    </ul>
 
     <h2 id="stuck">Kom je er niet uit?</h2>
     <p>Zie <a href="troubleshooting.html">Problemen oplossen</a>, of stuur feedback vanuit TestFlight of naar <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

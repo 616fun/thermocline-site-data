@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="styles.css?v=28">
+  <link rel="stylesheet" href="styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -70,7 +70,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Guide</h1>
-    <p>How to use Thermocline on iPhone, iPad and Mac, task by task. Written for the beta; menus can still change between builds. Updated 18 November 2026.</p>
+    <p>How to use Thermocline on iPhone, iPad and Mac, task by task. Written for the beta; menus can still change between builds. Updated 25 November 2026.</p>
   </div>
 </div>
 
@@ -106,6 +106,7 @@
         <li><a href="#summary">Summary and breathing</a></li>
         <li><a href="#sync">Sync with iCloud</a></li>
         <li><a href="#data">Export and restore points</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
       </ol>
     </details>
   </nav>
@@ -239,7 +240,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator and Petrel 1</h3>
-    <p>These use older Bluetooth (Bluetooth Classic) that iPhones and iPads can't use. On the Mac, pair the computer in <span class="path">System Settings → Bluetooth</span> first, then choose <strong>USB Cable</strong> in the download window: its port may appear in the list. Put the computer in its Bluetooth upload mode and choose Download. This hasn't been tried on a real Predator or Petrel 1 yet, so please <a href="troubleshooting.html#send-log">send the download log</a> whether it works or not. On iPhone, import their dives from Shearwater Cloud or a UDDF file instead.</p>
+    <p>These use an older Bluetooth (Bluetooth Classic) that iPhones, iPads and Macs can't reach. Download them with Shearwater Cloud on Windows or Android, then import its export or a UDDF file into Thermocline.</p>
 
     <h2 id="computers">Supported computers</h2>
     <p>Thermocline downloads with libdivecomputer, the open-source library many logbooks share. It knows several hundred models from most makers. To see yours, open the download screen and choose <strong>Supported computers</strong>; each one says whether it works on iPhone and iPad or needs the Mac.</p>
@@ -248,7 +249,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad and Mac</td><td>Shearwater Perdix and Perdix 2. Other models should work: tell us.</td></tr>
         <tr><td>USB or serial cable</td><td>Mac only</td><td>Built, not yet tried on real hardware.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 and other older models)</td><td>Mac only, paired as a serial port (<a href="#predator">how</a>)</td><td>Not yet tried.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 and other older models)</td><td>Not on iPhone, iPad or Mac: import their dives (<a href="#predator">how</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (.fit files)</td><td>Import on iPhone, iPad and Mac (<a href="#garmin">how</a>)</td><td>Descent dives, including drift dives.</td></tr>
       </tbody>
     </table>
@@ -280,9 +281,11 @@
       <tbody>
         <tr><th scope="row">Read any moment</th><td class="ios" data-label="iPhone and iPad">Drag across the chart.</td><td class="mac" data-label="Mac">Point at the chart.</td></tr>
         <tr><th scope="row">Log a dive by hand</th><td class="ios" data-label="iPhone and iPad"><span class="path">Logbook → Log by Hand</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Delete a dive</th><td class="ios" data-label="iPhone and iPad">Swipe left on it in the <span class="path">Logbook</span>. To delete several, tap <strong>Select</strong>.</td><td class="mac" data-label="Mac">⌘⌫, or <span class="path">Dive → Delete Dive…</span>. ⌘-click to choose several.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Deleting:</strong> a restore point is saved first, so a deleted dive can come back (see <a href="#data">Export, restore points and erase</a>).</li>
       <li><strong>Safety values</strong> sit in a fixed strip at the top of every dive, always in the same place.</li>
       <li><strong>The profile:</strong> chips under the chart show or hide Tank, ppO₂, NDL, SAC, Temp, CNS and Ascent, as <strong>Stacked</strong> strips or one <strong>Overlay</strong>. Only what the dive recorded gets a chip. NDL is the computer's own and stops during deco, where the red band shows the stops. On a narrow iPhone the chips stay on one line and scroll sideways. <a href="/#chart">Try it on the home page.</a></li>
       <li><strong>Rebreathers:</strong> from any computer or file that records them, the ppO₂ strip shows the setpoint with the voted ppO₂ (and each cell, where recorded), and the readout gives the setpoint at that moment. A switch from the diluent to any other gas is labelled as a bailout.</li>
@@ -433,6 +436,15 @@
       <figure class="shot part"><a href="images/guide/ios-yourdata.jpg"><picture><source srcset="images/guide/ios-yourdata.avif" type="image/avif"><img src="images/guide/ios-yourdata.jpg" width="600" height="455" loading="lazy" alt="Your data on iPhone: Import a logbook file, Export logbook (UDDF), Export in another format, Restore points and Erase logbook."></picture></a><figcaption>Profile → Your data on iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Accessibility</h2>
+    <p>Thermocline follows your device's accessibility settings.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> reads each bar on the Summary as one item, with its count. Open it to see its dives.</li>
+      <li><strong>Larger Text:</strong> the Summary wraps instead of cutting off, up to the largest sizes.</li>
+      <li><strong>Differentiate without color:</strong> wrecks on the map are diamonds, not only orange.</li>
+      <li><strong>Reduce Motion:</strong> the map jumps to a site instead of flying there, and messages fade in instead of sliding.</li>
+    </ul>
 
     <h2 id="stuck">Still stuck?</h2>
     <p>See <a href="troubleshooting.html">Troubleshooting</a>, or send feedback from TestFlight or to <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

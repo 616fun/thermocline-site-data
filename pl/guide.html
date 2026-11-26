@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Przewodnik</h1>
-    <p>Jak korzystać z Thermocline na iPhonie, iPadzie i Macu, zadanie po zadaniu. Napisany dla wersji beta; menu mogą się jeszcze zmieniać między kompilacjami. Zaktualizowano 18 listopada 2026.</p>
+    <p>Jak korzystać z Thermocline na iPhonie, iPadzie i Macu, zadanie po zadaniu. Napisany dla wersji beta; menu mogą się jeszcze zmieniać między kompilacjami. Zaktualizowano 25 listopada 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Podsumowanie i zużycie gazu</a></li>
         <li><a href="#sync">Synchronizuj z iCloud</a></li>
         <li><a href="#data">Eksport i punkty przywracania</a></li>
+        <li><a href="#accessibility">Dostępność</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator i Petrel 1</h3>
-    <p>Używają starszego Bluetooth (Bluetooth Classic), z którego iPhone’y i iPady nie mogą korzystać. Na Macu najpierw sparuj komputer w <span class="path">Ustawienia systemowe → Bluetooth</span>, a potem w oknie pobierania wybierz <strong>Kabel USB</strong>: jego port może pojawić się na liście. Przełącz komputer w tryb wysyłania przez Bluetooth i wybierz Pobierz. Nie zostało to jeszcze wypróbowane na prawdziwym Predatorze ani Petrelu 1, więc <a href="troubleshooting.html#send-log">wyślij log pobierania</a> niezależnie od tego, czy zadziała. Na iPhonie zamiast tego zaimportuj ich nurkowania z Shearwater Cloud lub z pliku UDDF.</p>
+    <p>Używają starszego Bluetooth (Bluetooth Classic), z którym iPhone'y, iPady i Maki nie mogą się połączyć. Pobierz je przez Shearwater Cloud na Windows lub Androidzie, a potem zaimportuj jego eksport lub plik UDDF do Thermocline.</p>
 
     <h2 id="computers">Obsługiwane komputery</h2>
     <p>Thermocline pobiera dane za pomocą libdivecomputer – biblioteki open source, z której korzysta wiele logbooków. Zna ona kilkaset modeli większości producentów. Aby sprawdzić swój, otwórz ekran pobierania i wybierz <strong>Obsługiwane komputery</strong>; przy każdym widać, czy działa na iPhonie i iPadzie, czy wymaga Maca.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad i Mac</td><td>Shearwater Perdix i Perdix 2. Inne modele powinny działać: daj nam znać.</td></tr>
         <tr><td>Kabel USB lub szeregowy</td><td>Tylko Mac</td><td>Przygotowane, jeszcze niewypróbowane na prawdziwym sprzęcie.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 i inne starsze modele)</td><td>Tylko Mac, sparowany jako port szeregowy (<a href="#predator">jak</a>)</td><td>Jeszcze niewypróbowane.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 i inne starsze modele)</td><td>Ani na iPhonie, iPadzie, ani na Macu: zaimportuj nurkowania (<a href="#predator">jak</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (pliki .fit)</td><td>Import na iPhonie, iPadzie i Macu (<a href="#garmin">jak</a>)</td><td>Nurkowania z Descent, w tym nurkowania w dryfie.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Odczytaj dowolną chwilę</th><td class="ios" data-label="iPhone i iPad">Przeciągnij po wykresie.</td><td class="mac" data-label="Mac">Wskaż wykres.</td></tr>
         <tr><th scope="row">Zapisz nurkowanie ręcznie</th><td class="ios" data-label="iPhone i iPad"><span class="path">Logbook → Zapisz ręcznie</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Usuwanie nurkowania</th><td class="ios" data-label="iPhone i iPad">Przesuń je w lewo w <span class="path">Logbooku</span>. Aby usunąć kilka, stuknij <strong>Wybierz</strong>.</td><td class="mac" data-label="Mac">⌘⌫ lub <span class="path">Nurkowanie → Usuń nurkowanie…</span>. ⌘-kliknięciem wybierzesz kilka.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Usuwanie:</strong> najpierw zapisywany jest punkt przywracania, więc usunięte nurkowanie może wrócić (zobacz <a href="#data">Eksport, punkty przywracania i wymazywanie</a>).</li>
       <li><strong>Wartości bezpieczeństwa</strong> są na stałym pasku u góry każdego nurkowania, zawsze w tym samym miejscu.</li>
       <li><strong>Profil:</strong> etykiety pod wykresem pokazują lub ukrywają Butla, ppO₂, NDL, SAC, Temp., CNS i Wynurzanie – jako paski <strong>Osobno</strong> lub jeden wykres <strong>Nałożone</strong>. Etykietę dostaje tylko to, co nurkowanie zapisało. NDL pochodzi z komputera i znika podczas deko, gdzie czerwony pas pokazuje przystanki. Na wąskim iPhonie etykiety zostają w jednym wierszu i przewijają się w bok. <a href="./#chart">Wypróbuj na stronie głównej.</a></li>
       <li><strong>Rebreathery:</strong> z każdego komputera lub pliku, który je zapisuje, pasek ppO₂ pokazuje setpoint razem z ppO₂ „Voted”, czyli wartością, którą komputer wybiera na podstawie ogniw (oraz każdym ogniwem, jeśli zostało zapisane), a odczyt podaje setpoint w danej chwili. Przejście z diluentu na dowolny inny gaz jest oznaczane jako bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/pl/ios-yourdata.jpg"><picture><source srcset="../images/guide/pl/ios-yourdata.avif" type="image/avif"><img src="../images/guide/pl/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="Twoje dane na iPhonie: Importuj plik logbooka, Eksportuj logbook (UDDF), Eksportuj w innym formacie, Punkty przywracania i Wymaż logbook."></picture></a><figcaption>Profil → Twoje dane na iPhonie.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Dostępność</h2>
+    <p>Thermocline stosuje ustawienia dostępności Twojego urządzenia.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> odczytuje każdy słupek Podsumowania jako jeden element, z liczbą. Otwórz go, aby zobaczyć jego nurkowania.</li>
+      <li><strong>Większy tekst:</strong> Podsumowanie zawija wiersze zamiast je ucinać, aż do największych rozmiarów.</li>
+      <li><strong>Różnicuj bez koloru:</strong> wraki są na mapie rombami, nie tylko pomarańczowe.</li>
+      <li><strong>Redukuj ruch:</strong> mapa przeskakuje do miejsca zamiast tam lecieć, a komunikaty pojawiają się płynnie zamiast się wsuwać.</li>
+    </ul>
 
     <h2 id="stuck">Nadal coś nie działa?</h2>
     <p>Zobacz <a href="troubleshooting.html">Rozwiązywanie problemów</a> albo wyślij opinię z TestFlight lub na adres <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

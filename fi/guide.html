@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Opas</h1>
-    <p>Näin käytät Thermoclinea iPhonella, iPadilla ja Macilla tehtävä kerrallaan. Kirjoitettu betaa varten; valikot voivat vielä muuttua buildien välillä. Päivitetty 18. marraskuuta 2026.</p>
+    <p>Näin käytät Thermoclinea iPhonella, iPadilla ja Macilla tehtävä kerrallaan. Kirjoitettu betaa varten; valikot voivat vielä muuttua buildien välillä. Päivitetty 25. marraskuuta 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Yhteenveto ja hengitys</a></li>
         <li><a href="#sync">Synkronoi iCloudin kanssa</a></li>
         <li><a href="#data">Vienti ja palautuspisteet</a></li>
+        <li><a href="#accessibility">Käyttöapu</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator ja Petrel 1</h3>
-    <p>Nämä käyttävät vanhempaa Bluetoothia (Bluetooth Classic), jota iPhone ja iPad eivät pysty käyttämään. Muodosta Macilla ensin tietokoneelle pari kohdassa <span class="path">Järjestelmäasetukset → Bluetooth</span> ja valitse sitten latausikkunassa <strong>USB-kaapeli</strong>: sen portti voi näkyä luettelossa. Laita tietokone Bluetooth-siirtotilaan ja valitse Lataa. Tätä ei ole vielä kokeiltu oikealla Predatorilla tai Petrel 1:llä, joten <a href="troubleshooting.html#send-log">lähetä latausloki</a>, toimi se tai ei. iPhonella tuo niiden sukellukset sen sijaan Shearwater Cloudista tai UDDF-tiedostosta.</p>
+    <p>Ne käyttävät vanhempaa Bluetoothia (Bluetooth Classic), johon iPhone, iPad ja Mac eivät yllä. Lataa ne Shearwater Cloudilla Windowsissa tai Androidissa ja tuo sitten sen vienti tai UDDF-tiedosto Thermoclineen.</p>
 
     <h2 id="computers">Tuetut tietokoneet</h2>
     <p>Thermocline lataa libdivecomputerilla, avoimen lähdekoodin kirjastolla, jota monet lokikirjat käyttävät. Se tuntee useita satoja malleja useimmilta valmistajilta. Nähdäksesi omasi avaa latausnäkymä ja valitse <strong>Tuetut tietokoneet</strong>; kunkin kohdalla kerrotaan, toimiiko se iPhonella ja iPadilla vai tarvitaanko Mac.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad ja Mac</td><td>Shearwater Perdix ja Perdix 2. Muiden mallien pitäisi toimia: kerro meille.</td></tr>
         <tr><td>USB- tai sarjakaapeli</td><td>Vain Mac</td><td>Tehty, ei vielä kokeiltu oikealla laitteistolla.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 ja muut vanhemmat mallit)</td><td>Vain Mac, pariliitettynä sarjaporttina (<a href="#predator">ohjeet</a>)</td><td>Ei vielä kokeiltu.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 ja muut vanhemmat mallit)</td><td>Ei iPhonella, iPadilla eikä Macilla: tuo sukellukset (<a href="#predator">ohjeet</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (.fit-tiedostot)</td><td>Tuonti iPhonella, iPadilla ja Macilla (<a href="#garmin">ohjeet</a>)</td><td>Descent-sukellukset, myös virtasukellukset.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Lue mikä tahansa hetki</th><td class="ios" data-label="iPhone ja iPad">Vedä kaavion poikki.</td><td class="mac" data-label="Mac">Osoita kaaviota.</td></tr>
         <tr><th scope="row">Kirjaa sukellus käsin</th><td class="ios" data-label="iPhone ja iPad"><span class="path">Lokikirja → Kirjaa käsin</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Poista sukellus</th><td class="ios" data-label="iPhone ja iPad">Pyyhkäise sitä vasemmalle <span class="path">Lokikirjassa</span>. Jos haluat poistaa useita, napauta <strong>Valitse</strong>.</td><td class="mac" data-label="Mac">⌘⌫ tai <span class="path">Sukellus → Poista sukellus…</span>. Valitse useita ⌘-osoittamalla.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Poistaminen:</strong> ensin tallennetaan palautuspiste, joten poistetun sukelluksen saa takaisin (katso <a href="#data">Vienti, palautuspisteet ja tyhjentäminen</a>).</li>
       <li><strong>Turvallisuusarvot</strong> ovat kiinteässä palkissa jokaisen sukelluksen yläosassa, aina samassa paikassa.</li>
       <li><strong>Profiili:</strong> kaavion alla olevat painikkeet näyttävät tai piilottavat arvot Pullo, ppO₂, NDL, SAC, Lämp., CNS ja Nousu joko <strong>Allekkain</strong>-kaistoina tai yhtenä <strong>Päällekkäin</strong>-näkymänä. Painikkeen saa vain se, mitä sukellus tallensi. NDL on tietokoneen oma ja pysähtyy dekon ajaksi, jolloin punainen kaista näyttää pysähdykset. Kapealla iPhonella painikkeet pysyvät yhdellä rivillä ja vierivät sivuttain. <a href="./#chart">Kokeile etusivulla.</a></li>
       <li><strong>Suljetun kierron laitteet:</strong> minkä tahansa niitä tallentavan tietokoneen tai tiedoston osalta ppO₂-kaista näyttää setpointin yhdessä voted ppO₂:n kanssa (ja jokaisen kennon, jos tallennettu), ja lukema kertoo kyseisen hetken setpointin. Vaihto diluentista mihin tahansa muuhun kaasuun merkitään bailoutiksi.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/fi/ios-yourdata.jpg"><picture><source srcset="../images/guide/fi/ios-yourdata.avif" type="image/avif"><img src="../images/guide/fi/ios-yourdata.jpg" width="600" height="455" loading="lazy" alt="Tietosi iPhonella: Tuo lokikirjatiedosto, Vie lokikirja (UDDF), Vie toisessa muodossa, Palautuspisteet ja Tyhjennä lokikirja."></picture></a><figcaption>Profiili → Tietosi iPhonella.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Käyttöapu</h2>
+    <p>Thermocline noudattaa laitteesi käyttöapuasetuksia.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> lukee Yhteenvedon jokaisen pylvään yhtenä kohteena määrineen. Avaa se nähdäksesi sen sukellukset.</li>
+      <li><strong>Suurempi teksti:</strong> Yhteenveto rivittyy katkeamatta suurimpiin kokoihin asti.</li>
+      <li><strong>Erottele ilman väriä:</strong> hylyt ovat kartalla vinoneliöitä, eivät vain oransseja.</li>
+      <li><strong>Vähennä liikettä:</strong> kartta hyppää paikkaan lentämättä sinne, ja viestit häivytetään esiin liukumatta.</li>
+    </ul>
 
     <h2 id="stuck">Vieläkin jumissa?</h2>
     <p>Katso <a href="troubleshooting.html">Vianmääritys</a> tai lähetä palautetta TestFlightista tai osoitteeseen <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

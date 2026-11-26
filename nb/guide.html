@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Veiledning</h1>
-    <p>Slik bruker du Thermocline på iPhone, iPad og Mac, oppgave for oppgave. Skrevet for betaen; menyene kan fortsatt endre seg mellom byggene. Oppdatert 18. november 2026.</p>
+    <p>Slik bruker du Thermocline på iPhone, iPad og Mac, oppgave for oppgave. Skrevet for betaen; menyene kan fortsatt endre seg mellom byggene. Oppdatert 25. november 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Sammendrag og pust</a></li>
         <li><a href="#sync">Synkroniser med iCloud</a></li>
         <li><a href="#data">Eksport og gjenopprettingspunkter</a></li>
+        <li><a href="#accessibility">Tilgjengelighet</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator og Petrel 1</h3>
-    <p>Disse bruker eldre Bluetooth (Bluetooth Classic) som iPhone og iPad ikke kan bruke. På Macen parer du først computeren i <span class="path">Systeminnstillinger → Bluetooth</span>, og velger så <strong>USB-kabel</strong> i nedlastingsvinduet: porten kan dukke opp i listen. Sett computeren i Bluetooth-opplastingsmodus og velg Last ned. Dette er ennå ikke prøvd på en ekte Predator eller Petrel 1, så <a href="troubleshooting.html#send-log">send nedlastingsloggen</a> enten det virker eller ikke. På iPhone importerer du heller dykkene deres fra Shearwater Cloud eller en UDDF-fil.</p>
+    <p>Disse bruker en eldre Bluetooth (Bluetooth Classic) som iPhone, iPad og Mac ikke når. Last dem ned med Shearwater Cloud på Windows eller Android, og importer deretter eksporten eller en UDDF-fil i Thermocline.</p>
 
     <h2 id="computers">Støttede computere</h2>
     <p>Thermocline laster ned med libdivecomputer, biblioteket med åpen kildekode som mange loggbøker deler. Det kjenner flere hundre modeller fra de fleste produsenter. For å se din åpner du nedlastingsskjermen og velger <strong>Støttede computere</strong>; for hver av dem står det om den virker på iPhone og iPad eller trenger Macen.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad og Mac</td><td>Shearwater Perdix og Perdix 2. Andre modeller skal virke: si fra til oss.</td></tr>
         <tr><td>USB- eller seriellkabel</td><td>Bare Mac</td><td>Bygget, ennå ikke prøvd på ekte maskinvare.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 og andre eldre modeller)</td><td>Bare Mac, paret som seriellport (<a href="#predator">slik gjør du</a>)</td><td>Ennå ikke prøvd.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 og andre eldre modeller)</td><td>Ikke på iPhone, iPad eller Mac: importer dykkene (<a href="#predator">slik gjør du</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (.fit-filer)</td><td>Import på iPhone, iPad og Mac (<a href="#garmin">slik gjør du</a>)</td><td>Descent-dykk, også driftdykk.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Les av et hvilket som helst øyeblikk</th><td class="ios" data-label="iPhone og iPad">Dra over grafen.</td><td class="mac" data-label="Mac">Pek på grafen.</td></tr>
         <tr><th scope="row">Logg et dykk for hånd</th><td class="ios" data-label="iPhone og iPad"><span class="path">Loggbok → Logg for hånd</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Slett et dykk</th><td class="ios" data-label="iPhone og iPad">Sveip mot venstre på det i <span class="path">Loggbok</span>. Trykk på <strong>Velg</strong> for å slette flere.</td><td class="mac" data-label="Mac">⌘⌫, eller <span class="path">Dykk → Slett dykk…</span>. ⌘-klikk for å velge flere.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Sletting:</strong> et gjenopprettingspunkt lagres først, så et slettet dykk kan komme tilbake (se <a href="#data">Eksport, gjenopprettingspunkter og tømming</a>).</li>
       <li><strong>Sikkerhetsverdier</strong> ligger i en fast stripe øverst på hvert dykk, alltid på samme sted.</li>
       <li><strong>Profilen:</strong> brikker under grafen viser eller skjuler Flaske, ppO₂, NDL, SAC, Temp., CNS og Oppstigning, som <strong>Stablet</strong> striper eller <strong>Lagt over</strong> i én graf. Bare det dykket registrerte, får en brikke. NDL er computerens egen og stopper under deko, der det røde båndet viser stoppene. På en smal iPhone blir brikkene på én linje og kan rulles sidelengs. <a href="./#chart">Prøv det på forsiden.</a></li>
       <li><strong>Rebreathere:</strong> fra en hvilken som helst computer eller fil som registrerer dem, viser ppO₂-stripen setpoint sammen med voted ppO₂ (og hver celle, der det er registrert), og avlesningen gir setpoint i det øyeblikket. Et bytte fra diluent til en hvilken som helst annen gass merkes som bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/nb/ios-yourdata.jpg"><picture><source srcset="../images/guide/nb/ios-yourdata.avif" type="image/avif"><img src="../images/guide/nb/ios-yourdata.jpg" width="600" height="455" loading="lazy" alt="Dataene dine på iPhone: Importer en loggbokfil, Eksporter loggbok (UDDF), Eksporter i et annet format, Gjenopprettingspunkter og Tøm loggboken."></picture></a><figcaption>Profil → Dataene dine på iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Tilgjengelighet</h2>
+    <p>Thermocline følger tilgjengelighetsinnstillingene på enheten.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> leser hver søyle i Sammendrag som ett element, med antallet. Åpne den for å se dykkene.</li>
+      <li><strong>Større tekst:</strong> Sammendrag brytes i stedet for å kuttes, opp til de største størrelsene.</li>
+      <li><strong>Differensier uten farger:</strong> vrak er ruter på kartet, ikke bare oransje.</li>
+      <li><strong>Reduser bevegelse:</strong> kartet hopper til et sted i stedet for å fly dit, og meldinger tones inn i stedet for å gli inn.</li>
+    </ul>
 
     <h2 id="stuck">Står du fortsatt fast?</h2>
     <p>Se <a href="troubleshooting.html">Feilsøking</a>, eller send tilbakemelding fra TestFlight eller til <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

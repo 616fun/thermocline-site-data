@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Guide</h1>
-    <p>Utiliser Thermocline sur iPhone, iPad et Mac, tâche par tâche. Rédigé pour la bêta ; les menus peuvent encore changer d'une version à l'autre. Mis à jour le 18 novembre 2026.</p>
+    <p>Utiliser Thermocline sur iPhone, iPad et Mac, tâche par tâche. Rédigé pour la bêta ; les menus peuvent encore changer d'une version à l'autre. Mis à jour le 25 novembre 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Résumé et consommation</a></li>
         <li><a href="#sync">Synchroniser avec iCloud</a></li>
         <li><a href="#data">Export et points de restauration</a></li>
+        <li><a href="#accessibility">Accessibilité</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator et Petrel 1</h3>
-    <p>Ils utilisent un Bluetooth plus ancien (Bluetooth Classic) que les iPhone et iPad ne peuvent pas utiliser. Sur le Mac, jumelez d'abord l'ordinateur dans <span class="path">Réglages Système → Bluetooth</span>, puis choisissez <strong>Câble USB</strong> dans la fenêtre de téléchargement : son port peut apparaître dans la liste. Mettez l'ordinateur en mode transfert Bluetooth et choisissez Télécharger. Cela n'a pas encore été essayé sur un vrai Predator ou Petrel 1 ; merci donc d'<a href="troubleshooting.html#send-log">envoyer le journal de téléchargement</a>, que cela fonctionne ou non. Sur iPhone, importez plutôt leurs plongées depuis Shearwater Cloud ou un fichier UDDF.</p>
+    <p>Ils utilisent un Bluetooth plus ancien (Bluetooth Classic) que les iPhone, iPad et Mac ne peuvent pas atteindre. Téléchargez-les avec Shearwater Cloud sous Windows ou Android, puis importez son export ou un fichier UDDF dans Thermocline.</p>
 
     <h2 id="computers">Ordinateurs compatibles</h2>
     <p>Thermocline télécharge avec libdivecomputer, la bibliothèque open source que partagent de nombreux carnets. Elle connaît plusieurs centaines de modèles de la plupart des fabricants. Pour voir le vôtre, ouvrez l'écran de téléchargement et choisissez <strong>Ordinateurs compatibles</strong> ; chacun indique s'il fonctionne sur iPhone et iPad ou s'il nécessite le Mac.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad et Mac</td><td>Shearwater Perdix et Perdix 2. Les autres modèles devraient fonctionner : dites-le-nous.</td></tr>
         <tr><td>Câble USB ou série</td><td>Mac uniquement</td><td>Développé, pas encore essayé sur du vrai matériel.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 et autres modèles plus anciens)</td><td>Mac uniquement, jumelé comme port série (<a href="#predator">comment</a>)</td><td>Pas encore essayé.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 et autres modèles plus anciens)</td><td>Ni sur iPhone, iPad ou Mac : importez leurs plongées (<a href="#predator">comment</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (fichiers .fit)</td><td>Import sur iPhone, iPad et Mac (<a href="#garmin">comment</a>)</td><td>Plongées Descent, dérivantes comprises.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Lire n'importe quel instant</th><td class="ios" data-label="iPhone et iPad">Faites glisser le doigt sur le graphique.</td><td class="mac" data-label="Mac">Pointez le graphique.</td></tr>
         <tr><th scope="row">Saisir une plongée à la main</th><td class="ios" data-label="iPhone et iPad"><span class="path">Carnet de plongée → Saisir à la main</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Supprimer une plongée</th><td class="ios" data-label="iPhone et iPad">Balayez-la vers la gauche dans le <span class="path">Carnet de plongée</span>. Pour en supprimer plusieurs, touchez <strong>Sélectionner</strong>.</td><td class="mac" data-label="Mac">⌘⌫, ou <span class="path">Plongée → Supprimer la plongée…</span>. ⌘-clic pour en choisir plusieurs.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Suppression :</strong> un point de restauration est enregistré avant, donc une plongée supprimée peut revenir (voir <a href="#data">Export, points de restauration et effacement</a>).</li>
       <li><strong>Les valeurs de sécurité</strong> occupent un bandeau fixe en haut de chaque plongée, toujours au même endroit.</li>
       <li><strong>Le profil :</strong> les pastilles sous le graphique affichent ou masquent Bouteille, ppO₂, NDL, SAC, Temp., CNS et Remontée, en bandes <strong>Empilé</strong> ou en une seule vue <strong>Superposé</strong>. Seul ce que la plongée a enregistré reçoit une pastille. La NDL est celle de l'ordinateur et s'arrête pendant la déco, où la bande rouge montre les paliers. Sur un iPhone étroit, les pastilles restent sur une ligne et défilent horizontalement. <a href="./#chart">Essayez-le sur la page d'accueil.</a></li>
       <li><strong>Recycleurs :</strong> pour tout ordinateur ou fichier qui les enregistre, la bande ppO₂ montre le setpoint avec la ppO₂ retenue par vote (et chaque cellule, quand elle est enregistrée), et la lecture donne le setpoint à cet instant. Un passage du diluant à tout autre gaz est indiqué comme bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/fr/ios-yourdata.jpg"><picture><source srcset="../images/guide/fr/ios-yourdata.avif" type="image/avif"><img src="../images/guide/fr/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="Vos données sur iPhone : Importer un fichier de carnet, Exporter le carnet de plongée (UDDF), Exporter dans un autre format, Points de restauration et Effacer le carnet de plongée."></picture></a><figcaption>Profil → Vos données sur iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Accessibilité</h2>
+    <p>Thermocline suit les réglages d’accessibilité de votre appareil.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> lit chaque barre du Résumé comme un seul élément, avec son nombre. Ouvrez-la pour voir ses plongées.</li>
+      <li><strong>Police plus grande :</strong> le Résumé passe à la ligne au lieu d’être coupé, jusqu’aux plus grandes tailles.</li>
+      <li><strong>Différencier sans couleur :</strong> les épaves sont des losanges sur la carte, pas seulement en orange.</li>
+      <li><strong>Réduire les animations :</strong> la carte saute vers un site au lieu d’y voler, et les messages apparaissent en fondu au lieu de glisser.</li>
+    </ul>
 
     <h2 id="stuck">Toujours bloqué ?</h2>
     <p>Consultez <a href="troubleshooting.html">Dépannage</a>, ou envoyez vos remarques depuis TestFlight ou à <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

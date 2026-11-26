@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Guía</h1>
-    <p>Cómo usar Thermocline en iPhone, iPad y Mac, tarea por tarea. Escrita para la beta; los menús todavía pueden cambiar entre builds. Actualizada el 18 de noviembre de 2026.</p>
+    <p>Cómo usar Thermocline en iPhone, iPad y Mac, tarea por tarea. Escrita para la beta; los menús todavía pueden cambiar entre builds. Actualizada el 25 de noviembre de 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Resumen y consumo de gas</a></li>
         <li><a href="#sync">Sincronizar con iCloud</a></li>
         <li><a href="#data">Exportar y puntos de restauración</a></li>
+        <li><a href="#accessibility">Accesibilidad</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator y Petrel 1</h3>
-    <p>Usan un Bluetooth antiguo (Bluetooth Classic) que el iPhone y el iPad no pueden usar. En la Mac, primero enlaza la computadora en <span class="path">Configuración del Sistema → Bluetooth</span> y luego elige <strong>Cable USB</strong> en la ventana de descarga: su puerto puede aparecer en la lista. Pon la computadora en su modo de transferencia Bluetooth y elige Descargar. Esto todavía no se ha probado con una Predator o una Petrel 1 reales, así que por favor <a href="troubleshooting.html#send-log">envía el registro de descarga</a>, funcione o no. En el iPhone, importa sus inmersiones desde Shearwater Cloud o un archivo UDDF.</p>
+    <p>Usan un Bluetooth más antiguo (Bluetooth Classic) que los iPhone, iPad y Mac no pueden alcanzar. Descárgalas con Shearwater Cloud en Windows o Android y luego importa su exportación o un archivo UDDF en Thermocline.</p>
 
     <h2 id="computers">Computadoras compatibles</h2>
     <p>Thermocline descarga con libdivecomputer, la biblioteca de código abierto que comparten muchas bitácoras. Conoce varios cientos de modelos de la mayoría de los fabricantes. Para ver la tuya, abre la pantalla de descarga y elige <strong>Computadoras compatibles</strong>; cada una indica si funciona en iPhone y iPad o si necesita la Mac.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad y Mac</td><td>Shearwater Perdix y Perdix 2. Otros modelos deberían funcionar: cuéntanos.</td></tr>
         <tr><td>Cable USB o serie</td><td>Solo en la Mac</td><td>Hecho, todavía sin probar con hardware real.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 y otros modelos antiguos)</td><td>Solo en la Mac, enlazada como puerto serie (<a href="#predator">cómo</a>)</td><td>Todavía sin probar.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 y otros modelos antiguos)</td><td>Ni en iPhone, iPad ni Mac: importa sus inmersiones (<a href="#predator">cómo</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (archivos .fit)</td><td>Importación en iPhone, iPad y Mac (<a href="#garmin">cómo</a>)</td><td>Inmersiones de Descent, incluidas las de deriva.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Leer cualquier momento</th><td class="ios" data-label="iPhone y iPad">Arrastra a lo largo de la gráfica.</td><td class="mac" data-label="Mac">Apunta a la gráfica.</td></tr>
         <tr><th scope="row">Registrar una inmersión a mano</th><td class="ios" data-label="iPhone y iPad"><span class="path">Bitácora → Registrar a mano</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Eliminar una inmersión</th><td class="ios" data-label="iPhone y iPad">Desliza a la izquierda sobre ella en la <span class="path">Bitácora</span>. Para eliminar varias, toca <strong>Seleccionar</strong>.</td><td class="mac" data-label="Mac">⌘⌫, o <span class="path">Inmersión → Eliminar inmersión…</span>. ⌘-clic para elegir varias.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Al eliminar:</strong> antes se guarda un punto de restauración, así que una inmersión eliminada puede volver (consulta <a href="#data">Exportar, puntos de restauración y borrar</a>).</li>
       <li><strong>Los valores de seguridad</strong> están en una franja fija en la parte superior de cada inmersión, siempre en el mismo lugar.</li>
       <li><strong>El perfil:</strong> los botones bajo la gráfica muestran u ocultan Tanque, ppO₂, NDL, SAC, Temp., CNS y Ascenso, en franjas (<strong>Apilado</strong>) o en una sola gráfica (<strong>Superpuesto</strong>). Solo lo que registró la inmersión tiene botón. El NDL es el de la computadora y se detiene durante la deco, donde la banda roja muestra las paradas. En un iPhone estrecho los botones se quedan en una sola línea y se desplazan hacia los lados. <a href="./#chart">Pruébalo en la página de inicio.</a></li>
       <li><strong>Rebreathers:</strong> desde cualquier computadora o archivo que los registre, la franja de ppO₂ muestra el setpoint con la ppO₂ votada (y cada celda, cuando se registra), y la lectura da el setpoint en ese momento. Un cambio del diluyente a cualquier otro gas se marca como bailout.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/es/ios-yourdata.jpg"><picture><source srcset="../images/guide/es/ios-yourdata.avif" type="image/avif"><img src="../images/guide/es/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="Tus datos en el iPhone: Importar un archivo de bitácora, Exportar bitácora (UDDF), Exportar en otro formato, Puntos de restauración y Borrar bitácora."></picture></a><figcaption>Perfil → Tus datos en el iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Accesibilidad</h2>
+    <p>Thermocline sigue los ajustes de accesibilidad de tu dispositivo.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> lee cada barra del Resumen como un solo elemento, con su número. Ábrela para ver sus inmersiones.</li>
+      <li><strong>Texto más grande:</strong> el Resumen pasa a la línea siguiente en lugar de cortarse, hasta los tamaños más grandes.</li>
+      <li><strong>Diferenciar sin color:</strong> los pecios son rombos en el mapa, no solo naranjas.</li>
+      <li><strong>Reducir movimiento:</strong> el mapa salta a un sitio en lugar de volar hasta él, y los mensajes aparecen con un fundido en lugar de deslizarse.</li>
+    </ul>
 
     <h2 id="stuck">¿Sigues atascado?</h2>
     <p>Consulta <a href="troubleshooting.html">Solución de problemas</a>, o envía comentarios desde TestFlight o a <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>

@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&text=Thermocline&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
 <!-- langs -->
     <link rel="alternate" hreflang="en" href="https://thermoclineapp.com/guide.html">
     <link rel="alternate" hreflang="de" href="https://thermoclineapp.com/de/guide.html">
@@ -71,7 +71,7 @@
 <div class="doc-hero">
   <div class="wrap">
     <h1>Anleitung</h1>
-    <p>So verwenden Sie Thermocline auf iPhone, iPad und Mac, Aufgabe für Aufgabe. Geschrieben für die Beta; Menüs können sich zwischen Builds noch ändern. Stand: 18. November 2026.</p>
+    <p>So verwenden Sie Thermocline auf iPhone, iPad und Mac, Aufgabe für Aufgabe. Geschrieben für die Beta; Menüs können sich zwischen Builds noch ändern. Stand: 25. November 2026.</p>
   </div>
 </div>
 
@@ -107,6 +107,7 @@
         <li><a href="#summary">Übersicht und Gasverbrauch</a></li>
         <li><a href="#sync">Mit iCloud synchronisieren</a></li>
         <li><a href="#data">Export und Wiederherstellungspunkte</a></li>
+        <li><a href="#accessibility">Bedienungshilfen</a></li>
       </ol>
     </details>
   </nav>
@@ -240,7 +241,7 @@
     </div>
 
     <h3 id="predator">Shearwater Predator und Petrel 1</h3>
-    <p>Diese nutzen älteres Bluetooth (Bluetooth Classic), das iPhones und iPads nicht verwenden können. Koppeln Sie den Computer auf dem Mac zuerst unter <span class="path">Systemeinstellungen → Bluetooth</span> und wählen Sie dann im Download-Fenster <strong>USB-Kabel</strong>: Sein Port kann in der Liste erscheinen. Versetzen Sie den Computer in seinen Bluetooth-Upload-Modus und wählen Sie „Herunterladen“. Das wurde noch nicht mit einem echten Predator oder Petrel 1 ausprobiert, daher <a href="troubleshooting.html#send-log">senden Sie bitte das Download-Log</a>, ob es klappt oder nicht. Auf dem iPhone importieren Sie ihre Tauchgänge stattdessen aus Shearwater Cloud oder einer UDDF-Datei.</p>
+    <p>Diese nutzen ein älteres Bluetooth (Bluetooth Classic), das iPhones, iPads und Macs nicht erreichen. Laden Sie sie mit Shearwater Cloud unter Windows oder Android herunter und importieren Sie dann dessen Export oder eine UDDF-Datei in Thermocline.</p>
 
     <h2 id="computers">Unterstützte Computer</h2>
     <p>Thermocline lädt mit libdivecomputer herunter, der Open-Source-Bibliothek, die viele Logbücher gemeinsam nutzen. Sie kennt mehrere hundert Modelle der meisten Hersteller. Um Ihres zu sehen, öffnen Sie den Download-Bildschirm und wählen <strong>Unterstützte Computer</strong>; bei jedem steht, ob er auf iPhone und iPad funktioniert oder den Mac braucht.</p>
@@ -249,7 +250,7 @@
       <tbody>
         <tr><td>Bluetooth LE</td><td>iPhone, iPad und Mac</td><td>Shearwater Perdix und Perdix 2. Andere Modelle sollten funktionieren: Sagen Sie uns Bescheid.</td></tr>
         <tr><td>USB- oder serielles Kabel</td><td>Nur auf dem Mac</td><td>Gebaut, noch nicht mit echter Hardware ausprobiert.</td></tr>
-        <tr><td>Bluetooth Classic (Predator, Petrel 1 und andere ältere Modelle)</td><td>Nur auf dem Mac, als serieller Port gekoppelt (<a href="#predator">wie</a>)</td><td>Noch nicht ausprobiert.</td></tr>
+        <tr><td>Bluetooth Classic (Predator, Petrel 1 und andere ältere Modelle)</td><td>Nicht auf iPhone, iPad oder Mac: Tauchgänge importieren (<a href="#predator">wie</a>)</td><td>—</td></tr>
         <tr><td>Garmin Descent (.fit-Dateien)</td><td>Import auf iPhone, iPad und Mac (<a href="#garmin">wie</a>)</td><td>Descent-Tauchgänge, auch Strömungstauchgänge.</td></tr>
       </tbody>
     </table>
@@ -281,9 +282,11 @@
       <tbody>
         <tr><th scope="row">Jeden Moment ablesen</th><td class="ios" data-label="iPhone und iPad">Ziehen Sie über das Diagramm.</td><td class="mac" data-label="Mac">Zeigen Sie auf das Diagramm.</td></tr>
         <tr><th scope="row">Einen Tauchgang von Hand loggen</th><td class="ios" data-label="iPhone und iPad"><span class="path">Logbuch → Von Hand loggen</span></td><td class="mac" data-label="Mac">⌘N</td></tr>
+        <tr><th scope="row">Einen Tauchgang löschen</th><td class="ios" data-label="iPhone und iPad">Im <span class="path">Logbuch</span> nach links darüber wischen. Für mehrere tippen Sie auf <strong>Auswählen</strong>.</td><td class="mac" data-label="Mac">⌘⌫ oder <span class="path">Tauchgang → Tauchgang löschen …</span>. Mit ⌘-Klick wählen Sie mehrere.</td></tr>
       </tbody>
     </table>
     <ul>
+      <li><strong>Löschen:</strong> Vorher wird ein Wiederherstellungspunkt gesichert, ein gelöschter Tauchgang lässt sich also zurückholen (siehe <a href="#data">Export, Wiederherstellungspunkte und Löschen</a>).</li>
       <li><strong>Sicherheitswerte</strong> stehen in einer festen Leiste oben bei jedem Tauchgang, immer an derselben Stelle.</li>
       <li><strong>Das Profil:</strong> Chips unter dem Diagramm blenden Flasche, ppO₂, Nullzeit, AMV, Temp., CNS und Aufstieg ein oder aus, als Leisten (<strong>Gestapelt</strong>) oder in einer Ansicht (<strong>Überlagert</strong>). Nur was der Tauchgang aufgezeichnet hat, bekommt einen Chip. Die Nullzeit ist die des Computers und endet während der Deko, wo das rote Band die Stopps zeigt. Auf einem schmalen iPhone bleiben die Chips in einer Zeile und lassen sich seitlich scrollen. <a href="./#chart">Auf der Startseite ausprobieren.</a></li>
       <li><strong>Kreislaufgeräte:</strong> Bei jedem Computer und jeder Datei, die sie aufzeichnen, zeigt die ppO₂-Leiste den Setpoint mit dem per Voting ermittelten ppO₂ (und jede Zelle, wo aufgezeichnet), und die Anzeige gibt den Setpoint in diesem Moment an. Ein Wechsel vom Diluent auf ein anderes Gas wird als Bailout gekennzeichnet.</li>
@@ -434,6 +437,15 @@
       <figure class="shot part"><a href="../images/guide/de/ios-yourdata.jpg"><picture><source srcset="../images/guide/de/ios-yourdata.avif" type="image/avif"><img src="../images/guide/de/ios-yourdata.jpg" width="600" height="456" loading="lazy" alt="Ihre Daten auf dem iPhone: Logbuchdatei importieren, Logbuch exportieren (UDDF), In einem anderen Format exportieren, Wiederherstellungspunkte, Logbuch löschen."></picture></a><figcaption>Profil → Ihre Daten auf dem iPhone.</figcaption></figure>
     </div>
     </div>
+
+    <h2 id="accessibility">Bedienungshilfen</h2>
+    <p>Thermocline folgt den Bedienungshilfen Ihres Geräts.</p>
+    <ul>
+      <li><strong>VoiceOver</strong> liest jeden Balken der Übersicht als ein Element vor, mit seiner Anzahl. Öffnen Sie ihn, um seine Tauchgänge zu sehen.</li>
+      <li><strong>Größerer Text:</strong> Die Übersicht bricht um, statt abgeschnitten zu werden, bis zu den größten Schriftgrößen.</li>
+      <li><strong>Ohne Farben differenzieren:</strong> Wracks sind auf der Karte Rauten, nicht nur orange.</li>
+      <li><strong>Bewegung reduzieren:</strong> Die Karte springt zu einem Tauchplatz, statt hinzufliegen, und Meldungen werden eingeblendet, statt hereinzugleiten.</li>
+    </ul>
 
     <h2 id="stuck">Kommen Sie nicht weiter?</h2>
     <p>Siehe <a href="troubleshooting.html">Problemlösung</a> oder senden Sie Feedback aus TestFlight oder an <a href="mailto:brian@616labs.net">brian@616labs.net</a>.</p>
